@@ -1,0 +1,12 @@
+[
+  {"name":"Gallipoli bridgehead","start":1354,"end":1362,"summary":"Crossing from the Dardanelles into Thrace.","points":[[26.68,40.41],[26.56,41.68]]},
+  {"name":"Kosovo campaign","start":1389,"end":1389,"summary":"Balkan advance toward Kosovo Polje.","points":[[26.56,41.68],[23.32,42.70],[21.09,42.66]]},
+  {"name":"Constantinople campaign","start":1453,"end":1453,"summary":"Mehmed II's final advance on the Byzantine capital.","points":[[26.56,41.68],[28.97,41.01]]},
+  {"name":"Albanian campaigns","start":1444,"end":1479,"summary":"Long Ottoman-Venetian and Skanderbeg-era struggle in Albania.","points":[[21.43,41.99],[20.00,41.50],[19.51,42.07]]},
+  {"name":"Mohacs campaign","start":1521,"end":1526,"summary":"Belgrade to Mohacs and Buda.","points":[[26.56,41.68],[20.46,44.82],[18.68,45.99],[19.05,47.50]]},
+  {"name":"Vienna campaign","start":1529,"end":1683,"summary":"The Danube road toward Vienna in 1529 and 1683.","points":[[19.05,47.50],[18.74,47.79],[16.37,48.21]]},
+  {"name":"Moscow raid","start":1571,"end":1571,"summary":"Crimean-Tatar raid route toward Moscow, clipped by the Europe-only atlas extent.","points":[[33.86,44.75],[36.00,49.20],[39.00,52.00]]},
+  {"name":"Podolia campaign","start":1672,"end":1672,"summary":"Ottoman-Commonwealth war route to Kamianets.","points":[[26.10,44.43],[27.59,47.16],[26.58,48.68]]},
+  {"name":"Wallachian campaigns","start":1462,"end":1595,"summary":"Campaigns across the lower Danube and Wallachia.","points":[[26.56,41.68],[25.97,43.85],[26.10,44.43],[26.05,44.18]]},
+  {"name":"Aegean naval war","start":1538,"end":1669,"summary":"Preveza, Lepanto, Cyprus, Rhodes, and Candia in the Mediterranean struggle.","points":[[20.75,38.95],[21.35,38.25],[28.22,36.44],[33.37,35.17],[25.14,35.34]]}
+]

@@ -1,0 +1,2 @@
+# No Python package dependencies are required.
+# The generated atlas is a standalone Leaflet HTML document using CDN assets.
