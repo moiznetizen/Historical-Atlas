@@ -257,6 +257,20 @@ body {{
   background: #2c1d16;
   border: 2px solid #fbf6ea;
 }}
+.territory-label {{
+  color: rgba(20, 32, 27, 0.86);
+  font: 700 11px/1.15 Inter, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 1px 0 rgba(251, 246, 234, 0.95), 0 -1px 0 rgba(251, 246, 234, 0.95), 1px 0 0 rgba(251, 246, 234, 0.95), -1px 0 0 rgba(251, 246, 234, 0.95);
+  pointer-events: none;
+}}
+.territory-label.vassal {{
+  color: rgba(28, 83, 53, 0.88);
+}}
+.territory-label.neighbour {{
+  color: rgba(70, 73, 69, 0.76);
+}}
 .route-label {{
   color: #4b2118;
   font: 700 12px Inter, sans-serif;
@@ -494,6 +508,7 @@ const territoryLayer = L.geoJSON(null, {{
     layer.on("mouseout", () => layer.setStyle(styleFor(feature)));
   }}
 }}).addTo(map);
+const labelGroup = L.layerGroup().addTo(map);
 const cityGroup = L.layerGroup().addTo(map);
 const battleGroup = L.layerGroup().addTo(map);
 const campaignGroup = L.layerGroup().addTo(map);
@@ -505,6 +520,28 @@ function cityIcon() {{
 function battleIcon(kind) {{
   const naval = kind === "naval";
   return L.divIcon({{className: "", html: `<span class="battle-marker ${{naval ? "naval" : ""}}">${{naval ? "●" : "◆"}}</span>`, iconSize: [22, 22], iconAnchor: [11, 11]}});
+}}
+
+function featureCenter(feature) {{
+  const geom = feature.geometry;
+  const rings = geom.type === "Polygon" ? geom.coordinates : geom.coordinates.flat();
+  const ring = rings.reduce((best, current) => current.length > best.length ? current : best, rings[0]);
+  const sum = ring.reduce((acc, point) => [acc[0] + point[0], acc[1] + point[1]], [0, 0]);
+  return [sum[1] / ring.length, sum[0] / ring.length];
+}}
+
+function renderTerritoryLabels(features) {{
+  labelGroup.clearLayers();
+  features.forEach(feature => {{
+    const p = feature.properties;
+    if (p.relation === "neighbour" && !["Habsburg Monarchy", "Polish-Lithuanian Commonwealth", "Venetian Republic", "Kingdom of Croatia"].includes(p.name)) return;
+    const center = featureCenter(feature);
+    const className = `territory-label ${{p.relation}}`;
+    L.marker(center, {{
+      icon: L.divIcon({{className: "", html: `<div class="${{className}}">${{p.name}}</div>`, iconSize: [132, 40], iconAnchor: [66, 20]}}),
+      interactive: false
+    }}).addTo(labelGroup);
+  }});
 }}
 
 function renderPoints(year) {{
@@ -579,6 +616,7 @@ function setYear(year) {{
     type: "FeatureCollection",
     features: activeFeatures
   }});
+  renderTerritoryLabels(activeFeatures);
   renderPoints(currentYear);
   updateStats(currentYear, event, activeFeatures);
 }}
@@ -633,6 +671,7 @@ searchInput.addEventListener("change", () => {{
 
 L.control.layers(null, {{
   "Territories and neighbours": territoryLayer,
+  "Territory labels": labelGroup,
   "Cities": cityGroup,
   "Battles": battleGroup,
   "Campaign routes": campaignGroup
