@@ -1,0 +1,614 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ottoman Europe Historical Atlas</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Libre+Baskerville:wght@400;700&family=Inter:wght@500;700&display=swap');
+:root {
+  --paper: #fbf6ea;
+--ink: #241b18;
+--direct: #0f5b44;
+--direct-dark: #12362d;
+--vassal: #68b684;
+  --glass: rgba(251, 246, 234, 0.92);
+  --line: rgba(36, 27, 24, 0.20);
+}
+html, body, #map {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+body {
+  background: #8fb7bf;
+  color: var(--ink);
+}
+#map {
+  background: #8fb7bf;
+  font-family: "Libre Baskerville", Georgia, serif;
+}
+.leaflet-container {
+  font-family: "Libre Baskerville", Georgia, serif;
+}
+.atlas-title, .atlas-panel {
+  position: fixed;
+  z-index: 900;
+  color: var(--ink);
+  background: var(--glass);
+  border: 1px solid var(--line);
+  box-shadow: 0 18px 55px rgba(28, 20, 16, 0.27);
+  backdrop-filter: blur(16px);
+}
+.atlas-title {
+  top: 18px;
+  left: 58px;
+  width: min(440px, calc(100vw - 76px));
+  padding: 18px 20px;
+  border-radius: 12px;
+}
+.atlas-title h1 {
+  margin: 0;
+  font-family: Cinzel, Georgia, serif;
+  font-size: clamp(22px, 2.2vw, 30px);
+  letter-spacing: 0;
+}
+.atlas-title p {
+  margin: 8px 0 0;
+  color: rgba(36, 27, 24, 0.72);
+  font-size: 13px;
+  line-height: 1.55;
+}
+.atlas-search {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 8px;
+  align-items: center;
+  margin-top: 12px;
+  font: 12px Inter, sans-serif;
+}
+.atlas-search input {
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 8px 10px;
+  background: rgba(255, 255, 255, 0.58);
+  color: var(--ink);
+  font: 13px Inter, sans-serif;
+}
+.atlas-panel {
+  left: 50%;
+  bottom: 18px;
+  transform: translateX(-50%);
+  width: min(940px, calc(100vw - 32px));
+  border-radius: 14px;
+  overflow: hidden;
+}
+.atlas-controls {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 14px;
+  align-items: center;
+  padding: 14px 16px 10px;
+}
+.atlas-year {
+  min-width: 74px;
+  color: var(--direct-dark);
+  font-family: Cinzel, Georgia, serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+#atlas-slider {
+  width: 100%;
+  accent-color: var(--direct);
+}
+.atlas-buttons {
+  display: flex;
+  gap: 8px;
+}
+.atlas-button {
+  width: 38px;
+  height: 34px;
+  border: 1px solid rgba(95, 27, 22, 0.35);
+  border-radius: 8px;
+  color: var(--direct-dark);
+  background: rgba(255, 255, 255, 0.46);
+  cursor: pointer;
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+}
+.atlas-button.is-active {
+  color: #fff;
+  background: var(--direct);
+}
+.atlas-speed {
+  width: 76px;
+  height: 34px;
+  border: 1px solid rgba(95, 27, 22, 0.35);
+  border-radius: 8px;
+  color: var(--direct-dark);
+  background: rgba(255, 255, 255, 0.46);
+  font: 12px Inter, sans-serif;
+}
+.atlas-story {
+  display: grid;
+  grid-template-columns: 170px 1fr;
+  gap: 12px;
+  padding: 0 16px 14px;
+  font-size: 13px;
+  line-height: 1.55;
+}
+.atlas-story strong {
+  color: var(--direct-dark);
+  font-family: Cinzel, Georgia, serif;
+  font-size: 15px;
+}
+.atlas-legend {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 10px 16px;
+  border-top: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.24);
+  font: 12px/1.4 Inter, sans-serif;
+}
+.atlas-stats {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(92px, 1fr));
+  gap: 1px;
+  border-top: 1px solid var(--line);
+  background: rgba(36, 27, 24, 0.12);
+  font-family: Inter, sans-serif;
+}
+.atlas-stats span {
+  display: grid;
+  gap: 2px;
+  padding: 8px 10px;
+  background: rgba(255, 255, 255, 0.24);
+}
+.atlas-stats b {
+  color: rgba(36, 27, 24, 0.62);
+  font-size: 10px;
+  text-transform: uppercase;
+}
+.atlas-stats em {
+  min-width: 0;
+  overflow: hidden;
+  color: var(--direct-dark);
+  font-size: 12px;
+  font-style: normal;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.legend-chip {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+}
+.legend-swatch {
+  width: 16px;
+  height: 11px;
+  border: 1px solid rgba(36, 27, 24, 0.28);
+  border-radius: 3px;
+}
+.atlas-tooltip {
+  max-width: 290px;
+  font-family: "Libre Baskerville", Georgia, serif;
+  line-height: 1.45;
+}
+.atlas-tooltip b {
+  color: #5f1b16;
+  font-family: Cinzel, Georgia, serif;
+}
+.battle-marker, .city-marker {
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+}
+.battle-marker {
+  width: 22px;
+  height: 22px;
+  color: #fff;
+  background: #642016;
+  font: 700 13px Inter, sans-serif;
+}
+.battle-marker.naval {
+  background: #1f5b6d;
+}
+.city-marker {
+  width: 10px;
+  height: 10px;
+  background: #2c1d16;
+  border: 2px solid #fbf6ea;
+}
+.route-label {
+  color: #4b2118;
+  font: 700 12px Inter, sans-serif;
+}
+.coord-readout, .fullscreen-faux {
+  padding: 5px 8px;
+  border-radius: 6px;
+  background: rgba(251, 246, 234, 0.86);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+  font: 12px Inter, sans-serif;
+}
+.fullscreen-faux {
+  cursor: pointer;
+  font-weight: 700;
+}
+.documentary-mode .leaflet-control-container {
+  opacity: 0.18;
+}
+.documentary-mode .atlas-title {
+  width: min(560px, calc(100vw - 36px));
+}
+.documentary-mode .atlas-panel {
+  width: min(760px, calc(100vw - 32px));
+}
+.legend-ottoman-province { background: #0f5b44; }
+.legend-ottoman-vassal { background: #68b684; }
+.legend-current-conquest { background: #c89b3c; }
+.legend-upper-hungary { background: #86cfa0; }
+.legend-habsburg-monarchy { background: #8e918d; }
+.legend-polish-lithuanian-commonwealth { background: #f1e2bb; }
+.legend-tsardom-of-russia { background: #739bb5; }
+.legend-venetian-republic { background: #8f2f2a; }
+.legend-republic-of-ragusa { background: #c7a06a; }
+.legend-kingdom-of-croatia { background: #a9a9a4; }
+.legend-holy-roman-empire { background: #c0b8a2; }
+.legend-crimean-khanate { background: #68b684; }
+@media (max-width: 720px) {
+  .atlas-title {
+    top: 10px;
+    left: 52px;
+    width: calc(100vw - 62px);
+    padding: 14px;
+  }
+  .atlas-panel {
+    bottom: 8px;
+    width: calc(100vw - 16px);
+  }
+  .atlas-controls {
+    grid-template-columns: 1fr auto;
+  }
+  #atlas-slider {
+    grid-column: 1 / -1;
+  }
+  .atlas-story {
+    grid-template-columns: 1fr;
+  }
+  .atlas-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+</style>
+</head>
+<body>
+  
+<div id="map"></div>
+<div class="atlas-title">
+  <h1>Ottoman Europe Atlas</h1>
+  <p>Interactive historical atlas of Ottoman European expansion and neighbouring powers, focused on the Danube, Balkan, Black Sea, and Adriatic frontiers.</p>
+  <label class="atlas-search"><span>Search</span><input id="atlas-search" list="atlas-search-list" placeholder="City, battle, province"><datalist id="atlas-search-list"></datalist></label>
+</div>
+<div class="atlas-panel">
+  <div class="atlas-controls">
+    <div class="atlas-year" id="atlas-year">1354</div>
+    <input id="atlas-slider" type="range" min="1354" max="1685" value="1354" step="1" aria-label="Timeline year">
+    <div class="atlas-buttons">
+      <button class="atlas-button" id="prev-button" title="Previous event">&lt;</button>
+      <button class="atlas-button" id="play-button" title="Play or pause timeline">▶</button>
+      <button class="atlas-button" id="next-button" title="Next event">&gt;</button>
+      <button class="atlas-button" id="doc-button" title="Toggle documentary mode">D</button>
+      <select class="atlas-speed" id="speed-control" title="Timeline speed">
+        <option value="320">Slow</option>
+        <option value="180" selected>Normal</option>
+        <option value="80">Fast</option>
+      </select>
+    </div>
+  </div>
+  <div class="atlas-story">
+    <strong id="event-title">Gallipoli seized</strong>
+    <span id="event-body">The Ottomans gain their first permanent European foothold on the Dardanelles.</span>
+  </div>
+  <div class="atlas-stats">
+    <span><b>Current Year</b><em id="stat-year">1354</em></span>
+    <span><b>Sultan</b><em id="stat-sultan">Orhan</em></span>
+    <span><b>Territory</b><em id="stat-territory">0 layers</em></span>
+    <span><b>Population</b><em id="stat-population">Frontier polity</em></span>
+    <span><b>Provinces</b><em id="stat-provinces">0</em></span>
+    <span><b>Vassals</b><em id="stat-vassals">0</em></span>
+    <span><b>Largest Rival</b><em id="stat-rival">Byzantine Empire</em></span>
+  </div>
+  <div class="atlas-legend"><span class="legend-chip"><span class="legend-swatch" style="background:#0f5b44"></span>Ottoman Province</span><span class="legend-chip"><span class="legend-swatch" style="background:#68b684"></span>Ottoman Vassal</span><span class="legend-chip"><span class="legend-swatch" style="background:#c89b3c"></span>Current Conquest</span><span class="legend-chip"><span class="legend-swatch" style="background:#86cfa0"></span>Upper Hungary</span><span class="legend-chip"><span class="legend-swatch" style="background:#8e918d"></span>Habsburg Monarchy</span><span class="legend-chip"><span class="legend-swatch" style="background:#f1e2bb"></span>Polish-Lithuanian Commonwealth</span><span class="legend-chip"><span class="legend-swatch" style="background:#739bb5"></span>Tsardom of Russia</span><span class="legend-chip"><span class="legend-swatch" style="background:#8f2f2a"></span>Venetian Republic</span><span class="legend-chip"><span class="legend-swatch" style="background:#c7a06a"></span>Republic of Ragusa</span><span class="legend-chip"><span class="legend-swatch" style="background:#a9a9a4"></span>Kingdom of Croatia</span><span class="legend-chip"><span class="legend-swatch" style="background:#c0b8a2"></span>Holy Roman Empire</span><span class="legend-chip"><span class="legend-swatch" style="background:#68b684"></span>Crimean Khanate</span><span class="legend-chip"><span class="legend-swatch" style="background:transparent;border-style:dashed"></span>Vassal or temporary rule</span><span class="legend-chip">◆ land battle</span><span class="legend-chip">● naval battle</span></div>
+</div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script>
+const ATLAS = {
+  bounds: [[34.0, 8.0], [52.0, 39.0]],
+  territories: {"type": "FeatureCollection", "features": [{"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[[26.18, 40.17], [26.72, 40.18], [26.98, 40.39], [26.82, 40.55], [26.35, 40.43], [26.18, 40.17]]]}, "properties": {"id": "gallipoli", "name": "Gallipoli Peninsula", "power": "Ottoman Province", "relation": "direct", "start": 1354, "end": 1912, "capital": "Gelibolu", "status": "First Ottoman European bridgehead", "held": "1354-1912", "summary": "The first durable Ottoman bridgehead in Europe after the seizure of Tzympe and Gallipoli."}}, {"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[[18.35, 42.28], [18.95, 41.8], [19.45, 40.45], [20.55, 39.35], [21.55, 38.25], [23.25, 37.6], [24.65, 38.0], [24.95, 39.25], [26.3, 40.2], [28.95, 40.8], [29.3, 41.3], [28.85, 42.05], [28.3, 43.2], [27.55, 43.75], [26.4, 44.1], [24.85, 44.15], [23.1, 44.05], [21.8, 44.55], [20.55, 45.1], [19.2, 44.88], [18.35, 44.05], [18.35, 42.28]]]}, "properties": {"id": "rumelia", "name": "Rumelia Eyalet", "power": "Ottoman Province", "relation": "direct", "start": 1362, "end": 1867, "capital": "Sofia, later Monastir", "status": "Core Ottoman European province", "held": "1362-1867", "summary": "The main Ottoman European province, covering Thrace, Macedonia, Bulgaria, Albania, Serbia, and much of Greece in different administrative forms."}}, {"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[[27.35, 43.72], [28.55, 44.05], [29.75, 44.55], [30.95, 45.3], [30.72, 46.2], [29.35, 46.1], [28.35, 45.35], [27.45, 44.5], [27.35, 43.72]]]}, "properties": {"id": "silistra", "name": "Silistra Eyalet", "power": "Ottoman Province", "relation": "direct", "start": 1593, "end": 1864, "capital": "Silistra / Ozi", "status": "Danube and Black Sea frontier province", "held": "1593-1864", "summary": "Lower Danube and western Black Sea province, historically tied to Dobruja, Bessarabian fortresses, and the steppe frontier."}}, {"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[[15.6, 43.1], [16.35, 42.65], [18.35, 42.35], [19.2, 43.25], [19.35, 44.72], [18.1, 45.58], [16.0, 45.25], [15.35, 44.1], [15.6, 43.1]]]}, "properties": {"id": "bosnia", "name": "Bosnia Eyalet", "power": "Ottoman Province", "relation": "direct", "start": 1463, "end": 1878, "capital": "Sarajevo / Banja Luka / Travnik", "status": "Frontier eyalet", "held": "1463-1878", "summary": "Bosnia and Herzegovina formed the western military frontier facing Habsburg Croatia and Venetian Dalmatia."}}, {"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[[16.3, 45.78], [16.8, 46.75], [18.35, 47.55], [19.8, 47.25], [20.55, 46.6], [20.55, 45.5], [19.05, 45.02], [17.25, 45.15], [16.3, 45.78]]]}, "properties": {"id": "budin", "name": "Budin Eyalet", "power": "Ottoman Province", "relation": "direct", "start": 1541, "end": 1686, "capital": "Buda", "status": "Direct Ottoman province", "held": "1541-1686", "summary": "Central Hungary under Ottoman administration after Suleiman's occupation of Buda."}}, {"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[[20.15, 45.05], [20.7, 45.88], [21.45, 46.22], [22.35, 45.92], [22.72, 45.3], [22.35, 44.72], [21.1, 44.58], [20.15, 45.05]]]}, "properties": {"id": "temesvar", "name": "Temesvar Eyalet", "power": "Ottoman Province", "relation": "direct", "start": 1552, "end": 1716, "capital": "Temesvar", "status": "Banat frontier province", "held": "1552-1716", "summary": "The Banat frontier eyalet, organized after the capture of Temesvar in 1552."}}, {"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[[19.25, 47.35], [20.22, 47.98], [21.55, 48.1], [22.15, 47.55], [21.35, 46.78], [20.4, 46.65], [19.25, 47.35]]]}, "properties": {"id": "egri", "name": "Egri Eyalet", "power": "Ottoman Province", "relation": "direct", "start": 1596, "end": 1687, "capital": "Eger", "status": "Northern Hungarian eyalet", "held": "1596-1687", "summary": "Created after Eger's fall during the Long Turkish War, extending Ottoman administration into northern Hungary."}}, {"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[[15.35, 45.42], [16.25, 46.35], [17.45, 46.72], [18.25, 46.2], [18.1, 45.45], [16.7, 45.08], [15.35, 45.42]]]}, "properties": {"id": "kanije", "name": "Kanije Eyalet", "power": "Ottoman Province", "relation": "direct", "start": 1600, "end": 1690, "capital": "Kanije", "status": "Southwestern Hungarian frontier eyalet", "held": "1600-1690", "summary": "Anchored on Nagykanizsa/Kanije, the province guarded the approaches toward Styria and Croatia."}}, {"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[[17.62, 47.72], [18.8, 48.18], [20.12, 48.35], [20.35, 47.82], [19.72, 47.35], [18.35, 47.28], [17.62, 47.72]]]}, "properties": {"id": "uyvar", "name": "Uyvar Eyalet", "power": "Ottoman Province", "relation": "direct", "start": 1663, "end": 1685, "capital": "Uyvar / Nove Zamky", "status": "Short-lived northern frontier eyalet", "held": "1663-1685", "summary": "Short-lived province in Upper Hungary after the capture of Nove Zamky."}}, {"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[[21.25, 46.7], [22.15, 47.35], [23.1, 47.15], [23.05, 46.45], [22.25, 46.05], [21.25, 46.7]]]}, "properties": {"id": "varat", "name": "Varat Eyalet", "power": "Ottoman Province", "relation": "direct", "start": 1660, "end": 1692, "capital": "Varat / Oradea", "status": "Partium frontier eyalet", "held": "1660-1692", "summary": "Created after the capture of Oradea, covering a strategic Partium zone between Ottoman Hungary and Transylvania."}}, {"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[[25.4, 48.35], [26.45, 49.12], [28.15, 49.2], [29.45, 48.58], [29.42, 47.72], [28.25, 47.2], [26.65, 47.28], [25.55, 47.82], [25.4, 48.35]]]}, "properties": {"id": "podolia", "name": "Podolia Eyalet", "power": "Ottoman Province", "relation": "temporary", "start": 1672, "end": 1699, "capital": "Kamianets-Podilskyi", "status": "Temporary Ottoman province", "held": "1672-1699", "summary": "Brief northern province gained from the Polish-Lithuanian Commonwealth by the Treaty of Buchach."}}, {"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[[31.45, 46.42], [33.4, 47.0], [35.35, 46.75], [37.45, 46.18], [38.55, 45.45], [37.1, 44.75], [34.9, 44.52], [33.05, 44.72], [31.95, 45.35], [31.45, 46.42]]]}, "properties": {"id": "crimea", "name": "Crimean Khanate", "power": "Crimean Khanate", "relation": "vassal", "start": 1475, "end": 1783, "capital": "Bakhchysarai", "status": "Ottoman vassal khanate", "held": "1475-1783", "summary": "Giray-ruled khanate under Ottoman suzerainty, dominant across Crimea and the northern Black Sea steppe."}}, {"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[[22.35, 44.42], [23.55, 44.78], [25.35, 45.02], [27.3, 45.1], [28.25, 44.7], [28.65, 44.1], [27.85, 43.72], [25.95, 43.65], [24.2, 43.82], [22.7, 44.08], [22.35, 44.42]]]}, "properties": {"id": "wallachia", "name": "Wallachia", "power": "Ottoman Vassal", "relation": "vassal", "start": 1393, "end": 1878, "capital": "Targoviste / Bucharest", "status": "Tributary principality", "held": "1393-1878", "summary": "Danubian principality under Ottoman suzerainty, retaining native voivodes and Orthodox institutions."}}, {"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[[26.1, 45.35], [27.0, 46.95], [28.0, 48.25], [29.3, 48.42], [30.55, 47.78], [30.38, 46.35], [29.75, 45.35], [28.65, 44.72], [27.25, 45.05], [26.1, 45.35]]]}, "properties": {"id": "moldavia", "name": "Moldavia", "power": "Ottoman Vassal", "relation": "vassal", "start": 1484, "end": 1878, "capital": "Iasi", "status": "Tributary principality", "held": "1484-1878", "summary": "Moldavia remained internally autonomous, while Kilia and Akkerman were held directly after 1484."}}, {"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[[21.7, 45.7], [22.35, 46.55], [23.65, 47.45], [25.25, 47.78], [26.45, 47.25], [26.58, 46.12], [25.72, 45.3], [24.2, 45.08], [22.6, 45.12], [21.7, 45.7]]]}, "properties": {"id": "transylvania", "name": "Principality of Transylvania", "power": "Ottoman Vassal", "relation": "vassal", "start": 1541, "end": 1699, "capital": "Gyulafehervar / Alba Iulia", "status": "Autonomous vassal principality", "held": "1541-1699", "summary": "A buffer principality east of Royal Hungary and west of Moldavia and Wallachia."}}, {"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[[18.45, 48.05], [19.8, 49.15], [21.65, 49.35], [22.55, 48.75], [22.15, 47.82], [20.4, 47.9], [18.45, 48.05]]]}, "properties": {"id": "upper_hungary", "name": "Principality of Upper Hungary", "power": "Upper Hungary", "relation": "vassal", "start": 1682, "end": 1685, "capital": "Kassa / Kosice", "status": "Ottoman-backed principality", "held": "1682-1685", "summary": "Short-lived principality ruled by Imre Thokoly with Ottoman backing."}}, {"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[[28.9, 48.2], [30.4, 49.2], [32.4, 49.05], [33.65, 48.2], [33.1, 47.35], [31.45, 47.18], [29.7, 47.55], [28.9, 48.2]]]}, "properties": {"id": "right_bank_ukraine", "name": "Right Bank Ukraine", "power": "Ottoman Vassal", "relation": "vassal", "start": 1669, "end": 1699, "capital": "Chyhyryn region", "status": "Nominal vassal hetmanate", "held": "1669-1699", "summary": "Ottoman-aligned Cossack polity associated with Petro Doroshenko and later Ottoman-Polish-Russian rivalry."}}, {"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[[12.15, 45.55], [13.2, 47.35], [12.7, 49.0], [14.8, 51.05], [17.25, 50.95], [19.55, 49.55], [18.55, 47.68], [16.0, 46.22], [14.2, 45.55], [12.15, 45.55]]]}, "properties": {"id": "habsburg", "name": "Habsburg Monarchy", "power": "Habsburg Monarchy", "relation": "neighbour", "start": 1526, "end": 1918, "capital": "Vienna", "status": "Neighbouring rival power", "held": "1526-1918", "summary": "Austria, Bohemia, Royal Hungary, Croatia, and frontier lands contesting Ottoman expansion."}}, {"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[[18.1, 49.1], [20.4, 51.4], [24.25, 53.85], [29.8, 53.2], [32.2, 51.15], [31.2, 48.5], [28.2, 48.82], [25.2, 49.2], [22.15, 48.75], [18.1, 49.1]]]}, "properties": {"id": "plc", "name": "Polish-Lithuanian Commonwealth", "power": "Polish-Lithuanian Commonwealth", "relation": "neighbour", "start": 1569, "end": 1795, "capital": "Warsaw / Krakow / Vilnius", "status": "Neighbouring rival power", "held": "1569-1795", "summary": "Northern neighbour and rival in Podolia, Right Bank Ukraine, and Moldavia."}}, {"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[[31.2, 48.5], [33.2, 51.4], [37.2, 54.3], [39.0, 54.95], [39.0, 47.5], [37.75, 46.05], [34.85, 47.18], [31.2, 48.5]]]}, "properties": {"id": "russia", "name": "Tsardom of Russia", "power": "Tsardom of Russia", "relation": "neighbour", "start": 1547, "end": 1721, "capital": "Moscow", "status": "Neighbouring rival power", "held": "1547-1721", "summary": "Expanding eastern power pressing toward the steppe, Ukraine, and the Black Sea."}}, {"type": "Feature", "geometry": {"type": "MultiPolygon", "coordinates": [[[[12.05, 45.15], [13.1, 45.78], [14.1, 45.22], [13.6, 44.42], [12.4, 44.55], [12.05, 45.15]]], [[[14.2, 44.75], [15.6, 44.32], [16.7, 43.42], [17.25, 42.75], [16.85, 42.25], [15.2, 43.25], [14.2, 44.75]]], [[[19.55, 39.82], [20.05, 39.82], [20.12, 39.35], [19.65, 39.3], [19.55, 39.82]]]]}, "properties": {"id": "venice", "name": "Venetian Republic", "power": "Venetian Republic", "relation": "neighbour", "start": 1204, "end": 1797, "capital": "Venice", "status": "Maritime rival power", "held": "1204-1797", "summary": "Adriatic maritime republic with Dalmatian, Ionian, and Aegean holdings contested by the Ottomans."}}, {"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[[17.92, 42.52], [18.35, 42.7], [18.55, 42.48], [18.2, 42.3], [17.92, 42.52]]]}, "properties": {"id": "ragusa", "name": "Republic of Ragusa", "power": "Republic of Ragusa", "relation": "neighbour", "start": 1358, "end": 1808, "capital": "Ragusa / Dubrovnik", "status": "Tributary republic", "held": "1358-1808", "summary": "Small Adriatic republic paying Ottoman tribute while preserving diplomatic and commercial autonomy."}}, {"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[[14.5, 45.2], [15.8, 46.25], [17.3, 46.15], [17.8, 45.35], [16.55, 44.85], [15.1, 44.9], [14.5, 45.2]]]}, "properties": {"id": "croatia", "name": "Kingdom of Croatia", "power": "Kingdom of Croatia", "relation": "neighbour", "start": 1102, "end": 1868, "capital": "Zagreb", "status": "Habsburg crown land and military frontier neighbour", "held": "1102-1868", "summary": "Croatian lands under the Hungarian and Habsburg crowns, including the Military Frontier against Ottoman Bosnia."}}, {"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[[8.0, 46.0], [10.8, 51.8], [14.2, 51.8], [14.4, 48.8], [12.6, 46.15], [8.0, 46.0]]]}, "properties": {"id": "hre", "name": "Holy Roman Empire", "power": "Holy Roman Empire", "relation": "neighbour", "start": 962, "end": 1806, "capital": "Imperial estates", "status": "Western imperial framework", "held": "962-1806", "summary": "The wider imperial framework behind Austria and many German estates involved in anti-Ottoman coalitions."}}]},
+  events: [{"year": 1354, "title": "Gallipoli seized", "body": "The Ottomans gain their first permanent European foothold on the Dardanelles.", "sultan": "Orhan", "population": "Emerging frontier polity", "largest_rival": "Byzantine Empire"}, {"year": 1362, "title": "Edirne becomes the European capital", "body": "Adrianople anchors Ottoman expansion into Thrace and the Balkans.", "sultan": "Murad I", "population": "Balkan frontier expansion", "largest_rival": "Byzantine Empire"}, {"year": 1389, "title": "Battle of Kosovo", "body": "Serbian power is broken after a costly battle; Ottoman influence deepens in the central Balkans.", "sultan": "Murad I / Bayezid I", "population": "Expanding Balkan empire", "largest_rival": "Serbian principalities"}, {"year": 1396, "title": "Battle of Nicopolis", "body": "A crusading army is defeated, confirming Ottoman control over Bulgaria.", "sultan": "Bayezid I", "population": "Rumelian consolidation", "largest_rival": "Hungary"}, {"year": 1444, "title": "Varna", "body": "The crusade of Varna is destroyed on the Black Sea coast.", "sultan": "Murad II", "population": "Recovered after interregnum", "largest_rival": "Hungary and Poland"}, {"year": 1453, "title": "Constantinople falls", "body": "Mehmed II captures the Byzantine capital and turns Istanbul into the imperial center.", "sultan": "Mehmed II", "population": "Imperial capital era begins", "largest_rival": "Venice"}, {"year": 1475, "title": "Crimea enters Ottoman orbit", "body": "Genoese Black Sea ports fall and the Crimean Khanate becomes an Ottoman vassal.", "sultan": "Mehmed II", "population": "Black Sea system", "largest_rival": "Genoa and Lithuania"}, {"year": 1484, "title": "Kilia and Akkerman taken", "body": "Moldavia loses its Black Sea outlets and accepts Ottoman suzerainty.", "sultan": "Bayezid II", "population": "Danube frontier grows", "largest_rival": "Moldavia"}, {"year": 1521, "title": "Belgrade falls", "body": "Suleiman opens the road into Hungary.", "sultan": "Suleiman I", "population": "Danube offensive", "largest_rival": "Hungary"}, {"year": 1526, "title": "Battle of Mohacs", "body": "The medieval Kingdom of Hungary collapses after a catastrophic defeat.", "sultan": "Suleiman I", "population": "Central European high-water mark", "largest_rival": "Habsburg Monarchy"}, {"year": 1541, "title": "Budin Eyalet established", "body": "Central Hungary becomes directly administered Ottoman territory while Transylvania becomes a vassal buffer.", "sultan": "Suleiman I", "population": "Ottoman Hungary formed", "largest_rival": "Habsburg Monarchy"}, {"year": 1552, "title": "Temesvar Eyalet created", "body": "The Banat frontier is reorganized as a major Ottoman eyalet.", "sultan": "Suleiman I", "population": "Hungarian frontier network", "largest_rival": "Habsburg Monarchy"}, {"year": 1566, "title": "Szigetvar and Suleiman's death", "body": "Suleiman dies during the siege, marking the end of the classic expansion age.", "sultan": "Suleiman I", "population": "Mature imperial frontier", "largest_rival": "Habsburg Monarchy"}, {"year": 1571, "title": "Lepanto and Cyprus", "body": "Cyprus is conquered, but the Ottoman fleet is checked by the Holy League at Lepanto.", "sultan": "Selim II", "population": "Mediterranean sea war", "largest_rival": "Venice and Spain"}, {"year": 1593, "title": "Long Turkish War", "body": "A long Habsburg-Ottoman conflict begins across Croatia, Hungary, and Transylvania.", "sultan": "Murad III", "population": "Fortress-war frontier", "largest_rival": "Habsburg Monarchy"}, {"year": 1596, "title": "Egri Eyalet organized", "body": "Eger's fall extends Ottoman administration into northern Hungary.", "sultan": "Mehmed III", "population": "Northern Hungarian expansion", "largest_rival": "Habsburg Monarchy"}, {"year": 1600, "title": "Kanije Eyalet organized", "body": "Nagykanizsa becomes the southwestern Ottoman Hungarian frontier center.", "sultan": "Mehmed III", "population": "Western Hungarian frontier", "largest_rival": "Habsburg Monarchy"}, {"year": 1660, "title": "Varat Eyalet created", "body": "Oradea becomes the capital of a new Partium frontier province.", "sultan": "Mehmed IV", "population": "Partium pressure", "largest_rival": "Transylvania and Habsburgs"}, {"year": 1663, "title": "Uyvar Eyalet created", "body": "Nove Zamky anchors a short-lived Ottoman province in Upper Hungary.", "sultan": "Mehmed IV", "population": "Upper Hungarian push", "largest_rival": "Habsburg Monarchy"}, {"year": 1669, "title": "Candia falls", "body": "Crete is absorbed after one of early modern Europe's longest sieges.", "sultan": "Mehmed IV", "population": "Aegean consolidation", "largest_rival": "Venice"}, {"year": 1672, "title": "Podolia annexed", "body": "The Ottoman Empire reaches its farthest northern European province.", "sultan": "Mehmed IV", "population": "Podolian frontier", "largest_rival": "Polish-Lithuanian Commonwealth"}, {"year": 1682, "title": "Upper Hungary", "body": "Imre Thokoly receives Ottoman backing for a short-lived principality.", "sultan": "Mehmed IV", "population": "Crisis before Vienna", "largest_rival": "Habsburg Monarchy"}, {"year": 1683, "title": "Second Siege of Vienna", "body": "The failed siege begins the strategic reversal of Ottoman power in central Europe.", "sultan": "Mehmed IV", "population": "Great Turkish War begins", "largest_rival": "Holy League"}, {"year": 1685, "title": "Uyvar and Upper Hungary lost", "body": "Habsburg counteroffensives begin dismantling Ottoman Hungary.", "sultan": "Mehmed IV", "population": "Retreat from central Europe", "largest_rival": "Holy League"}],
+  cities: [["Constantinople", 41.01, 28.97, 1453, "Imperial capital after 1453."], ["Edirne", 41.68, 26.56, 1362, "Ottoman European capital before Constantinople."], ["Belgrade", 44.82, 20.46, 1521, "Gateway fortress to Hungary."], ["Buda", 47.5, 19.05, 1541, "Capital of Budin Eyalet."], ["Sarajevo", 43.86, 18.41, 1463, "Bosnian Ottoman urban center."], ["Sofia", 42.7, 23.32, 1385, "Major Rumelian administrative city."], ["Skopje", 41.99, 21.43, 1392, "Important Vardar route city."], ["Thessaloniki", 40.64, 22.94, 1430, "Major Aegean port city."], ["Bucharest", 44.43, 26.1, 1393, "Wallachian capital from the early modern period."], ["Iasi", 47.16, 27.59, 1484, "Moldavian capital."], ["Cluj", 46.77, 23.59, 1541, "Transylvanian urban center."], ["Timisoara", 45.75, 21.23, 1552, "Capital of Temesvar Eyalet."], ["Eger", 47.9, 20.38, 1596, "Capital of Egri Eyalet."], ["Kanije", 46.45, 16.99, 1600, "Capital of Kanije Eyalet."], ["Esztergom", 47.79, 18.74, 1543, "Key Danube fortress."], ["Vienna", 48.21, 16.37, null, "Besieged in 1529 and 1683; never conquered."], ["Krakow", 50.06, 19.94, null, "Commonwealth royal city."], ["Lviv", 49.84, 24.03, null, "Commonwealth and Ruthenian frontier city."], ["Kamianets", 48.68, 26.58, 1672, "Capital fortress of Podolia Eyalet."], ["Caffa", 45.03, 35.38, 1475, "Black Sea port taken from Genoa."], ["Varat / Oradea", 47.05, 21.92, 1660, "Capital of Varat Eyalet."], ["Uyvar / Nove Zamky", 47.99, 18.16, 1663, "Capital of Uyvar Eyalet."], ["Kassa / Kosice", 48.72, 21.26, 1682, "Upper Hungary center under Imre Thokoly."], ["Bakhchysarai", 44.75, 33.86, 1475, "Crimean Khanate capital."], ["Venice", 45.44, 12.33, null, "Maritime republic capital."], ["Ragusa", 42.65, 18.09, null, "Tributary republic and diplomatic broker."], ["Moscow", 55.75, 37.62, null, "Tsardom of Russia capital outside the visible atlas bounds."], ["Warsaw", 52.23, 21.01, null, "Commonwealth political center near the northern atlas edge."]],
+  battles: [{"name": "Battle of Maritsa", "date": "26 September 1371", "year": 1371, "lat": 41.8, "lon": 26.36, "kind": "land", "commanders": "Lala Sahin Pasha; Vukasin Mrnjavcevic and Jovan Ugljesa", "result": "Ottoman victory", "importance": "Opened Macedonia and the central Balkans.", "casualties": "Heavy Serbian coalition losses."}, {"name": "Battle of Kosovo", "date": "15 June 1389", "year": 1389, "lat": 42.66, "lon": 21.09, "kind": "land", "commanders": "Murad I; Prince Lazar", "result": "Ottoman strategic victory", "importance": "Reshaped Serbian-Ottoman relations.", "casualties": "Heavy losses on both sides."}, {"name": "Battle of Nicopolis", "date": "25 September 1396", "year": 1396, "lat": 43.7, "lon": 24.9, "kind": "land", "commanders": "Bayezid I; Sigismund of Hungary", "result": "Ottoman victory", "importance": "Ended a major anti-Ottoman crusade.", "casualties": "Severe crusader losses."}, {"name": "Battle of Varna", "date": "10 November 1444", "year": 1444, "lat": 43.21, "lon": 27.91, "kind": "land", "commanders": "Murad II; Wladyslaw III and Janos Hunyadi", "result": "Ottoman victory", "importance": "Destroyed the crusade of Varna.", "casualties": "King Wladyslaw killed; heavy Christian losses."}, {"name": "Second Battle of Kosovo", "date": "17-20 October 1448", "year": 1448, "lat": 42.66, "lon": 21.09, "kind": "land", "commanders": "Murad II; Janos Hunyadi", "result": "Ottoman victory", "importance": "Confirmed Ottoman dominance in the Balkans.", "casualties": "Heavy Hungarian and allied losses."}, {"name": "Siege of Constantinople", "date": "6 April-29 May 1453", "year": 1453, "lat": 41.01, "lon": 28.97, "kind": "siege", "commanders": "Mehmed II; Constantine XI", "result": "Ottoman victory", "importance": "Ended the Byzantine Empire.", "casualties": "City taken after final assault."}, {"name": "Siege of Belgrade", "date": "4-22 July 1456", "year": 1456, "lat": 44.82, "lon": 20.46, "kind": "siege", "commanders": "Mehmed II; Janos Hunyadi", "result": "Hungarian victory", "importance": "Delayed Ottoman advance into Hungary.", "casualties": "High Ottoman losses."}, {"name": "Night Attack at Targoviste", "date": "17 June 1462", "year": 1462, "lat": 44.92, "lon": 25.46, "kind": "land", "commanders": "Vlad III; Mehmed II", "result": "Wallachian tactical success", "importance": "Symbolic resistance to Ottoman pressure in Wallachia.", "casualties": "Significant Ottoman camp losses reported."}, {"name": "Battle of Vaslui", "date": "10 January 1475", "year": 1475, "lat": 46.64, "lon": 27.73, "kind": "land", "commanders": "Stephen the Great; Hadim Suleiman Pasha", "result": "Moldavian victory", "importance": "Major anti-Ottoman victory in Moldavia.", "casualties": "Heavy Ottoman losses."}, {"name": "Battle of Valea Alba", "date": "26 July 1476", "year": 1476, "lat": 47.17, "lon": 26.25, "kind": "land", "commanders": "Mehmed II; Stephen the Great", "result": "Ottoman victory", "importance": "Forced Moldavia into a defensive posture.", "casualties": "Heavy Moldavian losses."}, {"name": "Siege of Rhodes", "date": "1522", "year": 1522, "lat": 36.44, "lon": 28.22, "kind": "siege", "commanders": "Suleiman I; Philippe Villiers de L'Isle-Adam", "result": "Ottoman victory", "importance": "Ended Hospitaller rule on Rhodes.", "casualties": "High siege losses."}, {"name": "Battle of Mohacs", "date": "29 August 1526", "year": 1526, "lat": 45.99, "lon": 18.68, "kind": "land", "commanders": "Suleiman I; Louis II", "result": "Ottoman victory", "importance": "Collapsed medieval Hungary.", "casualties": "King Louis II killed; heavy Hungarian losses."}, {"name": "First Siege of Vienna", "date": "27 September-14 October 1529", "year": 1529, "lat": 48.21, "lon": 16.37, "kind": "siege", "commanders": "Suleiman I; Wilhelm von Roggendorf", "result": "Habsburg defensive victory", "importance": "Checked Ottoman advance into Austria.", "casualties": "Attrition from weather and siege fighting."}, {"name": "Battle of Preveza", "date": "28 September 1538", "year": 1538, "lat": 38.95, "lon": 20.75, "kind": "naval", "commanders": "Hayreddin Barbarossa; Andrea Doria", "result": "Ottoman victory", "importance": "Confirmed Ottoman naval dominance in the eastern Mediterranean.", "casualties": "Holy League fleet losses."}, {"name": "Siege of Buda", "date": "1541", "year": 1541, "lat": 47.5, "lon": 19.05, "kind": "siege", "commanders": "Suleiman I; Habsburg and Hungarian factions", "result": "Ottoman occupation", "importance": "Created Budin Eyalet.", "casualties": "Political collapse more decisive than battlefield loss."}, {"name": "Siege of Temesvar", "date": "1552", "year": 1552, "lat": 45.75, "lon": 21.23, "kind": "siege", "commanders": "Kara Ahmed Pasha; Istvan Losonczy", "result": "Ottoman victory", "importance": "Created Temesvar Eyalet.", "casualties": "Garrison losses after capitulation."}, {"name": "Great Siege of Malta", "date": "18 May-11 September 1565", "year": 1565, "lat": 35.9, "lon": 14.51, "kind": "siege", "commanders": "Mustafa Pasha and Piyale Pasha; Jean Parisot de Valette", "result": "Hospitaller victory", "importance": "Checked Ottoman western Mediterranean expansion.", "casualties": "Very heavy Ottoman casualties."}, {"name": "Siege of Szigetvar", "date": "5 August-8 September 1566", "year": 1566, "lat": 46.05, "lon": 17.8, "kind": "siege", "commanders": "Suleiman I; Nikola Subic Zrinski", "result": "Ottoman victory", "importance": "Suleiman died during the campaign.", "casualties": "Garrison destroyed; heavy Ottoman losses."}, {"name": "Battle of Djerba", "date": "May 1560", "year": 1560, "lat": 33.81, "lon": 10.88, "kind": "naval", "commanders": "Piyale Pasha; Giovanni Andrea Doria", "result": "Ottoman victory", "importance": "Shown as an edge reference; site is outside the Europe-only view.", "casualties": "Heavy Christian fleet losses."}, {"name": "Cyprus campaign", "date": "1570-1571", "year": 1571, "lat": 35.17, "lon": 33.37, "kind": "siege", "commanders": "Lala Mustafa Pasha; Venetian defenders", "result": "Ottoman victory", "importance": "Cyprus passed from Venice to the Ottomans.", "casualties": "Heavy siege casualties, especially at Nicosia and Famagusta."}, {"name": "Battle of Lepanto", "date": "7 October 1571", "year": 1571, "lat": 38.25, "lon": 21.35, "kind": "naval", "commanders": "Muezzinzade Ali Pasha; Don John of Austria", "result": "Holy League victory", "importance": "Major naval defeat for the Ottoman fleet.", "casualties": "Very heavy Ottoman fleet casualties."}, {"name": "Battle of Molodi", "date": "29 July-2 August 1572", "year": 1572, "lat": 55.23, "lon": 37.62, "kind": "land", "commanders": "Devlet I Giray; Mikhail Vorotynsky", "result": "Russian victory", "importance": "Checked Crimean-Ottoman pressure on Muscovy; north of atlas extent.", "casualties": "Heavy Crimean losses."}, {"name": "Battle of Calugareni", "date": "23 August 1595", "year": 1595, "lat": 44.18, "lon": 26.05, "kind": "land", "commanders": "Michael the Brave; Koca Sinan Pasha", "result": "Wallachian tactical victory", "importance": "Famous Wallachian resistance battle.", "casualties": "Heavy Ottoman losses reported."}, {"name": "Battle of Sisak", "date": "22 June 1593", "year": 1593, "lat": 45.49, "lon": 16.38, "kind": "land", "commanders": "Hasan Pasha Predojevic; Habsburg-Croatian forces", "result": "Habsburg-Croatian victory", "importance": "Sparked the Long Turkish War.", "casualties": "Ottoman commander killed; heavy Ottoman losses."}, {"name": "Battle of Keresztes", "date": "24-26 October 1596", "year": 1596, "lat": 47.82, "lon": 20.43, "kind": "land", "commanders": "Mehmed III; Habsburg-Transylvanian army", "result": "Ottoman victory", "importance": "Followed the fall of Eger and helped shape Egri Eyalet.", "casualties": "Heavy losses on both sides."}, {"name": "Siege of Kanije", "date": "1601", "year": 1601, "lat": 46.45, "lon": 16.99, "kind": "siege", "commanders": "Tiryaki Hasan Pasha; Ferdinand's forces", "result": "Ottoman defensive victory", "importance": "Secured Kanije Eyalet.", "casualties": "Habsburg siege losses."}, {"name": "Battle of Cecora", "date": "17 September-7 October 1620", "year": 1620, "lat": 47.16, "lon": 27.59, "kind": "land", "commanders": "Iskender Pasha; Stanislaw Zolkiewski", "result": "Ottoman victory", "importance": "Escalated Ottoman-Commonwealth conflict.", "casualties": "Zolkiewski killed; heavy Commonwealth losses."}, {"name": "Battle of Khotyn", "date": "2 September-9 October 1621", "year": 1621, "lat": 48.5, "lon": 26.5, "kind": "siege", "commanders": "Osman II; Jan Karol Chodkiewicz", "result": "Commonwealth-Cossack defensive success", "importance": "Stopped Osman II's northern campaign.", "casualties": "Heavy attrition."}, {"name": "Siege of Candia", "date": "1648-1669", "year": 1669, "lat": 35.34, "lon": 25.14, "kind": "siege", "commanders": "Koprulu Fazil Ahmed Pasha; Venetian commanders", "result": "Ottoman victory", "importance": "Completed Ottoman conquest of Crete.", "casualties": "Enormous long-siege losses."}, {"name": "Siege of Varat", "date": "1660", "year": 1660, "lat": 47.05, "lon": 21.92, "kind": "siege", "commanders": "Kose Ali Pasha; Transylvanian-Habsburg defenders", "result": "Ottoman victory", "importance": "Created Varat Eyalet.", "casualties": "Garrison surrendered after siege."}, {"name": "Siege of Uyvar", "date": "1663", "year": 1663, "lat": 47.99, "lon": 18.16, "kind": "siege", "commanders": "Koprulu Fazil Ahmed Pasha; Adam Forgach", "result": "Ottoman victory", "importance": "Created Uyvar Eyalet.", "casualties": "Fortress capitulated."}, {"name": "Battle of Saint Gotthard", "date": "1 August 1664", "year": 1664, "lat": 46.95, "lon": 16.28, "kind": "land", "commanders": "Koprulu Fazil Ahmed Pasha; Raimondo Montecuccoli", "result": "Habsburg victory", "importance": "Checked Ottoman advance after Uyvar.", "casualties": "Heavy Ottoman losses."}, {"name": "Siege of Kamianets", "date": "18-27 August 1672", "year": 1672, "lat": 48.68, "lon": 26.58, "kind": "siege", "commanders": "Mehmed IV and Koprulu Fazil Ahmed Pasha; Polish defenders", "result": "Ottoman victory", "importance": "Led to Podolia Eyalet.", "casualties": "Fortress capitulated."}, {"name": "Battle of Khotyn", "date": "11 November 1673", "year": 1673, "lat": 48.5, "lon": 26.5, "kind": "land", "commanders": "Jan Sobieski; Hussein Pasha", "result": "Commonwealth victory", "importance": "Restored Commonwealth prestige after Buchach.", "casualties": "Heavy Ottoman losses."}, {"name": "Battle of Zurawno", "date": "25 September-14 October 1676", "year": 1676, "lat": 49.25, "lon": 24.3, "kind": "land", "commanders": "Ibrahim Pasha; Jan III Sobieski", "result": "Negotiated settlement", "importance": "Ended a phase of Ottoman-Commonwealth war.", "casualties": "Attritional losses."}, {"name": "Second Siege of Vienna", "date": "14 July-12 September 1683", "year": 1683, "lat": 48.21, "lon": 16.37, "kind": "siege", "commanders": "Kara Mustafa Pasha; Ernst Rudiger von Starhemberg and Jan III Sobieski", "result": "Holy League victory", "importance": "Turning point of the Great Turkish War.", "casualties": "Heavy Ottoman losses and abandoned camp."}, {"name": "Battle of Parkany", "date": "7-9 October 1683", "year": 1683, "lat": 47.8, "lon": 18.72, "kind": "land", "commanders": "Jan III Sobieski; Kara Mehmed Pasha", "result": "Holy League victory", "importance": "Follow-up victory after Vienna.", "casualties": "Heavy Ottoman losses."}, {"name": "Battle of Mohacs II", "date": "12 August 1687", "year": 1687, "lat": 45.99, "lon": 18.68, "kind": "land", "commanders": "Suleiman Pasha; Charles of Lorraine", "result": "Habsburg victory", "importance": "Accelerated loss of Ottoman Hungary.", "casualties": "Heavy Ottoman losses."}, {"name": "Battle of Slankamen", "date": "19 August 1691", "year": 1691, "lat": 45.14, "lon": 20.25, "kind": "land", "commanders": "Koprulu Fazil Mustafa Pasha; Louis William of Baden", "result": "Habsburg victory", "importance": "Major Great Turkish War defeat.", "casualties": "Grand vizier killed; heavy Ottoman losses."}, {"name": "Battle of Zenta", "date": "11 September 1697", "year": 1697, "lat": 45.93, "lon": 20.09, "kind": "land", "commanders": "Mustafa II; Prince Eugene of Savoy", "result": "Habsburg victory", "importance": "Led toward the Treaty of Karlowitz.", "casualties": "Severe Ottoman losses."}, {"name": "Battle of Petrovaradin", "date": "5 August 1716", "year": 1716, "lat": 45.25, "lon": 19.86, "kind": "land", "commanders": "Silahdar Damat Ali Pasha; Prince Eugene of Savoy", "result": "Habsburg victory", "importance": "Ended Ottoman hopes in the Banat.", "casualties": "Grand vizier killed; heavy Ottoman losses."}, {"name": "Battle of Chaldiran", "date": "23 August 1514", "year": 1514, "lat": 39.06, "lon": 44.02, "kind": "land", "commanders": "Selim I; Shah Ismail I", "result": "Ottoman victory", "importance": "Listed in the source spec but outside Europe and outside the atlas bounds.", "casualties": "Heavy Safavid losses."}, {"name": "Capture of Baghdad", "date": "1534", "year": 1534, "lat": 33.31, "lon": 44.36, "kind": "siege", "commanders": "Suleiman I; Safavid defenders", "result": "Ottoman victory", "importance": "Listed in the source spec but excluded from the Europe-only view.", "casualties": "City occupied."}],
+  campaigns: [{"name": "Gallipoli bridgehead", "start": 1354, "end": 1362, "summary": "Crossing from the Dardanelles into Thrace.", "points": [[26.68, 40.41], [26.56, 41.68]]}, {"name": "Kosovo campaign", "start": 1389, "end": 1389, "summary": "Balkan advance toward Kosovo Polje.", "points": [[26.56, 41.68], [23.32, 42.7], [21.09, 42.66]]}, {"name": "Constantinople campaign", "start": 1453, "end": 1453, "summary": "Mehmed II's final advance on the Byzantine capital.", "points": [[26.56, 41.68], [28.97, 41.01]]}, {"name": "Albanian campaigns", "start": 1444, "end": 1479, "summary": "Long Ottoman-Venetian and Skanderbeg-era struggle in Albania.", "points": [[21.43, 41.99], [20.0, 41.5], [19.51, 42.07]]}, {"name": "Mohacs campaign", "start": 1521, "end": 1526, "summary": "Belgrade to Mohacs and Buda.", "points": [[26.56, 41.68], [20.46, 44.82], [18.68, 45.99], [19.05, 47.5]]}, {"name": "Vienna campaign", "start": 1529, "end": 1683, "summary": "The Danube road toward Vienna in 1529 and 1683.", "points": [[19.05, 47.5], [18.74, 47.79], [16.37, 48.21]]}, {"name": "Moscow raid", "start": 1571, "end": 1571, "summary": "Crimean-Tatar raid route toward Moscow, clipped by the Europe-only atlas extent.", "points": [[33.86, 44.75], [36.0, 49.2], [39.0, 52.0]]}, {"name": "Podolia campaign", "start": 1672, "end": 1672, "summary": "Ottoman-Commonwealth war route to Kamianets.", "points": [[26.1, 44.43], [27.59, 47.16], [26.58, 48.68]]}, {"name": "Wallachian campaigns", "start": 1462, "end": 1595, "summary": "Campaigns across the lower Danube and Wallachia.", "points": [[26.56, 41.68], [25.97, 43.85], [26.1, 44.43], [26.05, 44.18]]}, {"name": "Aegean naval war", "start": 1538, "end": 1669, "summary": "Preveza, Lepanto, Cyprus, Rhodes, and Candia in the Mediterranean struggle.", "points": [[20.75, 38.95], [21.35, 38.25], [28.22, 36.44], [33.37, 35.17], [25.14, 35.34]]}],
+  colors: {"Ottoman Province": "#0f5b44", "Ottoman Vassal": "#68b684", "Current Conquest": "#c89b3c", "Upper Hungary": "#86cfa0", "Habsburg Monarchy": "#8e918d", "Polish-Lithuanian Commonwealth": "#f1e2bb", "Tsardom of Russia": "#739bb5", "Venetian Republic": "#8f2f2a", "Republic of Ragusa": "#c7a06a", "Kingdom of Croatia": "#a9a9a4", "Holy Roman Empire": "#c0b8a2", "Crimean Khanate": "#68b684"},
+  start: 1354,
+  end: 1685
+};
+
+const map = L.map("map", {
+  zoomControl: true,
+  maxBounds: ATLAS.bounds,
+  maxBoundsViscosity: 0.7
+});
+map.fitBounds(ATLAS.bounds);
+
+L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}{r}.png", {
+  attribution: "OpenStreetMap contributors, CARTO",
+  maxZoom: 18
+}).addTo(map);
+map.createPane("asiaMaskPane");
+map.getPane("asiaMaskPane").style.zIndex = 320;
+L.polygon([
+  [34.0, 29.65],
+  [34.0, 39.0],
+  [42.35, 39.0],
+  [42.35, 29.65]
+], {
+  pane: "asiaMaskPane",
+  stroke: false,
+  fillColor: "#8fb7bf",
+  fillOpacity: 0.96,
+  interactive: false
+}).addTo(map);
+
+let currentYear = ATLAS.start;
+let timer = null;
+const yearEl = document.getElementById("atlas-year");
+const slider = document.getElementById("atlas-slider");
+const prevButton = document.getElementById("prev-button");
+const playButton = document.getElementById("play-button");
+const nextButton = document.getElementById("next-button");
+const docButton = document.getElementById("doc-button");
+const speedControl = document.getElementById("speed-control");
+const searchInput = document.getElementById("atlas-search");
+const searchList = document.getElementById("atlas-search-list");
+const eventTitle = document.getElementById("event-title");
+const eventBody = document.getElementById("event-body");
+const statYear = document.getElementById("stat-year");
+const statSultan = document.getElementById("stat-sultan");
+const statTerritory = document.getElementById("stat-territory");
+const statPopulation = document.getElementById("stat-population");
+const statProvinces = document.getElementById("stat-provinces");
+const statVassals = document.getElementById("stat-vassals");
+const statRival = document.getElementById("stat-rival");
+
+L.control.scale({imperial: false, position: "bottomleft"}).addTo(map);
+
+const coordControl = L.control({position: "bottomleft"});
+coordControl.onAdd = function() {
+  const div = L.DomUtil.create("div", "coord-readout");
+  div.textContent = "Move cursor for coordinates";
+  map.on("mousemove", event => {
+    div.textContent = `${event.latlng.lat.toFixed(2)}N, ${event.latlng.lng.toFixed(2)}E`;
+  });
+  return div;
+};
+coordControl.addTo(map);
+
+const fullControl = L.control({position: "topleft"});
+fullControl.onAdd = function() {
+  const div = L.DomUtil.create("button", "fullscreen-faux");
+  div.type = "button";
+  div.textContent = "⛶";
+  div.title = "Fullscreen";
+  L.DomEvent.on(div, "click", event => {
+    L.DomEvent.stop(event);
+    if (!document.fullscreenElement) {
+      document.documentElement.requestFullscreen?.();
+    } else {
+      document.exitFullscreen?.();
+    }
+  });
+  return div;
+};
+fullControl.addTo(map);
+
+const mini = L.map(document.createElement("div"), {attributionControl: false, zoomControl: false, interactive: false});
+const miniControl = L.control({position: "bottomright"});
+miniControl.onAdd = function() {
+  const div = mini.getContainer();
+  div.style.width = "150px";
+  div.style.height = "96px";
+  div.style.border = "1px solid rgba(36,27,24,.24)";
+  div.style.borderRadius = "8px";
+  div.style.overflow = "hidden";
+  return div;
+};
+miniControl.addTo(map);
+L.tileLayer("https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png", {maxZoom: 8}).addTo(mini);
+mini.fitBounds(ATLAS.bounds);
+
+function activeInYear(item, year) {
+  const props = item.properties || item;
+  return props.start <= year && year <= props.end;
+}
+
+function styleFor(feature) {
+  const props = feature.properties;
+  const relation = props.relation;
+  const color = props.start === currentYear ? ATLAS.colors["Current Conquest"] : (ATLAS.colors[props.power] || "#0f5b44");
+  return {
+    color: relation === "neighbour" ? "#5f665f" : "#5f1b16",
+    weight: relation === "neighbour" ? 1.1 : 1.55,
+    fillColor: color,
+    fillOpacity: relation === "neighbour" ? 0.34 : relation === "vassal" ? 0.55 : relation === "temporary" ? 0.58 : 0.76,
+    dashArray: relation === "direct" || relation === "neighbour" ? null : "8 5"
+  };
+}
+
+function tooltip(feature) {
+  const p = feature.properties;
+  const end = p.end > 1900 ? "later" : p.end;
+  return `<div class="atlas-tooltip"><b>${p.name}</b><br>${p.status} · ${p.start}-${end}<br><em>${p.capital}</em><br>${p.summary}</div>`;
+}
+
+const territoryLayer = L.geoJSON(null, {
+  style: styleFor,
+  onEachFeature: (feature, layer) => {
+    layer.bindTooltip(tooltip(feature), {sticky: true, opacity: 0.96});
+    layer.on("mouseover", () => layer.setStyle({weight: 2.7, fillOpacity: Math.min((styleFor(feature).fillOpacity || 0.5) + 0.14, 0.9)}));
+    layer.on("mouseout", () => layer.setStyle(styleFor(feature)));
+  }
+}).addTo(map);
+const cityGroup = L.layerGroup().addTo(map);
+const battleGroup = L.layerGroup().addTo(map);
+const campaignGroup = L.layerGroup().addTo(map);
+
+function cityIcon() {
+  return L.divIcon({className: "", html: '<span class="city-marker"></span>', iconSize: [14, 14], iconAnchor: [7, 7]});
+}
+
+function battleIcon(kind) {
+  const naval = kind === "naval";
+  return L.divIcon({className: "", html: `<span class="battle-marker ${naval ? "naval" : ""}">${naval ? "●" : "◆"}</span>`, iconSize: [22, 22], iconAnchor: [11, 11]});
+}
+
+function renderPoints(year) {
+  cityGroup.clearLayers();
+  battleGroup.clearLayers();
+  campaignGroup.clearLayers();
+
+  ATLAS.cities.forEach(([name, lat, lon, start, note]) => {
+    if (start === null || start <= year) {
+      L.marker([lat, lon], {icon: cityIcon()})
+        .bindTooltip(`<div class="atlas-tooltip"><b>${name}</b><br>${note}</div>`, {sticky: true})
+        .addTo(cityGroup);
+    }
+  });
+
+  ATLAS.battles.forEach(battle => {
+    if (battle.year <= year) {
+      L.marker([battle.lat, battle.lon], {icon: battleIcon(battle.kind)})
+        .bindTooltip(`<div class="atlas-tooltip"><b>${battle.name}</b><br>${battle.date} · ${battle.kind}<br><em>${battle.commanders}</em><br><b>Result:</b> ${battle.result}<br><b>Importance:</b> ${battle.importance}<br><b>Casualties:</b> ${battle.casualties}</div>`, {sticky: true})
+        .addTo(battleGroup);
+    }
+  });
+
+  ATLAS.campaigns.forEach(route => {
+    if (route.start <= year) {
+      const latlngs = route.points.map(([lon, lat]) => [lat, lon]);
+      const visiblePoints = route.end <= year ? latlngs : latlngs.slice(0, Math.max(2, Math.ceil(latlngs.length * 0.55)));
+      L.polyline(visiblePoints, {
+        color: route.name.includes("Aegean") ? "#1f5b6d" : "#642016",
+        weight: 3,
+        opacity: 0.78,
+        dashArray: "10 8"
+      }).bindTooltip(`<div class="atlas-tooltip"><b>${route.name}</b><br>${route.summary}</div>`, {sticky: true}).addTo(campaignGroup);
+    }
+  });
+}
+
+function eventFor(year) {
+  return ATLAS.events.filter(event => event.year <= year).sort((a, b) => b.year - a.year)[0] || ATLAS.events[0];
+}
+
+function nearestEventYear(direction) {
+  const years = ATLAS.events.map(event => event.year).sort((a, b) => a - b);
+  if (direction < 0) {
+    return [...years].reverse().find(year => year < currentYear) || ATLAS.start;
+  }
+  return years.find(year => year > currentYear) || ATLAS.end;
+}
+
+function updateStats(year, event, activeFeatures) {
+  const provinces = activeFeatures.filter(feature => feature.properties.power === "Ottoman Province").length;
+  const vassals = activeFeatures.filter(feature => feature.properties.relation === "vassal").length;
+  statYear.textContent = year;
+  statSultan.textContent = event.sultan || "Unknown";
+  statTerritory.textContent = `${activeFeatures.length} layers`;
+  statPopulation.textContent = event.population || "Historical estimate varies";
+  statProvinces.textContent = provinces;
+  statVassals.textContent = vassals;
+  statRival.textContent = event.largest_rival || "Regional rivals";
+}
+
+function setYear(year) {
+  currentYear = Math.max(ATLAS.start, Math.min(ATLAS.end, Number(year)));
+  slider.value = currentYear;
+  yearEl.textContent = currentYear;
+  const event = eventFor(currentYear);
+  eventTitle.textContent = `${event.year} · ${event.title}`;
+  eventBody.textContent = event.body;
+  const activeFeatures = ATLAS.territories.features.filter(feature => activeInYear(feature, currentYear));
+  territoryLayer.clearLayers();
+  territoryLayer.addData({
+    type: "FeatureCollection",
+    features: activeFeatures
+  });
+  renderPoints(currentYear);
+  updateStats(currentYear, event, activeFeatures);
+}
+
+function togglePlay() {
+  if (timer) {
+    clearInterval(timer);
+    timer = null;
+    playButton.textContent = "▶";
+    playButton.classList.remove("is-active");
+    return;
+  }
+  playButton.textContent = "Ⅱ";
+  playButton.classList.add("is-active");
+  timer = setInterval(() => {
+    const next = currentYear >= ATLAS.end ? ATLAS.start : currentYear + 2;
+    setYear(next);
+  }, Number(speedControl.value));
+}
+
+slider.addEventListener("input", event => setYear(event.target.value));
+prevButton.addEventListener("click", () => setYear(nearestEventYear(-1)));
+nextButton.addEventListener("click", () => setYear(nearestEventYear(1)));
+playButton.addEventListener("click", togglePlay);
+speedControl.addEventListener("change", () => {
+  if (timer) {
+    togglePlay();
+    togglePlay();
+  }
+});
+docButton.addEventListener("click", () => {
+  document.body.classList.toggle("documentary-mode");
+  docButton.classList.toggle("is-active");
+});
+
+const searchItems = [
+  ...ATLAS.territories.features.map(feature => ({label: feature.properties.name, year: feature.properties.start, latlng: null})),
+  ...ATLAS.cities.map(([name, lat, lon, start]) => ({label: name, year: start || currentYear, latlng: [lat, lon]})),
+  ...ATLAS.battles.map(battle => ({label: battle.name, year: battle.year, latlng: [battle.lat, battle.lon]}))
+];
+searchItems.forEach(item => {
+  const option = document.createElement("option");
+  option.value = item.label;
+  searchList.appendChild(option);
+});
+searchInput.addEventListener("change", () => {
+  const item = searchItems.find(candidate => candidate.label.toLowerCase() === searchInput.value.toLowerCase());
+  if (!item) return;
+  setYear(item.year || currentYear);
+  if (item.latlng) map.flyTo(item.latlng, 7, {duration: 0.9});
+});
+
+L.control.layers(null, {
+  "Territories and neighbours": territoryLayer,
+  "Cities": cityGroup,
+  "Battles": battleGroup,
+  "Campaign routes": campaignGroup
+}, {collapsed: false, position: "topright"}).addTo(map);
+
+setYear(currentYear);
+</script>
+</body>
+</html>
