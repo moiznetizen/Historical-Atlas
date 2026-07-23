@@ -1,26 +1,389 @@
 [
-  {"year":1354,"title":"Gallipoli seized","body":"The Ottomans gain their first permanent European foothold on the Dardanelles.","sultan":"Orhan","population":"Emerging frontier polity","largest_rival":"Byzantine Empire"},
-  {"year":1362,"title":"Edirne becomes the European capital","body":"Adrianople anchors Ottoman expansion into Thrace and the Balkans.","sultan":"Murad I","population":"Balkan frontier expansion","largest_rival":"Byzantine Empire"},
-  {"year":1389,"title":"Battle of Kosovo","body":"Serbian power is broken after a costly battle; Ottoman influence deepens in the central Balkans.","sultan":"Murad I / Bayezid I","population":"Expanding Balkan empire","largest_rival":"Serbian principalities"},
-  {"year":1396,"title":"Battle of Nicopolis","body":"A crusading army is defeated, confirming Ottoman control over Bulgaria.","sultan":"Bayezid I","population":"Rumelian consolidation","largest_rival":"Hungary"},
-  {"year":1444,"title":"Varna","body":"The crusade of Varna is destroyed on the Black Sea coast.","sultan":"Murad II","population":"Recovered after interregnum","largest_rival":"Hungary and Poland"},
-  {"year":1453,"title":"Constantinople falls","body":"Mehmed II captures the Byzantine capital and turns Istanbul into the imperial center.","sultan":"Mehmed II","population":"Imperial capital era begins","largest_rival":"Venice"},
-  {"year":1475,"title":"Crimea enters Ottoman orbit","body":"Genoese Black Sea ports fall and the Crimean Khanate becomes an Ottoman vassal.","sultan":"Mehmed II","population":"Black Sea system","largest_rival":"Genoa and Lithuania"},
-  {"year":1484,"title":"Kilia and Akkerman taken","body":"Moldavia loses its Black Sea outlets and accepts Ottoman suzerainty.","sultan":"Bayezid II","population":"Danube frontier grows","largest_rival":"Moldavia"},
-  {"year":1521,"title":"Belgrade falls","body":"Suleiman opens the road into Hungary.","sultan":"Suleiman I","population":"Danube offensive","largest_rival":"Hungary"},
-  {"year":1526,"title":"Battle of Mohacs","body":"The medieval Kingdom of Hungary collapses after a catastrophic defeat.","sultan":"Suleiman I","population":"Central European high-water mark","largest_rival":"Habsburg Monarchy"},
-  {"year":1541,"title":"Budin Eyalet established","body":"Central Hungary becomes directly administered Ottoman territory while Transylvania becomes a vassal buffer.","sultan":"Suleiman I","population":"Ottoman Hungary formed","largest_rival":"Habsburg Monarchy"},
-  {"year":1552,"title":"Temesvar Eyalet created","body":"The Banat frontier is reorganized as a major Ottoman eyalet.","sultan":"Suleiman I","population":"Hungarian frontier network","largest_rival":"Habsburg Monarchy"},
-  {"year":1566,"title":"Szigetvar and Suleiman's death","body":"Suleiman dies during the siege, marking the end of the classic expansion age.","sultan":"Suleiman I","population":"Mature imperial frontier","largest_rival":"Habsburg Monarchy"},
-  {"year":1571,"title":"Lepanto and Cyprus","body":"Cyprus is conquered, but the Ottoman fleet is checked by the Holy League at Lepanto.","sultan":"Selim II","population":"Mediterranean sea war","largest_rival":"Venice and Spain"},
-  {"year":1593,"title":"Long Turkish War","body":"A long Habsburg-Ottoman conflict begins across Croatia, Hungary, and Transylvania.","sultan":"Murad III","population":"Fortress-war frontier","largest_rival":"Habsburg Monarchy"},
-  {"year":1596,"title":"Egri Eyalet organized","body":"Eger's fall extends Ottoman administration into northern Hungary.","sultan":"Mehmed III","population":"Northern Hungarian expansion","largest_rival":"Habsburg Monarchy"},
-  {"year":1600,"title":"Kanije Eyalet organized","body":"Nagykanizsa becomes the southwestern Ottoman Hungarian frontier center.","sultan":"Mehmed III","population":"Western Hungarian frontier","largest_rival":"Habsburg Monarchy"},
-  {"year":1660,"title":"Varat Eyalet created","body":"Oradea becomes the capital of a new Partium frontier province.","sultan":"Mehmed IV","population":"Partium pressure","largest_rival":"Transylvania and Habsburgs"},
-  {"year":1663,"title":"Uyvar Eyalet created","body":"Nove Zamky anchors a short-lived Ottoman province in Upper Hungary.","sultan":"Mehmed IV","population":"Upper Hungarian push","largest_rival":"Habsburg Monarchy"},
-  {"year":1669,"title":"Candia falls","body":"Crete is absorbed after one of early modern Europe's longest sieges.","sultan":"Mehmed IV","population":"Aegean consolidation","largest_rival":"Venice"},
-  {"year":1672,"title":"Podolia annexed","body":"The Ottoman Empire reaches its farthest northern European province.","sultan":"Mehmed IV","population":"Podolian frontier","largest_rival":"Polish-Lithuanian Commonwealth"},
-  {"year":1682,"title":"Upper Hungary","body":"Imre Thokoly receives Ottoman backing for a short-lived principality.","sultan":"Mehmed IV","population":"Crisis before Vienna","largest_rival":"Habsburg Monarchy"},
-  {"year":1683,"title":"Second Siege of Vienna","body":"The failed siege begins the strategic reversal of Ottoman power in central Europe.","sultan":"Mehmed IV","population":"Great Turkish War begins","largest_rival":"Holy League"},
-  {"year":1685,"title":"Uyvar and Upper Hungary lost","body":"Habsburg counteroffensives begin dismantling Ottoman Hungary.","sultan":"Mehmed IV","population":"Retreat from central Europe","largest_rival":"Holy League"}
+  {
+    "year": 1354,
+    "title": "Gallipoli seized",
+    "body": "The Ottomans gain their first permanent European foothold on the Dardanelles.",
+    "sultan": "Orhan",
+    "population": "Emerging frontier polity",
+    "largest_rival": "Byzantine Empire"
+  },
+  {
+    "year": 1362,
+    "title": "Edirne becomes the European capital",
+    "body": "Adrianople anchors Ottoman expansion into Thrace and the Balkans.",
+    "sultan": "Murad I",
+    "population": "Balkan frontier expansion",
+    "largest_rival": "Byzantine Empire"
+  },
+  {
+    "year": 1389,
+    "title": "Battle of Kosovo",
+    "body": "Serbian power is broken after a costly battle; Ottoman influence deepens in the central Balkans.",
+    "sultan": "Murad I / Bayezid I",
+    "population": "Expanding Balkan empire",
+    "largest_rival": "Serbian principalities"
+  },
+  {
+    "year": 1396,
+    "title": "Battle of Nicopolis",
+    "body": "A crusading army is defeated, confirming Ottoman control over Bulgaria.",
+    "sultan": "Bayezid I",
+    "population": "Rumelian consolidation",
+    "largest_rival": "Hungary"
+  },
+  {
+    "year": 1402,
+    "title": "Battle of Ankara & Collapse",
+    "body": "Timur crushes Bayezid I. The first Anatolian unification fractures as old beyliks re-assert independence during the Ottoman Interregnum.",
+    "sultan": "Bayezid I",
+    "population": "Empire fractured in civil war",
+    "largest_rival": "Timurid Empire"
+  },
+  {
+    "year": 1443,
+    "title": "Skanderbeg Rebellion begins",
+    "body": "Gjergj Kastrioti (Skanderbeg) seizes Krujë and defects, launching a 25-year war of liberation that opens a deep pocket in western Rumelia.",
+    "sultan": "Murad II",
+    "population": "Balkan localized warfare",
+    "largest_rival": "League of Lezhë and Hungary"
+  },
+  {
+    "year": 1444,
+    "title": "Varna",
+    "body": "The crusade of Varna is destroyed on the Black Sea coast.",
+    "sultan": "Murad II",
+    "population": "Recovered after interregnum",
+    "largest_rival": "Hungary and Poland"
+  },
+  {
+    "year": 1453,
+    "title": "Constantinople falls",
+    "body": "Mehmed II captures the Byzantine capital and turns Istanbul into the imperial center.",
+    "sultan": "Mehmed II",
+    "population": "Imperial capital era begins",
+    "largest_rival": "Venice"
+  },
+  {
+    "year": 1473,
+    "title": "Battle of Otlukbeli",
+    "body": "Mehmed II uses modern artillery to defeat Uzun Hasan, extending absolute hegemony deep into the eastern Anatolian highlands.",
+    "sultan": "Mehmed II",
+    "population": "Eastern border consolidated",
+    "largest_rival": "Aq Qoyunlu Confederation"
+  },
+  {
+    "year": 1475,
+    "title": "Crimea enters Ottoman orbit",
+    "body": "Genoese Black Sea ports fall and the Crimean Khanate becomes an Ottoman vassal.",
+    "sultan": "Mehmed II",
+    "population": "Black Sea system",
+    "largest_rival": "Genoa and Lithuania"
+  },
+  {
+    "year": 1475,
+    "title": "Battle of Vaslui",
+    "body": "Stephen the Great crushes a much larger Ottoman army in Moldavia, delaying direct subjection.",
+    "sultan": "Mehmed II",
+    "population": "Balkan and Danubian flashpoints",
+    "largest_rival": "Hungary and Moldavia"
+  },
+  {
+    "year": 1479,
+    "title": "Albania fully conquered",
+    "body": "Following the fall of Shkodër and the Treaty of Constantinople, Venetian-held outposts are ceded, incorporating Albania completely into Rumelia.",
+    "sultan": "Mehmed II",
+    "population": "Adriatic systems integrated",
+    "largest_rival": "Habsburgs and Venice"
+  },
+  {
+    "year": 1482,
+    "title": "Sack of Kyiv",
+    "body": "Major Crimean victory; sack of the city."
+  },
+  {
+    "year": 1484,
+    "title": "Kilia and Akkerman taken",
+    "body": "Moldavia loses its Black Sea outlets and accepts Ottoman suzerainty.",
+    "sultan": "Bayezid II",
+    "population": "Danube frontier grows",
+    "largest_rival": "Moldavia"
+  },
+  {
+    "year": 1515,
+    "title": "Political Unification of Anatolia",
+    "body": "Following victory at Turnadağ, the last major independent Anatolian beylik is formally eliminated, bringing Asia Minor under total Ottoman administration.",
+    "sultan": "Selim I",
+    "population": "Unified imperial heartland",
+    "largest_rival": "Safavid Persia"
+  },
+  {
+    "year": 1516,
+    "title": "Capture of Algiers",
+    "body": "Ottoman foothold established in the Maghreb.",
+    "sultan": "Selim I"
+  },
+  {
+    "year": 1521,
+    "title": "Belgrade falls",
+    "body": "Suleiman opens the road into Hungary.",
+    "sultan": "Suleiman I",
+    "population": "Danube offensive",
+    "largest_rival": "Hungary"
+  },
+  {
+    "year": 1521,
+    "title": "Great Crimean Raid",
+    "body": "Major Crimean victory reaching the outskirts of Moscow.",
+    "sultan": "Suleiman I"
+  },
+  {
+    "year": 1526,
+    "title": "Battle of Mohacs",
+    "body": "The medieval Kingdom of Hungary collapses after a catastrophic defeat.",
+    "sultan": "Suleiman I",
+    "population": "Central European high-water mark",
+    "largest_rival": "Habsburg Monarchy"
+  },
+  {
+    "year": 1529,
+    "title": "Capture of Peñón of Algiers",
+    "body": "Spanish fortress taken by Hayreddin Barbarossa.",
+    "sultan": "Suleiman I"
+  },
+  {
+    "year": 1534,
+    "title": "Capture of Tunis",
+    "body": "Temporary Ottoman occupation of the city.",
+    "sultan": "Suleiman I"
+  },
+  {
+    "year": 1535,
+    "title": "Conquest of Tunis",
+    "body": "Spanish reconquest of Tunis.",
+    "sultan": "Suleiman I"
+  },
+  {
+    "year": 1538,
+    "title": "Suleiman subdues Moldavia",
+    "body": "Suleiman the Magnificent invades Moldavia, takes Suceava, deposes Petru Rareș, and annexes Bender/Tighina.",
+    "sultan": "Suleiman I",
+    "population": "Consolidated northern vassal system",
+    "largest_rival": "Habsburg Monarchy"
+  },
+  {
+    "year": 1541,
+    "title": "Budin Eyalet established",
+    "body": "Central Hungary becomes directly administered Ottoman territory while Transylvania becomes a vassal buffer.",
+    "sultan": "Suleiman I",
+    "population": "Ottoman Hungary formed",
+    "largest_rival": "Habsburg Monarchy"
+  },
+  {
+    "year": 1551,
+    "title": "Capture of Tripoli",
+    "body": "Tripoli annexed into the Ottoman Empire.",
+    "sultan": "Suleiman I"
+  },
+  {
+    "year": 1552,
+    "title": "Temesvar Eyalet created",
+    "body": "The Banat frontier is reorganized as a major Ottoman eyalet.",
+    "sultan": "Suleiman I",
+    "population": "Hungarian frontier network",
+    "largest_rival": "Habsburg Monarchy"
+  },
+  {
+    "year": 1566,
+    "title": "Szigetvar and Suleiman's death",
+    "body": "Suleiman dies during the siege, marking the end of the classic expansion age.",
+    "sultan": "Suleiman I",
+    "population": "Mature imperial frontier",
+    "largest_rival": "Habsburg Monarchy"
+  },
+  {
+    "year": 1571,
+    "title": "Lepanto and Cyprus",
+    "body": "Cyprus is conquered, but the Ottoman fleet is checked by the Holy League at Lepanto.",
+    "sultan": "Selim II",
+    "population": "Mediterranean sea war",
+    "largest_rival": "Venice and Spain"
+  },
+  {
+    "year": 1571,
+    "title": "Burning of Moscow",
+    "body": "Devlet I Giray burns Moscow, leading to massive enslavement.",
+    "sultan": "Selim II"
+  },
+  {
+    "year": 1574,
+    "title": "Ottoman Reconquest of Tunis",
+    "body": "Permanent annexation of Tunisia.",
+    "sultan": "Selim II"
+  },
+  {
+    "year": 1591,
+    "title": "Battle near Moscow",
+    "body": "Crimean invasion under Ğazı II Giray; Russian victory."
+  },
+  {
+    "year": 1593,
+    "title": "Long Turkish War",
+    "body": "A long Habsburg-Ottoman conflict begins across Croatia, Hungary, and Transylvania.",
+    "sultan": "Murad III",
+    "population": "Fortress-war frontier",
+    "largest_rival": "Habsburg Monarchy"
+  },
+  {
+    "year": 1596,
+    "title": "Egri Eyalet organized",
+    "body": "Eger's fall extends Ottoman administration into northern Hungary.",
+    "sultan": "Mehmed III",
+    "population": "Northern Hungarian expansion",
+    "largest_rival": "Habsburg Monarchy"
+  },
+  {
+    "year": 1600,
+    "title": "Kanije Eyalet organized",
+    "body": "Nagykanizsa becomes the southwestern Ottoman Hungarian frontier center.",
+    "sultan": "Mehmed III",
+    "population": "Western Hungarian frontier",
+    "largest_rival": "Habsburg Monarchy"
+  },
+  {
+    "year": 1648,
+    "title": "Khmelnytsky Uprising Alliance",
+    "body": "Crimean Khanate allies with Bohdan Khmelnytsky against Poland."
+  },
+  {
+    "year": 1660,
+    "title": "Varat Eyalet created",
+    "body": "Oradea becomes the capital of a new Partium frontier province.",
+    "sultan": "Mehmed IV",
+    "population": "Partium pressure",
+    "largest_rival": "Transylvania and Habsburgs"
+  },
+  {
+    "year": 1663,
+    "title": "Uyvar Eyalet created",
+    "body": "Nove Zamky anchors a short-lived Ottoman province in Upper Hungary.",
+    "sultan": "Mehmed IV",
+    "population": "Upper Hungarian push",
+    "largest_rival": "Habsburg Monarchy"
+  },
+  {
+    "year": 1669,
+    "title": "Candia falls",
+    "body": "Crete is absorbed after one of early modern Europe's longest sieges.",
+    "sultan": "Mehmed IV",
+    "population": "Aegean consolidation",
+    "largest_rival": "Venice"
+  },
+  {
+    "year": 1672,
+    "title": "Podolia annexed",
+    "body": "The Ottoman Empire reaches its farthest northern European province.",
+    "sultan": "Mehmed IV",
+    "population": "Podolian frontier",
+    "largest_rival": "Polish-Lithuanian Commonwealth"
+  },
+  {
+    "year": 1677,
+    "title": "First Siege of Chyhyryn",
+    "body": "Ottoman defeat; Russians and Cossacks held the fortress."
+  },
+  {
+    "year": 1678,
+    "title": "Chyhyryn campaign",
+    "body": "Ottoman victory; Kara Mustafa captured and destroyed Chyhyryn."
+  },
+  {
+    "year": 1678,
+    "title": "Chyhyryn Campaign",
+    "body": "Kara Mustafa captures and destroys Chyhyryn.",
+    "sultan": "Mehmed IV"
+  },
+  {
+    "year": 1681,
+    "title": "Treaty of Bakhchisarai",
+    "body": "Ottoman–Russian peace; confirmed control of southern Right-bank Ukraine."
+  },
+  {
+    "year": 1682,
+    "title": "Upper Hungary",
+    "body": "Imre Thokoly receives Ottoman backing for a short-lived principality.",
+    "sultan": "Mehmed IV",
+    "population": "Crisis before Vienna",
+    "largest_rival": "Habsburg Monarchy"
+  },
+  {
+    "year": 1683,
+    "title": "Second Siege of Vienna",
+    "body": "The failed siege begins the strategic reversal of Ottoman power in central Europe.",
+    "sultan": "Mehmed IV",
+    "population": "Great Turkish War begins",
+    "largest_rival": "Holy League"
+  }, {"year": 1548, "title": "Third Campaign of Tabriz", "body": "Ottomans again occupied Tabriz temporarily.", "sultan": "Suleiman I"},
+    {"year": 1554, "title": "Nakhchivan Campaign", "body": "Ottoman devastation of Safavid territory leading to peace.", "sultan": "Suleiman I"},
+    {"year": 1555, "title": "Treaty of Amasya", "body": "First formal Ottoman–Safavid peace; Iraq recognized as Ottoman.", "sultan": "Suleiman I"},
+    {"year": 1590, "title": "Treaty of Constantinople (1590)", "body": "Greatest Ottoman territorial gains in the Caucasus.", "sultan": "Murad III"},
+    {"year": 1612, "title": "Treaty of Nasuh Pasha", "body": "Borders restored largely to those of 1555; Ottomans lost Caucasian conquests.", "sultan": "Ahmed I"},
+    {"year": 1618, "title": "Treaty of Serav", "body": "Confirmed Safavid gains with modified tribute arrangements.", "sultan": "Mustafa I"},
+    {"year": 1639, "title": "Treaty of Zuhab", "body": "Established the long-term Ottoman–Persian frontier; Iraq remained Ottoman.", "sultan": "Murad IV"}
+,
+  {
+    "year": 1685,
+    "title": "Uyvar and Upper Hungary lost",
+    "body": "Habsburg counteroffensives begin dismantling Ottoman Hungary.",
+    "sultan": "Mehmed IV",
+    "population": "Retreat from central Europe",
+    "largest_rival": "Holy League"
+  }
+  ,
+  
+  {
+    "year": 1423,
+    "title": "First Ottoman invasion of the Morea",
+    "body": "Large-scale raid initiating Ottoman interest in the region.",
+    "sultan": "Murad II"
+  },
+  {
+    "year": 1446,
+    "title": "Siege of the Hexamilion Wall",
+    "body": "Ottoman forces under Murad II break through the defensive wall at the Isthmus of Corinth.",
+    "sultan": "Murad II"
+  },
+  {
+    "year": 1458,
+    "title": "Conquest of northern Morea",
+    "body": "Ottoman advance forces the Despotate of the Morea into tributary status.",
+    "sultan": "Mehmed II"
+  },
+  {
+    "year": 1460,
+    "title": "Conquest of the Despotate of the Morea",
+    "body": "Final annexation of the Peloponnese, ending the Despotate.",
+    "sultan": "Mehmed II"
+  },{
+  "year": 1593,
+  "title": "Long Turkish War",
+  "body": "A protracted conflict between the Ottoman Empire and the Habsburg Monarchy, marked by stalemate and significant territorial shifts on the Hungarian frontier.",
+  "sultan": "Murad III / Mehmed III / Ahmed I"
+} ,
+{"year": 1482, "title": "Sack of Kyiv", "body": "Major Crimean victory."},
+    {"year": 1487, "title": "Frontier raids", "body": "Series of Crimean successes."},
+    {"year": 1491, "title": "Raid into Ryazan", "body": "Crimean success."},
+    {"year": 1507, "title": "Raid on Muscovy", "body": "Crimean success."},
+    {"year": 1512, "title": "Raid toward Ryazan", "body": "Crimean success."},
+    {"year": 1517, "title": "Oka frontier raid", "body": "Crimean success."},
+    {"year": 1521, "title": "Great Crimean Raid on Moscow", "body": "Major Crimean victory."},
+    {"year": 1552, "title": "Failed relief of Kazan", "body": "Crimeans failed to relieve Kazan during Ivan IV's siege."},
+    {"year": 1555, "title": "Battle of Sudbishchi", "body": "Russians defeated Crimean raiders."},
+    {"year": 1556, "title": "Raids post-Astrakhan", "body": "Crimean raids following Russian conquest of Astrakhan."},
+    {"year": 1571, "title": "Burning of Moscow", "body": "Led by Devlet I Giray; major victory with massive enslavement."},
+    {"year": 1591, "title": "Battle near Moscow", "body": "Crimean invasion under Ğazı II Giray; Russian victory."},
+    {"year": 1605, "title": "Time of Troubles raids", "body": "Series of slave-raiding expeditions (1605-1615)."},
+    {"year": 1648, "title": "Crimean-Cossack Alliance", "body": "Alliance with Bohdan Khmelnytsky; battles of Zhovti Vody, Korsuń, Pyliavtsi."},
+    {"year": 1677, "title": "First Siege of Chyhyryn", "body": "Ottoman defeat; Russians and Cossacks held the fortress."},
+    {"year": 1678, "title": "Chyhyryn campaign", "body": "Ottoman victory; Kara Mustafa captured and destroyed Chyhyryn."},
+    {"year": 1681, "title": "Treaty of Bakhchisarai", "body": "Ottoman–Russian peace; confirmed Ottoman control of southern Right-bank Ukraine."}
 ]

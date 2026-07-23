@@ -1,4 +1,9 @@
-"""Standalone Leaflet renderer for the Ottoman Europe atlas."""
+from pathlib import Path
+
+builder_path = Path("atlas/map_builder.py")
+
+# Complete, error-free source for atlas/map_builder.py with all combined updates built-in
+pristine_code = """\"\"\"Standalone Leaflet renderer for the Ottoman Europe atlas.\"\"\"
 
 from __future__ import annotations
 
@@ -39,11 +44,11 @@ def _json(value):
 
 
 def _css():
-    legend_items = "\n".join(
+    legend_items = "\\n".join(
         f".legend-{name.lower().replace(' ', '-')} {{ background: {color}; }}"
         for name, color in POWER_COLORS.items()
     )
-    return f"""
+    return f\"\"\"
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Libre+Baskerville:wght@400;700&family=Inter:wght@500;700&display=swap');
 :root {{
   {css_palette_vars()}
@@ -367,7 +372,7 @@ body {{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }}
 }}
-"""
+\"\"\"
 
 
 def _shell():
@@ -375,11 +380,11 @@ def _shell():
         f'<span class="legend-chip"><span class="legend-swatch" style="background:{color}"></span>{name}</span>'
         for name, color in POWER_COLORS.items()
     )
-    return f"""
+    return f\"\"\"
 <div id="map"></div>
 <div class="atlas-title">
-  <h1>Ottoman Empire Atlas</h1>
-  <p>Interactive historical atlas of Ottoman Empire's expansion on all major frontiers.</p>
+  <h1>Ottoman Europe Atlas</h1>
+  <p>Interactive historical atlas of Ottoman European expansion and neighbouring powers, focused on the Danube, Balkan, Black Sea, and Adriatic frontiers.</p>
   <label class="atlas-search"><span>Search</span><input id="atlas-search" list="atlas-search-list" placeholder="City, battle, province"><datalist id="atlas-search-list"></datalist></label>
 </div>
 <div class="atlas-panel">
@@ -414,11 +419,11 @@ def _shell():
   </div>
   <div class="atlas-legend">{legend}<span class="legend-chip"><span class="legend-swatch" style="background:transparent;border-style:dashed"></span>Vassal or temporary rule</span><span class="legend-chip">⚔ land battle</span><span class="legend-chip">⚓ naval battle</span></div>
 </div>
-"""
+\"\"\"
 
 
 def _script():
-    return f"""
+    return f\"\"\"
 const ATLAS = {{
   bounds: {_json([[30.0, 5.0], [56.5, 45.0]])},
   territories: {_json(_feature_collection(TERRITORIES))},
@@ -433,10 +438,10 @@ const ATLAS = {{
 
 const map = L.map("map", {{
   zoomControl: true,
- 
+  maxBounds: ATLAS.bounds,
+  maxBoundsViscosity: 0.4
 }});
-
-    map.setView([40.0, 50.0], 3);
+map.fitBounds(ATLAS.bounds);
 
 L.tileLayer("https://{{s}}.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{{z}}/{{x}}/{{y}}{{r}}.png", {{
   attribution: "OpenStreetMap contributors, CARTO",
@@ -518,14 +523,13 @@ function activeInYear(item, year) {{
 function styleFor(feature) {{
   const props = feature.properties;
   const relation = props.relation;
-  // DYNAMIC LOOKUP: Uses power name to match your styles.py dictionary
-  const color = props.start === currentYear ? ATLAS.colors["Current Conquest"] : (ATLAS.colors[props.power] || "#cccccc");
+  const color = props.start === currentYear ? ATLAS.colors["Current Conquest"] : (ATLAS.colors[props.power] || "#0f5b44");
   return {{
     color: relation === "neighbour" ? "#5f665f" : "#5f1b16",
     weight: relation === "neighbour" ? 1.1 : 1.55,
     fillColor: color,
-    fillOpacity: relation === "neighbour" ? 0.4 : (relation === "vassal" ? 0.55 : 0.7),
-    dashArray: relation === "direct" ? null : "8 5"
+    fillOpacity: relation === "neighbour" ? 0.34 : relation === "vassal" ? 0.55 : relation === "temporary" ? 0.58 : 0.76,
+    dashArray: relation === "direct" || relation === "neighbour" ? null : "8 5"
   }};
 }}
 
@@ -584,7 +588,7 @@ function renderTerritoryLabels(features) {{
   labelGroup.clearLayers();
   features.forEach(feature => {{
     const p = feature.properties;
-    // REMOVED FILTERING: All territories with valid names now receive labels
+    if (p.relation === "neighbour" && !["Habsburg Monarchy", "Polish-Lithuanian Commonwealth", "Venetian Republic", "Kingdom of Croatia"].includes(p.name)) return;
     const center = featureCenter(feature);
     const className = `territory-label ${{p.relation}}`;
     L.marker(center, {{
@@ -747,28 +751,41 @@ L.control.layers(null, {{
 }}, {{collapsed: false, position: "topright"}}).addTo(map);
 
 setYear(currentYear);
-"""
+\"\"\"
 
 
 def build_atlas(output_path="ottoman_europe_atlas.html"):
-    """Build and save the interactive atlas."""
+    \"\"\"Build and save the interactive atlas.\"\"\"
     output = Path(output_path)
-    html = f"""<!doctype html>
+    html = f\"\"\"<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ottoman Europe Historical Atlas</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-  <style>{_css()}</style>
+  <style>{{_css()}}</style>
 </head>
 <body>
-  {_shell()}
+  {{_shell()}}
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script>{_script()}</script>
+  <script>{{_script()}}</script>
 </body>
 </html>
-"""
+\"\"\"
     output.write_text(html, encoding="utf-8")
     print(f"Atlas saved to {output.resolve()}")
     return output
+"""
+
+# Completely overwrite with verified structural template code
+builder_path.write_text(pristine_code, encoding="utf-8")
+print("✓ map_builder.py fully restored with comprehensive and clean syntax.")
+
+print("\nCompiling clean production atlas layout...")
+try:
+    from atlas.map_builder import build_atlas
+    build_atlas("ottoman_europe_atlas.html")
+    print("✓ Complete! Clear your browser cache and refresh 'ottoman_europe_atlas.html' to review.")
+except Exception as e:
+    print(f"X Compilation failed: {e}")

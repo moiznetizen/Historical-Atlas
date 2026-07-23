@@ -2,7 +2,7 @@
 
 from .utils import load_json
 
-BOUNDS = [[34.0, 8.0], [52.0, 39.0]]
+BOUNDS = [[0, -15.0], [55.0, 65.0]]
 TIMELINE_START = 1354
 TIMELINE_END = 1685
 

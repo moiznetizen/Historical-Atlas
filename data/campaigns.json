@@ -1,12 +1,440 @@
 [
-  {"name":"Gallipoli bridgehead","start":1354,"end":1362,"summary":"Crossing from the Dardanelles into Thrace.","points":[[26.68,40.41],[26.56,41.68]]},
-  {"name":"Kosovo campaign","start":1389,"end":1389,"summary":"Balkan advance toward Kosovo Polje.","points":[[26.56,41.68],[23.32,42.70],[21.09,42.66]]},
-  {"name":"Constantinople campaign","start":1453,"end":1453,"summary":"Mehmed II's final advance on the Byzantine capital.","points":[[26.56,41.68],[28.97,41.01]]},
-  {"name":"Albanian campaigns","start":1444,"end":1479,"summary":"Long Ottoman-Venetian and Skanderbeg-era struggle in Albania.","points":[[21.43,41.99],[20.00,41.50],[19.51,42.07]]},
-  {"name":"Mohacs campaign","start":1521,"end":1526,"summary":"Belgrade to Mohacs and Buda.","points":[[26.56,41.68],[20.46,44.82],[18.68,45.99],[19.05,47.50]]},
-  {"name":"Vienna campaign","start":1529,"end":1683,"summary":"The Danube road toward Vienna in 1529 and 1683.","points":[[19.05,47.50],[18.74,47.79],[16.37,48.21]]},
-  {"name":"Moscow raid","start":1571,"end":1571,"summary":"Crimean-Tatar raid route toward Moscow, clipped by the Europe-only atlas extent.","points":[[33.86,44.75],[36.00,49.20],[39.00,52.00]]},
-  {"name":"Podolia campaign","start":1672,"end":1672,"summary":"Ottoman-Commonwealth war route to Kamianets.","points":[[26.10,44.43],[27.59,47.16],[26.58,48.68]]},
-  {"name":"Wallachian campaigns","start":1462,"end":1595,"summary":"Campaigns across the lower Danube and Wallachia.","points":[[26.56,41.68],[25.97,43.85],[26.10,44.43],[26.05,44.18]]},
-  {"name":"Aegean naval war","start":1538,"end":1669,"summary":"Preveza, Lepanto, Cyprus, Rhodes, and Candia in the Mediterranean struggle.","points":[[20.75,38.95],[21.35,38.25],[28.22,36.44],[33.37,35.17],[25.14,35.34]]}
+  {
+    "name": "Gallipoli bridgehead",
+    "start": 1354,
+    "end": 1362,
+    "summary": "Crossing from the Dardanelles into Thrace.",
+    "points": [
+      [
+        26.68,
+        40.41
+      ],
+      [
+        26.56,
+        41.68
+      ]
+    ]
+  },
+  
+  {
+    "name": "Ottoman Counter-Campaign to Varna",
+    "start": 1444,
+    "end": 1444,
+    "summary": "Sultan Murad II's rapid movement from Edirne to intercept the Crusader army at Varna.",
+    "points": [
+      [
+        26.56,
+        41.68
+      ],
+      [
+        27.91,
+        42.50
+      ],
+      [
+        27.93,
+        43.21
+      ]
+    ]
+  },
+  {
+    "name": "Kosovo campaign",
+    "start": 1389,
+    "end": 1389,
+    "summary": "Balkan advance toward Kosovo Polje.",
+    "points": [
+      [
+        26.56,
+        41.68
+      ],
+      [
+        23.32,
+        42.7
+      ],
+      [
+        21.09,
+        42.66
+      ]
+    ]
+  },
+  {
+    "name": "Constantinople campaign",
+    "start": 1453,
+    "end": 1453,
+    "summary": "Mehmed II's final advance on the Byzantine capital.",
+    "points": [
+      [
+        26.56,
+        41.68
+      ],
+      [
+        28.97,
+        41.01
+      ]
+    ]
+  },
+  {
+    "name": "Albanian campaigns",
+    "start": 1444,
+    "end": 1479,
+    "summary": "Long Ottoman-Venetian and Skanderbeg-era struggle in Albania.",
+    "points": [
+      [
+        21.43,
+        41.99
+      ],
+      [
+        20.0,
+        41.5
+      ],
+      [
+        19.51,
+        42.07
+      ]
+    ]
+  },
+  {
+    "name": "Mohacs campaign",
+    "start": 1521,
+    "end": 1526,
+    "summary": "Belgrade to Mohacs and Buda.",
+    "points": [
+      [
+        26.56,
+        41.68
+      ],
+      [
+        20.46,
+        44.82
+      ],
+      [
+        18.68,
+        45.99
+      ],
+      [
+        19.05,
+        47.5
+      ]
+    ]
+  },
+  {
+    "name": "Vienna campaign",
+    "start": 1529,
+    "end": 1683,
+    "summary": "The Danube road toward Vienna in 1529 and 1683.",
+    "points": [
+      [
+        19.05,
+        47.5
+      ],
+      [
+        18.74,
+        47.79
+      ],
+      [
+        16.37,
+        48.21
+      ]
+    ]
+  },
+  {
+    "name": "Moscow raid",
+    "start": 1571,
+    "end": 1571,
+    "summary": "Devlet I Giray's massive raid into Muscovy, resulting in the burning of Moscow. ",
+    "points": [
+      [
+        33.86,
+        44.75
+      ], [ 33.68, 46.15],
+      [
+        36.0,
+        48.0
+      ],
+      [
+        37.5,
+        52.0
+      ], [ 37.61, 55.75]
+    ]
+  },
+  {
+    "name": "Podolia campaign",
+    "start": 1672,
+    "end": 1672,
+    "summary": "Ottoman-Commonwealth war route to Kamianets.",
+    "points": [
+      [
+        26.1,
+        44.43
+      ],
+      [
+        27.59,
+        47.16
+      ],
+      [
+        26.58,
+        48.68
+      ]
+    ]
+  },
+  {
+    "name": "Wallachian campaigns",
+    "start": 1462,
+    "end": 1595,
+    "summary": "Campaigns across the lower Danube and Wallachia.",
+    "points": [
+      [
+        26.56,
+        41.68
+      ],
+      [
+        25.97,
+        43.85
+      ],
+      [
+        26.1,
+        44.43
+      ],
+      [
+        26.05,
+        44.18
+      ]
+    ]
+  },
+  {
+    "name": "Aegean naval war",
+    "start": 1538,
+    "end": 1669,
+    "summary": "Preveza, Lepanto, Cyprus, Rhodes, and Candia in the Mediterranean struggle.",
+    "points": [
+      [
+        20.75,
+        38.95
+      ],
+      [
+        21.35,
+        38.25
+      ],
+      [
+        28.22,
+        36.44
+      ],
+      [
+        33.37,
+        35.17
+      ],
+      [
+        25.14,
+        35.34
+      ]
+    ]
+  },
+  {
+    "name": "Campaign against Astrakhan",
+    "start": 1556,
+    "end": 1556,
+    "summary": "Ottoman and Crimean attempt to recover Astrakhan from Russian control.",
+    "points": [
+      [33.85, 44.75], 
+      [48.05, 46.35]
+    ]
+  },
+ 
+  {
+    "name": "Campaign of Chaldiran",
+    "start": 1514,
+    "end": 1514,
+    "summary": "Selim I's campaign against the Safavids, culminating in the Battle of Chaldiran.",
+    "points": [
+      [28.97, 41.00], 
+      [32.85, 39.93], 
+      [44.50, 39.10]
+    ]
+  },{
+  "name": "Ottoman Campaign towards Lviv",
+  "start": 1672,
+  "end": 1672,
+  "summary": "Ottoman expedition against the Polish-Lithuanian Commonwealth involving the siege of Kamianets and advance toward Lviv.",
+  "points": [
+    [26.55, 41.67],
+    [26.57, 48.67],
+    [24.01, 49.84]
+  ]
+},
+  {
+    "name": "Ottoman Campaign against Timur (Ankara)",
+    "start": 1402,
+    "end": 1402,
+    "summary": "Bayezid I's confrontation with Timur, ending at the Battle of Ankara.",
+    "points": [
+      [26.55, 41.67], 
+      [30.66, 36.89], 
+      [32.85, 39.93]
+    ]
+  }, {
+  "name": "Szigetvár Expedition (1566)",
+  "points": [[21.23, 45.75], [19.00, 45.80], [17.80, 46.10]],
+  "start": 1566,
+  "end": 1566,
+  "summary": "Suleiman the Magnificent's final campaign starting from Banat, targeting Szigetvár."
+},{
+    "name": "Chyhyryn Campaign (1678)",
+    "points": [
+    [26.55, 41.67],  
+    [27.26, 44.12],  
+    [30.36, 46.20],  
+    [32.65, 49.07]  
+  ],
+    "start": 1678,
+    "end": 1678,
+    "summary": "Ottoman advance from the southern plains to capture Chyhyryn."
+  },
+  {
+  "name": "Vienna Campaign (1529)",
+  "points": [
+    [19.04, 47.49], 
+    [18.50, 47.75], 
+    [17.50, 48.00], 
+    [16.37, 48.20]
+  ],
+  "start": 1529,
+  "end": 1529,
+  "summary": "The first major Ottoman attempt to capture Vienna, marking the high-water mark of their expansion into Central Europe under Suleiman the Magnificent."
+}, {
+  "name": "Campaign against Malta",
+  "points": [[28.97, 41.00], [22.00, 36.00], [14.50, 35.88]],
+  "start": 1565,
+  "end": 1565,
+  "summary": "Ottoman naval expedition to capture the island of Malta from the Knights Hospitaller."
+}, 
+
+  {
+    "name": "Eger Campaign (1596)",
+    "points": [[26.55, 41.67], [23.32, 42.69], [20.45, 44.81], [21.23, 45.75], [20.37, 47.90]],
+    "start": 1596,
+    "end": 1596,
+    "summary": "Major Ottoman expedition led by Mehmed III, moving through the Balkans to capture the fortress of Eger."
+  },
+  {
+    "name": "Bosnasaray to Eger Route (1596)",
+    "points": [[18.41, 43.85], [20.45, 44.81], [21.23, 45.75], [20.37, 47.90]],
+    "start": 1596,
+    "end": 1596,
+    "summary": "Military movement of Bosnian provincial forces joining the main Ottoman army at Belgrade en route to Eger."
+  },
+  {
+    "name": "Oradea Campaign (1660)",
+    "points": [[26.55, 41.67], [23.32, 42.69], [20.45, 44.81], [21.23, 45.75], [21.93, 47.05]],
+    "start": 1660,
+    "end": 1660,
+    "summary": "Ottoman expedition from Edirne to capture the strategic fortress of Oradea (Nagyvárad)."
+  },
+  {
+  "name": "Nové Zámky Campaign (1663)",
+  "points": [
+    [26.55, 41.67], 
+    [23.32, 42.69], 
+    [20.45, 44.81], 
+    [21.23, 45.75], 
+    [18.16, 47.99]
+  ],
+  "start": 1663,
+  "end": 1663,
+  "summary": "Expedition launched by Grand Vizier Köprülüzade Fazıl Ahmed Pasha to secure the fortress of Nové Zámky (Uyvar)."
+}
+,
+{
+  "name": "Bosnia Campaign (1388)",
+  "points": [
+    [26.55, 41.67],  
+    [23.32, 42.69],  
+    [21.16, 42.66],  
+    [18.41, 43.85]   
+  ],
+  "start": 1388,
+  "end": 1388,
+  "summary": "Early Ottoman military movement to secure influence in the central Balkans and the Bosnian interior during the reign of Murad I, staging through the administrative hub of Pristina."
+}
+
+,{
+  "name": "Selim I's Mamluk Campaign (1516–1517)",
+  "points": [
+    [28.97, 41.00], 
+    [40.21, 37.91], 
+    [37.15, 36.20], 
+    [36.30, 33.51], 
+    [31.23, 30.04]
+  ],
+  "start": 1516,
+  "end": 1517,
+  "summary": "Selim I's decisive campaign ending Mamluk rule, incorporating Syria, Palestine, and Egypt into the Ottoman Empire."
+},
+
+
+  {
+    "name": "Osman II's Khotyn Campaign (1621)",
+    "points": [
+      [28.97, 41.01],  
+      [26.55, 41.67],  
+      [27.59, 47.16],  
+      [26.49, 48.52]   
+    ],
+    "start": 1621,
+    "end": 1621,
+    "summary": "Sultan Osman II's personal expedition to annex Polish Ukraine and neutralize Cossack raids."
+  },
+  {
+    "name": "Transylvanian Campaign (1551)",
+    "points": [
+      [28.97, 41.01],  
+      [21.23, 45.75],  
+      [23.57, 46.07]   
+    ],
+    "start": 1551,
+    "end": 1551,
+    "summary": "Ottoman intervention under Sokollu Mehmed Pasha to reassert control over Transylvania after Habsburg maneuvers."
+  }
+
+,
+
+{
+  "name": "Murad IV's Mesopotamian Campaign (1638)",
+  "points": [
+    [28.97, 41.00], 
+    [32.85, 39.93], 
+    [39.72, 39.90], 
+    [43.35, 38.48], 
+    [44.40, 33.30]
+  ],
+  "start": 1638,
+  "end": 1639,
+  "summary": "Murad IV's grand campaign to recapture Baghdad and solidify Ottoman control over Mesopotamia, finalized by the Treaty of Zuhab."
+} ,
+  {
+    "name": "Crimean Campaign (Burning of Moscow)",
+    "start": 1571,
+    "end": 1571,
+    "summary": "Devlet I Giray's massive raid into Muscovy, resulting in the burning of Moscow.",
+    "points": [
+      [
+        33.85,
+        44.75
+      ],
+      [
+        33.68,
+        46.15
+      ],
+      [
+        36.0,
+        48.0
+      ],
+      [
+        37.5,
+        52.0
+      ],
+      [
+        37.61,
+        55.75
+      ]
+    ]
+  }
 ]

@@ -1,30 +1,352 @@
 [
-  ["Constantinople",41.01,28.97,1453,"Imperial capital after 1453."],
-  ["Edirne",41.68,26.56,1362,"Ottoman European capital before Constantinople."],
-  ["Belgrade",44.82,20.46,1521,"Gateway fortress to Hungary."],
-  ["Buda",47.50,19.05,1541,"Capital of Budin Eyalet."],
-  ["Sarajevo",43.86,18.41,1463,"Bosnian Ottoman urban center."],
-  ["Sofia",42.70,23.32,1385,"Major Rumelian administrative city."],
-  ["Skopje",41.99,21.43,1392,"Important Vardar route city."],
-  ["Thessaloniki",40.64,22.94,1430,"Major Aegean port city."],
-  ["Bucharest",44.43,26.10,1393,"Wallachian capital from the early modern period."],
-  ["Iasi",47.16,27.59,1484,"Moldavian capital."],
-  ["Cluj",46.77,23.59,1541,"Transylvanian urban center."],
-  ["Timisoara",45.75,21.23,1552,"Capital of Temesvar Eyalet."],
-  ["Eger",47.90,20.38,1596,"Capital of Egri Eyalet."],
-  ["Kanije",46.45,16.99,1600,"Capital of Kanije Eyalet."],
-  ["Esztergom",47.79,18.74,1543,"Key Danube fortress."],
-  ["Vienna",48.21,16.37,null,"Besieged in 1529 and 1683; never conquered."],
-  ["Krakow",50.06,19.94,null,"Commonwealth royal city."],
-  ["Lviv",49.84,24.03,null,"Commonwealth and Ruthenian frontier city."],
-  ["Kamianets",48.68,26.58,1672,"Capital fortress of Podolia Eyalet."],
-  ["Caffa",45.03,35.38,1475,"Black Sea port taken from Genoa."],
-  ["Varat / Oradea",47.05,21.92,1660,"Capital of Varat Eyalet."],
-  ["Uyvar / Nove Zamky",47.99,18.16,1663,"Capital of Uyvar Eyalet."],
-  ["Kassa / Kosice",48.72,21.26,1682,"Upper Hungary center under Imre Thokoly."],
-  ["Bakhchysarai",44.75,33.86,1475,"Crimean Khanate capital."],
-  ["Venice",45.44,12.33,null,"Maritime republic capital."],
-  ["Ragusa",42.65,18.09,null,"Tributary republic and diplomatic broker."],
-  ["Moscow",55.75,37.62,null,"Tsardom of Russia capital outside the visible atlas bounds."],
-  ["Warsaw",52.23,21.01,null,"Commonwealth political center near the northern atlas edge."]
+  [
+    "Constantinople",
+    41.01,
+    28.97,
+    1453,
+    "The Sublime Porté - Imperial capital after 1453."
+  ],
+  [
+    "Edirne",
+    41.68,
+    26.56,
+    1362,
+    "Ottoman European capital before Constantinople."
+  ],
+  [
+    "Belgrade",
+    44.82,
+    20.46,
+    1521,
+    "Gateway fortress to Hungary."
+  ],
+  ["Ray", 35.58, 51.43, 1500, "Ancient city near modern Tehran."],
+  ["Ahlat", 38.75, 42.50, 1533, "Strategic Ottoman stronghold in Eastern Anatolia."],
+  ["Suceava", 47.63, 26.10, 1359, "Moldavian capital"],
+  ["Adana", 37.00, 35.33, 1517, "Key administrative center in Çukurova."],
+  ["Kermanshah", 34.33, 47.07, 1500, "Major city in the Zagros Mountains."],
+  ["Hamadan", 34.79, 48.51, 1500, "Historic trade and cultural center."],
+  ["Nahavand", 34.19, 48.37, 1500, "Ancient city south of Hamadan."],
+  ["Gaza", 31.50, 34.46, 1516, "Important coastal city and regional trade hub."],
+  ["Nablus", 32.22, 35.26, 1516, "Regional center in the Palestinian highlands."],
+  ["Jaffa", 32.05, 34.75, 1516, "Vital port city serving Jerusalem."],
+  ["Acre", 32.92, 35.07, 1516, "Strategic fortified Mediterranean port."],
+  ["Bethlehem", 31.70, 35.20, 1516, "Historic site of high symbolic importance."],
+  ["Nazareth", 32.70, 35.30, 1516, "Significant center in Galilee."],
+  ["Ardabil", 38.25, 48.30, 1500, "Major religious and political center in Safavid Iran."],
+  ["Hebron", 31.53, 35.10, 1516, "City of religious significance in the Levant."],
+  ["Safed", 32.96, 35.49, 1516, "Spiritual center of Galilee."],
+  ["Kars", 40.61, 43.10, 1534, "Key border fortress against the Safavids."],
+  ["Azov", 47.10, 39.33, 1475, "Strategic fortress at the mouth of the Don River."]
+,
+  ["Aden", 12.78, 45.03, 1538, "Strategic Ottoman port at the entrance to the Red Sea."],
+  ["Suakin", 19.11, 37.33, 1517, "Major Ottoman port in modern-day Sudan, central hub for Red Sea trade."],
+  ["Massawa", 15.61, 39.46, 1557, "Key Ottoman port in the Red Sea, serving the Ethiopian highlands."],
+  ["Zeila", 11.35, 43.47, 1548, "Strategic Somali coastal port incorporated into the Ottoman trade network."],
+
+  
+  
+[
+  "Nicosia",
+  35.17,
+  33.36,
+  1571,
+  "Administrative capital of the Cyprus Eyalet."
+],
+[
+  "Split",
+  43.50,
+  16.44,
+  null,
+  "Venetian port serving as a vital trade hub (Scale) for the Ottoman Empire."
+],
+  [
+    "Sarajevo",
+    43.86,
+    18.41,
+    1463,
+    "Bosnian Ottoman urban center."
+  ],
+  [
+    "Sofia",
+    42.7,
+    23.32,
+    1385,
+    "Major Rumelian administrative city."
+  ],
+  [
+    "Skopje",
+    41.99,
+    21.43,
+    1392,
+    "Important Vardar route city."
+  ],
+  [
+    "Thessaloniki",
+    40.64,
+    22.94,
+    1430,
+    "Major Aegean port city."
+  ],
+  [
+    "Bucharest",
+    44.43,
+    26.1,
+    1393,
+    "Wallachian capital from the early modern period."
+  ],
+  [
+    "Jessy",
+    47.16,
+    27.59,
+    1484,
+    "Moldavian capital."
+  ],
+  [
+    "Cluj",
+    46.77,
+    23.59,
+    1541,
+    "Transylvanian urban center."
+  ],["Akkerman", 46.20, 30.36, 1484, "A major fortress city on the Dniester estuary, serving as a vital defensive hub for Ottoman control in the region."]
+  ,
+  ["Sarajevo", 43.85, 18.41, 1461, "A major administrative center of the Ottoman Empire in the Balkans, known for its extensive development of commercial infrastructure."],
+  ["Agram", 45.81, 15.98, 1500, "Historical name for Zagreb; a significant fortress city and administrative seat of the Kingdom of Croatia within the Habsburg domains."]
+
+  ,
+  [
+    "Timisoara",
+    45.75,
+    21.23,
+    1552,
+    "Capital of Temesvar Eyalet."
+  ],
+  [
+    "Eger",
+    47.9,
+    20.38,
+    1596,
+    "Capital of Egri Eyalet."
+  ],
+  [
+    "Kanije",
+    46.45,
+    16.99,
+    1600,
+    "Capital of Kanije Eyalet."
+  ],
+  [
+    "Esztergom",
+    47.79,
+    18.74,
+    1543,
+    "Key Danube fortress."
+  ],
+  [
+    "Vienna",
+    48.21,
+    16.37,
+    null,
+    "Besieged in 1529 and 1683; never conquered."
+  ],
+  [
+    "Krakow",
+    50.06,
+    19.94,
+    null,
+    "Commonwealth royal city."
+  ],
+  [
+    "Lviv",
+    49.84,
+    24.03,
+    null,
+    "Commonwealth and Ruthenian frontier city."
+  ],
+  [
+    "Kamianets",
+    48.68,
+    26.58,
+    1672,
+    "Capital fortress of Podolia Eyalet."
+  ],
+  [
+    "Caffa",
+    45.03,
+    35.38,
+    1475,
+    "Black Sea port taken from Genoa."
+  ],
+  [
+    "Varat / Oradea",
+    47.05,
+    21.92,
+    1660,
+    "Capital of Varat Eyalet."
+  ],
+  ["Pristina", 42.66, 21.16, 1342, "An important administrative and commercial hub in the Balkans throughout the Ottoman period."],
+  ["Cetinje", 42.39, 18.92, 1482, "The historical capital of Montenegro, serving as the center of resistance and spiritual authority in the early modern age."],
+  [
+    "Uyvar / Nove Zamky",
+    47.99,
+    18.16,
+    1663,
+    "Capital of Uyvar Eyalet."
+  ],
+  ["Shirvan", 40.58, 48.91, 1500, "Historical city and regional capital in the Caucasus, central to Safavid-Ottoman territorial shifts."],
+  [
+    "Kassa / Kosice",
+    48.72,
+    21.26,
+    1682,
+    "Upper Hungary center under Imre Thokoly."
+  ],
+  [
+    "Bakhchysarai",
+    44.75,
+    33.86,
+    1475,
+    "Crimean Khanate capital."
+  ],
+  [
+    "Venice",
+    45.44,
+    12.33,
+    null,
+    "Maritime republic capital."
+  ],
+  [
+    "Ragusa",
+    42.65,
+    18.09,
+    null,
+    "Tributary republic and diplomatic broker."
+  ],
+  [
+    "Moscow",
+    55.75,
+    37.62,
+    null,
+    "Tsardom of Russia capital outside the visible atlas bounds."
+  ],
+  [
+    "Warsaw",
+    52.23,
+    21.01,
+    null,
+    "Commonwealth political center near the northern atlas edge."
+  ],
+  [
+    "Bosnasaray",
+    43.86,
+    18.41,
+    1463,
+    "Bosnian administrative center (Sarajevo)."
+  ],
+  [
+    "Gyulafehérvár",
+    46.07,
+    23.57,
+    1541,
+    "Historical capital of the Principality of Transylvania."
+  ],
+  ["Ankara", 39.93, 32.85, 1354, "Major Anatolian administrative center."],
+  ["Izmir", 38.42, 27.14, 1424, "Key Aegean trade port."],
+  ["Adrianopolis", 41.67, 26.55, 1362, "Early European capital (Edirne)."],
+  ["Astrakhan", 46.35, 48.05, 1556, "Strategic Volga trade outpost."],
+  ["Khotyn", 48.51, 26.49, 1621, "Strategic fortress on the Dniester river."]
+  ,
+  ["Mecca", 21.42, 39.82, 1517, "Holy city and center of the Hejaz."],
+  ["Medina", 24.47, 39.61, 1517, "Holy city in the Hejaz."],
+  ["Baghdad", 33.31, 44.36, 1534, "Capital of Mesopotamia and key regional hub."],
+  ["Damascus", 33.51, 36.27, 1516, "Provincial capital of the Levant."],
+  ["Jerusalem", 31.76, 35.21, 1517, "Major religious and administrative center."],
+  ["Tyre", 33.27, 35.19, 1516, "Port city in the Sidon Eyalet."],
+  ["Yerevan", 40.18, 44.51, 1555, "Strategic fortress and regional center in the Caucasus."],
+  ["Konya", 37.86, 32.48, 1461, "Historical center of Anatolia."],
+  ["Tabriz", 38.08, 46.29, 1514, "Key hub frequently contested in Ottoman-Safavid wars."],
+  ["Derbent", 42.06, 48.29, 1578, "Strategic gateway to the Caucasus."],
+  ["Tbilisi", 41.71, 44.82, 1578, "Major city in the Georgian expansion zone."],
+  ["Erzurum", 39.91, 41.27, 1514, "Primary fortress city of Eastern Anatolia."],
+  ["Basra", 30.50, 47.78, 1546, "Key port in Southern Iraq."],
+  ["Amasya", 40.65, 35.83, 1420, "Significant administrative and cultural center."]
+  , ["Algiers", 36.75, 3.05, 1516, "Capital of the Regency of Algiers."],
+  ["Constantine", 36.36, 6.61, 1522, "Key inland administrative hub in Algeria."],
+  ["Tlemcen", 34.88, -1.31, 1554, "Historic cultural center of Western Algeria."],
+  ["Oran", 35.70, -0.64, 1708, "Strategic port, Ottoman after 1708."],
+  ["Béjaïa", 36.75, 5.07, 1555, "Important Algerian port and fortress."],
+  ["Annaba", 36.90, 7.76, 1533, "Ottoman stronghold on the Algerian coast."],
+  ["Mostaganem", 35.93, 0.08, 1516, "Coastal city and naval center."],
+  ["Blida", 36.47, 2.83, 1535, "Administrative center south of Algiers."],
+  ["Mascara", 35.39, 0.14, 1517, "Inland Algerian administrative post."],
+  ["Tunis", 36.80, 10.18, 1574, "Capital of the Regency of Tunis."],
+  ["Bizerte", 37.27, 9.87, 1574, "Strategic northern Tunisian port."],
+  ["Sousse", 35.82, 10.64, 1574, "Key Tunisian commercial port."],
+  ["Sfax", 34.74, 10.76, 1574, "Major port city in southern Tunisia."],
+  ["Kairouan", 35.67, 10.10, 1574, "Historically significant religious and interior center."],
+  ["Mahdia", 35.50, 11.07, 1574, "Fortified coastal town in Tunisia."],
+  ["Gabès", 33.88, 10.10, 1574, "Strategic southern Tunisian port."],
+  ["Kef", 36.17, 8.70, 1574, "Mountainous interior fortress in Tunisia."],
+  ["Djerba", 33.81, 10.85, 1574, "Strategic island base for the Ottoman navy."],
+  ["Tripoli", 32.88, 13.19, 1551, "Capital of Ottoman Tripolitania."],
+  ["Misrata", 32.37, 15.09, 1551, "Key commercial hub in Libya."],
+  ["Khoms", 32.65, 14.26, 1551, "Coastal town and trading post in Libya."],
+  ["Zuwara", 32.93, 12.08, 1551, "Coastal town west of Tripoli."],
+  ["Sirte", 31.21, 16.58, 1551, "Strategic coastal settlement in Libya."],
+  ["Murzuk", 25.92, 13.91, 1551, "Vital Saharan caravan and trade center."],
+  ["Ghadames", 30.13, 9.50, 1551, "Essential desert trade oasis."],
+  ["Cairo", 30.04, 31.23, 1517, "Administrative center of the Egypt Eyalet."],
+  ["Alexandria", 31.20, 29.91, 1517, "Primary Egyptian Mediterranean port."],
+  ["Rosetta", 31.40, 30.41, 1517, "Port city in the Nile Delta."],
+  ["Damietta", 31.41, 31.81, 1517, "Eastern Nile Delta port."],
+  ["Suez", 29.96, 32.55, 1517, "Strategic Red Sea port and trade terminal."],
+  ["Asyut", 27.18, 31.18, 1517, "Major agricultural center in Upper Egypt."],
+  ["Luxor", 25.68, 32.63, 1517, "Historical center in Upper Egypt."],
+  ["Aswan", 24.08, 32.89, 1517, "Southern frontier post in Egypt."],
+  ["Dongola", 19.17, 30.48, 1560, "Frontier town in Nubia (Sudan)."],
+  ["Preveza", 38.95, 20.75, 1499, "Strategic Ottoman port and fortress in Epirus."],
+  ["Lepanto", 38.25, 21.35, 1499, "Key naval base in western Greece."],
+  ["Cyprus", 35.17, 33.37, 1571, "Island territory annexed from Venice."],
+  ["Rhodes", 36.44, 28.22, 1522, "Island fortress taken from the Knights Hospitaller."],
+  ["Candia", 35.34, 25.14, 1669, "Capital of Crete under Ottoman control after siege."],
+  ["Kütahya", 39.42, 29.98, 1314, "Administrative capital of the Anatolia Eyalet."],
+  ["Bursa", 40.18, 29.06, 1326, "First major capital and historic heartland of the Ottoman Empire."],
+  ["Baku", 40.40, 49.86, 1583, "Strategic port city on the Caspian Sea, briefly held during the Safavid wars."],
+  ["Aleppo", 36.20, 37.15, 1516, "Major Ottoman trade hub and regional capital."],
+  ["Adana", 37.00, 35.33, 1517, "Key administrative center in the Çukurova region."],
+  ["Mosul", 36.33, 43.13, 1534, "Strategic frontier city in Ottoman Mesopotamia."],
+  ["Pressberg", 48.14, 17.10, 1536, "Administrative capital and coronation city of the Kingdom of Hungary."]
+  ,
+  
+  ["Buda", 47.49, 19.04, 1541, "Capital of Ottoman-held Hungary after its conquest from the Habsburgs."],
+  ["Poltava", 49.58, 34.55, 1650, "Site of a pivotal battle between the Swedish Empire and Tsardom of Russia."],
+  ["Jeddah", 21.54, 39.17, 1525, "Primary Red Sea port of the Hejaz and gateway for Hajj pilgrims."],
+  ["Munich", 48.13, 11.58, 1500, "Capital of the Electorate of Bavaria and a major central European power center."],
+  ["Prague", 50.07, 14.43, 1526, "Seat of the Bohemian Crown, key territory of the Habsburg monarchy."],
+  ["Rome", 41.90, 12.49, 1500, "Historical center of the Papal States and central node of European diplomacy."],
+  ["Geneva", 46.20, 6.14, 1536, "Significant center of the Protestant Reformation and political influence."],
+  ["Novgorod", 58.52, 31.27, 1478, "Historic Russian merchant city integrated into the expanding Muscovite state."],
+  ["Smolensk", 54.78, 32.04, 1514, "Major strategic fortress and border city contested between Lithuania and Muscovy."],
+  ["Kazan", 55.78, 49.12, 1552, "Former Tatar khanate capital, annexed by Ivan the Terrible."],
+  ["Nizhny Novgorod", 56.32, 44.00, 1500, "Key trade hub and defensive outpost on the Volga River."],
+  ["Vilnius", 54.68, 25.28, 1500, "Capital of the Grand Duchy of Lithuania and cultural center of the region."],
+  ["Chyhyryn", 49.07, 32.66, 1648, "Significant Cossack capital and administrative stronghold."],
+  ["Chernihiv", 51.49, 31.29, 1500, "Historical fortress city in the Dnieper region."],
+  ["Lutsk", 50.74, 25.32, 1500, "Capital of Volhynia under the Grand Duchy of Lithuania."],
+  ["Volodymyr", 50.84, 24.31, 1500, "Historic princely seat of the Kievan Rus' and major regional bishopric."],
+  ["Brody", 50.08, 25.15, 1584, "Important fortress city known for its diverse merchant guilds."],
+  ["Peremyshl", 49.78, 22.77, 1500, "Major fortress city and long-standing bishopric in the borderlands."],
+  ["Terebovlia", 49.30, 25.45, 1500, "Major medieval fortress crucial for defense against frontier raids."]
+,
+
+["Kiev", 50.45, 30.52, 482, "Major historical East Slavic metropolis and cultural center on the Dnieper River."],
+["Wroclaw", 51.10, 17.03, 1000, "Major historic Silesian city (Breslau) central to Central European trade and dynastic politics."],
+["Krakow", 50.06, 19.94, 966, "Historic royal capital of Poland and major Central European trade and cultural hub."],
+["Kijow", 50.45, 30.52, 482, "Major historical East Slavic metropolis and cultural center on the Dnieper River."],
+["Silistra", 44.11, 27.26, 1388, "Administrative center and major Danubian fortress guarding the frontier."],
+["Varna", 43.21, 27.91, 1444, "Vital fortified Black Sea naval port and site of the historic 1444 battle."],
+["Ochakiv", 46.61, 31.54, 1492, "Strategic fortress guarding the Dnieper-Bug estuary at the northern edge."],
+["Kilia", 45.44, 29.25, 1484, "Key Danube Delta stronghold securing northern Black Sea shipping."],
+["Ruse", 43.85, 25.97, 1388, "Major heavily fortified strongpoint on the Ottoman Danube defense line."],
+["Kizikermen", 46.83, 33.35, 1450, "Vital Ottoman-Tatar fortress on the lower Dnieper river guarding traffic and frontier crossings."]
 ]
