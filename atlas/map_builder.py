@@ -111,7 +111,6 @@ body {{
   color: var(--ink);
   font: 13px Inter, sans-serif;
 }}
-/* Panel Minimize Styles */
 .atlas-panel {{
   left: 50%;
   bottom: 18px;
@@ -273,7 +272,17 @@ body {{
   background: #2c1d16;
   border: 2px solid #fbf6ea;
 }}
-/* Aesthetic compact pointers CSS */
+.fortress-marker {{
+  font-size: 16px;
+  text-align: center;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}}
 .battle-marker {{
   width: 12px;
   height: 12px;
@@ -297,8 +306,8 @@ body {{
   color: rgba(36, 27, 24, 0.55);
   font-family: "Cinzel", Georgia, serif;
   font-weight: 700;
-  font-size: 14px;
-  letter-spacing: 4px;
+  font-size: 11px;
+  letter-spacing: 2px;
   text-transform: uppercase;
   text-align: center;
   pointer-events: none;
@@ -317,10 +326,6 @@ body {{
 }}
 .territory-label.neighbour {{
   color: rgba(70, 73, 69, 0.76);
-}}
-.route-label {{
-  color: #4b2118;
-  font: 700 12px Inter, sans-serif;
 }}
 .coord-readout, .fullscreen-faux {{
   padding: 5px 8px;
@@ -412,7 +417,7 @@ def _shell():
     <span><b>Vassals</b><em id="stat-vassals">0</em></span>
     <span><b>Largest Rival</b><em id="stat-rival">Byzantine Empire</em></span>
   </div>
-  <div class="atlas-legend">{legend}<span class="legend-chip"><span class="legend-swatch" style="background:transparent;border-style:dashed"></span>Vassal or temporary rule</span><span class="legend-chip">⚔ land battle</span><span class="legend-chip">⚓ naval battle</span></div>
+  <div class="atlas-legend">{legend}<span class="legend-chip"><span class="legend-swatch" style="background:transparent;border-style:dashed"></span>Vassal or temporary rule</span><span class="legend-chip">⚔ land battle</span><span class="legend-chip">⚓ naval battle</span><span class="legend-chip">🏰 fortress</span></div>
 </div>
 """
 
@@ -433,10 +438,9 @@ const ATLAS = {{
 
 const map = L.map("map", {{
   zoomControl: true,
- 
 }});
 
-    map.setView([40.0, 50.0], 3);
+map.setView([40.0, 50.0], 3);
 
 L.tileLayer("https://{{s}}.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{{z}}/{{x}}/{{y}}{{r}}.png", {{
   attribution: "OpenStreetMap contributors, CARTO",
@@ -471,7 +475,7 @@ coordControl.onAdd = function() {{
   const div = L.DomUtil.create("div", "coord-readout");
   div.textContent = "Move cursor for coordinates";
   map.on("mousemove", event => {{
-    div.textContent = `${{event.latlng.lat.toFixed(2)}}N, ${{event.latlng.lng.toFixed(2)}}E`;
+    div.textContent = event.latlng.lat.toFixed(2) + "N, " + event.latlng.lng.toFixed(2) + "E";
   }});
   return div;
 }};
@@ -518,7 +522,6 @@ function activeInYear(item, year) {{
 function styleFor(feature) {{
   const props = feature.properties;
   const relation = props.relation;
-  // DYNAMIC LOOKUP: Uses power name to match your styles.py dictionary
   const color = props.start === currentYear ? ATLAS.colors["Current Conquest"] : (ATLAS.colors[props.power] || "#cccccc");
   return {{
     color: relation === "neighbour" ? "#5f665f" : "#5f1b16",
@@ -532,7 +535,7 @@ function styleFor(feature) {{
 function tooltip(feature) {{
   const p = feature.properties;
   const end = p.end > 1900 ? "later" : p.end;
-  return `<div class="atlas-tooltip"><b>${{p.name}}</b><br>${{p.status}} · ${{p.start}}-${{end}}<br><em>${{p.capital}}</em><br>${{p.summary}}</div>`;
+  return '<div class="atlas-tooltip"><b>' + p.name + '</b><br>' + p.status + ' · ' + p.start + '-' + end + '<br><em>' + p.capital + '</em><br>' + p.summary + '</div>';
 }}
 
 const territoryLayer = L.geoJSON(null, {{
@@ -547,9 +550,14 @@ const labelGroup = L.layerGroup().addTo(map);
 const cityGroup = L.layerGroup().addTo(map);
 const battleGroup = L.layerGroup().addTo(map);
 const campaignGroup = L.layerGroup().addTo(map);
+const regionalLabelGroup = L.layerGroup().addTo(map);
 
 function cityIcon() {{
   return L.divIcon({{className: "", html: '<span class="city-marker"></span>', iconSize: [14, 14], iconAnchor: [7, 7]}});
+}}
+
+function fortressIcon() {{
+  return L.divIcon({{className: "", html: '<span class="fortress-marker">🏰</span>', iconSize: [24, 24], iconAnchor: [12, 12]}});
 }}
 
 function battleIcon(kind) {{
@@ -584,11 +592,10 @@ function renderTerritoryLabels(features) {{
   labelGroup.clearLayers();
   features.forEach(feature => {{
     const p = feature.properties;
-    // REMOVED FILTERING: All territories with valid names now receive labels
     const center = featureCenter(feature);
-    const className = `territory-label ${{p.relation}}`;
+    const className = "territory-label " + p.relation;
     L.marker(center, {{
-      icon: L.divIcon({{className: "", html: `<div class="${{className}}">${{p.name}}</div>`, iconSize: [132, 40], iconAnchor: [66, 20]}}),
+      icon: L.divIcon({{className: "", html: '<div class="' + className + '">' + p.name + '</div>', iconSize: [132, 40], iconAnchor: [66, 20]}}),
       interactive: false
     }}).addTo(labelGroup);
   }});
@@ -599,10 +606,21 @@ function renderPoints(year) {{
   battleGroup.clearLayers();
   campaignGroup.clearLayers();
 
-  ATLAS.cities.forEach(([name, lat, lon, start, note]) => {{
+  ATLAS.cities.forEach(item => {{
+    let name, lat, lon, start, note, kind;
+    if (Array.isArray(item)) {{
+      name = item[0]; lat = item[1]; lon = item[2]; start = item[3]; note = item[4]; kind = item[5];
+    }} else {{
+      name = item.name; lat = item.lat; lon = item.lon; start = item.start; note = item.note || item.summary; kind = item.kind;
+    }}
+
     if (start === null || start <= year) {{
-      L.marker([lat, lon], {{icon: cityIcon()}})
-        .bindTooltip(`<div class="atlas-tooltip"><b>${{name}}</b><br>${{note}}</div>`, {{sticky: true}})
+      const isFortress = kind === "fortress";
+      const icon = isFortress ? fortressIcon() : cityIcon();
+      const tooltipLabel = isFortress ? "<b>Fortress: " + name + "</b><br>" + (note || "") : "<b>" + name + "</b><br>" + (note || "");
+      
+      L.marker([lat, lon], {{icon: icon}})
+        .bindTooltip('<div class="atlas-tooltip">' + tooltipLabel + '</div>', {{sticky: true}})
         .addTo(cityGroup);
     }}
   }});
@@ -610,21 +628,21 @@ function renderPoints(year) {{
   ATLAS.battles.forEach(battle => {{
     if (battle.year <= year) {{
       L.marker([battle.lat, battle.lon], {{icon: battleIcon(battle.kind)}})
-        .bindTooltip(`<div class="atlas-tooltip"><b>${{battle.name}}</b><br>${{battle.date}} · ${{battle.kind}}<br><em>${{battle.commanders}}</em><br><b>Result:</b> ${{battle.result}}<br><b>Importance:</b> ${{battle.importance}}<br><b>Casualties:</b> ${{battle.casualties}}</div>`, {{sticky: true}})
+        .bindTooltip('<div class="atlas-tooltip"><b>' + battle.name + '</b><br>' + battle.date + ' · ' + battle.kind + '<br><em>' + battle.commanders + '</em><br><b>Result:</b> ' + battle.result + '<br><b>Importance:</b> ' + battle.importance + '<br><b>Casualties:</b> ' + battle.casualties + '</div>', {{sticky: true}})
         .addTo(battleGroup);
     }}
   }});
 
   ATLAS.campaigns.forEach(route => {{
     if (route.start <= year) {{
-      const latlngs = route.points.map(([lon, lat]) => [lat, lon]);
+      const latlngs = route.points.map(pt => [pt[1], pt[0]]);
       const visiblePoints = route.end <= year ? latlngs : latlngs.slice(0, Math.max(2, Math.ceil(latlngs.length * 0.55)));
       L.polyline(visiblePoints, {{
         color: route.name.includes("Aegean") ? "#1f5b6d" : "#642016",
         weight: 3,
         opacity: 0.78,
         dashArray: "10 8"
-      }}).bindTooltip(`<div class="atlas-tooltip"><b>${{route.name}}</b><br>${{route.summary}}</div>`, {{sticky: true}}).addTo(campaignGroup);
+      }}).bindTooltip('<div class="atlas-tooltip"><b>' + route.name + '</b><br>' + route.summary + '</div>', {{sticky: true}}).addTo(campaignGroup);
     }}
   }});
 }}
@@ -646,7 +664,7 @@ function updateStats(year, event, activeFeatures) {{
   const vassals = activeFeatures.filter(feature => feature.properties.relation === "vassal").length;
   statYear.textContent = year;
   statSultan.textContent = event.sultan || "Unknown";
-  statTerritory.textContent = `${{activeFeatures.length}} layers`;
+  statTerritory.textContent = activeFeatures.length + " layers";
   statPopulation.textContent = event.population || "Historical estimate varies";
   statProvinces.textContent = provinces;
   statVassals.textContent = vassals;
@@ -658,7 +676,7 @@ function setYear(year) {{
   slider.value = currentYear;
   yearEl.textContent = currentYear;
   const event = eventFor(currentYear);
-  eventTitle.textContent = `${{event.year}} · ${{event.title}}`;
+  eventTitle.textContent = event.year + " · " + event.title;
   eventBody.textContent = event.body;
   const activeFeatures = ATLAS.territories.features.filter(feature => activeInYear(feature, currentYear));
   territoryLayer.clearLayers();
@@ -719,11 +737,56 @@ L.marker([39.20, 34.50], {{
     iconAnchor: [100, 15]
   }}),
   interactive: false
-}}).addTo(map);
+}}).addTo(regionalLabelGroup);
+
+// Standalone regional text labels
+const regionalLabels = [
+  {{name: "Galicia", lat: 49.30, lon: 24.20}},
+  {{name: "Volhynia", lat: 50.80, lon: 25.50}},
+  {{name: "Ruthenia", lat: 49.80, lon: 27.50}},
+  {{name: "Bukovina", lat: 48.25, lon: 26.00}},
+  {{name: "Crown of the Kingdom of Poland", lat: 51.50, lon: 19.50}}, 
+  {{name: "Grand Duchy of Lithuania", lat: 54.68, lon: 25.27}}, 
+  {{name: "Kievan Rus", lat: 55.45, lon: 37.37}}, 
+  {{name: "Cossack Ukraine", lat: 49.80, lon: 31.50}},
+  {{name: "Maghreb", lat: 30.00, lon: 5.00}}, 
+  {{name: "Egypt", lat: 26.82, lon: 30.80}}, 
+  {{name: "Hejaz", lat: 24.00, lon: 39.50}}, 
+  {{name: "Levant", lat: 34.80, lon: 36.50}}, 
+  {{name: "Mesopotamia", lat: 33.30, lon: 44.30}},
+  {{name: "Desolate Kipchak Steppe", lat: 47.50, lon: 37.00}}, 
+  {{name: "Archduchy of Austria", lat: 48.20, lon: 14.30}},
+  {{name: "Duchy of Styria", lat: 47.07, lon: 15.44}}, 
+  {{name: "Crownlands of Bohemia", lat: 49.80, lon: 15.50}}, 
+  {{name: "Italian Maritime Lordships", lat: 44.50, lon: 12.00}},
+  {{name: "Balkan Peninsula", lat: 43.50, lon: 21.50}}, 
+  {{name: "Kingdom of Croatia", lat: 45.10, lon: 15.80}}, 
+  {{name: "Lands of St. Stephen's Crown", lat: 47.20, lon: 19.50}},
+  {{name: "Kingdom of Dalmatia", lat: 43.50, lon: 16.40}},
+  {{name: "Crimean Peninsula", lat: 45.30, lon: 34.30}}
+];
+
+regionalLabels.forEach(reg => {{
+  L.marker([reg.lat, reg.lon], {{
+    icon: L.divIcon({{
+      className: "",
+      html: '<div class="anatolia-map-label">' + reg.name + '</div>',
+      iconSize: [160, 30],
+      iconAnchor: [80, 15]
+    }}),
+    interactive: false
+  }}).addTo(regionalLabelGroup);
+}});
 
 const searchItems = [
   ...ATLAS.territories.features.map(feature => ({{label: feature.properties.name, year: feature.properties.start, latlng: null}})),
-  ...ATLAS.cities.map(([name, lat, lon, start]) => ({{label: name, year: start || currentYear, latlng: [lat, lon]}})),
+  ...ATLAS.cities.map(item => {{
+    const name = Array.isArray(item) ? item[0] : item.name;
+    const lat = Array.isArray(item) ? item[1] : item.lat;
+    const lon = Array.isArray(item) ? item[2] : item.lon;
+    const start = Array.isArray(item) ? item[3] : item.start;
+    return {{label: name, year: start || currentYear, latlng: [lat, lon]}};
+  }}),
   ...ATLAS.battles.map(battle => ({{label: battle.name, year: battle.year, latlng: [battle.lat, battle.lon]}}))
 ];
 searchItems.forEach(item => {{
@@ -741,7 +804,8 @@ searchInput.addEventListener("change", () => {{
 L.control.layers(null, {{
   "Territories and neighbours": territoryLayer,
   "Territory labels": labelGroup,
-  "Cities": cityGroup,
+  "Regional Area Labels": regionalLabelGroup,
+  "Cities & Fortresses": cityGroup,
   "Battles": battleGroup,
   "Campaign routes": campaignGroup
 }}, {{collapsed: false, position: "topright"}}).addTo(map);

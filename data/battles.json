@@ -11,6 +11,74 @@
     "importance": "Opened the way for a permanent Ottoman military role in Thrace.",
     "casualties": "Not securely recorded."
   },
+
+  
+  {
+    "name": "Battle of Kulikovo",
+    "date": "8 September 1380",
+    "year": 1380,
+    "lat": 53.64,
+    "lon": 38.64,
+    "kind": "land",
+    "commanders": "Dmitry Donskoy vs. Mamai",
+    "result": "Russian victory",
+    "importance": "Established Moscow as the primary political center for anti-Horde resistance and broke the aura of Tatar invincibility.",
+    "casualties": "Very heavy losses on both sides."
+  },
+  {
+    "name": "Great Stand on the Ugra River",
+    "date": "1480",
+    "year": 1480,
+    "lat": 54.55,
+    "lon": 36.31,
+    "kind": "treaty",
+    "commanders": "Ivan III vs. Akhmat Khan",
+    "result": "Standoff / Tatar retreat",
+    "importance": "Formally terminated two and a half centuries of Tatar tribute and suzerainty over Russian principalities.",
+    "casualties": "Minimal combat; strategic bloodless victory."
+  }
+,
+
+  {
+    "name": "Battle of Lipnic",
+    "date": "20 August 1470",
+    "year": 1470,
+    "lat": 48.33,
+    "lon": 28.53,
+    "kind": "land",
+    "commanders": "Stephen the Great vs. Ahmed Khan (Golden Horde)",
+    "result": "Decisive Moldavian victory",
+    "importance": "Repelled a major Volga-Tatar invasion of Moldavia, capturing Ahmed Khan's son and strengthening Moldavian sovereignty.",
+    "casualties": "Heavy Tatar losses; capture of numerous prisoners."
+  }
+
+,
+  {
+    "name": "Sack of Sarai",
+    "date": "1502",
+    "year": 1502,
+    "lat": 48.46,
+    "lon": 47.15,
+    "kind": "land",
+    "commanders": "Crimean Khanate (Mengli I Giray) vs. Great Horde (Sheikh Ahmad)",
+    "result": "Decisive Crimean victory",
+    "importance": "Destroyed the capital of the Great Horde, permanently extinguishing its statehood and dividing its remnants among rival khanates.",
+    "casualties": "Heavy devastation of the city and surrounding nomadic forces."
+  },
+  {
+    "name": "Battle of Samara River",
+    "date": "1502–1503",
+    "year": 1502,
+    "lat": 53.20,
+    "lon": 50.15,
+    "kind": "land",
+    "commanders": "Russian principalities / Nogais vs. Remnants of the Great Horde",
+    "result": "Decisive tactical routing",
+    "importance": " Effectively concluded the final phase of Golden Horde resistance, clearing the middle Volga and Ural frontier zones.",
+    "casualties": "Substantial destruction of remaining Horde military capacity."
+  }
+
+,
   {
   "name": "Battle of Kassa",
   "date": "18 October 1685",
@@ -862,18 +930,18 @@
     "importance": "Showed Belgrade's continued strength as Hungary's southern gate.",
     "casualties": "Not securely recorded."
   },
-  {
-    "name": "Long Campaign",
-    "date": "1443-1444",
-    "year": 1443,
-    "lat": 43.32,
-    "lon": 21.9,
-    "kind": "expedition",
-    "commanders": "Janos Hunyadi and Wladyslaw III; Murad II's commanders",
-    "result": "Crusader offensive",
-    "importance": "Major Christian offensive through the Balkans before Varna.",
-    "casualties": "Campaign losses not securely recorded."
-  },
+ {
+  "name": "Battle of Niš (Long Campaign)",
+  "date": "1443",
+  "year": 1443,
+  "lat": 43.32,
+  "lon": 21.90,
+  "kind": "land",
+  "commanders": "Janos Hunyadi and Wladyslaw III vs. Kasim Pasha / Ottoman commanders",
+  "result": "Christian victory",
+  "importance": "Major Christian victory during the Long Campaign, opening the Balkan offensive before Varna.",
+  "casualties": "Heavy Ottoman losses."
+},
   {
     "name": "Battle of Varna",
     "date": "10 November 1444",
@@ -910,6 +978,19 @@
   "importance": "A decisive defeat for the Habsburgs that saw the annihilation of their 24,000-man army, halting imperial offensive ambitions in the region following the broken Treaty of Konstantiniyye.",
   "casualties": "Extreme (approx. 20,000 killed)"
 },
+{
+  "name": "Siege of Buda",
+  "date": "August 26 – September 8, 1529",
+  "year": 1529,
+  "lat": 47.4979,
+  "lon": 19.0402,
+  "kind": "siege",
+  "commanders": "Suleiman the Magnificent vs. Ferdinand I",
+  "result": "Ottoman victory",
+  "importance": "Suleiman successfully captured Buda after intensive artillery bombardment, restoring and installing John Zápolya as an Ottoman vassal king over Hungary before marching on Vienna.",
+  "casualties": "Heavy (Habsburg garrison/mercenaries)"
+}
+,
 
   {
     "name": "Battle of Srebrenica (1411)",
