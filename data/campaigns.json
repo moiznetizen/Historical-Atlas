@@ -15,7 +15,103 @@
       ]
     ]
   },
-  
+{
+  "name": "Ottoman Campaign Against Hormuz",
+  "start": 1552,
+  "end": 1554,
+  "summary": "Piri Reis and Seydi Ali Reis led naval expeditions and campaigns from Suez through the Red Sea and Persian Gulf against Portuguese strongholds at Muscat, Hormuz, and the Strait of Hormuz, ultimately reaching Basra.",
+  "points": 
+     [
+      [
+        32.4072004,
+        29.9867394
+      ],
+      [
+        33.1546064,
+        28.5070638
+      ],
+      [
+        35.9075015,
+        25.4308506
+      ],
+      [
+        43.3710846,
+        12.6207029
+      ],
+      [
+        44.538019,
+        11.9078854
+      ],
+      [
+        45.9533963,
+        11.8058254
+      ],
+      [
+        52.7040168,
+        14.323596
+      ],
+      [
+        55.7461609,
+        16.5872012
+      ],
+      [
+        61.5660796,
+        21.9469326
+      ],
+      [
+        61.3809973,
+        22.6867918
+      ],
+      [
+        60.2133045,
+        23.4670073
+      ],
+      [
+        58.8528614,
+        23.6217592
+      ],
+      [
+        58.495125,
+        23.6146146
+      ],
+      [
+        56.9798997,
+        25.6237463
+      ],
+      [
+        56.4950165,
+        26.7085517
+      ],
+      [
+        56.2135943,
+        26.8055256
+      ],
+      [
+        54.4064715,
+        25.7684803
+      ],
+      [
+        53.511005,
+        25.7416703
+      ],
+      [
+        51.3889934,
+        26.7178693
+      ],
+      [
+        50.1960413,
+        27.8654993
+      ],
+      [
+        49.2337642,
+        29.0861848
+      ],
+      [
+        48.4098225,
+        29.9169659
+      ]
+  ]
+},
   {
     "name": "Ottoman Counter-Campaign to Varna",
     "start": 1444,
@@ -260,6 +356,19 @@
     [24.01, 49.84]
   ]
 },
+{
+    "name": "Sultan Murad IV's Yerevan Campaign",
+    "start": 1635,
+    "end": 1635,
+    "summary": "Sultan Murad IV's personal campaign into the Caucasus, successfully capturing Yerevan (Revan) and plundering Tabriz.",
+    "points": [
+      [28.97, 41.00],
+      [32.85, 39.93],
+      [38.30, 38.35],
+      [43.37, 38.50],
+      [44.51, 40.18]
+    ]
+  },
   {
     "name": "Ottoman Campaign against Timur (Ankara)",
     "start": 1402,
@@ -301,7 +410,91 @@
   "summary": "The first major Ottoman attempt to capture Vienna, marking the high-water mark of their expansion into Central Europe under Suleiman the Magnificent."
 }, {
   "name": "Campaign against Malta",
-  "points": [[28.97, 41.00], [22.00, 36.00], [14.50, 35.88]],
+  "points": [
+      [
+        28.9830875,
+        40.9915152
+      ],
+      [
+        27.9631368,
+        40.6116048
+      ],
+      [
+        27.7526708,
+        40.5439743
+      ],
+      [
+        27.5260151,
+        40.5501253
+      ],
+      [
+        27.0160398,
+        40.4824327
+      ],
+      [
+        26.740815,
+        40.4146718
+      ],
+      [
+        26.6112974,
+        40.3406728
+      ],
+      [
+        26.495136,
+        40.2240628
+      ],
+      [
+        26.3884199,
+        40.1803986
+      ],
+      [
+        26.3884199,
+        40.1192214
+      ],
+      [
+        26.3045716,
+        40.0579891
+      ],
+      [
+        26.1406863,
+        40.0142181
+      ],
+      [
+        25.7405011,
+        39.827146
+      ],
+      [
+        25.30526,
+        38.9427563
+      ],
+      [
+        25.3534747,
+        38.2447106
+      ],
+      [
+        25.6294496,
+        37.3874109
+      ],
+      [
+        24.7307895,
+        37.189674
+      ],
+      [
+        23.5560074,
+        36.4829891
+      ],
+      [
+        22.6916904,
+        35.3590808
+      ],
+      [
+        18.7454676,
+        35.2214425
+      ],
+      [
+        14.3152649,
+        35.9984371
+      ]],
   "start": 1565,
   "end": 1565,
   "summary": "Ottoman naval expedition to capture the island of Malta from the Knights Hospitaller."

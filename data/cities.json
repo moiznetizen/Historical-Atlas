@@ -210,6 +210,68 @@
     1541,
     "Transylvanian urban center."
   ],
+  ["Craiova",
+44.33,
+23.80,
+1475,
+"Major Wallachian urban center."
+],
+[
+"Targoviste",
+44.92,
+25.45,
+1396,
+"Historic Wallachian urban and political center."
+],
+[
+"Nagyvárad",
+47.07,
+21.92,
+1660,
+"Strategic fortress and regional center."
+],
+[
+"Kishinev",
+47.01,
+28.86,
+1436,
+"Regional urban center."
+],
+[
+"Bacau",
+46.56,
+26.91,
+1408,
+"Moldavian urban and trade center."
+],
+[
+"Cahul",
+45.90,
+28.19,
+1502,
+"Southern Moldavian urban settlement."
+],
+[
+"Kustendje (Constanța)",
+44.17,
+28.65,
+600,
+"Black Sea coastal urban center."
+],
+[
+"Hermanstadt (Sibiu)",
+45.80,
+24.15,
+1190,
+"Transylvanian urban center."
+],
+[
+"Karlsburg (Alba Iulia)",
+46.07,
+23.57,
+1000,
+"Transylvanian urban center."
+],
   {
     "name": "Akkerman",
     "lat": 46.20,
@@ -231,7 +293,24 @@
     1552,
     "Capital of Temesvar Eyalet."
   ],
- 
+ {
+    "name": "Braila",
+    "lat": 45.27,
+    "lon": 27.97,
+    "start": 1538,
+    "end": 1829,
+    "kind": "fortress",
+    "note": "An important fortified Danubian port city and Ottoman rayah."
+  },
+  {
+    "name": "Bender",
+    "lat": 46.83,
+    "lon": 29.48,
+    "start": 1538,
+    "end": 1900,
+    "kind": "fortress",
+    "note": "Dominated by the historic Bender Fortress on the Dniester River."
+  },
   [
     "Kanije",
     46.45,
@@ -312,7 +391,15 @@
     "note": "Capital fortress of Podolia Eyalet."
   }
 ,
-
+{
+    "name": "Izmail",
+    "lat": 45.34,
+    "lon": 28.84,
+    "start": 1590,
+    "end": 1812,
+    "kind": "fortress",
+    "note": "Major Ottoman fortress and stronghold on the Danube River."
+},
 {
     "name": "Bihać",
     "lat": 44.81,

@@ -638,7 +638,7 @@ function renderPoints(year) {{
       const latlngs = route.points.map(pt => [pt[1], pt[0]]);
       const visiblePoints = route.end <= year ? latlngs : latlngs.slice(0, Math.max(2, Math.ceil(latlngs.length * 0.55)));
       L.polyline(visiblePoints, {{
-        color: route.name.includes("Aegean") ? "#1f5b6d" : "#642016",
+       color: (route.name.includes("Aegean") || route.name.includes("Malta") || route.name.includes("Hormuz")) ? "#1f5b6d" : "#642016",
         weight: 3,
         opacity: 0.78,
         dashArray: "10 8"
@@ -742,6 +742,11 @@ L.marker([39.20, 34.50], {{
 // Standalone regional text labels
 const regionalLabels = [
   {{name: "Galicia", lat: 49.30, lon: 24.20}},
+  {{
+  "name": "Bessarabia",
+  "lat": 46.85,
+  "lon": 29.25
+}},
   {{name: "Volhynia", lat: 50.80, lon: 25.50}},
   {{name: "Ruthenia", lat: 49.80, lon: 27.50}},
   {{name: "Bukovina", lat: 48.25, lon: 26.00}},
