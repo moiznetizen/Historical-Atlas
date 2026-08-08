@@ -1,10 +1,82 @@
 [
   {
+    "year": 1352,
+    "title": "Establishment of Tzympe Castle",
+    "body": "The Ottomans secure their first fortified stronghold on the European mainland at Tzympe, laying the groundwork for permanent expansion into Thrace.",
+    "sultan": "Orhan",
+    "population": "Emerging frontier polity",
+    "largest_rival": "Byzantine Empire"
+  },
+  {
+    "year": 1353,
+    "title": "Consolidation of the Gallipoli Foothold",
+    "body": "Ottoman forces under Süleyman Pasha expand control around the Dardanelles straits following strategic local earthquakes that damaged Byzantine defenses.",
+    "sultan": "Orhan",
+    "population": "Emerging frontier polity",
+    "largest_rival": "Byzantine Empire"
+  },
+  {
     "year": 1354,
     "title": "Gallipoli seized",
     "body": "The Ottomans gain their first permanent European foothold on the Dardanelles.",
     "sultan": "Orhan",
     "population": "Emerging frontier polity",
+    "largest_rival": "Byzantine Empire"
+  },
+  {
+    "year": 1355,
+    "title": "Death of Stefan Dušan and Fragmentation of Serbia",
+    "body": "The sudden death of Emperor Stefan Dušan removes the primary military obstacle to Ottoman expansion in the central Balkans, fracturing Serbian unity.",
+    "sultan": "Orhan",
+    "population": "Balkan frontier expansion",
+    "largest_rival": "Serbian principalities"
+  },
+  {
+    "year": 1356,
+    "title": "Expansion into Thrace",
+    "body": "Ottoman raiding parties push further inland toward Çorlu and Lüleburgaz, isolating Constantinople from its Thracian hinterland.",
+    "sultan": "Orhan",
+    "population": "Balkan frontier expansion",
+    "largest_rival": "Byzantine Empire"
+  },
+  {
+    "year": 1357,
+    "title": "Capture of Çorlu",
+    "body": "Strategic regional centers in eastern Thrace are brought under direct Ottoman control, securing lines of communication across the straits.",
+    "sultan": "Orhan",
+    "population": "Balkan frontier expansion",
+    "largest_rival": "Byzantine Empire"
+  },
+  {
+    "year": 1358,
+    "title": "Advance to the Maritsa River Valley",
+    "body": "Ottoman forces probe deeper into western Thrace, establishing forward operating bases along the vital river trade routes.",
+    "sultan": "Orhan",
+    "population": "Balkan frontier expansion",
+    "largest_rival": "Byzantine Empire"
+  },
+  {
+    "year": 1359,
+    "title": "First Investment of Adrianople",
+    "body": "Ottoman armies initiate blockade operations around the major Thracian city of Adrianople (Edirne), signaling a shift from temporary raids to permanent conquest.",
+    "sultan": "Orhan",
+    "population": "Balkan frontier expansion",
+    "largest_rival": "Byzantine Empire"
+  },
+  {
+    "year": 1360,
+    "title": "Accession of Murad I",
+    "body": "Murad I succeeds Orhan, consolidating internal Anatolian control while accelerating systemic military expansion in Europe through the creation of the Janissary corps.",
+    "sultan": "Murad I",
+    "population": "Balkan frontier expansion",
+    "largest_rival": "Byzantine Empire"
+  },
+  {
+    "year": 1361,
+    "title": "Capture of Didymoteicho",
+    "body": "The key fortified center of Didymoteicho falls to Ottoman forces, tightening the noose around major Byzantine urban centers in Thrace.",
+    "sultan": "Murad I",
+    "population": "Balkan frontier expansion",
     "largest_rival": "Byzantine Empire"
   },
   {
@@ -16,12 +88,268 @@
     "largest_rival": "Byzantine Empire"
   },
   {
+    "year": 1363,
+    "title": "Battle of Dardanelles and Thracian Consolidation",
+    "body": "Ottoman forces secure absolute dominance over regional supply lines connecting Anatolia to the newly established European capital at Edirne.",
+    "sultan": "Murad I",
+    "population": "Balkan frontier expansion",
+    "largest_rival": "Byzantine Empire"
+  },
+  {
+    "year": 1364,
+    "title": "Campaigns in Western Thrace",
+    "body": "Ottoman columns push toward the Rhodope Mountains and the Aegean coast, cutting off regional Christian principalities from one another.",
+    "sultan": "Murad I",
+    "population": "Balkan frontier expansion",
+    "largest_rival": "Bulgarian Empire"
+  },
+  {
+    "year": 1365,
+    "title": "Transfer of Court to Edirne",
+    "body": "Edirne is officially designated as the primary imperial residence, symbolizing the shift of Ottoman strategic weight from Anatolia to the Balkans.",
+    "sultan": "Murad I",
+    "population": "Balkan frontier expansion",
+    "largest_rival": "Bulgarian Empire"
+  },
+  {
+    "year": 1366,
+    "title": "Amadeus VI's Crusade and Counter-Actions",
+    "body": "Count Amadeus VI of Savoy temporarily recaptures Gallipoli for Byzantium, though Ottoman forces successfully maintain their core positions in Thrace.",
+    "sultan": "Murad I",
+    "population": "Balkan frontier expansion",
+    "largest_rival": "Byzantine Empire"
+  },
+  {
+    "year": 1367,
+    "title": "Securing the Maritsa Corridor",
+    "body": "Ottoman armies systematically pacify the towns along the Maritsa valley, ensuring unobstructed movement toward the central Balkans.",
+    "sultan": "Murad I",
+    "population": "Balkan frontier expansion",
+    "largest_rival": "Bulgarian Empire"
+  },
+  {
+    "year": 1368,
+    "title": "Reduction of Local Bulgarian Strongholds",
+    "body": "Border fortresses in southern Bulgaria are brought under tributary status following coordinated pressure from Edirne.",
+    "sultan": "Murad I",
+    "population": "Balkan frontier expansion",
+    "largest_rival": "Bulgarian Empire"
+  },
+  {
+    "year": 1369,
+    "title": "Capture of Plovdiv (Philippopolis)",
+    "body": "The major Thracian city of Plovdiv falls to Ottoman arms, opening the direct approach to the Sofia valley and the interior Balkans.",
+    "sultan": "Murad I",
+    "population": "Balkan frontier expansion",
+    "largest_rival": "Bulgarian Empire"
+  },
+  {
+    "year": 1370,
+    "title": "Diplomatic and Military Pressure on Byzantium",
+    "body": "Emperor John V Palaiologos is forced to accept tributary status and acknowledge Ottoman military supremacy in Europe.",
+    "sultan": "Murad I",
+    "population": "Balkan frontier expansion",
+    "largest_rival": "Byzantine Empire"
+  },
+  {
+    "year": 1371,
+    "title": "Battle of Maritsa",
+    "body": "An Ottoman force decisively routs a much larger allied Serbian and Bulgarian army at the Maritsa River, establishing unchallenged hegemony over Macedonia.",
+    "sultan": "Murad I",
+    "population": "Expanding Balkan empire",
+    "largest_rival": "Serbian principalities"
+  },
+  {
+    "year": 1372,
+    "title": "Subjugation of Macedonia",
+    "body": "Following the Maritsa disaster, local lords in northern Greece and Macedonia accept Ottoman suzerainty and pay regular tribute.",
+    "sultan": "Murad I",
+    "population": "Expanding Balkan empire",
+    "largest_rival": "Serbian principalities"
+  },
+  {
+    "year": 1373,
+    "title": "Byzantine-Ottoman Joint Campaign in Anatolia",
+    "body": "Emperor John V is compelled to march alongside Murad I to suppress rebellious Ottoman princes in Anatolia, marking deep vassalage.",
+    "sultan": "Murad I",
+    "population": "Expanding Balkan empire",
+    "largest_rival": "Byzantine Empire"
+  },
+  {
+    "year": 1374,
+    "title": "Encroachment on Northern Bulgaria",
+    "body": "Ottoman raiding columns reach the northern slopes of the Balkan mountains, pressuring local Tsardom of Tarnovo outposts.",
+    "sultan": "Murad I",
+    "population": "Expanding Balkan empire",
+    "largest_rival": "Bulgarian Empire"
+  },
+  {
+    "year": 1375,
+    "title": "Acquisition of Germiyan and Hamid territories",
+    "body": "Diplomatic marriages and strategic land purchases in Anatolia peacefully integrate key central principalities into the Ottoman sphere.",
+    "sultan": "Murad I",
+    "population": "Expanding Balkan empire",
+    "largest_rival": "Karamanids"
+  },
+  {
+    "year": 1376,
+    "title": "Byzantine Civil War Intervention",
+    "body": "Murad I backs Andronikos IV Palaiologos in a Byzantine civil war, securing the retrocession of Gallipoli to Ottoman control.",
+    "sultan": "Murad I",
+    "population": "Expanding Balkan empire",
+    "largest_rival": "Byzantine Empire"
+  },
+  {
+    "year": 1377,
+    "title": "Consolidation of Aegean Thrace",
+    "body": "Coastal fortresses along the northern Aegean are systematically integrated into the expanding provincial administrative network.",
+    "sultan": "Murad I",
+    "population": "Expanding Balkan empire",
+    "largest_rival": "Byzantine Empire"
+  },
+  {
+    "year": 1378,
+    "title": "War with the Karamanids",
+    "body": "Rising tensions in central Anatolia lead to open conflict with the powerful Karamanid Beylik over regional hegemony.",
+    "sultan": "Murad I",
+    "population": "Expanding Balkan empire",
+    "largest_rival": "Karamanids"
+  },
+  {
+    "year": 1379,
+    "title": "Restoration of Manuel II and Balkan Garrisoning",
+    "body": "Ottoman forces manage shifting Byzantine alliances while strengthening permanent garrisons across Rumelia.",
+    "sultan": "Murad I",
+    "population": "Expanding Balkan empire",
+    "largest_rival": "Byzantine Empire"
+  },
+  {
+    "year": 1380,
+    "title": "Campaigns in Macedonia and Albania",
+    "body": "Ottoman commanders push westward toward the Adriatic watershed, subduing local warlords in western Macedonia and northern Albania.",
+    "sultan": "Murad I",
+    "population": "Expanding Balkan empire",
+    "largest_rival": "Serbian principalities"
+  },
+  {
+    "year": 1381,
+    "title": "Annexation of Tekke Lands",
+    "body": "The coastal Anatolian principality of Tekke is purchased, expanding Ottoman control toward the Mediterranean ports.",
+    "sultan": "Murad I",
+    "population": "Expanding Balkan empire",
+    "largest_rival": "Karamanids"
+  },
+  {
+    "year": 1382,
+    "title": "Capture of Sofia",
+    "body": "Strategic fortress city of Sofia falls to Ottoman forces, cutting the vital connection between Serbia and Bulgaria.",
+    "sultan": "Murad I",
+    "population": "Expanding Balkan empire",
+    "largest_rival": "Bulgarian Empire"
+  },
+  {
+    "year": 1383,
+    "title": "First Siege of Thessaloniki",
+    "body": "Ottoman forces under Lala Şahin Pasha begin the long-term blockade and investment of the major Byzantine port of Thessaloniki.",
+    "sultan": "Murad I",
+    "population": "Expanding Balkan empire",
+    "largest_rival": "Byzantine Empire"
+  },
+  {
+    "year": 1384,
+    "title": "Skirmishing in Northern Greece",
+    "body": "Ottoman raiders penetrate deep into Thessaly and Epirus, destabilizing local independent Christian rulers.",
+    "sultan": "Murad I",
+    "population": "Expanding Balkan empire",
+    "largest_rival": "Byzantine Empire"
+  },
+  {
+    "year": 1385,
+    "title": "Capture of Niš",
+    "body": "The vital fortress city of Niš falls to Murad I, breaking Moravian-Serbian defensive lines and opening the path to Kosovo.",
+    "sultan": "Murad I",
+    "population": "Expanding Balkan empire",
+    "largest_rival": "Serbian principalities"
+  },
+  {
+    "year": 1386,
+    "title": "Subjugation of the Karamanids",
+    "body": "Murad I inflicts a major defeat on the Karamanids at Konya, enforcing temporary submission across central Anatolia.",
+    "sultan": "Murad I",
+    "population": "Expanding Balkan empire",
+    "largest_rival": "Karamanids"
+  },
+  {
+    "year": 1387,
+    "title": "Fall of Thessaloniki",
+    "body": "The prolonged Ottoman siege culminates in the surrender of Thessaloniki, extending direct imperial control across coastal Macedonia.",
+    "sultan": "Murad I",
+    "population": "Expanding Balkan empire",
+    "largest_rival": "Byzantine Empire"
+  },
+  {
+    "year": 1388,
+    "title": "Battle of Bileća",
+    "body": "An Ottoman expeditionary force in Bosnia experiences a rare tactical check against local Bosnian and Zeta coalition forces.",
+    "sultan": "Murad I",
+    "population": "Expanding Balkan empire",
+    "largest_rival": "Kingdom of Bosnia"
+  },
+  {
     "year": 1389,
     "title": "Battle of Kosovo",
-    "body": "Serbian power is broken after a costly battle; Ottoman influence deepens in the central Balkans.",
+    "body": "Serbian power is broken after a costly battle; Ottoman influence deepens in the central Balkans, and Murad I is assassinated.",
     "sultan": "Murad I / Bayezid I",
     "population": "Expanding Balkan empire",
     "largest_rival": "Serbian principalities"
+  },
+  {
+    "year": 1390,
+    "title": "Bayezid's Rapid Anatolian Consolidation",
+    "body": "Newly enthroned Bayezid I swiftly campaigns across western Anatolia, annexing Aydınoğlu, Saruhanoğlu, and Menteşe to secure the rear before European operations.",
+    "sultan": "Bayezid I",
+    "population": "Rumelian consolidation",
+    "largest_rival": "Karamanids"
+  },
+  {
+    "year": 1391,
+    "title": "First Blockade of Constantinople",
+    "body": "Bayezid I initiates land blockades around Constantinople and campaigns along the lower Danube to secure northern borders.",
+    "sultan": "Bayezid I",
+    "population": "Rumelian consolidation",
+    "largest_rival": "Byzantine Empire"
+  },
+  {
+    "year": 1392,
+    "title": "Annexation of Kastamonu and Amasya",
+    "body": "Bayezid eliminates the Candaroglu power in northern Anatolia, extending Ottoman borders to the Black Sea coast.",
+    "sultan": "Bayezid I",
+    "population": "Rumelian consolidation",
+    "largest_rival": "Byzantine Empire"
+  },
+  {
+    "year": 1393,
+    "title": "Fall of Tarnovo and Subjugation of Bulgaria",
+    "body": "Ottoman forces capture the Bulgarian capital of Tarnovo, ending the Bulgarian Tsardom and converting it directly into an Ottoman province.",
+    "sultan": "Bayezid I",
+    "population": "Rumelian consolidation",
+    "largest_rival": "Hungarian Kingdom"
+  },
+  {
+    "year": 1394,
+    "title": "Establishment of the Blockade Ring (Anadolu Hisarı)",
+    "body": "Bayezid builds Anadolu Hisarı on the Bosporus to tighten the permanent strangulation of Constantinople.",
+    "sultan": "Bayezid I",
+    "population": "Rumelian consolidation",
+    "largest_rival": "Byzantine Empire"
+  },
+  {
+    "year": 1395,
+    "title": "Battle of Rovine",
+    "body": "Bayezid invades Wallachia; despite heavy fighting, Prince Mircea the Elder maintains local autonomy while acknowledging Ottoman tributary terms.",
+    "sultan": "Bayezid I",
+    "population": "Rumelian consolidation",
+    "largest_rival": "Wallachia"
   },
   {
     "year": 1396,
@@ -32,12 +360,372 @@
     "largest_rival": "Hungary"
   },
   {
+    "year": 1397,
+    "title": "War with Karamanid Beylik",
+    "body": "Bayezid decisively defeats the Karamanids at the Battle of Akçay, executing the ruler Ali Bey and absorbing central Anatolian territories.",
+    "sultan": "Bayezid I",
+    "population": "Rumelian consolidation",
+    "largest_rival": "Karamanids"
+  },
+  {
+    "year": 1398,
+    "title": "Expedition to Eastern Anatolia",
+    "body": "Ottoman forces push toward Sivas and Malatya, clashing with local Turkmen states and brushing against Mamluk spheres of influence.",
+    "sultan": "Bayezid I",
+    "population": "Rumelian consolidation",
+    "largest_rival": "Mamluk Sultanate"
+  },
+  {
+    "year": 1399,
+    "title": "Capture of Dulkadir Outposts",
+    "body": "Bayezid consolidates gains in eastern Anatolia, creating friction with Timur as the two expanding empires share a common border.",
+    "sultan": "Bayezid I",
+    "population": "Rumelian consolidation",
+    "largest_rival": "Timurid Empire"
+  },
+  {
+    "year": 1400,
+    "title": "Timur Sacks Sivas",
+    "body": "Timur captures and destroys the Ottoman garrison at Sivas, signaling the impending existential clash between the Ottomans and Timurids.",
+    "sultan": "Bayezid I",
+    "population": "Rumelian consolidation",
+    "largest_rival": "Timurid Empire"
+  },
+  {
+    "year": 1401,
+    "title": "Preparations for the Great Clash",
+    "body": "Both Bayezid I and Timur mobilize massive armies across Anatolia, setting the stage for the decisive showdown.",
+    "sultan": "Bayezid I",
+    "population": "Rumelian consolidation",
+    "largest_rival": "Timurid Empire"
+  },
+  {
     "year": 1402,
     "title": "Battle of Ankara & Collapse",
     "body": "Timur crushes Bayezid I. The first Anatolian unification fractures as old beyliks re-assert independence during the Ottoman Interregnum.",
     "sultan": "Bayezid I",
     "population": "Empire fractured in civil war",
     "largest_rival": "Timurid Empire"
+  },
+  {
+    "year": 1403,
+    "title": "Beginning of the Ottoman Interregnum",
+    "body": "Bayezid's sons (Süleyman, İsa, Mehmed, and Musa) begin a bitter decade-long civil war for control of the fractured remnants of the state.",
+    "sultan": "Interregnum (Süleyman Çelebi in Edirne)",
+    "population": "Civil war and division",
+    "largest_rival": "Byzantine Empire"
+  },
+  {
+    "year": 1404,
+    "title": "Interregnum: Power Struggles in Rumelia",
+    "body": "Süleyman Çelebi consolidates control over Ottoman European territories while Anatolian brothers fight for regional supremacy.",
+    "sultan": "Interregnum",
+    "population": "Civil war and division",
+    "largest_rival": "Rival Ottoman Princes"
+  },
+  {
+    "year": 1405,
+    "title": "Interregnum: Mehmed Çelebi in Amasya",
+    "body": "Mehmed Çelebi builds a strong power base in central Anatolia, organizing resources to challenge his rivals.",
+    "sultan": "Interregnum",
+    "population": "Civil war and division",
+    "largest_rival": "Rival Ottoman Princes"
+  },
+  {
+    "year": 1406,
+    "title": "Interregnum: Conflict between Süleyman and Musa",
+    "body": "Brothers clash for dominance over European and northwestern Anatolian territories.",
+    "sultan": "Interregnum",
+    "population": "Civil war and division",
+    "largest_rival": "Rival Ottoman Princes"
+  },
+  {
+    "year": 1407,
+    "title": "Interregnum: Shift in Regional Alliances",
+    "body": "Byzantine and Balkan rulers exploit the Ottoman civil war by playing rival princes against one another.",
+    "sultan": "Interregnum",
+    "population": "Civil war and division",
+    "largest_rival": "Byzantine Empire"
+  },
+  {
+    "year": 1408,
+    "title": "Interregnum: Musa Çelebi's Campaign in Rumelia",
+    "body": "Musa crosses into Europe with support from Wallachia, challenging Süleyman Çelebi's dominance in the Balkans.",
+    "sultan": "Interregnum",
+    "population": "Civil war and division",
+    "largest_rival": "Rival Ottoman Princes"
+  },
+  {
+    "year": 1409,
+    "title": "Interregnum: Fall of Süleyman Çelebi",
+    "body": "Musa Çelebi defeats Süleyman Çelebi, taking control of the European territories and briefly reunifying Rumelia.",
+    "sultan": "Interregnum (Musa Çelebi)",
+    "population": "Civil war and division",
+    "largest_rival": "Mehmed Çelebi"
+  },
+  {
+    "year": 1410,
+    "title": "Interregnum: Clashes between Musa and Mehmed",
+    "body": "Mehmed Çelebi allies with Byzantine Emperor Manuel II to cross the Bosporus and contest Musa's rule in Europe.",
+    "sultan": "Interregnum",
+    "population": "Civil war and division",
+    "largest_rival": "Rival Ottoman Princes"
+  },
+  {
+    "year": 1411,
+    "title": "Interregnum: Siege of Constantinople by Musa",
+    "body": "Musa Çelebi besieges Constantinople in retaliation for Byzantine support of Mehmed Çelebi.",
+    "sultan": "Interregnum (Musa Çelebi)",
+    "population": "Civil war and division",
+    "largest_rival": "Byzantine Empire"
+  },
+  {
+    "year": 1412,
+    "title": "Interregnum: Escalation in Rumelia",
+    "body": "Mehmed Çelebi and Serbian allies wage intense campaigns against Musa's forces in the western Balkans.",
+    "sultan": "Interregnum",
+    "population": "Civil war and division",
+    "largest_rival": "Rival Ottoman Princes"
+  },
+  {
+    "year": 1413,
+    "title": "Battle of Çamurlu & End of Interregnum",
+    "body": "Mehmed I defeats Musa Çelebi with Serbian backing, reunifying the Ottoman state and ending the destructive 11-year civil war.",
+    "sultan": "Mehmed I",
+    "population": "Reunified state rebuilding",
+    "largest_rival": "Byzantine Empire"
+  },
+  {
+    "year": 1414,
+    "title": "Mehmed I Campaigns in Anatolia",
+    "body": "The newly reunited state asserts its authority over rebellious western Anatolian principalities, restoring pre-Ankara borders.",
+    "sultan": "Mehmed I",
+    "population": "Reunified state rebuilding",
+    "largest_rival": "Karamanids"
+  },
+  {
+    "year": 1415,
+    "title": "First Naval Clash with Venice",
+    "body": "The emerging Ottoman navy fights its first major engagement against the Venetian fleet off Gallipoli, highlighting rising maritime competition.",
+    "sultan": "Mehmed I",
+    "population": "Reunified state rebuilding",
+    "largest_rival": "Republic of Venice"
+  },
+  {
+    "year": 1416,
+    "title": "Bedreddin Revolt",
+    "body": "A major social and religious rebellion led by Sheikh Bedreddin across Rumelia and western Anatolia is successfully suppressed by Mehmed I.",
+    "sultan": "Mehmed I",
+    "population": "Internal pacification",
+    "largest_rival": "Byzantine Empire"
+  },
+  {
+    "year": 1417,
+    "title": "Campaigns in Wallachia",
+    "body": "Ottoman punitive expeditions cross the Danube to enforce tribute collection from Wallachian princes.",
+    "sultan": "Mehmed I",
+    "population": "Reunified state rebuilding",
+    "largest_rival": "Wallachia"
+  },
+  {
+    "year": 1418,
+    "title": "Capture of Samsun",
+    "body": "Mehmed I incorporates Samsun and surrounding Black Sea coastal ports into the Ottoman domain, securing regional trade.",
+    "sultan": "Mehmed I",
+    "population": "Reunified state rebuilding",
+    "largest_rival": "Candaroglu"
+  },
+  {
+    "year": 1419,
+    "title": "Consolidation of Black Sea Trade",
+    "body": "Ottoman naval and commercial presence expands along the southern Black Sea littoral.",
+    "sultan": "Mehmed I",
+    "population": "Reunified state rebuilding",
+    "largest_rival": "Genoa"
+  },
+  {
+    "year": 1420,
+    "title": "Suppression of Anatolian Dissidents",
+    "body": "Final mopping-up operations against lingering pretenders and rebellious local lords in Anatolia.",
+    "sultan": "Mehmed I",
+    "population": "Reunified state rebuilding",
+    "largest_rival": "Karamanids"
+  },
+  {
+    "year": 1421,
+    "title": "Accession of Murad II and Pretender Revolts",
+    "body": "Mehmed I dies; his son Murad II ascends the throne and immediately faces a Byzantine-backed pretender revolt (Düzmece Mustafa).",
+    "sultan": "Murad II",
+    "population": "Reunified state rebuilding",
+    "largest_rival": "Byzantine Empire"
+  },
+  {
+    "year": 1422,
+    "title": "Start of the Siege of Thessalonica",
+    "body": "In retaliation for the Byzantine Empire releasing and backing the pretender Mustafa Çelebi, Sultan Murad II defeated the rival claimant and launched an immediate blockade and siege against Thessalonica.",
+    "sultan": "Murad II",
+    "population": "Balkan frontier expansion",
+    "largest_rival": "Byzantine Empire"
+  },
+  {
+    "year": 1423,
+    "title": "First Ottoman invasion of the Morea",
+    "body": "Large-scale raid initiating Ottoman interest in the Peloponnese region.",
+    "sultan": "Murad II",
+    "population": "Balkan frontier expansion",
+    "largest_rival": "Despotate of the Morea"
+  },
+  {
+    "year": 1424,
+    "title": "Treaty with Byzantium and Venice",
+    "body": "Murad II concludes favorable peace treaties, stabilizing European borders and confirming annual Byzantine tribute.",
+    "sultan": "Murad II",
+    "population": "Balkan frontier expansion",
+    "largest_rival": "Republic of Venice"
+  },
+  {
+    "year": 1425,
+    "title": "Anatolian Campaign against Menteşe and Aydın",
+    "body": "Murad II annexes remaining western Anatolian principalities, solidifying central imperial control over Asia Minor.",
+    "sultan": "Murad II",
+    "population": "Unified Anatolian core",
+    "largest_rival": "Karamanids"
+  },
+  {
+    "year": 1426,
+    "title": "Annexation of Hamid",
+    "body": "The territories of the Hamid principality are formally incorporated into the Ottoman administrative structure.",
+    "sultan": "Murad II",
+    "population": "Unified Anatolian core",
+    "largest_rival": "Karamanids"
+  },
+  {
+    "year": 1427,
+    "title": "Acquisition of Golubac",
+    "body": "The strategic Danubian fortress of Golubac is secured following the death of Despot Stefan Lazarević of Serbia.",
+    "sultan": "Murad II",
+    "population": "Danube frontier expansion",
+    "largest_rival": "Kingdom of Hungary"
+  },
+  {
+    "year": 1428,
+    "title": "Campaigns in the Morava Valley",
+    "body": "Ottoman forces clash with Hungarian border armies for control of key transit routes into central Europe.",
+    "sultan": "Murad II",
+    "population": "Danube frontier expansion",
+    "largest_rival": "Kingdom of Hungary"
+  },
+  {
+    "year": 1429,
+    "title": "Siege of Thessalonica Intensifies",
+    "body": "Blockade operations around Thessalonica tighten as Venetian resistance wanes.",
+    "sultan": "Murad II",
+    "population": "Balkan frontier expansion",
+    "largest_rival": "Republic of Venice"
+  },
+  {
+    "year": 1430,
+    "title": "Fall of Thessalonica to Murad II",
+    "body": "Murad II captures Thessalonica from the Venetians, securing a major Aegean port and dealing a severe blow to Venetian commercial networks.",
+    "sultan": "Murad II",
+    "population": "Balkan frontier expansion",
+    "largest_rival": "Republic of Venice"
+  },
+  {
+    "year": 1431,
+    "title": "Campaigns in Albania",
+    "body": "Ottoman armies launch extensive campaigns into central and southern Albania to establish direct administrative control.",
+    "sultan": "Murad II",
+    "population": "Balkan frontier expansion",
+    "largest_rival": "Venetian Albania"
+  },
+  {
+    "year": 1432,
+    "title": "First Timar Survey in Albania",
+    "body": "Comprehensive land and revenue surveys (tahrir) are initiated in newly conquered Albanian territories to integrate them into the Ottoman military-feudal system.",
+    "sultan": "Murad II",
+    "population": "Balkan frontier expansion",
+    "largest_rival": "Local Albanian Lords"
+  },
+  {
+    "year": 1433,
+    "title": "Expeditions into Serbia",
+    "body": "Ottoman forces conduct punitive raids into Serbian territory to enforce vassal compliance.",
+    "sultan": "Murad II",
+    "population": "Balkan frontier expansion",
+    "largest_rival": "Serbian Despotate"
+  },
+  {
+    "year": 1434,
+    "title": "Clashes with John Hunyadi's Precursors",
+    "body": "Hungarian commanders begin organizing defensive leagues along the southern border, marking the rise of John Hunyadi.",
+    "sultan": "Murad II",
+    "population": "Danube frontier expansion",
+    "largest_rival": "Kingdom of Hungary"
+  },
+  {
+    "year": 1435,
+    "title": "Border Skirmishes in Transylvania",
+    "body": "Low-intensity warfare characterizes the mountainous borders between Ottoman vassal states and the Hungarian Kingdom.",
+    "sultan": "Murad II",
+    "population": "Danube frontier expansion",
+    "largest_rival": "Kingdom of Hungary"
+  },
+  {
+    "year": 1436,
+    "title": "Rebellion in Albania",
+    "body": "Early local uprisings break out against Ottoman land registration and timar distribution in mountainous Albanian districts.",
+    "sultan": "Murad II",
+    "population": "Balkan frontier expansion",
+    "largest_rival": "Local Albanian Rebels"
+  },
+  {
+    "year": 1437,
+    "title": "Death of Sigismund and Hungarian Instability",
+    "body": "The death of Holy Roman Emperor and Hungarian King Sigismund plunges central Europe into political instability, prompting Ottoman opportunistic raids.",
+    "sultan": "Murad II",
+    "population": "Danube frontier expansion",
+    "largest_rival": "Kingdom of Hungary"
+  },
+  {
+    "year": 1438,
+    "title": "Invasion of Transylvania",
+    "body": "Murad II leads a massive expedition into Transylvania, sacking towns and capturing significant loot and prisoners.",
+    "sultan": "Murad II",
+    "population": "Danube frontier expansion",
+    "largest_rival": "Kingdom of Hungary"
+  },
+  {
+    "year": 1439,
+    "title": "Fall of Smederevo",
+    "body": "Ottoman forces capture the mighty Serbian fortress of Smederevo, effectively extinguishing the independent Serbian Despotate for the first time.",
+    "sultan": "Murad II",
+    "population": "Danube frontier expansion",
+    "largest_rival": "Kingdom of Hungary"
+  },
+  {
+    "year": 1440,
+    "title": "Siege of Belgrade",
+    "body": "Murad II lays siege to the crucial frontier fortress of Belgrade, but stubborn Hungarian defense repels the Ottoman assault.",
+    "sultan": "Murad II",
+    "population": "Danube frontier expansion",
+    "largest_rival": "Kingdom of Hungary"
+  },
+  {
+    "year": 1441,
+    "title": "John Hunyadi's Counter-Raids",
+    "body": "John Hunyadi inflicts several defeats on regional Ottoman commanders in Transylvania and Wallachia, boosting Christian morale.",
+    "sultan": "Murad II",
+    "population": "Danube frontier expansion",
+    "largest_rival": "Kingdom of Hungary"
+  },
+  {
+    "year": 1442,
+    "title": "Battles of the Iron Gates",
+    "body": "Hunyadi successfully repels Ottoman punitive armies in Transylvania and Wallachia, checking the Ottoman advance.",
+    "sultan": "Murad II",
+    "population": "Danube frontier expansion",
+    "largest_rival": "Kingdom of Hungary"
   },
   {
     "year": 1443,
@@ -56,12 +744,228 @@
     "largest_rival": "Hungary and Poland"
   },
   {
+    "year": 1445,
+    "title": "Crusader Operations on the Danube",
+    "body": "Naval and land crusader forces attempt minor operations along the lower Danube following Varna, with limited strategic impact.",
+    "sultan": "Murad II",
+    "population": "Recovered after interregnum",
+    "largest_rival": "Kingdom of Hungary"
+  },
+  {
+    "year": 1446,
+    "title": "Siege of the Hexamilion Wall",
+    "body": "Ottoman forces under Murad II break through the defensive wall at the Isthmus of Corinth, devastating the Peloponnese.",
+    "sultan": "Murad II",
+    "population": "Balkan frontier expansion",
+    "largest_rival": "Despotate of the Morea"
+  },
+  {
+    "year": 1447,
+    "title": "Venetian-Ottoman Treaty",
+    "body": "Venice and the Ottoman Empire conclude a trade and peace agreement, isolating Skanderbeg's resistance in Albania.",
+    "sultan": "Murad II",
+    "population": "Balkan frontier expansion",
+    "largest_rival": "League of Lezhë"
+  },
+  {
+    "year": 1448,
+    "title": "Second Battle of Kosovo",
+    "body": "Murad II crushes John Hunyadi's invading army in a three-day battle at Kosovo Polje, permanently ending Hungarian hopes of expelling Ottomans from Europe.",
+    "sultan": "Murad II",
+    "population": "Balkan frontier expansion",
+    "largest_rival": "Kingdom of Hungary"
+  },
+  {
+    "year": 1449,
+    "title": "Border Stabilization",
+    "body": "Quiet period on the European frontier as Murad II consolidates administrative control following Kosovo.",
+    "sultan": "Murad II",
+    "population": "Balkan frontier expansion",
+    "largest_rival": "Kingdom of Hungary"
+  },
+  {
+    "year": 1450,
+    "title": "First Siege of Krujë",
+    "body": "Murad II personally leads an army to besiege Skanderbeg's stronghold at Krujë, but fails to capture it due to fierce resistance and harsh winter conditions.",
+    "sultan": "Murad II",
+    "population": "Balkan localized warfare",
+    "largest_rival": "League of Lezhë"
+  },
+  {
+    "year": 1451,
+    "title": "Accession of Mehmed II",
+    "body": "Mehmed II ascends the throne for his second reign, immediately beginning meticulous preparations for the final conquest of Constantinople.",
+    "sultan": "Mehmed II",
+    "population": "Imperial preparation",
+    "largest_rival": "Byzantine Empire"
+  },
+  {
+    "year": 1452,
+    "title": "Construction of Boğazkesen (Rumeli Hisarı)",
+    "body": "Mehmed II builds the massive fortress of Rumeli Hisarı on the European shore of the Bosporus, completely cutting off Constantinople from Black Sea relief.",
+    "sultan": "Mehmed II",
+    "population": "Imperial preparation",
+    "largest_rival": "Byzantine Empire"
+  },
+  {
     "year": 1453,
     "title": "Constantinople falls",
     "body": "Mehmed II captures the Byzantine capital and turns Istanbul into the imperial center.",
     "sultan": "Mehmed II",
     "population": "Imperial capital era begins",
     "largest_rival": "Venice"
+  },
+  {
+    "year": 1454,
+    "title": "First Campaign in Serbia",
+    "body": "Mehmed II invades Serbia, forcing Despot Đurađ Branković to pay increased tribute and submit to Ottoman terms.",
+    "sultan": "Mehmed II",
+    "population": "Imperial capital era begins",
+    "largest_rival": "Serbian Despotate"
+  },
+  {
+    "year": 1455,
+    "title": "Conquest of Novo Brdo",
+    "body": "Ottoman forces capture the rich silver-mining center of Novo Brdo in Kosovo, boosting imperial revenues.",
+    "sultan": "Mehmed II",
+    "population": "Imperial capital era begins",
+    "largest_rival": "Kingdom of Hungary"
+  },
+  {
+    "year": 1456,
+    "title": "Siege of Belgrade",
+    "body": "Mehmed II is wounded and repulsed at the Siege of Belgrade by John Hunyadi and John Capistran, halting Ottoman expansion into Hungary for decades.",
+    "sultan": "Mehmed II",
+    "population": "Imperial capital era begins",
+    "largest_rival": "Kingdom of Hungary"
+  },
+  {
+    "year": 1457,
+    "title": "Skanderbeg's Victory at Albulena",
+    "body": "Skanderbeg inflicts a heavy defeat on an Ottoman expeditionary force at Albulena in Albania.",
+    "sultan": "Mehmed II",
+    "population": "Balkan localized warfare",
+    "largest_rival": "League of Lezhë"
+  },
+  {
+    "year": 1458,
+    "title": "Conquest of northern Morea",
+    "body": "Ottoman advance forces the Despotate of ghosts and local lords into tributary status in the Peloponnese.",
+    "sultan": "Mehmed II",
+    "population": "Balkan frontier expansion",
+    "largest_rival": "Despotate of the Morea"
+  },
+  {
+    "year": 1459,
+    "title": "Annexation of the Serbian Despotate",
+    "body": "The fortress of Smederevo is peacefully surrendered or captured, ending the final remnants of the medieval Serbian state.",
+    "sultan": "Mehmed II",
+    "population": "Balkan frontier expansion",
+    "largest_rival": "Kingdom of Hungary"
+  },
+  {
+    "year": 1460,
+    "title": "Conquest of the Despotate of the Morea",
+    "body": "Final annexation of the Peloponnese, ending the Despotate and extinguishing Byzantine rule in mainland Greece.",
+    "sultan": "Mehmed II",
+    "population": "Balkan frontier expansion",
+    "largest_rival": "Despotate of the Morea"
+  },
+  {
+    "year": 1461,
+    "title": "Conquest of Trebizond and Amasra",
+    "body": "Mehmed II eliminates the Empire of Trebizond and Genoese Amasra, bringing the southern Black Sea coast entirely under Ottoman control.",
+    "sultan": "Mehmed II",
+    "population": "Black Sea system",
+    "largest_rival": "Empire of Trebizond"
+  },
+  {
+    "year": 1462,
+    "title": "Campaign against Vlad III Dracula",
+    "body": "Mehmed II launches the famous campaign into Wallachia, encountering the psychological warfare of the Night Attack and replacing Dracula with Radu cel Frumos.",
+    "sultan": "Mehmed II",
+    "population": "Danube frontier expansion",
+    "largest_rival": "Wallachia"
+  },
+  {
+    "year": 1463,
+    "title": "Conquest of Bosnia and Outbreak of Ottoman-Venetian War",
+    "body": "Mehmed II rapidly conquers the Kingdom of Bosnia, executing King Stephen Tomašević, while a long 16-year war breaks out with Venice over Aegean outposts.",
+    "sultan": "Mehmed II",
+    "population": "Balkan frontier expansion",
+    "largest_rival": "Republic of Venice"
+  },
+  {
+    "year": 1464,
+    "title": "Jajce Campaign",
+    "body": "Mehmed II attempts to recapture Jajce in Bosnia from Hungarian forces but is forced to lift the siege.",
+    "sultan": "Mehmed II",
+    "population": "Balkan frontier expansion",
+    "largest_rival": "Kingdom of Hungary"
+  },
+  {
+    "year": 1465,
+    "title": "Skirmishing in Venetian Albania",
+    "body": "Protracted border warfare against Venetian coastal enclaves and Skanderbeg's forces in the western Balkans.",
+    "sultan": "Mehmed II",
+    "population": "Balkan frontier expansion",
+    "largest_rival": "Republic of Venice"
+  },
+  {
+    "year": 1466,
+    "title": "Mehmed II's Campaign in Albania",
+    "body": "Mehmed II personally leads a large army into Albania to crush Skanderbeg's resistance and besiege Krujë once again, without decisive subjugation.",
+    "sultan": "Mehmed II",
+    "population": "Balkan localized warfare",
+    "largest_rival": "League of Lezhë"
+  },
+  {
+    "year": 1467,
+    "title": "Death of Skanderbeg's Resistance Strains",
+    "body": "Despite ongoing guerrilla warfare, Skanderbeg maintains independence shortly before his death in 1468.",
+    "sultan": "Mehmed II",
+    "population": "Balkan localized warfare",
+    "largest_rival": "League of Lezhë"
+  },
+  {
+    "year": 1468,
+    "title": "Annexation of Karamanid Territories",
+    "body": "Mehmed II exploits internal divisions in the Karamanid Beylik to annex Konya and central Anatolian heartlands.",
+    "sultan": "Mehmed II",
+    "population": "Unified Anatolian core",
+    "largest_rival": "Aq Qoyunlu"
+  },
+  {
+    "year": 1469,
+    "title": "Venetian Raids on Aegean Coast",
+    "body": "Venetian fleets launch disruptive raids along the western Anatolian coast, sacking towns like İzmir.",
+    "sultan": "Mehmed II",
+    "population": "Mediterranean sea war",
+    "largest_rival": "Republic of Venice"
+  },
+  {
+    "year": 1470,
+    "title": "Conquest of Negroponte (Euboea)",
+    "body": "Mehmed II constructs a pontoon bridge to capture the heavily fortified Venetian naval base of Negroponte, stunning European powers.",
+    "sultan": "Mehmed II",
+    "population": "Mediterranean sea war",
+    "largest_rival": "Republic of Venice"
+  },
+  {
+    "year": 1471,
+    "title": "Fortification of the Danube Frontier",
+    "body": "Ottoman engineers construct new fortresses along the Danube to counter Hungarian river patrols.",
+    "sultan": "Mehmed II",
+    "population": "Danube frontier expansion",
+    "largest_rival": "Kingdom of Hungary"
+  },
+  {
+    "year": 1472,
+    "title": "Aq Qoyunlu Invasions in Anatolia",
+    "body": "Uzun Hasan of the Aq Qoyunlu confederation invades eastern Anatolia with Western encouragement.",
+    "sultan": "Mehmed II",
+    "population": "Eastern border consolidated",
+    "largest_rival": "Aq Qoyunlu"
   },
   {
     "year": 1473,
@@ -72,41 +976,332 @@
     "largest_rival": "Aq Qoyunlu Confederation"
   },
   {
-    "year": 1475,
-    "title": "Crimea enters Ottoman orbit",
-    "body": "Genoese Black Sea ports fall and the Crimean Khanate becomes an Ottoman vassal.",
+    "year": 1474,
+    "title": "Siege of Shkodra",
+    "body": "Ottoman forces besiege the Venetian-held Albanian fortress of Shkodra, facing stiff resistance.",
     "sultan": "Mehmed II",
-    "population": "Black Sea system",
-    "largest_rival": "Genoa and Lithuania"
+    "population": "Adriatic systems integrated",
+    "largest_rival": "Republic of Venice"
   },
   {
     "year": 1475,
-    "title": "Battle of Vaslui",
-    "body": "Stephen the Great crushes a much larger Ottoman army in Moldavia, delaying direct subjection.",
+    "title": "Crimea enters Ottoman orbit & Battle of Vaslui",
+    "body": "Genoese Black Sea ports fall and the Crimean Khanate becomes an Ottoman vassal, though Stephen the Great crushes an Ottoman army at Vaslui in Moldavia.",
     "sultan": "Mehmed II",
-    "population": "Balkan and Danubian flashpoints",
-    "largest_rival": "Hungary and Moldavia"
+    "population": "Black Sea system",
+    "largest_rival": "Genoa and Moldavia"
+  },
+  {
+    "year": 1476,
+    "title": "Campaign of Valea Albă",
+    "body": "Mehmed II personally invades Moldavia, defeating Stephen the Great at Valea Albă, though unable to secure permanent subjugation.",
+    "sultan": "Mehmed II",
+    "population": "Danubian flashpoints",
+    "largest_rival": "Moldavia"
+  },
+  {
+    "year": 1477,
+    "title": "Venetian Peace Feelers",
+    "body": "Exhausted by a 15-year war, Venice and the Ottoman Empire begin serious diplomatic exchanges.",
+    "sultan": "Mehmed II",
+    "population": "Mediterranean sea war",
+    "largest_rival": "Republic of Venice"
+  },
+  {
+    "year": 1478,
+    "title": "Renewed Siege of Shkodra",
+    "body": "Ottoman armies renew assaults on Shkodra until the Venetian peace treaty forces its ceding.",
+    "sultan": "Mehmed II",
+    "population": "Adriatic systems integrated",
+    "largest_rival": "Republic of Venice"
   },
   {
     "year": 1479,
-    "title": "Albania fully conquered",
+    "title": "Albania fully conquered & Treaty of Constantinople",
     "body": "Following the fall of Shkodër and the Treaty of Constantinople, Venetian-held outposts are ceded, incorporating Albania completely into Rumelia.",
     "sultan": "Mehmed II",
     "population": "Adriatic systems integrated",
     "largest_rival": "Habsburgs and Venice"
   },
   {
+    "year": 1480,
+    "title": "Otranto Landing and Siege of Rhodes",
+    "body": "Ottoman forces land at Otranto in southern Italy while simultaneously launching a failed siege of the Knights Hospitaller at Rhodes.",
+    "sultan": "Mehmed II",
+    "population": "Mediterranean sea war",
+    "largest_rival": "Kingdom of Naples and Knights Hospitaller"
+  },
+  {
+    "year": 1481,
+    "title": "Death of Mehmed II and Civil War",
+    "body": "Mehmed II dies during preparations for a new campaign; a succession struggle erupts between his sons Bayezid II and Cem Sultan.",
+    "sultan": "Mehmed II / Bayezid II",
+    "population": "Dynastic succession struggle",
+    "largest_rival": "Cem Sultan"
+  },
+  {
     "year": 1482,
-    "title": "Sack of Kyiv",
-    "body": "Major Crimean victory; sack of the city."
+    "title": "Sack of Kyiv by Crimean Allies",
+    "body": "Crimean Tatars acting under Ottoman-aligned orbits sack Kyiv, while Cem Sultan flees to European protection after losing the civil war.",
+    "sultan": "Bayezid II",
+    "population": "Black Sea system",
+    "largest_rival": "Grand Duchy of Moscow"
+  },
+  {
+    "year": 1483,
+    "title": "Consolidation of Bayezid II's Rule",
+    "body": "Bayezid II stabilizes domestic administration and secures the western frontiers after the dynastic disruption.",
+    "sultan": "Bayezid II",
+    "population": "Consolidated empire",
+    "largest_rival": "Kingdom of Hungary"
   },
   {
     "year": 1484,
     "title": "Kilia and Akkerman taken",
-    "body": "Moldavia loses its Black Sea outlets and accepts Ottoman suzerainty.",
+    "body": "Moldavia loses its Black Sea outlets and accepts Ottoman suzerainty under Bayezid II.",
     "sultan": "Bayezid II",
     "population": "Danube frontier grows",
     "largest_rival": "Moldavia"
+  },
+  {
+    "year": 1485,
+    "title": "Outbreak of Ottoman-Mamluk War",
+    "body": "Border disputes in Cilicia spark a protracted, inconclusive war between the Ottoman Empire and the Mamluk Sultanate.",
+    "sultan": "Bayezid II",
+    "population": "Southern border conflicts",
+    "largest_rival": "Mamluk Sultanate"
+  },
+  {
+    "year": 1486,
+    "title": "Frontier Clashes in Cilicia",
+    "body": "Ottoman and Mamluk armies trade border fortresses in southern Anatolia with no decisive winner.",
+    "sultan": "Bayezid II",
+    "population": "Southern border conflicts",
+    "largest_rival": "Mamluk Sultanate"
+  },
+  {
+    "year": 1487,
+    "title": "Crimean Successes on the Northern Steppe",
+    "body": "Crimean Tatar raids secure dominance across the Pontic-Caspian steppe, feeding slaves and tribute into the Ottoman economic sphere.",
+    "sultan": "Bayezid II",
+    "population": "Black Sea system",
+    "largest_rival": "Muscovy"
+  },
+  {
+    "year": 1488,
+    "title": "Battle of Ağaççayırı",
+    "body": "Mamluk forces inflict a heavy defeat on the Ottoman army in Cilicia, highlighting logistical strains on the southern front.",
+    "sultan": "Bayezid II",
+    "population": "Southern border conflicts",
+    "largest_rival": "Mamluk Sultanate"
+  },
+  {
+    "year": 1489,
+    "title": "Cem Sultan Handed to the Papacy",
+    "body": "Exile Cem Sultan is transferred to Pope Innocent VIII, becoming a useful diplomatic hostage against Bayezid II's European ambitions.",
+    "sultan": "Bayezid II",
+    "population": "Diplomatic containment",
+    "largest_rival": "Papal States"
+  },
+  {
+    "year": 1490,
+    "title": "Stalemate with Mamluks",
+    "body": "Weary of inconclusive warfare, the Ottomans and Mamluks negotiate a tentative cessation of hostilities in Cilicia.",
+    "sultan": "Bayezid II",
+    "population": "Southern border conflicts",
+    "largest_rival": "Mamluk Sultanate"
+  },
+  {
+    "year": 1491,
+    "title": "Treaty with Mamluks & Ryazan Raids",
+    "body": "A peace treaty with the Mamluks restores pre-war borders, while Crimean Tatars raid deep into Muscovite Ryazan.",
+    "sultan": "Bayezid II",
+    "population": "Black Sea system",
+    "largest_rival": "Mamluk Sultanate"
+  },
+  {
+    "year": 1492,
+    "title": "Expulsion of Sephardic Jews",
+    "body": "Bayezid II famously dispatches the Ottoman navy to rescue Sephardic Jews expelled from Spain, welcoming them into major imperial cities.",
+    "sultan": "Bayezid II",
+    "population": "Cosmopolitan imperial core",
+    "largest_rival": "Spain"
+  },
+  {
+    "year": 1493,
+    "title": "Battle of Krbava Field",
+    "body": "Ottoman irregular cavalry (Akıncıs) inflict a catastrophic defeat on Croatian nobility in a devastating raid.",
+    "sultan": "Bayezid II",
+    "population": "Balkan frontier raiding",
+    "largest_rival": "Kingdom of Croatia and Hungary"
+  },
+  {
+    "year": 1494,
+    "title": "Italian War Disruptions",
+    "body": "The French invasion of Italy under Charles VIII shifts European focus away from the Ottoman frontier.",
+    "sultan": "Bayezid II",
+    "population": "Cautious western diplomacy",
+    "largest_rival": "Venice"
+  },
+  {
+    "year": 1495,
+    "title": "Death of Cem Sultan",
+    "body": "Cem Sultan dies in Naples, removing a major source of European leverage and internal dynastic anxiety for Bayezid II.",
+    "sultan": "Bayezid II",
+    "population": "Consolidated empire",
+    "largest_rival": "Venice"
+  },
+  {
+    "year": 1496,
+    "title": "Montenegro Campaigns",
+    "body": "Ottoman forces tighten control over the mountainous terrain of Zeta and Montenegro.",
+    "sultan": "Bayezid II",
+    "population": "Balkan frontier expansion",
+    "largest_rival": "Venice"
+  },
+  {
+    "year": 1497,
+    "title": "Polish-Ottoman Border Clashes",
+    "body": "Tensions flare along the Moldavian frontier as Polish armies attempt to intervene in Danubian affairs.",
+    "sultan": "Bayezid II",
+    "population": "Danube frontier",
+    "largest_rival": "Polish-Lithuanian Commonwealth"
+  },
+  {
+    "year": 1498,
+    "title": "Raid into Poland",
+    "body": "Crimean Tatars and Ottoman auxiliary forces launch a massive punitive raid deep into Polish territory.",
+    "sultan": "Bayezid II",
+    "population": "Danube frontier",
+    "largest_rival": "Polish-Lithuanian Commonwealth"
+  },
+  {
+    "year": 1499,
+    "title": "Outbreak of Ottoman-Venetian War",
+    "body": "Bayezid II launches a major naval and land war against Venice, capturing Lepanto and dominating the Ionian Sea.",
+    "sultan": "Bayezid II",
+    "population": "Mediterranean sea war",
+    "largest_rival": "Republic of Venice"
+  },
+  {
+    "year": 1500,
+    "title": "Fall of Modon and Coron",
+    "body": "The Ottoman navy under Kemal Reis defeats Venice at the Battle of Zonchio, followed by the capture of key Venetian naval stations at Modon and Coron.",
+    "sultan": "Bayezid II",
+    "population": "Mediterranean sea war",
+    "largest_rival": "Republic of Venice"
+  },
+  {
+    "year": 1501,
+    "title": "Rise of the Safavid Empire",
+    "body": "Shah Ismail I founds the Safavid dynasty in Persia, establishing a militant Shia state that will become the primary existential rival to the Ottomans.",
+    "sultan": "Bayezid II",
+    "population": "Rising eastern threat",
+    "largest_rival": "Safavid Persia"
+  },
+  {
+    "year": 1502,
+    "title": "Peace with Venice",
+    "body": "Venice cedes its remaining major Greek mainland strongholds to the Ottoman Empire, concluding the naval conflict.",
+    "sultan": "Bayezid II",
+    "population": "Mediterranean sea war",
+    "largest_rival": "Republic of Venice"
+  },
+  {
+    "year": 1503,
+    "title": "Treaty with Poland",
+    "body": "Poland signs a peace treaty recognizing Ottoman hegemony over Moldavian ports and border regions.",
+    "sultan": "Bayezid II",
+    "population": "Danube frontier",
+    "largest_rival": "Polish-Lithuanian Commonwealth"
+  },
+  {
+    "year": 1504,
+    "title": "Internal Safavid Expansion",
+    "body": "Shah Ismail consolidates control over western Iran, absorbing territories that border Ottoman eastern provinces.",
+    "sultan": "Bayezid II",
+    "population": "Rising eastern threat",
+    "largest_rival": "Safavid Persia"
+  },
+  {
+    "year": 1505,
+    "title": "Great Earthquake in Istanbul",
+    "body": "A massive earthquake (known as the Lesser Judgement Day) heavily damages Istanbul, prompting widespread imperial reconstruction.",
+    "sultan": "Bayezid II",
+    "population": "Imperial capital",
+    "largest_rival": "Safavid Persia"
+  },
+  {
+    "year": 1506,
+    "title": "Qizilbash Propaganda in Anatolia",
+    "body": "Safavid agents (Qizilbash) actively spread Shia militant propaganda among discontented Turkmen tribes in eastern and central Anatolia.",
+    "sultan": "Bayezid II",
+    "population": "Internal sectarian tension",
+    "largest_rival": "Safavid Persia"
+  },
+  {
+    "year": 1507,
+    "title": "Safavid Raids through Anatolia",
+    "body": "Shah Ismail's forces march through Ottoman-claimed territory to attack Dulkadir, alarming the Sublime Porte.",
+    "sultan": "Bayezid II",
+    "population": "Internal sectarian tension",
+    "largest_rival": "Safavid Persia"
+  },
+  {
+    "year": 1508,
+    "title": "Safavid Capture of Baghdad",
+    "body": "Shah Ismail conquers Baghdad, bringing Safavid power directly to the borders of Ottoman Mesopotamia.",
+    "sultan": "Bayezid II",
+    "population": "Eastern border crisis",
+    "largest_rival": "Safavid Persia"
+  },
+  {
+    "year": 1509,
+    "title": "Şahkulu Rebellion",
+    "body": "A massive pro-Safavid Qizilbash uprising breaks out in Anatolia, threatening Bursa before being brutally suppressed by Ottoman forces.",
+    "sultan": "Bayezid II",
+    "population": "Internal sectarian crisis",
+    "largest_rival": "Safavid Persia"
+  },
+  {
+    "year": 1510,
+    "title": "Succession Crisis Looms",
+    "body": "Aging Bayezid II faces intense factional struggle among his sons (Ahmed, Korkud, and Selim) over the imperial succession.",
+    "sultan": "Bayezid II",
+    "population": "Dynastic crisis",
+    "largest_rival": "Safavid Persia"
+  },
+  {
+    "year": 1511,
+    "title": "Selim's Coup and Abdication of Bayezid II",
+    "body": "Prince Selim mobilizes Janissary support, forces the abdication of his father Bayezid II, and ascends the throne as Selim I.",
+    "sultan": "Selim I",
+    "population": "Militant expansion era",
+    "largest_rival": "Safavid Persia"
+  },
+  {
+    "year": 1512,
+    "title": "Purge of Domestic Rivals",
+    "body": "Selim I eliminates his brothers Ahmed and Korkud to secure undivided control over the empire, turning his full attention east.",
+    "sultan": "Selim I",
+    "population": "Militant expansion era",
+    "largest_rival": "Safavid Persia"
+  },
+  {
+    "year": 1513,
+    "title": "Massacre of Qizilbash Sympathizers",
+    "body": "Selim I orders a comprehensive census and purge of pro-Safavid Shia sympathizers in Anatolia to secure his rear.",
+    "sultan": "Selim I",
+    "population": "Internal security",
+    "largest_rival": "Safavid Persia"
+  },
+  {
+    "year": 1514,
+    "title": "Battle of Chaldiran",
+    "body": "Selim I crushes Shah Ismail's Qizilbash army using superior artillery and firearms, annexing northern Iraq and eastern Anatolia.",
+    "sultan": "Selim I",
+    "population": "Eastern expansion peak",
+    "largest_rival": "Safavid Persia"
   },
   {
     "year": 1515,
@@ -118,207 +1313,1336 @@
   },
   {
     "year": 1516,
-    "title": "Capture of Algiers",
-    "body": "Ottoman foothold established in the Maghreb.",
-    "sultan": "Selim I"
+    "title": "Battle of Marj Dabiq & Capture of Algiers",
+    "body": "Selim I destroys the Mamluk army in Syria, opening the path to Egypt, while Ottoman corsairs establish a foothold in Algiers.",
+    "sultan": "Selim I",
+    "population": "Mamluk war",
+    "largest_rival": "Mamluk Sultanate"
   },
   {
-    "year": 1553,
-    "title": "Invasion of Corsica",
-    "body": "A joint Franco-Ottoman fleet and land force under admirals like Turgut Reis and Paulin de la Garde invaded Corsica, capturing Bastia, Saint-Florent, and Bonifacio from Genoa.",
+    "year": 1517,
+    "title": "Conquest of Egypt and Caliphate Transfer",
+    "body": "Selim I defeats the Mamluks at Ridaniyye, capturing Cairo and ending the Mamluk Sultanate; the Caliphate is traditionally transferred to the Ottoman house.",
+    "sultan": "Selim I",
+    "population": "Global Islamic superpower",
+    "largest_rival": "Portuguese Empire"
+  },
+  {
+    "year": 1518,
+    "title": "Integration of Levantine and Egyptian Provinces",
+    "body": "Selim I organizes new administrative provinces in Syria and Egypt, securing vast trade networks linking the Red Sea to the Mediterranean.",
+    "sultan": "Selim I",
+    "population": "Global Islamic superpower",
+    "largest_rival": "Portuguese Empire"
+  },
+  {
+    "year": 1519,
+    "title": "Barbarossa Swears Fealty",
+    "body": "Hayreddin Barbarossa places Algiers under Ottoman protection, laying the foundation for North African maritime eyalets.",
+    "sultan": "Selim I",
+    "population": "North African expansion",
+    "largest_rival": "Spanish Empire"
+  },
+  {
+    "year": 1520,
+    "title": "Accession of Suleiman the Magnificent",
+    "body": "Selim I dies; his son Suleiman I (the Magnificent) ascends the throne, ushering in the golden age of Ottoman military and cultural expansion.",
     "sultan": "Suleiman I",
-    "population": "Franco-Ottoman Mediterranean alliance",
-    "largest_rival": "Republic of Genoa"
+    "population": "Golden Age begins",
+    "largest_rival": "Habsburg Monarchy"
   },
   {
     "year": 1521,
-    "title": "Belgrade falls",
-    "body": "Suleiman opens the road into Hungary.",
+    "title": "Belgrade falls & Great Crimean Raid",
+    "body": "Suleiman opens the road into Hungary by capturing Belgrade, while Crimean forces launch a massive raid reaching the outskirts of Moscow.",
     "sultan": "Suleiman I",
     "population": "Danube offensive",
     "largest_rival": "Hungary"
   },
   {
-    "year": 1521,
-    "title": "Great Crimean Raid",
-    "body": "Major Crimean victory reaching the outskirts of Moscow.",
-    "sultan": "Suleiman I"
+    "year": 1522,
+    "title": "Conquest of Rhodes",
+    "body": "Suleiman leads a massive amphibious siege to expel the Knights Hospitaller from Rhodes, securing secure sea lanes to Egypt.",
+    "sultan": "Suleiman I",
+    "population": "Mediterranean sea dominance",
+    "largest_rival": "Knights Hospitaller"
   },
   {
-    "year": 1526,
-    "title": "Battle of Mohacs",
-    "body": "The medieval Kingdom of Hungary collapses after a catastrophic defeat.",
+    "year": 1523,
+    "title": "Appointment of Pargalı Ibrahim Pasha",
+    "body": "Ibrahim Pasha is elevated to Grand Vizier, beginning a long period of centralized bureaucratic and military reform.",
+    "sultan": "Suleiman I",
+    "population": "Golden Age governance",
+    "largest_rival": "Habsburg Monarchy"
+  },
+  {
+    "year": 1524,
+    "title": "Rebellion of Ahmed Pasha in Egypt",
+    "body": "A rogue governor's revolt in Egypt is swiftly crushed, leading to administrative reorganization by Ibrahim Pasha.",
+    "sultan": "Suleiman I",
+    "population": "Provincial stability",
+    "largest_rival": "Safavid Persia"
+  },
+  {
+    "year": 1525,
+    "title": "Preparations for Hungarian Campaign",
+    "body": "Suleiman masses imperial forces for a decisive strike against the Kingdom of Hungary.",
     "sultan": "Suleiman I",
     "population": "Central European high-water mark",
     "largest_rival": "Habsburg Monarchy"
   },
   {
+    "year": 1526,
+    "title": "Battle of Mohacs",
+    "body": "The medieval Kingdom of Hungary collapses after a catastrophic defeat and King Louis II's death.",
+    "sultan": "Suleiman I",
+    "population": "Central European high-water mark",
+    "largest_rival": "Habsburg Monarchy"
+  },
+  {
+    "year": 1527,
+    "title": "Habsburg-Ottoman Contest for Hungary",
+    "body": "Ferdinand of Habsburg claims the Hungarian crown, sparking a prolonged struggle with Ottoman-backed John Zápolya.",
+    "sultan": "Suleiman I",
+    "population": "Hungarian frontier war",
+    "largest_rival": "Habsburg Monarchy"
+  },
+  {
+    "year": 1528,
+    "title": "Expedition to Secure Buda",
+    "body": "Ottoman armies sweep back into Hungary to reinstate John Zápolya against Habsburg incursions.",
+    "sultan": "Suleiman I",
+    "population": "Hungarian frontier war",
+    "largest_rival": "Habsburg Monarchy"
+  },
+  {
     "year": 1529,
-    "title": "Capture of Peñón of Algiers",
-    "body": "Spanish fortress taken by Hayreddin Barbarossa.",
-    "sultan": "Suleiman I"
+    "title": "First Siege of Vienna & Capture of Peñón of Algiers",
+    "body": "Suleiman leads the grand army to the walls of Vienna but fails to capture it due to harsh weather and logistics, while Hayreddin Barbarossa takes the Spanish fortress in Algiers.",
+    "sultan": "Suleiman I",
+    "population": "European frontier limits",
+    "largest_rival": "Habsburg Monarchy"
+  },
+  {
+    "year": 1530,
+    "title": "Stalemate in Hungary",
+    "body": "Ferdinand's counter-siege of Buda fails, cementing a fractured territorial division in Central Europe.",
+    "sultan": "Suleiman I",
+    "population": "Hungarian frontier war",
+    "largest_rival": "Habsburg Monarchy"
+  },
+  {
+    "year": 1531,
+    "title": "Fortification of Frontiers",
+    "body": "Both the Ottomans and Habsburgs construct extensive border fortresses along the disputed Hungarian corridor.",
+    "sultan": "Suleiman I",
+    "population": "Hungarian frontier war",
+    "largest_rival": "Habsburg Monarchy"
+  },
+  {
+    "year": 1532,
+    "title": "Campaign of Güns (Kőszeg)",
+    "body": "Suleiman leads another massive army into Hungary, bogged down by the minor fortress of Kőszeg, preventing a second major push on Vienna.",
+    "sultan": "Suleiman I",
+    "population": "Hungarian frontier war",
+    "largest_rival": "Habsburg Monarchy"
+  },
+  {
+    "year": 1533,
+    "title": "Treaty of Constantinople with Habsburgs",
+    "body": "Ferdinand and Suleiman sign a landmark treaty recognizing Ottoman suzerainty over central Hungary and treating Ferdinand as an equal to the Grand Vizier.",
+    "sultan": "Suleiman I",
+    "population": "Diplomatic stabilization",
+    "largest_rival": "Habsburg Monarchy"
   },
   {
     "year": 1534,
-    "title": "Capture of Tunis",
-    "body": "Temporary Ottoman occupation of the city.",
-    "sultan": "Suleiman I"
+    "title": "Capture of Baghdad & Temporary Tunis Occupation",
+    "body": "Suleiman launches the Two Iraqs campaign, capturing Baghdad from the Safavids, while Barbarossa temporarily seizes Tunis.",
+    "sultan": "Suleiman I",
+    "population": "Two-front superpower",
+    "largest_rival": "Safavid Persia and Charles V"
   },
   {
     "year": 1535,
-    "title": "Conquest of Tunis",
-    "body": "Spanish reconquest of Tunis.",
-    "sultan": "Suleiman I"
+    "title": "Spanish Reconquest of Tunis",
+    "body": "Emperor Charles V leads a massive Christian fleet to capture Tunis from Barbarossa, temporarily restoring Spanish influence in North Africa.",
+    "sultan": "Suleiman I",
+    "population": "Mediterranean contest",
+    "largest_rival": "Spanish Empire"
+  },
+  {
+    "year": 1536,
+    "title": "Franco-Ottoman Alliance & Execution of Ibrahim Pasha",
+    "body": "Suleiman concludes the historic Franco-Ottoman alliance with Francis I against the Habsburgs and orders the execution of Grand Vizier Ibrahim Pasha.",
+    "sultan": "Suleiman I",
+    "population": "Diplomatic realignment",
+    "largest_rival": "Habsburg Monarchy"
+  },
+  {
+    "year": 1537,
+    "title": "Campaign of Corfu and Venetian War",
+    "body": "Suleiman launches an invasion of Venetian-held Corfu and the Italian coast, sparking a new maritime war with Venice.",
+    "sultan": "Suleiman I",
+    "population": "Mediterranean sea war",
+    "largest_rival": "Republic of Venice"
   },
   {
     "year": 1538,
-    "title": "Suleiman subdues Moldavia",
-    "body": "Suleiman the Magnificent invades Moldavia, takes Suceava, deposes Petru Rareș, and annexes Bender/Tighina.",
+    "title": "Battle of Preveza & Moldovan Campaign",
+    "body": "Hayreddin Barbarossa crushes the Holy League fleet at Preveza, securing Ottoman naval supremacy in the Mediterranean, while Suleiman subdues Moldavia.",
     "sultan": "Suleiman I",
-    "population": "Consolidated northern vassal system",
-    "largest_rival": "Habsburg Monarchy"
+    "population": "Apex of naval power",
+    "largest_rival": "Holy League"
+  },
+  {
+    "year": 1539,
+    "title": "Siege of Castelnuovo",
+    "body": "Ottoman forces recapture Castelnuovo (Herceg Novi) from Spanish troops after a brutal siege.",
+    "sultan": "Suleiman I",
+    "population": "Mediterranean expansion",
+    "largest_rival": "Spanish Empire"
+  },
+  {
+    "year": 1540,
+    "title": "Venetian Peace Treaty",
+    "body": "Venice cedes its remaining Aegean and Peloponnesian possessions to the Ottomans and pays a heavy indemnity.",
+    "sultan": "Suleiman I",
+    "population": "Mediterranean sea dominance",
+    "largest_rival": "Republic of Venice"
   },
   {
     "year": 1541,
     "title": "Budin Eyalet established",
-    "body": "Central Hungary becomes directly administered Ottoman territory while Transylvania becomes a vassal buffer.",
+    "body": "Central Hungary becomes directly administered Ottoman territory (Budin Eyalet) while Transylvania becomes a vassal buffer following John Zápolya's death.",
     "sultan": "Suleiman I",
     "population": "Ottoman Hungary formed",
     "largest_rival": "Habsburg Monarchy"
   },
   {
+    "year": 1542,
+    "title": "Habsburg Siege of Buda Repulsed",
+    "body": "Ferdinand's massive attempt to recapture Buda is comprehensively smashed by Ottoman relief armies.",
+    "sultan": "Suleiman I",
+    "population": "Ottoman Hungary secure",
+    "largest_rival": "Habsburg Monarchy"
+  },
+  {
+    "year": 1543,
+    "title": "Campaign of Esztergom",
+    "body": "Suleiman leads a successful campaign in Hungary, capturing Esztergom, Székesfehérvár, and Siklós.",
+    "sultan": "Suleiman I",
+    "population": "Hungarian frontier expansion",
+    "largest_rival": "Habsburg Monarchy"
+  },
+  {
+    "year": 1544,
+    "title": "Truce with Habsburgs",
+    "body": "Exhausted by continuous campaigning, Suleiman and Charles V agree to a temporary truce in Hungary.",
+    "sultan": "Suleiman I",
+    "population": "Frontier stabilization",
+    "largest_rival": "Habsburg Monarchy"
+  },
+  {
+    "year": 1545,
+    "title": "Renewal of Truce",
+    "body": "Diplomatic efforts maintain peace along the central European borderlands.",
+    "sultan": "Suleiman I",
+    "population": "Frontier stabilization",
+    "largest_rival": "Habsburg Monarchy"
+  },
+  {
+    "year": 1546,
+    "title": "Death of Hayreddin Barbarossa",
+    "body": "Legendary grand admiral Hayreddin Barbarossa passes away, leaving a dominant Ottoman naval legacy managed by successors like Turgut Reis.",
+    "sultan": "Suleiman I",
+    "population": "Naval golden age",
+    "largest_rival": "Spanish Empire"
+  },
+  {
+    "year": 1547,
+    "title": "Five-Year Truce Signed",
+    "body": "Ferdinand and Charles V formally sign a five-year truce with the Ottoman Empire, agreeing to pay annual tribute for Habsburg lands in Hungary.",
+    "sultan": "Suleiman I",
+    "population": "Diplomatic high point",
+    "largest_rival": "Habsburg Monarchy"
+  },
+  {
+    "year": 1548,
+    "title": "Third Campaign of Tabriz",
+    "body": "Suleiman launches his second major expedition against Safavid Persia, occupying Tabriz and advancing through Armenia.",
+    "sultan": "Suleiman I",
+    "population": "Safavid war",
+    "largest_rival": "Safavid Persia"
+    },
+  {
+    "year": 1549,
+    "title": "Operations in the Georgian Valleys",
+    "body": "Ottoman armies secure border districts in southern Georgia during the Persian campaign.",
+    "sultan": "Suleiman I",
+    "population": "Caucasian border",
+    "largest_rival": "Safavid Persia"
+  },
+  {
+    "year": 1550,
+    "title": "Construction of Süleymaniye Mosque",
+    "body": "Master architect Mimar Sinan begins construction of the iconic Süleymaniye Mosque in Istanbul, defining classical Ottoman architecture.",
+    "sultan": "Suleiman I",
+    "population": "Cultural peak",
+    "largest_rival": "Safavid Persia"
+  },
+  {
     "year": 1551,
     "title": "Capture of Tripoli",
-    "body": "Tripoli annexed into the Ottoman Empire.",
-    "sultan": "Suleiman I"
+    "body": "Turgut Reis and Sinan Pasha capture Tripoli from the Knights of St. John, expanding Ottoman North African dominance.",
+    "sultan": "Suleiman I",
+    "population": "North African expansion",
+    "largest_rival": "Knights Hospitaller"
   },
   {
     "year": 1552,
-    "title": "Temesvar Eyalet created",
-    "body": "The Banat frontier is reorganized as a major Ottoman eyalet.",
+    "title": "Temesvar Eyalet created & Siege of Eger",
+    "body": "The Banat frontier is reorganized as the Temesvar Eyalet, though the Ottoman siege of Eger in northern Hungary fails.",
     "sultan": "Suleiman I",
     "population": "Hungarian frontier network",
     "largest_rival": "Habsburg Monarchy"
   },
   {
-    "year": 1566,
-    "title": "Szigetvar and Suleiman's death",
-    "body": "Suleiman dies during the siege, marking the end of the classic expansion age.",
+    "year": 1553,
+    "title": "Invasion of Corsica & Execution of Şehzade Mustafa",
+    "body": "A joint Franco-Ottoman fleet invades Corsica, while Suleiman orders the execution of his eldest son Şehzade Mustafa over succession intrigues.",
     "sultan": "Suleiman I",
+    "population": "Franco-Ottoman Mediterranean alliance",
+    "largest_rival": "Republic of Genoa"
+  },
+  {
+    "year": 1554,
+    "title": "Nakhchivan Campaign",
+    "body": "Ottoman devastation of Safavid territory leading to peace negotiations.",
+    "sultan": "Suleiman I",
+    "population": "Safavid war",
+    "largest_rival": "Safavid Persia"
+  },
+  {
+    "year": 1555,
+    "title": "Treaty of Amasya",
+    "body": "First formal Ottoman–Safavid peace treaty; Iraq and eastern Anatolia are recognized as permanently Ottoman.",
+    "sultan": "Suleiman I",
+    "population": "Eastern frontier settled",
+    "largest_rival": "Safavid Persia"
+  },
+  {
+    "year": 1556,
+    "title": "Siege of Szigetvár Prep",
+    "body": "Local skirmishing and fortification dominate the Hungarian border as regional commanders vie for advantage.",
+    "sultan": "Suleiman I",
+    "population": "Hungarian frontier",
+    "largest_rival": "Habsburg Monarchy"
+  },
+  {
+    "year": 1557,
+    "title": "Completion of Süleymaniye Mosque",
+    "body": "The grand Süleymaniye complex is inaugurated in Istanbul, symbolizing the cultural height of Suleiman's reign.",
+    "sultan": "Suleiman I",
+    "population": "Cultural peak",
+    "largest_rival": "Habsburg Monarchy"
+  },
+  {
+    "year": 1558,
+    "title": "Naval Engagement at Djerba Prep",
+    "body": "Turgut Reis expands Ottoman naval dominance across the western Mediterranean basin.",
+    "sultan": "Suleiman I",
+    "population": "North African maritime power",
+    "largest_rival": "Spanish Empire"
+  },
+  {
+    "year": 1559,
+    "title": "Battle of Konya (Civil War)",
+    "body": "Suleiman's surviving sons Bayezid and Selim clash in a civil war over succession; Bayezid is defeated and flees to Persia.",
+    "sultan": "Suleiman I",
+    "population": "Dynastic crisis",
+    "largest_rival": "Safavid Persia"
+  },
+  {
+    "year": 1560,
+    "title": "Battle of Djerba",
+    "body": "Ottoman fleet under Piyale Pasha and Turgut Reis utterly destroys a Christian coalition fleet off the island of Djerba.",
+    "sultan": "Suleiman I",
+    "population": "Naval supremacy",
+    "largest_rival": "Spanish Empire"
+  },
+  {
+    "year": 1561,
+    "title": "Execution of Şehzade Bayezid",
+    "body": "Following diplomatic agreements with Shah Ismail, fugitive Prince Bayezid and his sons are executed in Safavid territory, securing Selim as sole heir.",
+    "sultan": "Suleiman I",
+    "population": "Dynastic stabilization",
+    "largest_rival": "Safavid Persia"
+  },
+  {
+    "year": 1562,
+    "title": "Extension of Habsburg Truce",
+    "body": "Suleiman signs an eight-year peace extension with Ferdinand I, stabilizing the European frontier.",
+    "sultan": "Suleiman I",
+    "population": "Frontier peace",
+    "largest_rival": "Habsburg Monarchy"
+  },
+  {
+    "year": 1563,
+    "title": "Border Skirmishes in Hungary",
+    "body": "Minor local infractions occur along the fortified border zones despite official truces.",
+    "sultan": "Suleiman I",
+    "population": "Frontier peace",
+    "largest_rival": "Habsburg Monarchy"
+  },
+  {
+    "year": 1564,
+    "title": "St. Elmo Preparations (Malta Prep)",
+    "body": "Intelligence reports gather in Istanbul regarding the Knights Hospitaller buildup on Malta.",
+    "sultan": "Suleiman I",
+    "population": "Mediterranean strategy",
+    "largest_rival": "Knights Hospitaller"
+  },
+  {
+    "year": 1565,
+    "title": "Great Siege of Malta",
+    "body": "Ottoman forces under Mustafa Pasha and Piyale Pasha attempt to dislodge the Knights Hospitaller from Malta but suffer a famous, bloody defeat.",
+    "sultan": "Suleiman I",
+    "population": "Mediterranean check",
+    "largest_rival": "Knights Hospitaller"
+  },
+  {
+    "year": 1566,
+    "title": "Szigetvár and Suleiman's death",
+    "body": "Suleiman dies in his tent during the capture of Szigetvár; Grand Vizier Sokollu Mehmed Pasha successfully conceals his death to maintain army morale.",
+    "sultan": "Suleiman I / Selim II",
     "population": "Mature imperial frontier",
     "largest_rival": "Habsburg Monarchy"
   },
   {
-    "year": 1571,
-    "title": "Lepanto and Cyprus",
-    "body": "Cyprus is conquered, but the Ottoman fleet is checked by the Holy League at Lepanto.",
+    "year": 1567,
+    "title": "Accession Consolidation under Sokollu",
+    "body": "Capable Grand Vizier Sokollu Mehmed Pasha effectively runs the empire under easygoing Sultan Selim II, initiating ambitious infrastructure projects like the Suez canal proposals.",
+    "sultan": "Selim II",
+    "population": "Vizierial administration",
+    "largest_rival": "Habsburg Monarchy"
+  },
+  {
+    "year": 1568,
+    "title": "Treaty of Adrianople with Habsburgs",
+    "body": "Sokollu signs a landmark peace treaty with Maximilian II, ending hostilities in Hungary and recognizing mutual spheres of influence.",
+    "sultan": "Selim II",
+    "population": " Vizierial administration",
+    "largest_rival": "Habsburg Monarchy"
+  },
+  {
+    "year": 1569,
+    "title": "Astrakhan Expedition",
+    "body": "An ambitious Ottoman-Crimean expedition to capture Astrakhan and cut off Russian expansion fails due to logistical collapse and harsh winter.",
+    "sultan": "Selim II",
+    "population": "Northern frontier limits",
+    "largest_rival": "Tsardom of Russia"
+  },
+  {
+    "year": 1570,
+    "title": "Invasion of Cyprus",
+    "body": "Sokollu Mehmed Pasha initiates the conquest of Venetian Cyprus, capturing Nicosia and blockading Famagusta.",
     "sultan": "Selim II",
     "population": "Mediterranean sea war",
-    "largest_rival": "Venice and Spain"
+    "largest_rival": "Republic of Venice"
   },
   {
     "year": 1571,
-    "title": "Burning of Moscow",
-    "body": "Devlet I Giray burns Moscow, leading to massive enslavement.",
-    "sultan": "Selim II"
+    "title": "Lepanto, Fall of Cyprus & Burning of Moscow",
+    "body": "Cyprus is fully conquered after the fall of Famagusta, but the Ottoman fleet suffers a catastrophic defeat at Lepanto against the Holy League, while Devlet I Giray burns Moscow.",
+    "sultan": "Selim II",
+    "population": "Mediterranean sea war",
+    "largest_rival": "Holy League and Russia"
+  },
+  {
+    "year": 1572,
+    "title": "Rapid Fleet Reconstruction",
+    "body": "In an astonishing industrial feat, Sokollu Mehmed Pasha rebuilds the entire Ottoman navy within six winter months, deterring Holy League follow-up attacks.",
+    "sultan": "Selim II",
+    "population": "Naval recovery",
+    "largest_rival": "Holy League"
+  },
+  {
+    "year": 1573,
+    "title": "Treaty with Venice",
+    "body": "Venice signs a separate peace treaty ceding Cyprus to the Ottoman Empire and paying a massive war indemnity.",
+    "sultan": "Selim II",
+    "population": "Mediterranean dominance reaffirmed",
+    "largest_rival": "Republic of Venice"
   },
   {
     "year": 1574,
     "title": "Ottoman Reconquest of Tunis",
-    "body": "Permanent annexation of Tunisia.",
-    "sultan": "Selim II"
+    "body": "Kılıç Ali Pasha leads an expedition to permanently annex Tunisia from Spanish control, ending the local Hafsid dynasty.",
+    "sultan": "Selim II",
+    "population": "North African consolidation",
+    "largest_rival": "Spanish Empire"
+  },
+  {
+    "year": 1575,
+    "title": "Accession of Murad III",
+    "body": "Selim II dies; Murad III ascends the throne, continuing the vizierate of Sokollu Mehmed Pasha amidst rising court factionalism.",
+    "sultan": "Murad III",
+    "population": "Court factionalism",
+    "largest_rival": "Safavid Persia"
+  },
+  {
+    "year": 1576,
+    "title": "Safavid Succession Crisis Exploited",
+    "body": "The death of Shah Tahmasp I triggers chaos in Persia, prompting the Ottoman war party to push for a resumption of hostilities in the east.",
+    "sultan": "Murad III",
+    "population": "Eastern war resumption",
+    "largest_rival": "Safavid Persia"
+  },
+  {
+    "year": 1577,
+    "title": "Outbreak of Ottoman-Safavid War (1578–1590)",
+    "body": "Lala Mustafa Pasha leads an Ottoman invasion into the Caucasus, sparking a long and economically draining war with Persia.",
+    "sultan": "Murad III",
+    "population": "Eastern war resumption",
+    "largest_rival": "Safavid Persia"
+  },
+  {
+    "year": 1578,
+    "title": "Battle of the Swords (Çıldır)",
+    "body": "Ottoman forces defeat Safavid armies in Georgia, establishing forward military bases in Tiflis and Shirvan.",
+    "sultan": "Murad III",
+    "population": "Caucasian expansion",
+    "largest_rival": "Safavid Persia"
+  },
+  {
+    "year": 1579,
+    "title": "Assassination of Sokollu Mehmed Pasha",
+    "body": "The powerful Grand Vizier Sokollu Mehmed Pasha is assassinated by a dervish, removing the last steady hand of the classic era and accelerating court corruption.",
+    "sultan": "Murad III",
+    "population": "Political transition",
+    "largest_rival": "Safavid Persia"
+  },
+  {
+    "year": 1580,
+    "title": "Anglo-Ottoman Trade Capitulations",
+    "body": "Queen Elizabeth I secures trade privileges (capitulations) for English merchants in the Ottoman Empire, countering Spanish hegemony.",
+    "sultan": "Murad III",
+    "population": "Commercial diplomacy",
+    "largest_rival": "Spanish Empire"
+  },
+  {
+    "year": 1581,
+    "title": "Caucasian Campaigns Continue",
+    "body": "Özdemiroğlu Osman Pasha campaigns extensively across Dagestan and Shirvan to secure mountain passes against Safavid counter-attacks.",
+    "sultan": "Murad III",
+    "population": "Caucasian expansion",
+    "largest_rival": "Safavid Persia"
+  },
+  {
+    "year": 1582,
+    "title": "Grand Circumcision Festival",
+    "body": "Murad III holds an extravagant 55-day festival for his son Prince Mehmed's circumcision, showcasing imperial wealth despite brewing economic inflation.",
+    "sultan": "Murad III",
+    "population": "Imperial pageantry",
+    "largest_rival": "Safavid Persia"
+  },
+  {
+    "year": 1583,
+    "title": "Battle of the Torches",
+    "body": "A brutal night battle fought in a severe thunderstorm in the Caucasus results in an Ottoman victory over Safavid forces.",
+    "sultan": "Murad III",
+    "population": "Caucasian expansion",
+    "largest_rival": "Safavid Persia"
+  },
+  {
+    "year": 1584,
+    "title": "Crimean Succession Intervention",
+    "body": "The Sublime Porte deposes Islam II Giray and installs a loyal Khan, solidifying tight Ottoman oversight over Crimean politics.",
+    "sultan": "Murad III",
+    "population": "Black Sea system",
+    "largest_rival": "Tsardom of Russia"
+  },
+  {
+    "year": 1585,
+    "title": "Conquest of Tabriz",
+    "body": "Özdemiroğlu Osman Pasha captures Tabriz once again after fierce fighting during the eastern war.",
+    "sultan": "Murad III",
+    "population": "Eastern expansion peak",
+    "largest_rival": "Safavid Persia"
+  },
+  {
+    "year": 1586,
+    "title": "Inflation and Currency Devaluation",
+    "body": "Widespread economic inflation driven by American silver influxes and military costs triggers the first major Janissary coin riot in Istanbul.",
+    "sultan": "Murad III",
+    "population": "Economic strain",
+    "largest_rival": "Safavid Persia"
+  },
+  {
+    "year": 1587,
+    "title": "Accession of Shah Abbas I",
+    "body": "Shah Abbas I ascends the Safavid throne, initiating major military reforms that will soon reverse Ottoman eastern gains.",
+    "sultan": "Murad III",
+    "population": "Eastern threat reform",
+    "largest_rival": "Safavid Persia"
+  },
+  {
+    "year": 1588,
+    "title": "Koca Sinan Pasha's Vizierate",
+    "body": "Experienced military commander Koca Sinan Pasha takes over the grand vizierate to stabilize internal military discipline.",
+    "sultan": "Murad III",
+    "population": "Administrative adjustments",
+    "largest_rival": "Safavid Persia"
+  },
+  {
+    "year": 1589,
+    "title": "Beylerbeyi Revolt",
+    "body": "Janissaries mutiny in Istanbul over devalued pay, forcing the Sultan to dismiss ministers in the first major capital military revolt.",
+    "sultan": "Murad III",
+    "population": "Military unrest",
+    "largest_rival": "Safavid Persia"
+  },
+  {
+    "year": 1590,
+    "title": "Treaty of Constantinople (1590)",
+    "body": "The Ottoman Empire achieves its greatest territorial extent in the Caucasus, forcing Safavids to cede Tabriz, Georgia, and Azerbaijan.",
+    "sultan": "Murad III",
+    "population": "Greatest territorial extent",
+    "largest_rival": "Safavid Persia"
   },
   {
     "year": 1591,
     "title": "Battle near Moscow",
-    "body": "Crimean invasion under Ğazı II Giray; Russian victory."
+    "body": "Crimean invasion under Ğazı II Giray meets fierce resistance; Russian victory halts Tatar expansion toward the capital.",
+    "sultan": "Murad III",
+    "population": "Northern frontier checks",
+    "largest_rival": "Tsardom of Russia"
+  },
+  {
+    "year": 1592,
+    "title": "Border Skirmishes in Croatia",
+    "body": "Clashes between Ottoman Bosnian governors and Habsburg border commanders escalate along the Una River, paving the way for open war.",
+    "sultan": "Murad III",
+    "population": "Escalating border crisis",
+    "largest_rival": "Habsburg Monarchy"
   },
   {
     "year": 1593,
-    "title": "Long Turkish War",
-    "body": "A long Habsburg-Ottoman conflict begins across Croatia, Hungary, and Transylvania.",
+    "title": "Long Turkish War Begins",
+    "body": "A protracted conflict between the Ottoman Empire and the Habsburg Monarchy begins, marked by stalemate and significant territorial shifts on the Hungarian frontier.",
     "sultan": "Murad III",
     "population": "Fortress-war frontier",
     "largest_rival": "Habsburg Monarchy"
   },
   {
+    "year": 1594,
+    "title": "Fall of Győr (Raab) to Ottomans",
+    "body": "Grand Vizier Koca Sinan Pasha captures the strategic fortress of Győr in Royal Hungary, shocking Christian Europe.",
+    "sultan": "Murad III",
+    "population": "Long Turkish War",
+    "largest_rival": "Habsburg Monarchy"
+  },
+  {
+    "year": 1595,
+    "title": "Accession of Mehmed III and Battle of Giurgiu",
+    "body": "Murad III dies; Mehmed III ascends the throne, executing his 19 brothers, while Wallachian prince Michael the Brave inflicts heavy defeats on Ottoman forces at Giurgiu.",
+    "sultan": "Mehmed III",
+    "population": "Dynastic purge and Danubian crisis",
+    "largest_rival": "Habsburg and Wallachia"
+  },
+  {
     "year": 1596,
-    "title": "Egri Eyalet organized",
-    "body": "Eger's fall extends Ottoman administration into northern Hungary.",
+    "title": "Egri Eyalet organized & Battle of Keresztes",
+    "body": "Mehmed III personally leads the army to victory at the Battle of Keresztes and captures Eger, extending Ottoman administration into northern Hungary.",
     "sultan": "Mehmed III",
     "population": "Northern Hungarian expansion",
     "largest_rival": "Habsburg Monarchy"
   },
   {
+    "year": 1597,
+    "title": "Stalemate in Hungary",
+    "body": "Both Ottoman and Habsburg armies settle into mutual attrition around contested frontier fortresses like Vác and Esztergom.",
+    "sultan": "Mehmed III",
+    "population": "Long Turkish War stalemate",
+    "largest_rival": "Habsburg Monarchy"
+  },
+  {
+    "year": 1598,
+    "title": "Defense of Várad",
+    "body": "Ottoman garrisons successfully hold major Hungarian border strongholds against Habsburg counter-sieges.",
+    "sultan": "Mehmed III",
+    "population": "Long Turkish War stalemate",
+    "largest_rival": "Habsburg Monarchy"
+  },
+  {
+    "year": 1599,
+    "title": "Celali Rebellions Begin",
+    "body": "Disbanded soldiers, economic hardship, and rural dislocation spark widespread Celali peasant and bandit revolts across Anatolia.",
+    "sultan": "Mehmed III",
+    "population": "Anatolian internal crisis",
+    "largest_rival": "Habsburg Monarchy"
+  },
+  {
     "year": 1600,
     "title": "Kanije Eyalet organized",
-    "body": "Nagykanizsa becomes the southwestern Ottoman Hungarian frontier center.",
+    "body": "Tiryaki Hasan Pasha successfully defends Nagykanizsa (Kanije) against a massive Habsburg siege, and it becomes the southwestern Ottoman Hungarian frontier center.",
     "sultan": "Mehmed III",
     "population": "Western Hungarian frontier",
     "largest_rival": "Habsburg Monarchy"
   },
   {
+    "year": 1601,
+    "title": "Siege of Kanije Repulsed",
+    "body": "Habsburg forces under Archduke Ferdinand fail spectacularly to retake Kanije despite overwhelming numerical superiority.",
+    "sultan": "Mehmed III",
+    "population": "Long Turkish War",
+    "largest_rival": "Habsburg Monarchy"
+  },
+  {
+    "year": 1602,
+    "title": "Loss of Székesfehérvár",
+    "body": "Habsburg forces temporarily capture Székesfehérvár (Alba Regia) from Ottoman control during autumn campaigning.",
+    "sultan": "Mehmed III",
+    "population": "Long Turkish War",
+    "largest_rival": "Habsburg Monarchy"
+  },
+  {
+    "year": 1603,
+    "title": "Accession of Ahmed I and Safavid War Resumption",
+    "body": "Mehmed III dies; 13-year-old Ahmed I ascends the throne, while Shah Abbas I launches a major offensive to reclaim Caucasian territories lost in 1590.",
+    "sultan": "Ahmed I",
+    "population": "Two-front crisis",
+    "largest_rival": "Safavid Persia"
+  },
+  {
+    "year": 1604,
+    "title": "Loss of Tabriz to Safavids",
+    "body": "Shah Abbas recaptures Tabriz and pushes deep into Ottoman eastern provinces while imperial armies are tied down in Hungary.",
+    "sultan": "Ahmed I",
+    "population": "Eastern front collapse",
+    "largest_rival": "Safavid Persia"
+  },
+  {
+    "year": 1605,
+    "title": "Recapture of Esztergom & Celali Crisis",
+    "body": "Grand Vizier Kuyucu Murad Pasha campaigns against Celali rebels in Anatolia while Ottoman forces retake Esztergom in Hungary.",
+    "sultan": "Ahmed I",
+    "population": "Internal pacification",
+    "largest_rival": "Safavid Persia"
+  },
+  {
+    "year": 1606,
+    "title": "Treaty of Zsitvatorok & Treaty of Vienna",
+    "body": "The Long Turkish War ends with the Treaty of Zsitvatorok, ending annual Habsburg tribute and recognizing the Habsburg emperor as an equal to the Sultan, alongside the Treaty of Vienna.",
+    "sultan": "Ahmed I",
+    "population": "Peace agreement and political turmoil",
+    "largest_rival": "Habsburg Monarchy"
+  },
+  {
+    "year": 1607,
+    "title": "Kuyucu Murad Pasha's Suppression of Celalis",
+    "body": "Grand Vizier Kuyucu Murad Pasha launches a ruthless military campaign across Anatolia, executing tens of thousands of Celali rebels and restoring order.",
+    "sultan": "Ahmed I",
+    "population": "Anatolian pacification",
+    "largest_rival": "Safavid Persia"
+  },
+  {
+    "year": 1608,
+    "title": "Crushing of Remaining Celalis",
+    "body": "Rebel leader Canbulatoğlu Ali Pasha is defeated near Damascus, effectively breaking the backbone of the devastating Celali uprisings.",
+    "sultan": "Ahmed I",
+    "population": "Anatolian pacification",
+    "largest_rival": "Safavid Persia"
+  },
+  {
+    "year": 1609,
+    "title": "Construction of the Blue Mosque",
+    "body": "Construction begins on the Sultan Ahmed Mosque (Blue Mosque) in Istanbul, symbolizing architectural renewal after years of crisis.",
+    "sultan": "Ahmed I",
+    "population": "Cultural restoration",
+    "largest_rival": "Safavid Persia"
+  },
+  {
+    "year": 1610,
+    "title": "Campaign in Syria and Lebanon",
+    "body": "Ottoman punitive expeditions re-establish strict central authority over autonomous Druze and regional lords in Mount Lebanon.",
+    "sultan": "Ahmed I",
+    "population": "Provincial control",
+    "largest_rival": "Safavid Persia"
+  },
+  {
+    "year": 1611,
+    "title": "Stalemate on the Eastern Front",
+    "body": "Low-intensity warfare continues in the Caucasus and western Iran against Shah Abbas's modernized forces.",
+    "sultan": "Ahmed I",
+    "population": "Eastern front stalemate",
+    "largest_rival": "Safavid Persia"
+  },
+  {
+    "year": 1612,
+    "title": "Treaty of Nasuh Pasha",
+    "body": "Borders are restored largely to those of 1555; the Ottomans lose all Caucasian conquests made under Murad III to Safavid Persia.",
+    "sultan": "Ahmed I",
+    "population": "Territorial loss",
+    "largest_rival": "Safavid Persia"
+  },
+  {
+    "year": 1613,
+    "title": "Revolt of Fakhr-al-Din II",
+    "body": "Lebanese Druze leader Fakhr-al-Din II allies with Tuscany and rebels against Ottoman suzerainty, fleeing to Europe.",
+    "sultan": "Ahmed I",
+    "population": "Levantine instability",
+    "largest_rival": "Tuscany"
+  },
+  {
+    "year": 1614,
+    "title": "Execution of Nasuh Pasha",
+    "body": "Grand Vizier Nasuh Pasha is executed over court corruption and treason allegations.",
+    "sultan": "Ahmed I",
+    "population": "Court factionalism",
+    "largest_rival": "Safavid Persia"
+  },
+  {
+    "year": 1615,
+    "title": "Border Tensions with Persia",
+    "body": "Failure of Persia to pay agreed silk tributes sparks renewed friction along the eastern borderlands.",
+    "sultan": "Ahmed I",
+    "population": "Eastern friction",
+    "largest_rival": "Safavid Persia"
+  },
+  {
+    "year": 1616,
+    "title": "Death of Ahmed I and Accession of Mustafa I",
+    "body": "Ahmed I dies prematurely; his mentally unstable brother Mustafa I is brought to the throne in a unique succession precedent.",
+    "sultan": "Ahmed I / Mustafa I",
+    "population": "Dynastic instability",
+    "largest_rival": "Safavid Persia"
+  },
+  {
+    "year": 1617,
+    "title": "Deposition of Mustafa I and Accession of Osman II",
+    "body": "Mustafa I is deposed after a few months due to incompetence; young, ambitious Osman II is enthroned.",
+    "sultan": "Mustafa I / Osman II",
+    "population": "Dynastic stabilization",
+    "largest_rival": "Safavid Persia"
+  },
+  {
+    "year": 1618,
+    "title": "Treaty of Serav",
+    "body": "Confirmed Safavid gains with modified silk trade and tribute arrangements, ending active eastern fighting for the moment.",
+    "sultan": "Osman II",
+    "population": "Eastern trade agreement",
+    "largest_rival": "Safavid Persia"
+  },
+  {
+    "year": 1619,
+    "title": "Reforms of Osman II",
+    "body": "Young Sultan Osman II attempts to centralize administration and curtail corrupt court and religious factions.",
+    "sultan": "Osman II",
+    "population": "Reform era",
+    "largest_rival": "Polish-Lithuanian Commonwealth"
+  },
+  {
+    "year": 1620,
+    "title": "Outbreak of Polish-Ottoman War",
+    "body": "Border clashes in Moldavia spark a direct war between the Ottoman Empire and the Polish-Lithuanian Commonwealth over Cossack raids.",
+    "sultan": "Osman II",
+    "population": "Northern frontier war",
+    "largest_rival": "Polish-Lithuanian Commonwealth"
+  },
+  {
+    "year": 1621,
+    "title": "Battle of Khotyn",
+    "body": "Osman II personally leads a massive expedition to Poland, but the siege of Khotyn bogs down against Cossack-Polish defenses, leading to a stalemate treaty.",
+    "sultan": "Osman II",
+    "population": "Northern frontier war",
+    "largest_rival": "Polish-Lithuanian Commonwealth"
+  },
+  {
+    "year": 1622,
+    "title": "Assassination of Osman II and Restoration of Mustafa I",
+    "body": "Discontented Janissaries revolt against Osman II's proposed military reforms, dragging him to the Yedikule Fortress and assassinating him, restoring unstable Mustafa I.",
+    "sultan": "Osman II / Mustafa I",
+    "population": "Capital anarchy",
+    "largest_rival": "Safavid Persia"
+  },
+  {
+    "year": 1623,
+    "title": "Accession of Murad IV and Loss of Baghdad",
+    "body": "Mustafa I is permanently deposed and confined; 11-year-old Murad IV ascends while Safavids seize Baghdad, plunging the empire into deep anarchy.",
+    "sultan": "Mustafa I / Murad IV",
+    "population": "Empire in crisis",
+    "largest_rival": "Safavid Persia"
+  },
+  {
+    "year": 1624,
+    "title": "Abaza Pasha's Rebellion",
+    "body": "Abaza Pasha launches a massive governor's rebellion in eastern Anatolia in revenge for Osman II's murder, backed by local tribes.",
+    "sultan": "Murad IV",
+    "population": "Anatolian rebellion",
+    "largest_rival": "Safavid Persia"
+  },
+  {
+    "year": 1625,
+    "title": "Failed Siege of Baghdad",
+    "body": "Ottoman armies under Grand Vizier Gürcü Mehmed Pasha fail to recapture Baghdad from Shah Abbas after a grueling winter siege.",
+    "sultan": "Murad IV",
+    "population": "Eastern front struggle",
+    "largest_rival": "Safavid Persia"
+  },
+  {
+    "year": 1626,
+    "title": "Cossack Raids on Istanbul Suburbs",
+    "body": "Dnieper Cossacks launch audacious naval raids down the Black Sea, reaching the outer suburbs of Istanbul and burning towns.",
+    "sultan": "Murad IV",
+    "population": "Black Sea insecurity",
+    "largest_rival": "Cossacks"
+  },
+  {
+    "year": 1627,
+    "title": "Suppression of Abaza Pasha",
+    "body": "Imperial forces defeat Abaza Pasha at Erzurum, ending his regional rebellion and restoring central control to eastern Anatolia.",
+    "sultan": "Murad IV",
+    "population": "Internal pacification",
+    "largest_rival": "Safavid Persia"
+  },
+  {
+    "year": 1628,
+    "title": "Surrender of Abaza Pasha",
+    "body": "Abaza Pasha surrenders to young Murad IV and is surprisingly pardoned, later appointed governor of Bosnia.",
+    "sultan": "Murad IV",
+    "population": "Internal pacification",
+    "largest_rival": "Safavid Persia"
+  },
+  {
+    "year": 1629,
+    "title": "Preparation for Eastern Campaign",
+    "body": "Murad IV begins taking personal control of government, brutally executing corrupt officials to restore absolute imperial authority.",
+    "sultan": "Murad IV",
+    "population": "Authoritarian restoration",
+    "largest_rival": "Safavid Persia"
+  },
+  {
+    "year": 1630,
+    "title": "Murad IV's First Eastern Campaign",
+    "body": "Murad IV leads an army to retake Hamadan and besiege Baghdad, but severe weather forces an eventual withdrawal.",
+    "sultan": "Murad IV",
+    "population": "Safavid war",
+    "largest_rival": "Safavid Persia"
+  },
+  {
+    "year": 1631,
+    "title": "Janissary Mutinies in Istanbul",
+    "body": "Janissaries revolt in Istanbul against Murad IV's strict disciplinary laws; the Sultan responds with swift, brutal executions.",
+    "sultan": "Murad IV",
+    "population": "Capital discipline",
+    "largest_rival": "Safavid Persia"
+  },
+  {
+    "year": 1632,
+    "title": "Murad IV Assumes Absolute Power",
+    "body": "Executing rebellious viziers and janissary ringleaders in the Hippodrome, 20-year-old Murad IV takes absolute personal control of the state.",
+    "sultan": "Murad IV",
+    "population": "Absolute royal rule",
+    "largest_rival": "Safavid Persia"
+  },
+  {
+    "year": 1633,
+    "title": "Tobacco Ban and Istanbul Fires",
+    "body": "Murad IV bans tobacco, coffee, and alcohol in Istanbul under pain of death following massive accidental city fires.",
+    "sultan": "Murad IV",
+    "population": "Strict domestic control",
+    "largest_rival": "Safavid Persia"
+  },
+  {
+    "year": 1634,
+    "title": "Polish-Ottoman War Avoided",
+    "body": "Murad IV personally leads a successful campaign against Polish incursions in the Balkans, quickly signing a reaffirmation of peace.",
+    "sultan": "Murad IV",
+    "population": "Balkan security",
+    "largest_rival": "Polish-Lithuanian Commonwealth"
+  },
+  {
+    "year": 1635,
+    "title": "Revan (Yerevan) Campaign",
+    "body": "Murad IV leads a massive army into the Caucasus, capturing the strategic fortress of Revan (Yerevan) from the Safavids.",
+    "sultan": "Murad IV",
+    "population": "Caucasian recovery",
+    "largest_rival": "Safavid Persia"
+  },
+  {
+    "year": 1636,
+    "title": "Safavid Counter-Offensive Repulsed",
+    "body": "Persian armies retake Revan after Murad IV's departure, setting the stage for the definitive showdown over Mesopotamia.",
+    "sultan": "Murad IV",
+    "population": "Caucasian war",
+    "largest_rival": "Safavid Persia"
+  },
+  {
+    "year": 1637,
+    "title": "Mobilization for Baghdad",
+    "body": "Murad IV gathers the largest imperial army of his reign for a definitive campaign to recover Baghdad.",
+    "sultan": "Murad IV",
+    "population": "Mesopotamian campaign prep",
+    "largest_rival": "Safavid Persia"
+  },
+  {
+    "year": 1638,
+    "title": "Recapture of Baghdad",
+    "body": "Murad IV personally leads a brutal 39-day siege to successfully recapture Baghdad, ending 15 years of Persian occupation.",
+    "sultan": "Murad IV",
+    "population": "Mesopotamian recovery",
+    "largest_rival": "Safavid Persia"
+  },
+  {
+    "year": 1639,
+    "title": "Treaty of Zuhab",
+    "body": "Established the permanent modern Ottoman–Persian frontier; Iraq remained securely Ottoman while western Armenia and eastern Georgia went to Persia.",
+    "sultan": "Murad IV",
+    "population": "Permanent eastern border",
+    "largest_rival": "Safavid Persia"
+  },
+  {
+    "year": 1640,
+    "title": "Death of Murad IV and Accession of Ibrahim I",
+    "body": "Murad IV dies of cirrhosis at age 27; his eccentric, unstable brother Ibrahim I is pulled from confinement to take the throne.",
+    "sultan": "Murad IV / Ibrahim I",
+    "population": "Imperial transition",
+    "largest_rival": "Venice"
+  },
+  {
+    "year": 1641,
+    "title": "Capture of Azov from Cossacks",
+    "body": "Don Cossacks surrender the strategic fortress of Azov to Ottoman-Crimean forces after a prolonged siege.",
+    "sultan": "Ibrahim I",
+    "population": "Black Sea stabilization",
+    "largest_rival": "Cossacks"
+  },
+  {
+    "year": 1642,
+    "title": "Internal Court Intrigue",
+    "body": "Sultan Ibrahim I leaves governance largely to mother Kösem Sultan and grand viziers while indulging in court eccentricities.",
+    "sultan": "Ibrahim I",
+    "population": "Court rule",
+    "largest_rival": "Venice"
+  },
+  {
+    "year": 1643,
+    "title": "Financial Restructuring",
+    "body": "Despite court chaos, capable viziers manage to stabilize imperial currency and tax collection temporarily.",
+    "sultan": "Ibrahim I",
+    "population": "Financial stability",
+    "largest_rival": "Venice"
+  },
+  {
+    "year": 1644,
+    "title": "Maltese Corsair Incident",
+    "body": "Maltese corsairs capture an Ottoman ship carrying pilgrims and high officials to Mecca, sparking outrage and providing the pretext for the Cretan War.",
+    "sultan": "Ibrahim I",
+    "population": "Cretan War spark",
+    "largest_rival": "Republic of Venice"
+  },
+  {
+    "year": 1645,
+    "title": "Invasion of Crete (Cretan War)",
+    "body": "Ottoman armies under Yusuf Pasha land in Crete, capturing Canea (Chania) in a brutal campaign against Venetian forces.",
+    "sultan": "Ibrahim I",
+    "population": "Cretan War begins",
+    "largest_rival": "Republic of Venice"
+  },
+  {
+    "year": 1646,
+    "title": "Siege of Rethymno",
+    "body": "Ottoman forces capture Rethymno in Crete, steadily expanding control over the island while Venetian fleets blockade the Dardanelles.",
+    "sultan": "Ibrahim I",
+    "population": "Cretan War",
+    "largest_rival": "Republic of Venice"
+  },
+  {
+    "year": 1647,
+    "title": "Blockade of the Dardanelles",
+    "body": "Venetian naval blockades severely disrupt grain and supply shipments to Istanbul, causing food shortages and capital panic.",
+    "sultan": "Ibrahim I",
+    "population": "Capital food crisis",
+    "largest_rival": "Republic of Venice"
+  },
+  {
     "year": 1648,
-    "title": "Khmelnytsky Uprising Alliance",
-    "body": "Crimean Khanate allies with Bohdan Khmelnytsky against Poland."
+    "title": "Deposition and Execution of Ibrahim I & Crimean-Cossack Alliance",
+    "body": "A violent coup led by Janissaries and religious scholars deposes and strangles Ibrahim I; 6-year-old Mehmed IV is enthroned, while Crimea allies with Bohdan Khmelnytsky.",
+    "sultan": "Ibrahim I / Mehmed IV",
+    "population": "Sultanate of Women peak",
+    "largest_rival": "Republic of Venice"
+  },
+  {
+    "year": 1649,
+    "title": "Naval Battle of Phocaea",
+    "body": "Venetian fleets inflict a heavy defeat on the Ottoman navy near Foça, maintaining the crippling blockade of the straits.",
+    "sultan": "Mehmed IV",
+    "population": "Cretan War naval crisis",
+    "largest_rival": "Republic of Venice"
+  },
+  {
+    "year": 1650,
+    "title": "Venetian Dardanelles Blockade Peak",
+    "body": "Venetian warships dominate the mouth of the Dardanelles, strangling Istanbul's maritime trade and fueling political instability.",
+    "sultan": "Mehmed IV",
+    "population": "Capital crisis",
+    "largest_rival": "Republic of Venice"
+  },
+  {
+    "year": 1651,
+    "title": "Assassination of Kösem Sultan",
+    "body": "Regent Kösem Sultan is murdered in a palace coup by Turhan Hatice (mother of Mehmed IV), ending the height of the Sultanate of Women.",
+    "sultan": "Mehmed IV",
+    "population": "Political realignment",
+    "largest_rival": "Republic of Venice"
+  },
+  {
+    "year": 1652,
+    "title": "Search for Strong Leadership",
+    "body": "Rapid turnover of grand viziers fails to solve the crippling Venetian blockade and economic inflation.",
+    "sultan": "Mehmed IV",
+    "population": "Political instability",
+    "largest_rival": "Republic of Venice"
+  },
+  {
+    "year": 1653,
+    "title": "Economic Strain and Inflation",
+    "body": "Silver shortages and war costs in Crete paralyze provincial administration and tax yields.",
+    "sultan": "Mehmed IV",
+    "population": "Economic depression",
+    "largest_rival": "Republic of Venice"
+  },
+  {
+    "year": 1654,
+    "title": "First Battle of the Dardanelles",
+    "body": "Ottoman naval forces break the Venetian blockade in a hard-fought battle, restoring vital supply lines to Istanbul.",
+    "sultan": "Mehmed IV",
+    "population": "Naval breakthrough",
+    "largest_rival": "Republic of Venice"
+  },
+  {
+    "year": 1655,
+    "title": "Second Battle of the Dardanelles",
+    "body": "Venetian Admiral Lazzaro Mocenigo defeats the Ottoman fleet outside the straits, though without fully restoring the blockade.",
+    "sultan": "Mehmed IV",
+    "population": "Naval contest",
+    "largest_rival": "Republic of Venice"
+  },
+  {
+    "year": 1656,
+    "title": "Appointment of Köprülü Mehmed Pasha",
+    "body": "Desperate to save the empire, Turhan Hatice appoints 80-year-old Köprülü Mehmed Pasha as Grand Vizier with absolute dictatorial powers, launching the Köprülü Era.",
+    "sultan": "Mehmed IV",
+    "population": "Köprülü Era begins",
+    "largest_rival": "Republic of Venice"
+  },
+  {
+    "year": 1657,
+    "title": "Breaking the Venetian Blockade (Battle of the Dardanelles)",
+    "body": "Köprülü Mehmed Pasha decisively smashes the Venetian blockade in a massive 4-day naval battle, reopening the Aegean and capturing Tenedos and Lemnos.",
+    "sultan": "Mehmed IV",
+    "population": "Revival of empire",
+    "largest_rival": "Republic of Venice"
+  },
+  {
+    "year": 1658,
+    "title": "Suppression of Transylvanian Rebellion",
+    "body": "Köprülü Mehmed Pasha leads a massive campaign into Transylvania to punish rebellious Prince George II Rákóczi and reassert Ottoman vassal control.",
+    "sultan": "Mehmed IV",
+    "population": "Balkan reassertion",
+    "largest_rival": "Transylvania and Habsburgs"
+  },
+  {
+    "year": 1659,
+    "title": "Purge of Disloyal Officials",
+    "body": "Köprülü Mehmed Pasha ruthlessly executes corrupt governors and rebellious commanders across Anatolia, restoring iron discipline.",
+    "sultan": "Mehmed IV",
+    "population": "Internal purification",
+    "largest_rival": "Habsburg Monarchy"
   },
   {
     "year": 1660,
-    "title": "Varat Eyalet created",
-    "body": "Oradea becomes the capital of a new Partium frontier province.",
+    "title": "Varat Eyalet created & Great Istanbul Fire",
+    "body": "Oradea (Varat) is captured and made the capital of a new Partium frontier province, while a massive fire devastates much of Istanbul.",
     "sultan": "Mehmed IV",
     "population": "Partium pressure",
     "largest_rival": "Transylvania and Habsburgs"
   },
   {
+    "year": 1661,
+    "title": "Death of Köprülü Mehmed Pasha",
+    "body": "Köprülü Mehmed Pasha dies, handing the grand vizierate smoothly to his equally capable son, Köprülü Fazıl Ahmed Pasha.",
+    "sultan": "Mehmed IV",
+    "population": "Köprülü dynasty continuity",
+    "largest_rival": "Habsburg Monarchy"
+  },
+  {
+    "year": 1662,
+    "title": "Preparations for Austro-Turkish War",
+    "body": "Tensions rise along the Hungarian border as Köprülü Fazıl Ahmed Pasha prepares for a major showdown with the Habsburg Monarchy.",
+    "sultan": "Mehmed IV",
+    "population": "Austro-Turkish War prep",
+    "largest_rival": "Habsburg Monarchy"
+  },
+  {
     "year": 1663,
-    "title": "Uyvar Eyalet created",
-    "body": "Nove Zamky anchors a short-lived Ottoman province in Upper Hungary.",
+    "title": "Uyvar Eyalet created (Nove Zamky Campaign)",
+    "body": "Köprülü Fazıl Ahmed Pasha captures the formidable fortress of Uyvar (Nové Zámky) in Upper Hungary, creating a short-lived Ottoman province.",
     "sultan": "Mehmed IV",
     "population": "Upper Hungarian push",
     "largest_rival": "Habsburg Monarchy"
   },
   {
+    "year": 1664,
+    "title": "Battle of Saint Gotthard & Treaty of Vasvár",
+    "body": "Ottoman forces are checked at the Battle of Saint Gotthard by Montecuccoli, but Köprülü Fazıl Ahmed Pasha secures favorable terms in the Treaty of Vasvár.",
+    "sultan": "Mehmed IV",
+    "population": "Hungarian frontier",
+    "largest_rival": "Habsburg Monarchy"
+  },
+  {
+    "year": 1665,
+    "title": "Rebuilding Palace and State Infrastructure",
+    "body": "Köprülü Fazıl Ahmed Pasha focuses on administrative consolidation and rebuilding parts of Istanbul damaged by earlier fires.",
+    "sultan": "Mehmed IV",
+    "population": "Administrative consolidation",
+    "largest_rival": "Republic of Venice"
+  },
+  {
+    "year": 1666,
+    "title": "Sabbatai Zevi Movement Suppressed",
+    "body": "False messiah Sabbatai Zevi is arrested in Adrianople and forced to convert to Islam, ending a massive messianic Jewish movement.",
+    "sultan": "Mehmed IV",
+    "population": "Religious stability",
+    "largest_rival": "Republic of Venice"
+  },
+  {
+    "year": 1667,
+    "title": "Intensification of Cretan Siege",
+    "body": "Grand Vizier Köprülü Fazıl Ahmed Pasha personally travels to Crete to take charge of the grueling, multi-year siege of Candia (Heraklion).",
+    "sultan": "Mehmed IV",
+    "population": "Cretan War climax",
+    "largest_rival": "Republic of Venice"
+  },
+  {
+    "year": 1668,
+    "title": "Stalemate at Candia",
+    "body": "Engineering mines and artillery bombardments dominate the endless siege of Candia against stubborn Venetian and French volunteer defense.",
+    "sultan": "Mehmed IV",
+    "population": "Cretan War climax",
+    "largest_rival": "Republic of Venice"
+  },
+  {
     "year": 1669,
     "title": "Candia falls",
-    "body": "Crete is absorbed after one of early modern Europe's longest sieges.",
+    "body": "Crete is absorbed after one of early modern Europe's longest sieges, concluding the 24-year Cretan War with total Ottoman victory.",
     "sultan": "Mehmed IV",
     "population": "Aegean consolidation",
-    "largest_rival": "Venice"
+    "largest_rival": "Republic of Venice"
+  },
+  {
+    "year": 1670,
+    "title": "Restructuring of Aegean Islands",
+    "body": "Captured Cretan and Aegean ports are integrated into the Ottoman administrative and naval tax system.",
+    "sultan": "Mehmed IV",
+    "population": "Aegean consolidation",
+    "largest_rival": "Republic of Venice"
+  },
+  {
+    "year": 1671,
+    "title": "Preparations for Polish War",
+    "body": "The Sublime Porte prepares for an expedition against the Polish-Lithuanian Commonwealth over control of Ukraine and Cossack territories.",
+    "sultan": "Mehmed IV",
+    "population": "Polish War prep",
+    "largest_rival": "Polish-Lithuanian Commonwealth"
   },
   {
     "year": 1672,
-    "title": "Podolia annexed",
-    "body": "The Ottoman Empire reaches its farthest northern European province.",
+    "title": "Podolia annexed & Fall of Kamianets",
+    "body": "The Ottoman Empire reaches its farthest northern European province, capturing the mighty fortress of Kamianets-Podilskyi.",
     "sultan": "Mehmed IV",
     "population": "Podolian frontier",
     "largest_rival": "Polish-Lithuanian Commonwealth"
   },
   {
-    "year": 1677,
-    "title": "First Siege of Chyhyryn",
-    "body": "Ottoman defeat; Russians and Cossacks held the fortress."
+    "year": 1673,
+    "title": "Battle of Khotyn (Sobieski's Victory)",
+    "body": "Polish commander Jan Sobieski crushes an Ottoman army at Khotyn, halting further expansion into Polish heartlands.",
+    "sultan": "Mehmed IV",
+    "population": "Northern frontier check",
+    "largest_rival": "Polish-Lithuanian Commonwealth"
   },
   {
-    "year": 1678,
-    "title": "Chyhyryn campaign",
-    "body": "Ottoman victory; Kara Mustafa captured and destroyed Chyhyryn."
+    "year": 1674,
+    "title": "Russo-Ottoman Border Skirmishes",
+    "body": "Tensions escalate with the Tsardom of Russia over control of Right-bank Ukraine and Cossack vassal allegiance.",
+    "sultan": "Mehmed IV",
+    "population": "Ukrainian frontier war",
+    "largest_rival": "Tsardom of Russia"
+  },
+  {
+    "year": 1675,
+    "title": "Siege of Lviv",
+    "body": "Ottoman and Tatar armies campaign through Ukraine, maintaining pressure on Polish borderlands.",
+    "sultan": "Mehmed IV",
+    "population": "Ukrainian frontier war",
+    "largest_rival": "Polish-Lithuanian Commonwealth"
+  },
+  {
+    "year": 1676,
+    "title": "Death of Köprülü Fazıl Ahmed Pasha",
+    "body": "Köprülü Fazıl Ahmed Pasha dies; his brother-in-law Merzifonlu Kara Mustafa Pasha is appointed Grand Vizier.",
+    "sultan": "Mehmed IV",
+    "population": "Vizierial transition",
+    "largest_rival": "Tsardom of Russia"
+  },
+  {
+    "year": 1677,
+    "title": "First Siege of Chyhyryn",
+    "body": "Ottoman defeat; Russian and Cossack forces successfully hold the fortress against Ottoman assault.",
+    "sultan": "Mehmed IV",
+    "population": "Ukrainian frontier war",
+    "largest_rival": "Tsardom of Russia"
   },
   {
     "year": 1678,
     "title": "Chyhyryn Campaign",
-    "body": "Kara Mustafa captures and destroys Chyhyryn.",
-    "sultan": "Mehmed IV"
+    "body": "Grand Vizier Kara Mustafa Pasha personally leads an army to capture and utterly destroy Chyhyryn, turning back Russian advances.",
+    "sultan": "Mehmed IV",
+    "population": "Ukrainian frontier war",
+    "largest_rival": "Tsardom of Russia"
+  },
+  {
+    "year": 1679,
+    "title": "Negotiations with Russia",
+    "body": "Exhausted by Ukrainian border warfare, Ottoman and Russian diplomats begin talks to formalize a permanent frontier.",
+    "sultan": "Mehmed IV",
+    "population": "Frontier diplomacy",
+    "largest_rival": "Tsardom of Russia"
+  },
+  {
+    "year": 1680,
+    "title": "Border Stabilization in Ukraine",
+    "body": "Minor skirmishes taper off along the Dnieper River line as both empires prepare for treaties.",
+    "sultan": "Mehmed IV",
+    "population": "Frontier diplomacy",
+    "largest_rival": "Tsardom of Russia"
   },
   {
     "year": 1681,
     "title": "Treaty of Bakhchisarai",
-    "body": "Ottoman–Russian peace; confirmed control of southern Right-bank Ukraine."
+    "body": "Ottoman–Russian peace treaty signed; confirms Ottoman control of southern Right-bank Ukraine and Zaporozhian regions.",
+    "sultan": "Mehmed IV",
+    "population": "Ukrainian frontier settled",
+    "largest_rival": "Tsardom of Russia"
   },
   {
     "year": 1682,
-    "title": "Upper Hungary",
-    "body": "Imre Thokoly receives Ottoman backing for a short-lived principality.",
+    "title": "Upper Hungary & Imre Thököly Alliance",
+    "body": "Imre Thököly receives Ottoman backing to establish a short-lived pro-Ottoman principality in Upper Hungary.",
     "sultan": "Mehmed IV",
     "population": "Crisis before Vienna",
     "largest_rival": "Habsburg Monarchy"
@@ -326,72 +2650,140 @@
   {
     "year": 1683,
     "title": "Second Siege of Vienna",
-    "body": "The failed siege begins the strategic reversal of Ottoman power in central Europe.",
+    "body": "Grand Vizier Kara Mustafa Pasha leads a massive army to besiege Vienna; John Sobieski's relief forces inflict a crushing defeat, beginning the strategic reversal of Ottoman power.",
     "sultan": "Mehmed IV",
     "population": "Great Turkish War begins",
     "largest_rival": "Holy League"
-  }, {"year": 1548, "title": "Third Campaign of Tabriz", "body": "Ottomans again occupied Tabriz temporarily.", "sultan": "Suleiman I"},
-    {"year": 1554, "title": "Nakhchivan Campaign", "body": "Ottoman devastation of Safavid territory leading to peace.", "sultan": "Suleiman I"},
-    {"year": 1555, "title": "Treaty of Amasya", "body": "First formal Ottoman–Safavid peace; Iraq recognized as Ottoman.", "sultan": "Suleiman I"},
-    {"year": 1590, "title": "Treaty of Constantinople (1590)", "body": "Greatest Ottoman territorial gains in the Caucasus.", "sultan": "Murad III"},
-    {"year": 1612, "title": "Treaty of Nasuh Pasha", "body": "Borders restored largely to those of 1555; Ottomans lost Caucasian conquests.", "sultan": "Ahmed I"},
-    {"year": 1618, "title": "Treaty of Serav", "body": "Confirmed Safavid gains with modified tribute arrangements.", "sultan": "Mustafa I"},
-    {"year": 1639, "title": "Treaty of Zuhab", "body": "Established the long-term Ottoman–Persian frontier; Iraq remained Ottoman.", "sultan": "Murad IV"}
-,
+  },
+  {
+    "year": 1684,
+    "title": "Formation of the Holy League",
+    "body": "Pope Innocent VIII brokers the Holy League (Habsburgs, Poland, Venice, and later Russia) to systematically dismantle Ottoman European holdings.",
+    "sultan": "Mehmed IV",
+    "population": "European coalition war",
+    "largest_rival": "Holy League"
+  },
   {
     "year": 1685,
     "title": "Uyvar and Upper Hungary lost",
-    "body": "Habsburg counteroffensives begin dismantling Ottoman Hungary.",
+    "body": "Habsburg counteroffensives begin dismantling Ottoman Hungary, capturing key fortresses like Uyvar.",
     "sultan": "Mehmed IV",
     "population": "Retreat from central Europe",
     "largest_rival": "Holy League"
+  },
+  {
+    "year": 1686,
+    "title": "Fall of Buda",
+    "body": "Habsburg forces capture Buda after a grueling 78-day siege, ending 145 years of Ottoman rule over the capital of Ottoman Hungary.",
+    "sultan": "Mehmed IV",
+    "population": "Devastated borderlands",
+    "largest_rival": "Habsburg Monarchy"
+  },
+  {
+    "year": 1687,
+    "title": "Battle of Mohács and Deposition of Mehmed IV",
+    "body": "A catastrophic Ottoman defeat at the Second Battle of Mohács leads to military mutiny, the deposition of Sultan Mehmed IV, and the accession of Suleiman II.",
+    "sultan": "Suleiman II",
+    "largest_rival": "Habsburg Monarchy"
+  },
+  {
+    "year": 1688,
+    "title": "Fall of Belgrade to Habsburgs",
+    "body": "Imperial Habsburg forces under Maximilian II Emmanuel capture Belgrade, pushing Ottoman defenses deep into the central Balkans.",
+    "sultan": "Suleiman II",
+    "largest_rival": "Habsburg Monarchy"
+  },
+  {
+    "year": 1689,
+    "title": "Habsburg Advance into Kosovo and Niš",
+    "body": "Habsburg forces push deep into Ottoman territory, capturing Niš and entering Kosovo during the Great Turkish War.",
+    "sultan": "Suleiman II",
+    "largest_rival": "Habsburg Monarchy"
+  },
+  {
+    "year": 1690,
+    "title": "Ottoman Counter-Offensive and Recapture of Belgrade",
+    "body": "Grand Vizier Köprülü Fazıl Mustafa Pasha leads a brilliant counter-offensive, successfully recapturing Belgrade and stabilizing the northern frontier.",
+    "sultan": "Suleiman II",
+    "largest_rival": "Habsburg Monarchy"
+  },
+  {
+    "year": 1691,
+    "title": "Battle of Slankamen",
+    "body": "Heavy Ottoman defeat at the Battle of Slankamen where the capable Grand Vizier Köprülü Fazıl Mustafa Pasha is killed in action.",
+    "sultan": "Ahmed II",
+    "largest_rival": "Habsburg Monarchy"
+  },
+  {
+    "year": 1692,
+    "title": "Siege of Petrovaradin",
+    "body": "Ottoman forces attempt to check Habsburg expansion by fortifying and defending regional positions along the frontier.",
+    "sultan": "Ahmed II",
+    "largest_rival": "Habsburg Monarchy"
+  },
+  {
+    "year": 1693,
+    "title": "Defense of Belgrade",
+    "body": "Ottoman forces successfully hold Belgrade against a major Habsburg siege attempt, preserving a vital anchor on the Danube.",
+    "sultan": "Ahmed II",
+    "largest_rival": "Habsburg Monarchy"
+  },
+  {
+    "year": 1694,
+    "title": "Capture of Giurgiu",
+    "body": "Skirmishing and border warfare dominate the Danubian frontier with mixed engagements between Ottoman and Habsburg-Venetian coalitions.",
+    "sultan": "Ahmed II",
+    "largest_rival": "Habsburg Monarchy"
+  },
+  {
+    "year": 1695,
+    "title": "Sultan Mustafa II's First Imperial Campaign",
+    "body": "Sultan Mustafa II personally takes command of the field army, leading successful campaigns into Hungary and capturing Lipova.",
+    "sultan": "Mustafa II",
+    "largest_rival": "Habsburg Monarchy"
+  },
+  {
+    "year": 1696,
+    "title": "Battle of Ulaş",
+    "body": "Sultan Mustafa II defeats imperial forces in a hard-fought engagement in Hungary during his second personal campaign.",
+    "sultan": "Mustafa II",
+    "largest_rival": "Habsburg Monarchy"
+  },
+  {
+    "year": 1697,
+    "title": "Disastrous Battle of Zenta",
+    "body": "Prince Eugene of Savoy inflicts a crushing defeat on the Ottoman army led by Sultan Mustafa II at Zenta, leading to the loss of most of Hungary.",
+    "sultan": "Mustafa II",
+    "largest_rival": "Habsburg Monarchy"
+  },
+  {
+    "year": 1698,
+    "title": "Prelude to Peace Negotiations",
+    "body": "Exhausted by decades of continuous warfare and economic strain, the Ottoman Empire begins diplomatic overtures mediated by European powers.",
+    "sultan": "Mustafa II",
+    "largest_rival": "Habsburg Monarchy"
+  },
+  {
+    "year": 1699,
+    "title": "Treaty of Karlowitz",
+    "body": "The Ottoman Empire signs the Treaty of Karlowitz, ceding Hungary, Transylvania, and Podolia, marking the first major permanent loss of core territory in Ottoman history.",
+    "sultan": "Mustafa II",
+    "population": "Post-treaty demographic consolidation",
+    "largest_rival": "Habsburg Monarchy"
+  },
+  {
+    "year": 1700,
+    "title": "Treaty of Constantinople",
+    "body": "Following the peace with Christian coalition states, the Ottoman Empire concludes a peace treaty with the Tsardom of Russia, ceding Azov.",
+    "sultan": "Mustafa II",
+    "largest_rival": "Tsardom of Russia"
+  },
+  {
+    "year": 1701,
+    "title": "Post-Karlowitz Administrative Restructuring",
+    "body": "The Sublime Porte focuses on domestic reforms, military restructuring, and frontier fortification in the wake of the territorial losses of the Great Turkish War.",
+    "sultan": "Mustafa II",
+    "population": "Recovering imperial administrative core",
+    "largest_rival": "Habsburg Monarchy"
   }
-  ,
-  
-  {
-    "year": 1423,
-    "title": "First Ottoman invasion of the Morea",
-    "body": "Large-scale raid initiating Ottoman interest in the region.",
-    "sultan": "Murad II"
-  },
-  {
-    "year": 1446,
-    "title": "Siege of the Hexamilion Wall",
-    "body": "Ottoman forces under Murad II break through the defensive wall at the Isthmus of Corinth.",
-    "sultan": "Murad II"
-  },
-  {
-    "year": 1458,
-    "title": "Conquest of northern Morea",
-    "body": "Ottoman advance forces the Despotate of the Morea into tributary status.",
-    "sultan": "Mehmed II"
-  },
-  {
-    "year": 1460,
-    "title": "Conquest of the Despotate of the Morea",
-    "body": "Final annexation of the Peloponnese, ending the Despotate.",
-    "sultan": "Mehmed II"
-  },{
-  "year": 1593,
-  "title": "Long Turkish War",
-  "body": "A protracted conflict between the Ottoman Empire and the Habsburg Monarchy, marked by stalemate and significant territorial shifts on the Hungarian frontier.",
-  "sultan": "Murad III / Mehmed III / Ahmed I"
-} ,
-{"year": 1482, "title": "Sack of Kyiv", "body": "Major Crimean victory."},
-    {"year": 1487, "title": "Frontier raids", "body": "Series of Crimean successes."},
-    {"year": 1491, "title": "Raid into Ryazan", "body": "Crimean success."},
-    {"year": 1507, "title": "Raid on Muscovy", "body": "Crimean success."},
-    {"year": 1512, "title": "Raid toward Ryazan", "body": "Crimean success."},
-    {"year": 1517, "title": "Oka frontier raid", "body": "Crimean success."},
-    {"year": 1521, "title": "Great Crimean Raid on Moscow", "body": "Major Crimean victory."},
-    {"year": 1552, "title": "Failed relief of Kazan", "body": "Crimeans failed to relieve Kazan during Ivan IV's siege."},
-    {"year": 1555, "title": "Battle of Sudbishchi", "body": "Russians defeated Crimean raiders."},
-    {"year": 1556, "title": "Raids post-Astrakhan", "body": "Crimean raids following Russian conquest of Astrakhan."},
-    {"year": 1571, "title": "Burning of Moscow", "body": "Led by Devlet I Giray; major victory with massive enslavement."},
-    {"year": 1591, "title": "Battle near Moscow", "body": "Crimean invasion under Ğazı II Giray; Russian victory."},
-    {"year": 1605, "title": "Time of Troubles raids", "body": "Series of slave-raiding expeditions (1605-1615)."},
-    {"year": 1648, "title": "Crimean-Cossack Alliance", "body": "Alliance with Bohdan Khmelnytsky; battles of Zhovti Vody, Korsuń, Pyliavtsi."},
-    {"year": 1677, "title": "First Siege of Chyhyryn", "body": "Ottoman defeat; Russians and Cossacks held the fortress."},
-    {"year": 1678, "title": "Chyhyryn campaign", "body": "Ottoman victory; Kara Mustafa captured and destroyed Chyhyryn."},
-    {"year": 1681, "title": "Treaty of Bakhchisarai", "body": "Ottoman–Russian peace; confirmed Ottoman control of southern Right-bank Ukraine."}
 ]

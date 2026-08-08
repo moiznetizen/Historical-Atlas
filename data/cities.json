@@ -7,6 +7,13 @@
     "The Sublime Porté - Imperial capital after 1453."
   ],
   [
+  "Bursa",
+  40.20,
+  29.06,
+  1326,
+  "First major Ottoman capital after its conquest by Orhan Gazi; remained the imperial capital until Edirne became the capital in 1362."
+],
+  [
     "Edirne",
     41.68,
     26.56,
@@ -17,11 +24,13 @@
     "name": "Belgrade",
     "lat": 44.82,
     "lon": 20.46,
-    "start": 1521,
+    "start": 1350,
     "end": 1900,
     "kind": "fortress",
+    "defense_type": "renaissance_bastion",
     "note": "Gateway fortress to Hungary."
   },
+  ["Chişinău", 47.01, 28.86, 1436, "Historic town in Bessarabia, developing from a monastery village into a regional hub."],
   ["Ray", 35.58, 51.43, 1500, "Ancient city near modern Tehran."],
   ["Ahlat", 38.75, 42.50, 1533, "Strategic Ottoman stronghold in Eastern Anatolia."],
   ["Suceava", 47.63, 26.10, 1359, "Moldavian capital"],
@@ -35,8 +44,6 @@
   ["Acre", 32.92, 35.07, 1516, "Strategic fortified Mediterranean port."],
   ["Bethlehem", 31.70, 35.20, 1516, "Historic site of high symbolic importance."],
   ["Nazareth", 32.70, 35.30, 1516, "Significant center in Galilee."],
- 
-
   {
     "name": "Tabriz",
     "lat": 38.08,
@@ -44,6 +51,7 @@
     "start": 1500,
     "end": 1900,
     "kind": "fortress",
+    "defense_type": "transitional",
     "note": "Fortified royal capital featuring massive brick ramparts and the towering Arg-e Alishah citadel."
   },
   {
@@ -53,6 +61,7 @@
     "start": 1400,
     "end": 1900,
     "kind": "fortress",
+    "defense_type": "medieval_stone",
     "note": "The Iron Gate of the Caucasus; double stone walls running from the mountains straight into the Caspian Sea."
   },
   {
@@ -62,18 +71,19 @@
     "start": 1500,
     "end": 1900,
     "kind": "fortress",
+    "defense_type": "earthwork_abatis",
     "note": "Strategic walled military and spiritual stronghold with deep moats guarding northern approaches."
   },
-  
   ["Hebron", 31.53, 35.10, 1516, "City of religious significance in the Levant."],
   ["Safed", 32.96, 35.49, 1516, "Spiritual center of Galilee."],
- {
+  {
     "name": "Kars",
     "lat": 40.61,
     "lon": 43.10,
     "start": 1534,
     "end": 1900,
     "kind": "fortress",
+    "defense_type": "renaissance_bastion",
     "note": "Key border fortress against the Safavids."
   },
   {
@@ -83,12 +93,10 @@
     "start": 1475,
     "end": 1900,
     "kind": "fortress",
+    "defense_type": "renaissance_bastion",
     "note": "Strategic fortress at the mouth of the Don River."
-  }
-,
+  },
   ["Aden", 12.78, 45.03, 1538, "Strategic Ottoman port at the entrance to the Red Sea."],
- 
-
   {
     "name": "Suakin",
     "lat": 19.10,
@@ -96,9 +104,9 @@
     "start": 1517,
     "end": 1900,
     "kind": "fortress",
+    "defense_type": "medieval_stone",
     "note": "Major Ottoman Port and Island fortress city surrounded by coral reefs and fortified perimeter walls on the African Red Sea."
   },
-
   {
     "name": "Massawa",
     "lat": 15.61,
@@ -106,11 +114,10 @@
     "start": 1557,
     "end": 1900,
     "kind": "fortress",
+    "defense_type": "medieval_stone",
     "note": "Fortified island port controlling the southern maritime mouth of the Red Sea."
   },
   ["Zeila", 11.35, 43.47, 1548, "Strategic Somali coastal port incorporated into the Ottoman trade network."],
-
-  
   {
     "name": "Bukhara",
     "lat": 39.77,
@@ -118,6 +125,7 @@
     "start": 1400,
     "end": 1900,
     "kind": "fortress",
+    "defense_type": "medieval_stone",
     "note": "The Ark of Bukhara; a massive walled city-within-a-city citadel raised high on an artificial mound."
   },
   {
@@ -127,6 +135,7 @@
     "start": 1400,
     "end": 1900,
     "kind": "fortress",
+    "defense_type": "earthwork_abatis",
     "note": "Protected by a massive perimeter of mud-brick curtain walls, deep moats, and a dominant inner citadel."
   },
   {
@@ -136,6 +145,7 @@
     "start": 1400,
     "end": 1900,
     "kind": "fortress",
+    "defense_type": "earthwork_abatis",
     "note": "Ichan Kala; fully enclosed fortress-city surrounded by thick mud-brick walls and semicircular towers."
   },
   {
@@ -145,22 +155,23 @@
     "start": 1400,
     "end": 1900,
     "kind": "fortress",
+    "defense_type": "earthwork_abatis",
     "note": "Multi-layered fortress-city oasis featuring successive concentric rings like Erg Kala."
   },
-[
-  "Nicosia",
-  35.17,
-  33.36,
-  1571,
-  "Administrative capital of the Cyprus Eyalet."
-],
-[
-  "Split",
-  43.50,
-  16.44,
-  null,
-  "Venetian port serving as a vital trade hub (Scale) for the Ottoman Empire."
-],
+  [
+    "Nicosia",
+    35.17,
+    33.36,
+    1571,
+    "Administrative capital of the Cyprus Eyalet."
+  ],
+  [
+    "Split",
+    43.50,
+    16.44,
+    null,
+    "Venetian port serving as a vital trade hub (Scale) for the Ottoman Empire."
+  ],
   [
     "Sarajevo",
     43.86,
@@ -210,68 +221,210 @@
     1541,
     "Transylvanian urban center."
   ],
-  ["Craiova",
-44.33,
-23.80,
-1475,
-"Major Wallachian urban center."
-],
-[
-"Targoviste",
-44.92,
-25.45,
-1396,
-"Historic Wallachian urban and political center."
-],
-[
-"Nagyvárad",
-47.07,
-21.92,
-1660,
-"Strategic fortress and regional center."
-],
-[
-"Kishinev",
-47.01,
-28.86,
-1436,
-"Regional urban center."
-],
-[
-"Bacau",
-46.56,
-26.91,
-1408,
-"Moldavian urban and trade center."
-],
-[
-"Cahul",
-45.90,
-28.19,
-1502,
-"Southern Moldavian urban settlement."
-],
-[
-"Kustendje (Constanța)",
-44.17,
-28.65,
-600,
-"Black Sea coastal urban center."
-],
-[
-"Hermanstadt (Sibiu)",
-45.80,
-24.15,
-1190,
-"Transylvanian urban center."
-],
-[
-"Karlsburg (Alba Iulia)",
-46.07,
-23.57,
-1000,
-"Transylvanian urban center."
-],
+  [
+    "Craiova",
+    44.33,
+    23.80,
+    1475,
+    "Major Wallachian urban center."
+  ],
+  [
+    "Targoviste",
+    44.92,
+    25.45,
+    1396,
+    "Historic Wallachian urban and political center."
+  ],
+  {
+    "name": "Győr",
+    "lat": 47.68,
+    "lon": 17.64,
+    "start": 1556,
+    "end": 1700,
+    "kind": "fortress",
+    "defense_type": "renaissance_bastion",
+    "note": "Seat of the Captaincy of Győr (Duna-Balaton Köz); captured by the Ottomans in 1594 and successfully reconquered by Christian allied forces in 1598."
+  },
+  {
+    "name": "Kőszeg (Güns)",
+    "lat": 47.38,
+    "lon": 16.54,
+    "start": 1289,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "Famous for the heroic 1532 defense by Nikola Jurišić against Sultan Suleiman the Magnificent's massive army."
+  },
+  {
+    "name": "Székesfehérvár",
+    "lat": 47.19,
+    "lon": 18.41,
+    "start": 1000,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "renaissance_bastion",
+    "note": "The historic coronation and burial city of Hungarian kings, heavily contested and besieged multiple times during the Ottoman-Habsburg wars."
+  },
+  {
+    "name": "Körmend",
+    "lat": 47.01,
+    "lon": 16.60,
+    "start": 1607,
+    "end": 1700,
+    "kind": "fortress",
+    "defense_type": "transitional",
+    "note": "Became the new center of the reorganized Captaincy of Kanizsa starting in 1607."
+  },
+ {
+  "name": "Nagyvárad Fortress",
+  "lat": 47.07,
+  "lon": 21.92,
+  "start": 1660,
+  "end": 1800,
+  "kind": "fortress",
+  "defense_type": "renaissance_bastion",
+  "note": "Strategic fortress and regional center."
+},
+  [
+    "Kishinev",
+    47.01,
+    28.86,
+    1436,
+    "Regional urban center."
+  ],
+  {
+    "name": "Trabzon",
+    "lat": 41.0015,
+    "lon": 39.7178,
+    "start": 756,
+    "end": null,
+    "kind": "city",
+    "note": "Capital of the Empire of Trebizond until 1461, later a key Ottoman fortified Black Sea port."
+  },
+  {
+    "name": "Sivas",
+    "lat": 39.7477,
+    "lon": 37.0179,
+    "start": 1000,
+    "end": null,
+    "kind": "city",
+    "note": "Major interior Anatolian urban center and strategic military staging post."
+  },
+  {
+    "name": "Antalya",
+    "lat": 36.8969,
+    "lon": 30.7133,
+    "start": 1200,
+    "end": null,
+    "kind": "city",
+    "note": "Major Mediterranean port city protected by extensive Hellenistic, Roman, and Seljuk harbor walls."
+  },
+  {
+    "name": "Anadolu Hisarı",
+    "lat": 41.0825,
+    "lon": 29.0658,
+    "start": 1395,
+    "end": 1700,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "Anatolian Fortress built on the Bosphorus by Sultan Bayezid I to blockade Constantinople."
+  },
+  {
+    "name": "Rumeli Hisarı",
+    "lat": 41.0858,
+    "lon": 29.0583,
+    "start": 1452,
+    "end": 1700,
+    "kind": "fortress",
+    "defense_type": "transitional",
+    "note": "Massive fortress built by Mehmed the Conqueror on the Bosphorus strait prior to the 1453 siege."
+  },
+  {
+    "name": "Yedikule",
+    "lat": 40.9922,
+    "lon": 28.9239,
+    "start": 1458,
+    "end": 1700,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "The Fortress of the Seven Towers, incorporating parts of the Theodosian Walls as an imperial Ottoman citadel."
+  },
+  {
+    "name": "Galați",
+    "lat": 45.43,
+    "lon": 28.03,
+    "start": 1445,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "earthwork_abatis",
+    "note": "Strategic Danubian port and fortified Ottoman-Moldavian border stronghold."
+  },
+  {
+    "name": "Novi Sad",
+    "lat": 45.26,
+    "lon": 19.83,
+    "start": 1694,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "renaissance_bastion",
+    "note": "Danube river fortification hub opposite the Petrovaradin Fortress."
+  },
+  [
+    "Craiova",
+    44.33,
+    23.79,
+    1475,
+    "Major urban center and historical capital of Oltenia."
+  ],
+  [
+    "Debrecen",
+    47.53,
+    21.62,
+    1361,
+    "Important regional market town and urban center in the Pannonian Plain."
+  ],
+  [
+    "Chernivtsi",
+    48.29,
+    25.93,
+    1408,
+    "Key historical trading hub and urban center of Bukovina and the Prut river basin."
+  ],
+  [
+    "Bacau",
+    46.56,
+    26.91,
+    1408,
+    "Moldavian urban and trade center."
+  ],
+  [
+    "Cahul",
+    45.90,
+    28.19,
+    1502,
+    "Southern Moldavian urban settlement."
+  ],
+  [
+    "Kustendje (Constanța)",
+    44.17,
+    28.65,
+    600,
+    "Black Sea coastal urban center."
+  ],
+  [
+    "Hermanstadt (Sibiu)",
+    45.80,
+    24.15,
+    1190,
+    "Transylvanian urban center."
+  ],
+  [
+    "Karlsburg (Alba Iulia)",
+    46.07,
+    23.57,
+    1000,
+    "Transylvanian urban center."
+  ],
   {
     "name": "Akkerman",
     "lat": 46.20,
@@ -279,13 +432,11 @@
     "start": 1484,
     "end": 1900,
     "kind": "fortress",
+    "defense_type": "medieval_stone",
     "note": "A major fortress city on the Dniester estuary, serving as a vital defensive hub for Ottoman control in the region."
-  }
-  ,
+  },
   ["Sarajevo", 43.85, 18.41, 1461, "A major administrative center of the Ottoman Empire in the Balkans, known for its extensive development of commercial infrastructure."],
-  ["Agram", 45.81, 15.98, 1500, "Historical name for Zagreb; a significant fortress city and administrative seat of the Kingdom of Croatia within the Habsburg domains."]
-
-  ,
+  ["Agram", 45.81, 15.98, 1500, "Historical name for Zagreb; a significant fortress city and administrative seat of the Kingdom of Croatia within the Habsburg domains."],
   [
     "Timisoara",
     45.75,
@@ -293,13 +444,14 @@
     1552,
     "Capital of Temesvar Eyalet."
   ],
- {
+  {
     "name": "Braila",
     "lat": 45.27,
     "lon": 27.97,
     "start": 1538,
     "end": 1829,
     "kind": "fortress",
+    "defense_type": "renaissance_bastion",
     "note": "An important fortified Danubian port city and Ottoman rayah."
   },
   {
@@ -309,6 +461,7 @@
     "start": 1538,
     "end": 1900,
     "kind": "fortress",
+    "defense_type": "renaissance_bastion",
     "note": "Dominated by the historic Bender Fortress on the Dniester River."
   },
   [
@@ -318,7 +471,6 @@
     1600,
     "Capital of Kanije Eyalet."
   ],
-
   [
     "Krakow",
     50.06,
@@ -326,14 +478,16 @@
     null,
     "Commonwealth royal city."
   ],
+
   {
     "name": "Khotyn",
     "lat": 48.51,
     "lon": 26.49,
-    "start": 1621,
+    "start": 1300,
     "end": 1900,
     "kind": "fortress",
-    "note": "Strategic fortress on the Dniester river."
+    "defense_type": "transitional",
+    "note": "A massively strategic fortress on the Dniester River, witnessing major clashes between the Polish-Lithuanian Commonwealth, Moldavia, and the Ottoman Empire."
   },
   {
     "name": "Eger",
@@ -342,8 +496,30 @@
     "start": 1596,
     "end": 1900,
     "kind": "fortress",
+    "defense_type": "renaissance_bastion",
     "note": "Capital of Egri Eyalet."
   },
+  {
+    "name": "Hust",
+    "lat": 48.18,
+    "lon": 23.33,
+    "start": 1353,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "A prominent hilltop castle and fortress guarding the salt trade routes and frontier regions of Upper Hungary and Transylvania."
+  },
+  {
+    "name": "Arad",
+    "lat": 46.18,
+    "lon": 21.31,
+    "start": 1100,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "renaissance_bastion",
+    "note": "A crucial fortified stronghold on the Mureș River serving as a major military garrison and administrative hub on the Ottoman-Habsburg frontier."
+  },
+
   {
     "name": "Buda",
     "lat": 47.49,
@@ -351,6 +527,7 @@
     "start": 1541,
     "end": 1900,
     "kind": "fortress",
+    "defense_type": "renaissance_bastion",
     "note": "Capital of Ottoman-held Hungary after its conquest from the Habsburgs."
   },
   {
@@ -360,6 +537,7 @@
     "start": 1543,
     "end": 1900,
     "kind": "fortress",
+    "defense_type": "renaissance_bastion",
     "note": "Key Danube fortress."
   },
   {
@@ -369,18 +547,19 @@
     "start": 1566,
     "end": 1900,
     "kind": "fortress",
+    "defense_type": "renaissance_bastion",
     "note": "Scene of the famous 1566 siege and death of Suleiman the Magnificent."
   },
-{
+  {
     "name": "Lviv",
     "lat": 49.84,
     "lon": 24.03,
     "start": 1350,
     "end": 1900,
     "kind": "fortress",
+    "defense_type": "medieval_stone",
     "note": "The primary administrative, economic, and fortified hub of Red Ruthenia in the Polish-Lithuanian Commonwealth."
   },
-
   {
     "name": "Kamianets",
     "lat": 48.68,
@@ -388,25 +567,27 @@
     "start": 1672,
     "end": 1900,
     "kind": "fortress",
+    "defense_type": "renaissance_bastion",
     "note": "Capital fortress of Podolia Eyalet."
-  }
-,
-{
+  },
+  {
     "name": "Izmail",
     "lat": 45.34,
     "lon": 28.84,
     "start": 1590,
     "end": 1812,
     "kind": "fortress",
+    "defense_type": "renaissance_bastion",
     "note": "Major Ottoman fortress and stronghold on the Danube River."
-},
-{
+  },
+  {
     "name": "Bihać",
     "lat": 44.81,
     "lon": 15.87,
     "start": 1592,
     "end": 1900,
     "kind": "fortress",
+    "defense_type": "renaissance_bastion",
     "note": "A vital Croatian royal fortress on the Una River that became a major Ottoman border stronghold."
   },
   {
@@ -416,6 +597,7 @@
     "start": 1593,
     "end": 1900,
     "kind": "fortress",
+    "defense_type": "renaissance_bastion",
     "note": "Strategic fortress at the confluence of the Kupa and Sava rivers, halting major Ottoman expansion into central Croatia."
   },
   {
@@ -425,6 +607,7 @@
     "start": 1400,
     "end": 1900,
     "kind": "fortress",
+    "defense_type": "medieval_stone",
     "note": "Coastal stronghold famously operated by the Uskoks, raiding Ottoman maritime lines."
   },
   {
@@ -434,6 +617,7 @@
     "start": 1500,
     "end": 1900,
     "kind": "fortress",
+    "defense_type": "transitional",
     "note": "Anchored the Russian Zasechnaya cherta southern abatis defense line against Crimean and Horde raids."
   },
   {
@@ -443,7 +627,218 @@
     "start": 1380,
     "end": 1900,
     "kind": "fortress",
+    "defense_type": "medieval_stone",
     "note": "Strategic fortified outpost protecting the approaches to Moscow."
+  },
+  {
+    "name": "Visegrád",
+    "lat": 47.79,
+    "lon": 18.97,
+    "start": 1335,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "Royal citadel and strategic Danube stronghold in Hungary."
+  },
+  {
+    "name": "Komárom Fortification System",
+    "lat": 47.74,
+    "lon": 18.11,
+    "start": 1265,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "renaissance_bastion",
+    "note": "Vast and vital fortress complex controlling the Danube river route."
+  },
+  {
+    "name": "Karlovac",
+    "lat": 45.49,
+    "lon": 15.55,
+    "start": 1559,
+    "end": 1873,
+    "kind": "fortress",
+    "defense_type": "renaissance_bastion",
+    "note": "Capital city and planned star fortress of the Croatian Military Frontier Captaincy, established to block Ottoman incursions toward the Adriatic and central Europe."
+  },
+  {
+    "name": "Varaždin",
+    "lat": 46.30,
+    "lon": 16.33,
+    "start": 1578,
+    "end": 1873,
+    "kind": "fortress",
+    "defense_type": "renaissance_bastion",
+    "note": "Center of the Slavonian/Varaždin Captaincy established in 1578 to hold the defensive line against Ottoman forces until the Treaty of Karlowitz."
+  },
+  {
+    "name": "Kőszeg Castle",
+    "lat": 47.38,
+    "lon": 16.54,
+    "start": 1289,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "Historic border fortress famous for holding off Ottoman forces."
+  },
+  {
+    "name": "Trenčín Castle",
+    "lat": 48.89,
+    "lon": 18.03,
+    "start": 1069,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "Dominant medieval stone castle guarding the Váh river valley in Upper Hungary."
+  },
+  {
+    "name": "Nitra Castle",
+    "lat": 48.31,
+    "lon": 18.09,
+    "start": 800,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "Ancient episcopal stronghold and administrative hub in Upper Hungary."
+  },
+  {
+    "name": "Šurany",
+    "lat": 48.11,
+    "lon": 18.18,
+    "start": 1568,
+    "end": 1581,
+    "kind": "fortress",
+    "defense_type": "earthwork_abatis",
+    "note": "Headquarters of the Captaincy of Lower Hungary from 1568 to 1581."
+  },
+  {
+    "name": "Levice",
+    "lat": 48.21,
+    "lon": 18.60,
+    "start": 1581,
+    "end": 1589,
+    "kind": "fortress",
+    "defense_type": "transitional",
+    "note": "Headquarters of the Captaincy of Lower Hungary from 1581 to 1589."
+  },
+  {
+    "name": "Devín Castle",
+    "lat": 48.17,
+    "lon": 16.98,
+    "start": 864,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "Strategic clifftop fortress overlooking the confluence of the Danube and Morava rivers."
+  },
+  {
+    "name": "Skalica",
+    "lat": 48.84,
+    "lon": 17.22,
+    "start": 1372,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "Important fortified royal free town in the Skalica region near the Moravian border."
+  },
+  {
+    "name": "Veszprém",
+    "lat": 47.09,
+    "lon": 17.90,
+    "start": 980,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "Historic episcopal castle town and stronghold north of Lake Balaton."
+  },
+  {
+    "name": "Nógrád Castle",
+    "lat": 47.93,
+    "lon": 19.38,
+    "start": 1100,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "Hilltop stone fortress giving its name to the surrounding Nógrád county."
+  },
+  {
+    "name": "Szécsény",
+    "lat": 48.08,
+    "lon": 19.52,
+    "start": 1332,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "Important market town and fortified stronghold in northern Hungary."
+  },
+  {
+    "name": "Érsekújvár (Nové Zámky)",
+    "lat": 47.98,
+    "lon": 18.15,
+    "start": 1581,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "renaissance_bastion",
+    "note": "Major Renaissance fortress and capital of the Ottoman Uyvar Eyalet until its capture in 1685."
+  },
+  {
+    "name": "Levice Castle",
+    "lat": 48.21,
+    "lon": 18.60,
+    "start": 1318,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "Border fortress protecting the mining towns of Upper Hungary."
+  },
+  {
+    "name": "Spiš Castle",
+    "lat": 49.00,
+    "lon": 20.76,
+    "start": 1120,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "One of the largest castle complexes in Central Europe located in northern Upper Hungary."
+  },
+  {
+    "name": "Mukačevo Castle",
+    "lat": 48.43,
+    "lon": 22.70,
+    "start": 1396,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "Palanok Castle, a major strategic fortification guarding the Carpathian passes."
+  },
+  {
+    "name": "Banská Bystrica",
+    "lat": 48.73,
+    "lon": 19.14,
+    "start": 1255,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "Fortified central mining town and stronghold in Upper Hungary."
+  },
+  {
+    "name": "Kremnica",
+    "lat": 48.70,
+    "lon": 18.91,
+    "start": 1328,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "Prominent fortified royal mint and mining town."
+  },
+  {
+    "name": "Sárvár Castle",
+    "lat": 47.25,
+    "lon": 16.93,
+    "start": 1271,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "Nádasdy castle guarding the Rába river crossings in western Hungary."
   },
   {
     "name": "Nagykanizsa",
@@ -452,9 +847,9 @@
     "start": 1600,
     "end": 1900,
     "kind": "fortress",
+    "defense_type": "renaissance_bastion",
     "note": "Important Ottoman frontier fortress and pashalik center in western Hungary."
   },
-
   [
     "Caffa",
     45.03,
@@ -471,13 +866,6 @@
   ],
   ["Pristina", 42.66, 21.16, 1342, "An important administrative and commercial hub in the Balkans throughout the Ottoman period."],
   ["Cetinje", 42.39, 18.92, 1482, "The historical capital of Montenegro, serving as the center of resistance and spiritual authority in the early modern age."],
-  [
-    "Uyvar / Nove Zamky",
-    47.99,
-    18.16,
-    1663,
-    "Capital of Uyvar Eyalet."
-  ],
   ["Shirvan", 40.58, 48.91, 1500, "Historical city and regional capital in the Caucasus, central to Safavid-Ottoman territorial shifts."],
   [
     "Kassa / Kosice",
@@ -486,6 +874,68 @@
     1682,
     "Upper Hungary center under Imre Thokoly."
   ],
+  
+  {
+    "name": "Osijek",
+    "lat": 45.55,
+    "lon": 18.69,
+    "start": 1526,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "renaissance_bastion",
+    "note": "A critically important bridgehead and river-crossing fortress over the Drava River, heavily fortified by the Ottomans."
+  },
+  {
+    "name": "Valpovo",
+    "lat": 45.65,
+    "lon": 18.42,
+    "start": 1543,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "A major stronghold along the Drava valley that guarded regional approaches, captured by the Ottomans during Suleiman the Magnificent's 1543 campaign."
+  },
+  {
+    "name": "Klis",
+    "lat": 43.56,
+    "lon": 16.53,
+    "start": 1537,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "A dramatic cliffside mountain fortress near Split that served as a major Christian bulwark in Dalmatia before falling to the Ottomans in 1537."
+  },
+  {
+    "name": "Gyula",
+    "lat": 46.65,
+    "lon": 21.28,
+    "start": 1566,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "A powerful Gothic brick and stone lowland water fortress in eastern Hungary that endured a legendary 63-day siege before falling to the Ottomans in 1566."
+  },
+  {
+    "name": "Siklós",
+    "lat": 45.85,
+    "lon": 18.29,
+    "start": 1543,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "A formidable castle south of Pécs guarding the southern approach to the Baranya hills."
+  },
+  {
+    "name": "Trembovlia Castle",
+    "lat": 49.30,
+    "lon": 25.70,
+    "start": 1350,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "Located in the rolling hills of Podolia/Red Ruthenia, this castle became legendary for its resilient defense against Ottoman and Tatar raiding parties in the 17th century."
+  },
+
   [
     "Bakhchysarai",
     44.75,
@@ -493,6 +943,67 @@
     1475,
     "Crimean Khanate capital."
   ],
+  {
+    "name": "Ioannina Fortress",
+    "lat": 39.66,
+    "lon": 20.85,
+    "start": 1430,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "renaissance_bastion",
+    "note": "Regional capital of Epirus featuring a heavily reinforced inner citadel that became Ali Pasha's seat of power."
+  },
+  {
+    "name": "Niš",
+    "lat": 43.32,
+    "lon": 21.89,
+    "start": 1386,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "renaissance_bastion",
+    "note": "Pivotal strategic crossroads and heavily rebuilt stone fortress guarding the Morava-Valley military highway."
+  },
+  {
+    "name": "Golubac",
+    "lat": 44.65,
+    "lon": 21.63,
+    "start": 1380,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "Dramatic multi-towered cliffside fortress guarding the Iron Gates gorge on the Danube."
+  },
+  {
+    "name": "Smederevo",
+    "lat": 44.66,
+    "lon": 20.93,
+    "start": 1430,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "transitional",
+    "note": "Massive triangular water fortress on the Danube serving as a major Ottoman military base in northern Serbia."
+  },
+  {
+    "name": "Thessaloniki (White Tower & Walls)",
+    "lat": 40.64,
+    "lon": 22.94,
+    "start": 1430,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "renaissance_bastion",
+    "note": "Major Aegean port city and fortified maritime hub protected by extensive Ottoman coastal and citadel walls."
+  },
+
+  {
+    "name": "Bar",
+    "lat": 49.07,
+    "lon": 27.68,
+    "start": 1536,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "renaissance_bastion",
+    "note": "Known as the 'Eastern Gate of Podolia.' Protected western Podolia, supported operations toward Moldavia, and connected with the Kamianets defensive network."
+  },
   [
     "Venice",
     45.44,
@@ -507,7 +1018,6 @@
     null,
     "Tributary republic and diplomatic broker."
   ],
- 
   {
     "name": "Moscow",
     "lat": 55.75,
@@ -515,6 +1025,7 @@
     "start": null,
     "end": 1900,
     "kind": "fortress",
+    "defense_type": "medieval_stone",
     "note": "Tsardom of Russia capital, anchored by the fortified Kremlin."
   },
   [
@@ -540,13 +1051,10 @@
   ],
   ["Ankara", 39.93, 32.85, 1354, "Major Anatolian administrative center."],
   ["Izmir", 38.42, 27.14, 1424, "Key Aegean trade port."],
-  ["Adrianopolis", 41.67, 26.55, 1362, "Early European capital (Edirne)."],
-  ["Astrakhan", 46.35, 48.05, 1556, "Strategic Volga trade outpost."],
- 
   
+  ["Astrakhan", 46.35, 48.05, 1556, "Strategic Volga trade outpost."],
   ["Mecca", 21.42, 39.82, 1517, "Holy city and center of the Hejaz."],
   ["Medina", 24.47, 39.61, 1517, "Holy city in the Hejaz."],
-  
   {
     "name": "Baghdad",
     "lat": 33.31,
@@ -554,30 +1062,25 @@
     "start": 1534,
     "end": 1900,
     "kind": "fortress",
+    "defense_type": "renaissance_bastion",
     "note": "Heavily fortified military river bastion on the Tigris, contested between the Ottomans and Safavids."
   },
-
   ["Damascus", 33.51, 36.27, 1516, "Provincial capital of the Levant."],
   ["Jerusalem", 31.76, 35.21, 1517, "Major religious and administrative center."],
   ["Tyre", 33.27, 35.19, 1516, "Port city in the Sidon Eyalet."],
   ["Yerevan", 40.18, 44.51, 1555, "Strategic fortress and regional center in the Caucasus."],
   ["Konya", 37.86, 32.48, 1461, "Historical center of Anatolia."],
-  
-
-
-
   ["Tbilisi", 41.71, 44.82, 1578, "Major city in the Georgian expansion zone."],
-{
+  {
     "name": "Erzurum",
     "lat": 39.90,
     "lon": 41.27,
     "start": 1514,
     "end": 1900,
     "kind": "fortress",
+    "defense_type": "transitional",
     "note": "Primary forward military base and citadel city of eastern Anatolia controlling the high plateau."
   },
-
- 
   {
     "name": "Basra",
     "lat": 30.50,
@@ -585,12 +1088,10 @@
     "start": 1546,
     "end": 1900,
     "kind": "fortress",
+    "defense_type": "renaissance_bastion",
     "note": "Crucial Ottoman border and riverine fortress guarding the Shatt al-Arab waterway and northern Persian Gulf."
   },
-
-  ["Amasya", 40.65, 35.83, 1420, "Significant administrative and cultural center."]
-  ,
-
+  ["Amasya", 40.65, 35.83, 1420, "Significant administrative and cultural center."],
   {
     "name": "Algiers",
     "lat": 36.75,
@@ -598,9 +1099,9 @@
     "start": 1516,
     "end": 1900,
     "kind": "fortress",
+    "defense_type": "renaissance_bastion",
     "note": "Casbah citadel and coastal sea-forts designed for crossfire artillery barrages against naval fleets."
   },
-
   ["Constantine", 36.36, 6.61, 1522, "Key inland administrative hub in Algeria."],
   ["Tlemcen", 34.88, -1.31, 1554, "Historic cultural center of Western Algeria."],
   ["Oran", 35.70, -0.64, 1708, "Strategic port, Ottoman after 1708."],
@@ -618,7 +1119,6 @@
   ["Gabès", 33.88, 10.10, 1574, "Strategic southern Tunisian port."],
   ["Kef", 36.17, 8.70, 1574, "Mountainous interior fortress in Tunisia."],
   ["Djerba", 33.81, 10.85, 1574, "Strategic island base for the Ottoman navy."],
-
   {
     "name": "Tripoli",
     "lat": 32.88,
@@ -626,9 +1126,9 @@
     "start": 1551,
     "end": 1900,
     "kind": "fortress",
+    "defense_type": "renaissance_bastion",
     "note": "Capital of Ottoman Tripolitania; Red Castle (Assaraya al-Hamra) a sprawling coastal fortress commanding the Barbary harbor."
   },
-
   ["Misrata", 32.37, 15.09, 1551, "Key commercial hub in Libya."],
   ["Khoms", 32.65, 14.26, 1551, "Coastal town and trading post in Libya."],
   ["Zuwara", 32.93, 12.08, 1551, "Coastal town west of Tripoli."],
@@ -639,8 +1139,6 @@
   ["Alexandria", 31.20, 29.91, 1517, "Primary Egyptian Mediterranean port."],
   ["Rosetta", 31.40, 30.41, 1517, "Port city in the Nile Delta."],
   ["Damietta", 31.41, 31.81, 1517, "Eastern Nile Delta port."],
- 
-
   {
     "name": "Suez",
     "lat": 29.96,
@@ -648,9 +1146,9 @@
     "start": 1517,
     "end": 1900,
     "kind": "fortress",
+    "defense_type": "renaissance_bastion",
     "note": "Fortified Ottoman naval base and garrison town guarding the northern terminus of the Red Sea."
   },
-
   ["Asyut", 27.18, 31.18, 1517, "Major agricultural center in Upper Egypt."],
   ["Luxor", 25.68, 32.63, 1517, "Historical center in Upper Egypt."],
   ["Aswan", 24.08, 32.89, 1517, "Southern frontier post in Egypt."],
@@ -661,19 +1159,344 @@
   ["Rhodes", 36.44, 28.22, 1522, "Island fortress taken from the Knights Hospitaller."],
   ["Candia", 35.34, 25.14, 1669, "Capital of Crete under Ottoman control after siege."],
   ["Kütahya", 39.42, 29.98, 1314, "Administrative capital of the Anatolia Eyalet."],
-  ["Bursa", 40.18, 29.06, 1326, "First major capital and historic heartland of the Ottoman Empire."],
+ 
   ["Baku", 40.40, 49.86, 1583, "Strategic port city on the Caspian Sea, briefly held during the Safavid wars."],
-  
-{
+  {
     "name": "La Goletta",
     "lat": 36.80,
     "lon": 10.18,
     "start": 1574,
     "end": 1900,
     "kind": "fortress",
+    "defense_type": "renaissance_bastion",
     "note": "Halk el-Wadi; massive multi-bastioned coastal fortress guarding the Tunis maritime channel."
   },
-
+  {
+    "name": "Saratov",
+    "lat": 51.53,
+    "lon": 46.03,
+    "start": 1590,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "earthwork_abatis",
+    "note": "Strategic fortified Russian stronghold established along the middle Volga River to secure river navigation and protect the frontier."
+  },
+  {
+    "name": "Tsaritsyn",
+    "lat": 48.71,
+    "lon": 44.51,
+    "start": 1589,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "earthwork_abatis",
+    "note": "Key fortress city situated at the narrowest port between the Volga and Don rivers, controlling major steppe routes."
+  },
+  {
+    "name": "Cherkassk",
+    "lat": 47.24,
+    "lon": 40.11,
+    "start": 1570,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "earthwork_abatis",
+    "note": "The historic capital and fortified administrative center of the Don Cossacks along the Don River."
+  },
+  {
+    "name": "Bad Radkersburg",
+    "lat": 46.69,
+    "lon": 15.98,
+    "start": 1300,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "renaissance_bastion",
+    "note": "Frontier stronghold along the Mur River fortified to block Ottoman incursions into Styria."
+  },
+  {
+    "name": "Fürstenfeld",
+    "lat": 47.08,
+    "lon": 16.08,
+    "start": 1170,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "renaissance_bastion",
+    "note": "Fortified eastern Styrian frontier town and administrative node designed to block raiding parties."
+  },
+  {
+    "name": "Maribor",
+    "lat": 46.55,
+    "lon": 15.64,
+    "start": 1254,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "Strategic walled town in southern Styria acting as an outer shield for Inner Austria."
+  },
+  {
+    "name": "Ptuj",
+    "lat": 46.42,
+    "lon": 15.87,
+    "start": 1000,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "Ancient fortified stronghold on the Drava River securing regional supply and communication lines in southern Styria."
+  },
+  {
+    "name": "Enns",
+    "lat": 48.21,
+    "lon": 14.48,
+    "start": 900,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "Ancient Danubian fortress town in Upper Austria guarding critical river crossings and eastern approaches."
+  },
+  {
+    "name": "Salzburg",
+    "lat": 47.79,
+    "lon": 13.04,
+    "start": 1077,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "Hohensalzburg Fortress; a massive, uncaptured medieval hilltop stronghold defending the Archbishopric of Salzburg."
+  },
+  {
+    "name": "Wawel Castle",
+    "lat": 50.05,
+    "lon": 19.93,
+    "start": 1350,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "The royal citadel and fortified core of Kraków, serving as the political center of the Polish-Lithuanian Commonwealth."
+  },
+  {
+    "name": "Ogrodzieniec Castle",
+    "lat": 50.45,
+    "lon": 19.55,
+    "start": 1350,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "Prominent 'Eagle's Nest' fortress along the rugged limestone ridges north of Kraków protecting the western approaches."
+  },
+  {
+    "name": "Pieskowa Skała",
+    "lat": 50.24,
+    "lon": 19.78,
+    "start": 1350,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "A vital fortified cliffside stronghold along the Prądnik valley, part of the defensive chain guarding Kraków."
+  },
+  {
+    "name": "Rabsztyn Castle",
+    "lat": 50.40,
+    "lon": 19.57,
+    "start": 1300,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "Strategic Gothic frontier fortress north-west of Kraków overlooking regional trade routes."
+  },
+  {
+    "name": "Pécs",
+    "lat": 46.08,
+    "lon": 18.23,
+    "start": 1543,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "renaissance_bastion",
+    "note": "Important fortified southern Hungarian bishopric city captured by the Ottomans in 1543 and transformed into an administrative sanjak center."
+  },
+  {
+    "name": "Leopoldov",
+    "lat": 48.43,
+    "lon": 17.76,
+    "start": 1665,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "renaissance_bastion",
+    "note": "Advanced star fortress built by the Habsburgs to replace Érsekújvár and guard Royal Hungary's northern frontier."
+  },
+ 
+  {
+    "name": "Khortytsia Island",
+    "lat": 47.85,
+    "lon": 35.10,
+    "start": 1550,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "earthwork_abatis",
+    "note": "The base of the Zaporizhian Cossacks. Served as a defensive barrier against Crimean Tatars and a launch point for raids into Ottoman territory."
+  },
+  {
+    "name": "Špilberk Castle",
+    "lat": 49.19,
+    "lon": 16.60,
+    "start": 1350,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "renaissance_bastion",
+    "note": "The principal stronghold and citadel of the Margraviate of Moravia in Brno."
+  },
+  {
+    "name": "Olomouc",
+    "lat": 49.59,
+    "lon": 17.25,
+    "start": 1350,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "renaissance_bastion",
+    "note": "Major fortified religious and administrative center in northern Moravia."
+  },
+  {
+    "name": "Sabac",
+    "lat": 44.75,
+    "lon": 19.69,
+    "start": 1476,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "Key Ottoman bridgehead fortress on the Sava River."
+  },
+  {
+    "name": "Petrovaradin",
+    "lat": 45.25,
+    "lon": 19.87,
+    "start": 1526,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "transitional",
+    "note": "Strategic Danubian fortress guarding southern Hungary."
+  },
+  {
+    "name": "Khadjibey",
+    "lat": 46.48,
+    "lon": 30.74,
+    "start": 1475,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "Ottoman fortress on the Black Sea coast near modern Odessa."
+  },
+  {
+    "name": "Kodak",
+    "lat": 48.36,
+    "lon": 35.13,
+    "start": 1635,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "renaissance_bastion",
+    "note": "Polish-Lithuanian Commonwealth fortress on the Dnieper to block Cossacks."
+  },
+  {
+    "name": "Kodak Fortress",
+    "lat": 48.38,
+    "lon": 35.12,
+    "start": 1635,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "renaissance_bastion",
+    "note": "Built in 1635 by the Commonwealth near modern Dnipro. Purpose was to control Dnieper crossings, restrict uncontrolled Cossack movement, and defend against Tatar incursions."
+  },
+  {
+    "name": "Dubno Castle",
+    "lat": 50.41,
+    "lon": 25.74,
+    "start": 1492,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "One of Volhynia's strongest fortifications. Protected wealthy estates and vital communication routes toward Lviv."
+  },
+  {
+    "name": "Zamość",
+    "lat": 50.72,
+    "lon": 23.25,
+    "start": 1580,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "renaissance_bastion",
+    "note": "One of the finest Renaissance fortresses in Europe. Protected southeastern Poland, served as a major military and economic center, and successfully withstood Swedish, Cossack, and Ottoman threats."
+  },
+  ["Paris", 48.8566, 2.3522, 987, "Capital of the Kingdom of France."],
+  
+  ["Bochnia", 49.9672, 20.4286, 600, "Historic town in southern Poland noted for its ancient salt mine."],
+  ["Wieliczka", 49.9833, 20.0667, 600, "Town near Kraków famous for its historic salt mine and underground chambers."],
+  ["Terebovlia", 49.2983, 25.7000, 600, "Historic city in western Ukraine featuring an ancient medieval castle."]
+,
+  ["Marseille", 43.2965, 5.3698, 600, "Major Mediterranean port."],
+  ["Lyon", 45.7640, 4.8357, 43, "Commercial hub on the Rhône."],
+  ["Bordeaux", 44.8378, -0.5792, 300, "Atlantic port, English-held until 1453."],
+  ["Toulouse", 43.6047, 1.4442, 100, "Capital of Languedoc."],
+  ["Rouen", 49.4431, 1.0993, 841, "Norman capital, site of Joan of Arc's 1431 execution."],
+  ["Avignon", 43.9493, 4.8055, 1309, "Seat of the Avignon Papacy, 1309-1377."],
+  ["Reims", 49.2583, 4.0317, 80, "Traditional coronation city of French kings."],
+  ["Strasbourg", 48.5734, 7.7521, 1262, "Free imperial city on the Rhine."],
+  ["Nantes", 47.2184, -1.5536, 850, "Capital of the Duchy of Brittany."],
+  {
+    "name": "Ostroh Castle",
+    "lat": 50.33,
+    "lon": 26.51,
+    "start": 1350,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "Important noble fortress of the Ostrogski family. Defended Volhynia and served as a major symbol of Orthodox and Ruthenian noble power."
+  },
+  {
+    "name": "Orleans",
+    "lat": 47.9029,
+    "lon": 1.9039,
+    "start": 1428,
+    "end": 1700,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "Besieged 1428-29, relieved by Joan of Arc."
+  },
+  {
+    "name": "Calais",
+    "lat": 50.9513,
+    "lon": 1.8587,
+    "start": 1347,
+    "end": 1700,
+    "kind": "fortress",
+    "defense_type": "renaissance_bastion",
+    "note": "English-held fortress-port until 1558."
+  },
+  {
+    "name": "Metz",
+    "lat": 49.1193,
+    "lon": 6.1757,
+    "start": 1552,
+    "end": 1700,
+    "kind": "fortress",
+    "defense_type": "renaissance_bastion",
+    "note": "Free imperial city, annexed by France 1552."
+  },
+  {
+    "name": "La Rochelle",
+    "lat": 46.1603,
+    "lon": -1.1511,
+    "start": 1627,
+    "end": 1700,
+    "kind": "fortress",
+    "defense_type": "renaissance_bastion",
+    "note": "Huguenot stronghold besieged 1627-28."
+  },
+  {
+    "name": "Perpignan",
+    "lat": 42.6986,
+    "lon": 2.8954,
+    "start": 1276,
+    "end": 1700,
+    "kind": "fortress",
+    "defense_type": "renaissance_bastion",
+    "note": "Border fortress facing Aragon."
+  },
   {
     "name": "Aleppo",
     "lat": 36.20,
@@ -681,15 +1504,12 @@
     "start": 1516,
     "end": 1900,
     "kind": "fortress",
+    "defense_type": "medieval_stone",
     "note": "Citadel of Aleppo; Major Ottoman trade hub and regional capital."
   },
-
   ["Adana", 37.00, 35.33, 1517, "Key administrative center in the Çukurova region."],
   ["Mosul", 36.33, 43.13, 1534, "Strategic frontier city in Ottoman Mesopotamia."],
-  ["Pressberg", 48.14, 17.10, 1536, "Administrative capital and coronation city of the Kingdom of Hungary."]
-  ,
-  
-  
+  ["Pressberg", 48.14, 17.10, 1536, "Administrative capital and coronation city of the Kingdom of Hungary."],
   ["Poltava", 49.58, 34.55, 1650, "Site of a pivotal battle between the Swedish Empire and Tsardom of Russia."],
   ["Jeddah", 21.54, 39.17, 1525, "Primary Red Sea port of the Hejaz and gateway for Hajj pilgrims."],
   ["Munich", 48.13, 11.58, 1500, "Capital of the Electorate of Bavaria and a major central European power center."],
@@ -700,6 +1520,7 @@
     "start": 1350,
     "end": 1900,
     "kind": "fortress",
+    "defense_type": "renaissance_bastion",
     "note": "The heavily fortified capital of the Habsburg Archduchy of Austria, famously resisting major Ottoman sieges in 1529 and 1683."
   },
   {
@@ -709,17 +1530,388 @@
     "start": 1350,
     "end": 1900,
     "kind": "fortress",
+    "defense_type": "renaissance_bastion",
     "note": "Schlossberg fortress; the impenetrable bastion of Inner Austria that protected the region from Ottoman raiders."
   },
+  ["Nuremberg", 49.4521, 11.0767, 1219, "Free imperial city, imperial diet host."],
+  ["Augsburg", 48.3705, 10.8978, 1276, "Free imperial city, site of 1555 religious peace."],
+  ["Cologne", 50.9375, 6.9603, 1475, "Ecclesiastical electorate seat on the Rhine."],
+  ["Frankfurt", 50.1109, 8.6821, 1372, "Site of imperial elections."],
+  ["Hamburg", 53.5511, 9.9937, 1189, "Free imperial city, Hanseatic port."],
+  ["Lübeck", 53.8655, 10.6866, 1226, "Leading city of the Hanseatic League."],
+  ["Leipzig", 51.3397, 12.3731, 1165, "Saxon commercial and trade-fair city."],
+  ["Dresden", 51.0504, 13.7373, 1206, "Electoral Saxon capital."],
+  ["Munich", 48.1351, 11.5820, 1158, "Capital of the Duchy of Bavaria."],
+  ["Regensburg", 49.0134, 12.1016, 1245, "Free imperial city, seat of the Imperial Diet."],
+  ["Mainz", 49.9929, 8.2473, 1244, "Ecclesiastical electorate seat."],
+  ["Trier", 49.7596, 6.6441, 1580, "Ecclesiastical electorate seat, oldest German city."],
+  ["Worms", 49.6360, 8.3591, 1521, "Site of the 1521 Diet of Worms."],
+  ["Ulm", 48.4011, 9.9876, 1184, "Free imperial city on the Danube."],
+  ["Wittenberg", 51.8667, 12.6500, 1517, "Site of the 1517 posting of the 95 Theses."],
+  ["Berlin", 52.5200, 13.4050, 1237, "Capital of the Electorate of Brandenburg."],
   {
-    "name": "Prague",
-    "lat": 50.07,
-    "lon": 14.43,
-    "start": 1350,
+    "name": "Schweidnitz (Świdnica)",
+    "lat": 50.84,
+    "lon": 16.48,
+    "start": 1250,
     "end": 1900,
     "kind": "fortress",
-    "note": "Capital of the Kingdom of Bohemia, featuring the massive fortified Hradčany (Prague Castle) complex."
+    "defense_type": "medieval_stone",
+    "note": "Key fortified urban stronghold in central Silesia controlling regional trade and transit."
   },
+  {
+    "name": "Glatz (Kłodzko)",
+    "lat": 50.44,
+    "lon": 16.65,
+    "start": 981,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "renaissance_bastion",
+    "note": "Major strategic fortress controlling the mountain passes between Bohemia and Silesia."
+  },
+  {
+    "name": "Prague Castle",
+    "lat": 50.09,
+    "lon": 14.40,
+    "start": 870,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "The historic fortified seat of Bohemian kings and emperors, anchoring the defense of Bohemia."
+  },
+  {
+    "name": "Magdeburg",
+    "lat": 52.1205,
+    "lon": 11.6276,
+    "start": 1631,
+    "end": 1700,
+    "kind": "fortress",
+    "defense_type": "renaissance_bastion",
+    "note": "Sacked in the Thirty Years' War, 1631."
+  },
+  ["Zurich", 47.3769, 8.5417, 1218, "Leading canton of the Swiss Confederacy."],
+  ["Bern", 46.9480, 7.4474, 1191, "Powerful canton, expanded into the Vaud."],
+  ["Basel", 47.5596, 7.5886, 1201, "Free imperial city, joined Confederacy 1501."],
+  ["Geneva", 46.2044, 6.1432, 1400, "Independent city-republic, Calvinist center from 1536."],
+  ["Lucerne", 47.0502, 8.3093, 1178, "Founding canton of the Confederacy."],
+  ["Schwyz", 47.0207, 8.6530, 1291, "Founding canton, namesake of Switzerland."],
+  ["Fribourg", 46.8065, 7.1619, 1157, "Bilingual canton, joined Confederacy 1481."],
+  ["St. Gallen", 47.4245, 9.3767, 1415, "Prince-abbey and allied city."],
+  ["Madrid", 40.4168, -3.7038, 1561, "Made capital of Spain by Philip II, 1561."],
+  ["Toledo", 39.8628, -4.0273, 1085, "Former capital, ecclesiastical primate seat."],
+  ["Seville", 37.3891, -5.9845, 1248, "Monopoly port for the Spanish Americas trade."],
+  ["Barcelona", 41.3874, 2.1686, 801, "Capital of the Principality of Catalonia."],
+  ["Valencia", 39.4699, -0.3763, 1238, "Capital of the Kingdom of Valencia."],
+  ["Zaragoza", 41.6488, -0.8891, 1118, "Capital of the Kingdom of Aragon."],
+  ["Burgos", 42.3439, -3.6969, 884, "Historic Castilian capital."],
+  ["Cordoba", 37.8882, -4.7794, 1236, "Former Umayyad caliphal capital."],
+  ["Valladolid", 41.6523, -4.7245, 1072, "Frequent royal court seat."],
+  ["Santiago de Compostela", 42.8782, -8.5448, 1075, "Major pilgrimage city of Galicia."],
+  {
+    "name": "Granada",
+    "lat": 37.1773,
+    "lon": -3.5986,
+    "start": 1238,
+    "end": 1492,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "Last Muslim emirate in Iberia, fell 1492."
+  },
+  {
+    "name": "Ram",
+    "lat": 44.82,
+    "lon": 21.33,
+    "start": 1483,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "transitional",
+    "note": "15th-century Ottoman artillery fortress built to control Danube river traffic."
+  },
+  {
+    "name": "Fetislam",
+    "lat": 44.61,
+    "lon": 22.61,
+    "start": 1524,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "renaissance_bastion",
+    "note": "Ottoman fortress near Kladovo, built on Roman foundations; 'The Gate of Islam'."
+  },
+  ["Eskisehir", 39.77, 30.52, 1289, "Vital historic urban center and transit hub in western Anatolia."],
+    ["Sivas", 39.75, 37.01, 1398, "Major provincial capital and administrative crossroads in central-eastern Anatolia."],
+    ["Trabzon", 41.00, 39.72, 1461, "Major Black Sea port and former imperial capital in northeastern Anatolia."],
+  {
+    "name": "Cadiz",
+    "lat": 36.5271,
+    "lon": -6.2886,
+    "start": 1500,
+    "end": 1700,
+    "kind": "fortress",
+    "defense_type": "renaissance_bastion",
+    "note": "Atlantic port, later Armada staging point."
+  },
+  {
+    "name": "Pamplona",
+    "lat": 42.8125,
+    "lon": -1.6458,
+    "start": 905,
+    "end": 1700,
+    "kind": "fortress",
+    "defense_type": "renaissance_bastion",
+    "note": "Capital of the Kingdom of Navarre."
+  },
+  {
+    "name": "Gibraltar",
+    "lat": 36.1408,
+    "lon": -5.3536,
+    "start": 1160,
+    "end": 1700,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "Strategic fortress at the strait's mouth."
+  },
+  ["Florence", 43.7696, 11.2558, 1115, "Capital of the Republic/Grand Duchy of Tuscany."],
+  ["Milan", 45.4642, 9.1900, 1100, "Capital of the Duchy of Milan."],
+  ["Naples", 40.8518, 14.2681, 1282, "Capital of the Kingdom of Naples."],
+  ["Genoa", 44.4056, 8.9463, 1096, "Capital of the Republic of Genoa."],
+  ["Turin", 45.0703, 7.6869, 1280, "Capital of the Duchy of Savoy."],
+  ["Bologna", 44.4949, 11.3426, 1116, "Papal legation city."],
+  ["Ferrara", 44.8381, 11.6198, 1101, "Este duchy capital, absorbed into Papal States 1598."],
+  ["Mantua", 45.1564, 10.7914, 1115, "Gonzaga duchy capital."],
+  ["Pisa", 43.7228, 10.4017, 1060, "Absorbed into Florentine territory 1406."],
+  ["Palermo", 38.1157, 13.3615, 1072, "Capital of the Kingdom of Sicily."],
+  ["Messina", 38.1938, 15.5540, 1130, "Key Sicilian port facing the Ottoman-contested Mediterranean."],
+  ["Ancona", 43.6158, 13.5189, 1100, "Papal Adriatic port."],
+  ["Bari", 41.1171, 16.8719, 1071, "Adriatic port of the Kingdom of Naples."],
+  ["Varaždin", 46.3057, 16.3366, 1209, "Royal free city and one of the principal urban centers of the Kingdom of Croatia."],
+  {
+    "name": "Siena",
+    "lat": 43.3188,
+    "lon": 11.3308,
+    "start": 1125,
+    "end": 1555,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "Republic fell to Florence, 1555."
+  },
+  {
+    "name": "Otranto",
+    "lat": 40.1447,
+    "lon": 18.4900,
+    "start": 1480,
+    "end": 1700,
+    "kind": "fortress",
+    "defense_type": "transitional",
+    "note": "Captured by the Ottomans in 1480, held briefly."
+  },
+  ["Ragusa (Dubrovnik)", 42.6507, 18.0944, 1358, "Independent tributary republic under Ottoman suzerainty."],
+  ["Split", 43.5081, 16.4402, 1420, "Venetian-held Dalmatian port."],
+  ["Hvar", 43.1729, 16.4413, 1420, "Venetian island naval base."],
+  ["Trogir", 43.5147, 16.2517, 1420, "Venetian-held Dalmatian town."],
+  {
+    "name": "Zadar",
+    "lat": 44.1194,
+    "lon": 15.2314,
+    "start": 1409,
+    "end": 1700,
+    "kind": "fortress",
+    "defense_type": "renaissance_bastion",
+    "note": "Venetian Dalmatian stronghold."
+  },
+  {
+    "name": "Šibenik",
+    "lat": 43.7350,
+    "lon": 15.8952,
+    "start": 1412,
+    "end": 1700,
+    "kind": "fortress",
+    "defense_type": "renaissance_bastion",
+    "note": "Venetian fortress city."
+  },
+  {
+    "name": "Kotor",
+    "lat": 42.4247,
+    "lon": 18.7712,
+    "start": 1420,
+    "end": 1700,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "Venetian fortress at the Gulf of Kotor."
+  },
+  ["Athens", 37.9838, 23.7275, 1458, "Under Ottoman rule from 1458."],
+  ["Thebes", 38.3200, 23.3200, 1460, "Central Greek town, early Ottoman administrative seat."],
+  ["Patras", 38.2466, 21.7346, 1458, "Key port of the Morea."],
+  ["Ioannina", 39.6650, 20.8537, 1430, "Ottoman regional capital of Epirus from 1430."],
+  ["Larissa", 39.6390, 22.4194, 1393, "Ottoman administrative center of Thessaly."],
+  {
+    "name": "Corinth",
+    "lat": 37.9058,
+    "lon": 22.8781,
+    "start": 1204,
+    "end": 1700,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "Strategic isthmus fortress town."
+  },
+  {
+    "name": "Monemvasia",
+    "lat": 36.6870,
+    "lon": 23.0500,
+    "start": 583,
+    "end": 1540,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "Last Byzantine-lineage holdout, fell to Ottomans 1540."
+  },
+  {
+    "name": "Mistra",
+    "lat": 37.0700,
+    "lon": 22.3660,
+    "start": 1249,
+    "end": 1460,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "Capital of the Byzantine Despotate of the Morea, fell 1460."
+  },
+  {
+    "name": "Chania",
+    "lat": 35.5138,
+    "lon": 24.0180,
+    "start": 1252,
+    "end": 1645,
+    "kind": "fortress",
+    "defense_type": "renaissance_bastion",
+    "note": "Venetian Crete, fell to Ottomans 1645."
+  },
+  {
+    "name": "Candia (Heraklion)",
+    "lat": 35.3387,
+    "lon": 25.1442,
+    "start": 1648,
+    "end": 1669,
+    "kind": "fortress",
+    "defense_type": "renaissance_bastion",
+    "note": "Venetian Crete capital, besieged 1648-1669."
+  },
+  {
+    "name": "Rethymno",
+    "lat": 35.3667,
+    "lon": 24.4833,
+    "start": 1204,
+    "end": 1700,
+    "kind": "fortress",
+    "defense_type": "renaissance_bastion",
+    "note": "Venetian Cretan port."
+  },
+  {
+    "name": "Nafplio (Nauplia)",
+    "lat": 37.5673,
+    "lon": 22.8074,
+    "start": 1388,
+    "end": 1700,
+    "kind": "fortress",
+    "defense_type": "renaissance_bastion",
+    "note": "Key Venetian Morea fortress."
+  },
+  {
+    "name": "Modon (Methoni)",
+    "lat": 36.8264,
+    "lon": 21.7025,
+    "start": 1209,
+    "end": 1500,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "Venetian fortress, fell to Ottomans 1500."
+  },
+  {
+    "name": "Coron (Koroni)",
+    "lat": 36.7995,
+    "lon": 21.9557,
+    "start": 1209,
+    "end": 1500,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "Venetian fortress, paired with Modon."
+  },
+  {
+    "name": "Negroponte (Chalkis)",
+    "lat": 38.4640,
+    "lon": 23.5930,
+    "start": 1205,
+    "end": 1470,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "Venetian Euboea capital, fell to Ottomans 1470."
+  },
+  {
+    "name": "Rhodes",
+    "lat": 36.4341,
+    "lon": 28.2176,
+    "start": 1309,
+    "end": 1522,
+    "kind": "fortress",
+    "defense_type": "transitional",
+    "note": "Knights Hospitaller stronghold, fell to Ottomans 1522."
+  },
+  ["Danzig (Gdansk)", 54.3520, 18.6466, 1263, "Chief Baltic port of the Polish Crown."],
+  ["Königsberg", 54.7104, 20.4522, 1255, "Capital of the Teutonic/Ducal Prussia."],
+  ["Riga", 56.9496, 24.1052, 1201, "Hanseatic city, later under Polish then Swedish rule."],
+  ["Reval (Tallinn)", 59.4370, 24.7536, 1219, "Hanseatic city, Swedish Estonia from 1561."],
+  ["Stettin (Szczecin)", 53.4285, 14.5528, 1243, "Pomeranian duchy capital."],
+  ["Elbing (Elblag)", 54.1522, 19.4088, 1237, "Hanseatic city under Polish Royal Prussia."],
+  ["Rostock", 54.0924, 12.0991, 1218, "Hanseatic port, Duchy of Mecklenburg."],
+  ["Wismar", 53.8912, 11.4642, 1229, "Hanseatic port, Swedish possession from 1648."],
+  {
+    "name": "Memel (Klaipeda)",
+    "lat": 55.7033,
+    "lon": 21.1443,
+    "start": 1252,
+    "end": 1700,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "Teutonic Order fortress-port."
+  },
+  {
+    "name": "Stralsund",
+    "lat": 54.3091,
+    "lon": 13.0818,
+    "start": 1628,
+    "end": 1700,
+    "kind": "fortress",
+    "defense_type": "renaissance_bastion",
+    "note": "Withstood Wallenstein's siege in 1628."
+  },
+  ["Arkhangelsk", 64.5401, 40.5433, 1584, "Founded 1584 as Russia's chief northern port."],
+  ["Vologda", 59.2181, 39.8886, 1147, "Northern trade and administrative center."],
+  ["Kholmogory", 64.2258, 41.6708, 1335, "Pre-Arkhangelsk northern trading post."],
+  {
+    "name": "Pskov",
+    "lat": 57.8194,
+    "lon": 28.3319,
+    "start": 1510,
+    "end": 1700,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "Independent republic annexed by Moscow, 1510."
+  },
+  
+  ["Szentgotthárd", 46.9531, 16.2764, 1183, "Cistercian abbey and site of the decisive 1664 Christian victory over the Ottomans on the Raab River."],
+  ["Mogersdorf", 46.9492, 16.2378, 1664, "Strategic hill overlooking the Raab River valley, focal point of heavy combat during the Battle of St. Gotthard."]
+,
+["Tutaora Field / Zamoyski’s Ditch", 47.2167, 27.8000, 1595, "Temporary military fortification featuring 13 bastions and wagon-laager defenses built by Hetman Jan Zamoyski to guard the Prut River crossing."],
+  {
+    "name": "Staraya Ladoga",
+    "lat": 60.0086,
+    "lon": 32.2933,
+    "start": 753,
+    "end": 1700,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "Ancient fortress on the Volkhov River."
+  },
+  ["Torun", 53.0138, 18.5981, 1233, "Royal Prussian city, site of 1466 peace treaty."],
+  ["Poznan", 52.4064, 16.9252, 1253, "Capital of the Greater Poland province."],
+  ["Plock", 52.5463, 19.7065, 1070, "Historic Masovian capital."],
   {
     "name": "Brno",
     "lat": 49.19,
@@ -727,17 +1919,40 @@
     "start": 1350,
     "end": 1900,
     "kind": "fortress",
+    "defense_type": "renaissance_bastion",
     "note": "Špilberk Castle; the principal stronghold of the Margraviate of Moravia."
   },
   {
-    "name": "Olomouc",
-    "lat": 49.59,
-    "lon": 17.25,
-    "start": 1350,
+  "name": "Zrínyi-újvár",
+  "lat": 46.4358,
+  "lon": 16.7914,
+  "start": 1661,
+  "end": 1664,
+  "kind": "fortress",
+  "defense_type": "bastion_fortress",
+  "note": "Advanced star fortress built by Nikola Zrinski on the Mura River to counter the Ottoman Kanije Eyalet before its destruction in 1664."
+},
+ {
+    "name": "Karlštejn Castle",
+    "lat": 49.94,
+    "lon": 14.18,
+    "start": 1348,
     "end": 1900,
     "kind": "fortress",
-    "note": "A major fortified religious and administrative center in northern Moravia."
+    "defense_type": "medieval_stone",
+    "note": "Impenetrable Gothic royal fortress built to safeguard the Bohemian crown jewels."
   },
+  {
+    "name": "Cheb Castle",
+    "lat": 50.08,
+    "lon": 12.37,
+    "start": 1100,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "Imperial Kaiserpfalz and border fortress guarding the western approaches to Bohemia."
+  },
+  
   {
     "name": "Linz",
     "lat": 48.30,
@@ -745,59 +1960,468 @@
     "start": 1350,
     "end": 1900,
     "kind": "fortress",
+    "defense_type": "medieval_stone",
     "note": "Strategic Danubian fortress guarding the upper approaches to the Austrian heartland."
   },
   ["Rome", 41.90, 12.49, 1500, "Historical center of the Papal States and central node of European diplomacy."],
   ["Geneva", 46.20, 6.14, 1536, "Significant center of the Protestant Reformation and political influence."],
   ["Novgorod", 58.52, 31.27, 1478, "Historic Russian merchant city integrated into the expanding Muscovite state."],
-   {
+  {
     "name": "Smolensk",
     "lat": 54.78,
     "lon": 32.04,
     "start": 1400,
     "end": 1900,
     "kind": "fortress",
+    "defense_type": "transitional",
     "note": "The great western fortress gate of the Russian lands, fiercely fought over during wars with the Commonwealth."
   },
   ["Kazan", 55.78, 49.12, 1552, "Former Tatar khanate capital, annexed by Ivan the Terrible."],
   ["Nizhny Novgorod", 56.32, 44.00, 1500, "Key trade hub and defensive outpost on the Volga River."],
-  {
-    "name": "Vilnius",
-    "lat": 54.68,
-    "lon": 25.27,
-    "start": 1323,
-    "end": 1900,
-    "kind": "fortress",
-    "note": "The fortified capital of the Grand Duchy of Lithuania, anchored by the Upper Castle."
-  },
-
-  ["Chyhyryn", 49.07, 32.66, 1648, "Significant Cossack capital and administrative stronghold."],
-  ["Chernihiv", 51.49, 31.29, 1500, "Historical fortress city in the Dnieper region."],
-  ["Lutsk", 50.74, 25.32, 1500, "Capital of Volhynia under the Grand Duchy of Lithuania."],
+["Vilnius", 54.68, 25.27, 1323, "Capital and political heart of the Grand Duchy of Lithuania."],
+{
+        "name": "Vilnius Upper Castle",
+        "lat": 54.68,
+        "lon": 25.29,
+        "start": 1323,
+        "end": 1900,
+        "kind": "fortress",
+        "defense_type": "medieval_stone",
+        "note": "Gediminas' Tower and upper stronghold anchoring the capital's defense."
+    },
+ 
   ["Volodymyr", 50.84, 24.31, 1500, "Historic princely seat of the Kievan Rus' and major regional bishopric."],
   ["Brody", 50.08, 25.15, 1584, "Important fortress city known for its diverse merchant guilds."],
   ["Peremyshl", 49.78, 22.77, 1500, "Major fortress city and long-standing bishopric in the borderlands."],
-  ["Terebovlia", 49.30, 25.45, 1500, "Major medieval fortress crucial for defense against frontier raids."]
+  ["Terebovlia", 49.30, 25.45, 1500, "Major medieval fortress crucial for defense against frontier raids."],
+  
+  {
+    "name": "Uman",
+    "lat": 48.74,
+    "lon": 30.22,
+    "start": 1616,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "Important fortified frontier town and stronghold in the Bratslav region, serving as a strategic hub for Cossack and regional defense."
+  },
+  {
+    "name": "Perekop",
+    "lat": 46.14,
+    "lon": 33.68,
+    "start": 1500,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "earthwork_abatis",
+    "note": "Key steppe fortress guarding the Isthmus of Perekop into the Crimean peninsula."
+  },
+  ["Chyhyryn", 49.07, 32.66, 1648, "Significant Cossack capital and administrative stronghold."],
+  {
+    "name": "Chyhyryn Fortress",
+    "lat": 49.07,
+    "lon": 32.66,
+    "start": 1648,
+    "end": 1711,
+    "kind": "fortress",
+    "defense_type": "bastion_fortress",
+    "note": "Hilltop citadel and heavily fortified stronghold serving as the residence of the Hetman and the political center of the Cossack Hetmanate."
+  },
+  {
+    "name": "Riegersburg Castle",
+    "lat": 47.0039,
+    "lon": 15.9383,
+    "start": 1138,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "Impregnable volcanic cliffside fortress with massive double walls and multiple fortified gates, never captured by an enemy."
+  },
+  {
+    "name": "Oberkapfenberg Castle",
+    "lat": 47.4136,
+    "lon": 15.2897,
+    "start": 1160,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "Strategic hilltop fortress overlooking the Mur Valley transit route."
+  },
+  {
+    "name": "Hatvan",
+    "lat": 47.66,
+    "lon": 19.69,
+    "start": 1500,
+    "end": 1686,
+    "kind": "fortress",
+    "defense_type": "bastion_fortress",
+    "note": "Crucial Ottoman-Habsburg border fortress controlling approaches to Royal Hungary along the Zagyva River, heavily contested during the Long Turkish War."
+  },
+  {
+    "name": "Kapfenstein Castle",
+    "lat": 46.9142,
+    "lon": 15.9750,
+    "start": 1150,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "Volcanic cone fortification guarding the southeastern Styrian border approaches toward the Raab valley."
+  },
+  {
+    "name": "Herberstein Castle",
+    "lat": 47.2189,
+    "lon": 15.7333,
+    "start": 1250,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "Cliffside stronghold perched above the Feistritz Gorge belonging to the prominent anti-Ottoman military family."
+  },
+
+  {
+    "name": "Bratslav",
+    "lat": 48.82,
+    "lon": 28.90,
+    "start": 1362,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "Key historical fortified administrative center and fortress town of the Bratslav Voivodeship."
+  },
+
+  {
+    "name": "Sumy Fortress",
+    "lat": 50.91,
+    "lon": 34.80,
+    "start": 1655,
+    "end": 1800,
+    "kind": "fortress",
+    "defense_type": "earthwork_abatis",
+    "note": "Strategic fortified frontier city and administrative center established by Cossacks along the northern borderlands."
+  },
+  {
+    "name": "Kharkov Fortress",
+    "lat": 49.99,
+    "lon": 36.23,
+    "start": 1654,
+    "end": 1800,
+    "kind": "fortress",
+    "defense_type": "earthwork_abatis",
+    "note": "Major fortress city founded during the mid-17th-century colonization of the Sloboda Ukraine region."
+  }
+,
+  {
+    "name": "Zhytomyr",
+    "lat": 50.25,
+    "lon": 28.66,
+    "start": 884,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "Major fortified urban center and strategic stronghold located in the northern Ukrainian borderlands."
+  }
+
 ,
 {
+  "name": "Terebovlia Castle",
+  "lat": 49.30,
+  "lon": 25.70,
+  "start": 1360,
+  "end": 1800,
+  "kind": "fortress",
+  "defense_type": "medieval_stone",
+  "note": "Prominent medieval fortress perched on a high promontory in Podolia, famed for its fierce resistance against Tatar and Turkish sieges (such as under the defense of Sofia Chrzanowska)."
+},
+  {
     "name": "Van",
     "lat": 38.50,
     "lon": 43.34,
     "start": 1500,
     "end": 1900,
     "kind": "fortress",
+    "defense_type": "medieval_stone",
     "note": "Colossal high-altitude stone fortress perched on a sheer vertical cliff overlooking Lake Van."
   },
-
-{
+  {
+    "name": "Zbarazh",
+    "lat": 49.66,
+    "lon": 25.77,
+    "start": 1393,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "renaissance_bastion",
+    "note": "One of the most famous Commonwealth defensive positions. Controlled routes from Ottoman Moldavia and is famous for the Siege of Zbarazh (1649) during the Khmelnytsky Uprising."
+  },
+  {
+    "name": "Tula Kremlin",
+    "lat": 54.19,
+    "lon": 37.61,
+    "start": 1509,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "transitional",
+    "note": "The key fortress of the western section of the Great Abatis Line. Protected Moscow's southern approaches, served as an arsenal and weapons production center, and controlled routes from the steppe."
+  },
+  {
+    "name": "Kolomna Kremlin",
+    "lat": 55.09,
+    "lon": 38.78,
+    "start": 1380,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "Guarded the Oka River crossing and served as an assembly point for Russian armies moving south. One of the main defensive nodes before Moscow."
+  },
+  {
+    "name": "Ryazan Kremlin",
+    "lat": 54.63,
+    "lon": 39.74,
+    "start": 1095,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "Eastern anchor of the Oka defensive system. Protected against steppe incursions."
+  },
+  {
+    "name": "Venev",
+    "lat": 54.35,
+    "lon": 38.27,
+    "start": 1371,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "Protected the approaches east of Tula and connected the abatis forests with the main fortress network."
+  },
+  {
+    "name": "Kashira",
+    "lat": 54.84,
+    "lon": 38.15,
+    "start": 1356,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "Oka River defense point that stopped Tatar crossings."
+  },
+  {
+    "name": "Odoev",
+    "lat": 53.94,
+    "lon": 36.69,
+    "start": 1380,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "Western section of the abatis line. Protected routes toward Moscow from the southwest."
+  },
+  {
+    "name": "Serpukhov",
+    "lat": 54.91,
+    "lon": 37.41,
+    "start": 1339,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "Important fortified town on the Oka River protecting Moscow's southern approaches and part of the abatis defense network."
+  },
+  {
+    "name": "Zaraysk",
+    "lat": 54.76,
+    "lon": 38.88,
+    "start": 1531,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "transitional",
+    "note": "Strategic stone kremlin on the southern frontier, guarding against Crimean Tatar raids along the Oka-Don watershed."
+  },
+  {
+    "name": "Belyov",
+    "lat": 53.81,
+    "lon": 36.13,
+    "start": 1147,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "Ancient fortified town on the upper Oka River protecting the western flank of the Russian southern frontier."
+  },
+  {
+    "name": "Akhtyrka",
+    "lat": 50.31,
+    "lon": 34.88,
+    "start": 1641,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "earthwork_abatis",
+    "note": "Important fortified town and Cossack regimental center on the southern frontier defenses."
+  },
+  {
+    "name": "Przemyśl",
+    "lat": 49.78,
+    "lon": 22.77,
+    "start": 1340,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "renaissance_bastion",
+    "note": "Major strategic fortified city in southeastern Poland (Galicia), guarding the approaches to the Carpathian passes and trade routes."
+  },
+  {
+    "name": "Penza",
+    "lat": 53.20,
+    "lon": 45.00,
+    "start": 1663,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "earthwork_abatis",
+    "note": "Frontier outpost guarding the southeastern borderlands against nomadic incursions."
+  },
+  {
+    "name": "Simbirsk",
+    "lat": 54.32,
+    "lon": 48.38,
+    "start": 1648,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "earthwork_abatis",
+    "note": "Major fortified stronghold on the Volga River securing the eastern frontier."
+  },
+  {
+    "name": "Dedilov",
+    "lat": 53.96,
+    "lon": 38.16,
+    "start": 1553,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "earthwork_abatis",
+    "note": "Important fortified settlement near Tula that protected agricultural zones."
+  },
+  {
+    "name": "Belgorod",
+    "lat": 50.60,
+    "lon": 36.58,
+    "start": 1596,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "earthwork_abatis",
+    "note": "The central fortress of the entire Belgorod Line. Administrative and military headquarters, command center for frontier troops, and controller of routes from the Donets steppe."
+  },
+  {
+    "name": "Voronezh",
+    "lat": 51.67,
+    "lon": 39.18,
+    "start": 1586,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "earthwork_abatis",
+    "note": "Eastern anchor of the Belgorod Line. Protected Don River approaches and later became a base for Russian naval construction under Peter I."
+  },
+  {
+    "name": "Ostrogozhsk",
+    "lat": 50.86,
+    "lon": 39.06,
+    "start": 1652,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "earthwork_abatis",
+    "note": "Protected the southern frontier and served as a Cossack settlement center."
+  },
+  {
+    "name": "Kursk",
+    "lat": 51.73,
+    "lon": 36.19,
+    "start": 1032,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "earthwork_abatis",
+    "note": "Western Belgorod Line fortress that protected routes from the Dnieper steppe."
+  },
+  {
+    "name": "Putivl",
+    "lat": 51.34,
+    "lon": 33.87,
+    "start": 1146,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "Western gateway toward Ukraine. Supported campaigns against Crimean Tatars and Lithuania."
+  },
+  {
+    "name": "Livny",
+    "lat": 52.42,
+    "lon": 37.60,
+    "start": 1586,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "earthwork_abatis",
+    "note": "Protected eastern approaches and connected with Oka defenses."
+  },
+  {
+    "name": "Yelets",
+    "lat": 52.62,
+    "lon": 38.50,
+    "start": 1146,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "earthwork_abatis",
+    "note": "Important southern defensive town that controlled crossings toward the upper Don."
+  },
+  {
+    "name": "Tambov",
+    "lat": 52.72,
+    "lon": 41.45,
+    "start": 1636,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "earthwork_abatis",
+    "note": "Eastern extension of the defensive system. Protected Russian settlements against raids."
+  },
+  {
+    "name": "Lutsk",
+    "lat": 50.74,
+    "lon": 25.32,
+    "start": 1350,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "Major Lithuanian-era fortress. Defended Volhynia and served as a crucial regional administrative center."
+  },
+  {
     "name": "Smederevo",
     "lat": 44.66,
     "lon": 20.93,
     "start": 1430,
     "end": 1900,
     "kind": "fortress",
+    "defense_type": "transitional",
     "note": "The massive medieval fortified capital of the Serbian Despotate, later a crucial Ottoman stronghold on the Danube."
   },
+  {
+    "name": "Chernihiv",
+    "lat": 51.49,
+    "lon": 31.29,
+    "start": 900,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "Major northern defensive point and ancient historical urban stronghold."
+  },
+  {
+    "name": "Neamț",
+    "lat": 47.21,
+    "lon": 26.36,
+    "start": 1395,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "Critical mountain route defense and stronghold in Moldavia, guarding the Carpathian passes."
+  },
+  {
+    "name": "Soroca",
+    "lat": 48.15,
+    "lon": 28.29,
+    "start": 1499,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "renaissance_bastion",
+    "note": "Essential part of the Dniester defense line in Moldavia, protecting the river crossing against Ottoman and Tatar incursions."
+  },
+  
   {
     "name": "Golubac",
     "lat": 44.65,
@@ -805,6 +2429,7 @@
     "start": 1380,
     "end": 1900,
     "kind": "fortress",
+    "defense_type": "medieval_stone",
     "note": "A dramatic cliffside fortress guarding the Iron Gates gorge on the Danube, heavily contested between Hungary and the Ottomans."
   },
   {
@@ -814,8 +2439,10 @@
     "start": 1386,
     "end": 1900,
     "kind": "fortress",
+    "defense_type": "renaissance_bastion",
     "note": "Pivotal strategic crossroads and fortress guarding the Morava-Valley military highway into the Balkans."
   },
+
   {
     "name": "Vidin",
     "lat": 43.98,
@@ -823,6 +2450,7 @@
     "start": 1396,
     "end": 1900,
     "kind": "fortress",
+    "defense_type": "medieval_stone",
     "note": "Baba Vida fortress in northwestern Bulgaria; a key Danubian stronghold and pashalik center."
   },
   {
@@ -832,6 +2460,7 @@
     "start": 1388,
     "end": 1900,
     "kind": "fortress",
+    "defense_type": "renaissance_bastion",
     "note": "A formidable Danubian fortress and administrative center critical for defending Ottoman control over the lower Danube."
   },
   {
@@ -841,7 +2470,58 @@
     "start": 1388,
     "end": 1900,
     "kind": "fortress",
+    "defense_type": "medieval_stone",
     "note": "An ancient fortified stronghold that anchored the defense of the eastern Balkan passes."
+  },
+  {
+    "name": "Skopje Castle",
+    "lat": 42.00,
+    "lon": 21.43,
+    "start": 1392,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "Dominant hilltop stone fortification commanding the Vardar River and protecting the Ottoman administrative hub of Skopje."
+  },
+  {
+    "name": "Vranduk Fortress",
+    "lat": 44.24,
+    "lon": 17.90,
+    "start": 1410,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "Strategic hilltop fortress along the Bosna River valley in Bosnia, heavily garrisoned and upgraded during the Ottoman era."
+  },
+  {
+    "name": "Travnik Fortress",
+    "lat": 44.23,
+    "lon": 17.66,
+    "start": 1450,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "Important fortified residence and stronghold of the Viziers of Bosnia."
+  },
+  {
+    "name": "Banja Luka (Kastel)",
+    "lat": 44.77,
+    "lon": 17.19,
+    "start": 1500,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "renaissance_bastion",
+    "note": "Major Ottoman fortified stronghold on the Vrbas River serving as an administrative and military hub in western Bosnia."
+  },
+  {
+    "name": "Bitola",
+    "lat": 41.03,
+    "lon": 21.33,
+    "start": 1389,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "transitional",
+    "note": "Key military garrison city (Manastir) and command center in Ottoman Macedonia."
   },
   {
     "name": "Giurgiu",
@@ -850,6 +2530,7 @@
     "start": 1420,
     "end": 1900,
     "kind": "fortress",
+    "defense_type": "renaissance_bastion",
     "note": "An Ottoman bridgehead fortress on the northern bank of the Danube opposite Ruse, vital for cross-river operations into Wallachia."
   },
   {
@@ -859,25 +2540,8 @@
     "start": 1417,
     "end": 1900,
     "kind": "fortress",
+    "defense_type": "medieval_stone",
     "note": "(Turnu Măgurele) Fortified Ottoman enclave across from Nicopolis, securing the Wallachian frontier."
-  },
-  {
-    "name": "Malbork",
-    "lat": 54.03,
-    "lon": 19.03,
-    "start": 1352,
-    "end": 1900,
-    "kind": "fortress",
-    "note": "The massive Gothic brick castle built by the Teutonic Order, later integrated into Royal Prussia under the Polish Crown."
-  },
-  {
-    "name": "Zamość",
-    "lat": 50.72,
-    "lon": 23.25,
-    "start": 1580,
-    "end": 1900,
-    "kind": "fortress",
-    "note": "A masterpiece of Renaissance Italian bastion fortification built by Jan Zamoyski in southeastern Poland."
   },
   {
     "name": "Targoviste",
@@ -886,30 +2550,30 @@
     "start": 1396,
     "end": 1900,
     "kind": "fortress",
+    "defense_type": "medieval_stone",
     "note": "The historic princely fortified capital of Wallachia, witness to fierce resistance under rulers like Vlad the Impaler."
   },
-
-{
+  {
     "name": "Kyiv",
     "lat": 50.45,
     "lon": 30.52,
     "start": 1350,
     "end": 1900,
     "kind": "fortress",
+    "defense_type": "medieval_stone",
     "note": "Ancient historic center and strategic fortified outpost on the Dnieper River controlling central Ukrainian lands."
   },
-["Wroclaw", 51.10, 17.03, 1000, "Major historic Silesian city (Breslau) central to Central European trade and dynastic politics."],
-["Krakow", 50.06, 19.94, 966, "Historic royal capital of Poland and major Central European trade and cultural hub."],
-["Kijow", 50.45, 30.52, 482, "Major historical East Slavic metropolis and cultural center on the Dnieper River."],
-
-
-{
+  ["Wroclaw", 51.10, 17.03, 1000, "Major historic Silesian city (Breslau) central to Central European trade and dynastic politics."],
+  ["Krakow", 50.06, 19.94, 966, "Historic royal capital of Poland and major Central European trade and cultural hub."],
+  ["Kijow", 50.45, 30.52, 482, "Major historical East Slavic metropolis and cultural center on the Dnieper River."],
+  {
     "name": "Lutsk",
     "lat": 50.74,
     "lon": 25.33,
     "start": 1350,
     "end": 1900,
     "kind": "fortress",
+    "defense_type": "medieval_stone",
     "note": "Historic fortified political center of Volhynia and the Lubart's Castle stronghold."
   },
   {
@@ -919,16 +2583,17 @@
     "start": 1350,
     "end": 1700,
     "kind": "fortress",
+    "defense_type": "medieval_stone",
     "note": "The ancient namesake capital stronghold of the Principality of Galicia."
   },
-
-{
+  {
     "name": "Varna",
     "lat": 43.21,
     "lon": 27.91,
     "start": 1444,
     "end": 1900,
     "kind": "fortress",
+    "defense_type": "renaissance_bastion",
     "note": "Vital fortified Black Sea naval port and site of the historic 1444 battle."
   },
   {
@@ -938,6 +2603,7 @@
     "start": 1492,
     "end": 1900,
     "kind": "fortress",
+    "defense_type": "renaissance_bastion",
     "note": "Strategic fortress guarding the Dnieper-Bug estuary at the northern edge."
   },
   {
@@ -947,6 +2613,7 @@
     "start": 1484,
     "end": 1900,
     "kind": "fortress",
+    "defense_type": "medieval_stone",
     "note": "Key Danube Delta stronghold securing northern Black Sea shipping."
   },
   {
@@ -956,8 +2623,41 @@
     "start": 1388,
     "end": 1900,
     "kind": "fortress",
+    "defense_type": "renaissance_bastion",
     "note": "Major heavily fortified strongpoint on the Ottoman Danube defense line."
   },
+  
+  {
+    "name": "Brest-Litovsk Castle",
+    "lat": 52.09,
+    "lon": 23.68,
+    "start": 1390,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "A major strategic river-confluence fortress at the borderlands of the Grand Duchy of Lithuania, serving as a political and military anchor for the Brest Voivodeship."
+  },
+  {
+    "name": "Kamenets Tower (Belaya Vezha)",
+    "lat": 52.41,
+    "lon": 23.81,
+    "start": 1276,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "A powerful defensive pillar tower (donjon) built to guard the northern marches of the Brest region against raids from Baltic tribes and external powers."
+  },
+  {
+    "name": "Pinsk Castle",
+    "lat": 52.11,
+    "lon": 26.12,
+    "start": 1300,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "A marshland and river fortress located in the heart of the Pripet Marshes, protecting the eastern approaches of the Brest-Litovsk Voivodeship."
+  }
+,
   {
     "name": "Kizikermen",
     "lat": 46.83,
@@ -965,7 +2665,132 @@
     "start": 1450,
     "end": 1900,
     "kind": "fortress",
+    "defense_type": "earthwork_abatis",
     "note": "Vital Ottoman-Tatar fortress on the lower Dnieper river guarding traffic and frontier crossings."
-  }
+  },
 
+  ["Trakai", 54.64, 24.93, 1337, "Early co-capital and royal residence surrounded by lakes."],
+    
+  {
+    "name": "Kaunas Castle",
+    "lat": 54.90,
+    "lon": 23.88,
+    "start": 1361,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "Strategic Gothic frontier fortress at the confluence of the Neris and Nemunas rivers."
+  },
+  {
+    "name": "Grodno Old Castle",
+    "lat": 53.67,
+    "lon": 23.82,
+    "start": 1300,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "Key border stronghold and royal residence situated on a high bluff over the Neman River."
+  },
+    ["Novogrudok (Navahrudak)", 53.59, 25.82, 1044, "First capital of the Grand Duchy of Lithuania in the 13th century."],
+{
+        "name": "Trakai Island Castle",
+        "lat": 54.64,
+        "lon": 24.93,
+        "start": 1400,
+        "end": 1900,
+        "kind": "fortress",
+        "defense_type": "medieval_stone",
+        "note": "Formidable water-defended island stronghold of the Grand Dukes."
+    },
+    {
+    "name": "Minsk Castle",
+    "lat": 53.90,
+    "lon": 27.56,
+    "start": 1300,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "A major administrative and fortified center within the Minsk Voivodeship along the Svislach River."
+  },
+  {
+    "name": "Slutsk",
+    "lat": 53.03,
+    "lon": 27.55,
+    "start": 1400,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "renaissance_bastion",
+    "note": "A powerfully fortified magnate stronghold in the southern part of the Minsk Voivodeship featuring extensive earthen and bastioned defenses."
+  },
+  
+  {
+    "name": "Cherkasy Castle",
+    "lat": 49.44,
+    "lon": 32.06,
+    "start": 1392,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "medieval_stone",
+    "note": "A vital Dnieper river border fortress in the Kiev Voivodeship guarding against Tatar incursions from the southern steppes."
+  },
+  {
+    "name": "Smolensk",
+    "lat": 54.78,
+    "lon": 32.04,
+    "start": 1300,
+    "end": 1900,
+    "kind": "fortress",
+    "defense_type": "renaissance_bastion",
+    "note": "The legendary 'Gateway of Russia / Grand Duchy of Lithuania', featuring monumental stone walls and towers guarding the upper Dnieper corridor."
+  },
+    {
+        "name": "Kaunas Castle",
+        "lat": 54.89,
+        "lon": 23.88,
+        "start": 1361,
+        "end": 1900,
+        "kind": "fortress",
+        "defense_type": "medieval_stone",
+        "note": "One of the earliest stone fortresses in Lithuania, built to check the Teutonic Order."
+    },
+    {
+        "name": "Medininkai Castle",
+        "lat": 54.57,
+        "lon": 25.64,
+        "start": 1300,
+        "end": 1900,
+        "kind": "fortress",
+        "defense_type": "medieval_stone",
+        "note": "Largest enclosure-type castle in Lithuania protecting southern approaches to Vilnius."
+    },
+    {
+        "name": "Lida Castle",
+        "lat": 53.89,
+        "lon": 25.30,
+        "start": 1323,
+        "end": 1900,
+        "kind": "fortress",
+        "defense_type": "medieval_stone",
+        "note": "Built by Grand Duke Gediminas on a marshy plain between two rivers."
+    },
+    {
+        "name": "Kreva Castle",
+        "lat": 54.30,
+        "lon": 26.29,
+        "start": 1300,
+        "end": 1900,
+        "kind": "fortress",
+        "defense_type": "medieval_stone",
+        "note": "Ancient castellum-type stone fortress and site of the 1385 Union of Krewo."
+    },
+    {
+        "name": "Biržai Castle",
+        "lat": 56.20,
+        "lon": 24.75,
+        "start": 1589,
+        "end": 1900,
+        "kind": "fortress",
+        "defense_type": "renaissance_bastion",
+        "note": "Advanced Italian-style bastioned earthwork fortress guarding the northern border."
+    }
 ]

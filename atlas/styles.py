@@ -23,7 +23,9 @@ POWER_COLORS = {
    "Swiss Confederacy": "#b19cd9",
    "Duchy of Naxos": "#85e5eb",
    "Papal States": "#f39c12",
-
+   "Golden Horde": "#C89B3C",
+   "Nogai Horde": "#1B365D",
+   
     # Regional Powers & Monarchies
     "Upper Hungary": "#86cfa0",
     "Habsburg Monarchy": "#f30707",
@@ -32,27 +34,46 @@ POWER_COLORS = {
     "Kingdom of Croatia": "#1e61e6",
     "Holy Roman Empire": "#0FF507",
     "HRE": "#e25379",
-    "Tsardom of Russia": "#2f5f50",
+    "Tsardom of Russia": "#123228",
     "Kingdom of France": "#002366",
+    "House of Wettin":"#800031",
+  "House of Wettin (Albertine branch)":"#800031",
+"House of Wettin (Ernestine branch)":"#800031",
+"House of Ascania":"#800031",
+"House of Jagiellon":"#d97706",
     
     # Italian & Mediterranean States
     "Venetian Republic": "#8f2f2a",
     "Republic of Ragusa": "#c7a06a",
     "Republic of Genoa": "#18D8BB",
+    "Kingdom of England": "#df07f3",
+    "Kingdom of Denmark": "#ffff55",
+    "Kingdom of Denmark (union crown)": "#e5f931",
+    "House of Hohenzollern": "#9c07f3",
+    "House of Wittelsbach":"#07f3bc",
+    "House of Luxembourg / Wittelsbach":"#9c07f3",
+    "House of Hohenzollern / Luxembourg":"#9c07f3",
+    "vassal of Polish-Lithuanian Commonwealth":"#9B3918", 
     
     # Eastern Europe & Rus Principalities
     "Grand Duchy of Muscovy": "#1a7894",
-    "Kingdom of Poland": "#c3500e",
-    "Grand Duchy of Lithuania": "#3c14b3",
+    "Kingdom of Poland": "#4cc6ef",
+    "Fief of Poland": "#d76827",
+    "Grand Duchy of Lithuania": "#4112cd",
+    "Vassal of the Grand Duchy of Lithuania": "#4112cd",
     "Polish-Lithuanian Commonwealth": "#952500", 
     "Cossack Hetmanate": "#C8F72D",
-    
+    "Kingdom of Sweden":"#C1EE45",
+    "Teutonic Order":"#0F0045",
+    "House of Luxembourg":"#0086ED",
     # Steppe Khanates & Hordes (Added Great Horde & Kazan Khanate)
     "Crimean Khanate": "#68b684",
     "Great Horde": "#8b7355",      
     "Kazan Khanate": "#cc6600",     
     "Independent Khanate": "#168ECA",
     "Don Cossacks": "#17bda7",
+    "Timurid Empire": "#b93e65",
+    "Livonian Order": "#0066b5",
     
     # Balkans & Southeast Europe
     "Albanian Lords": "#a5a58d",
@@ -66,7 +87,9 @@ POWER_COLORS = {
     "Duchy of Saint Sava (Herzegovina)": "#13CACA",  
     "Principality of Transylvania": "#002AE7",
     "Independent (Kosača Family)": "#8B4513",
-   
+    "Habsburg vassal": "#D7473C",
+     "Habsburg Personal Union": "#D7473C",
+     "House of Griffin": "#72545B",
     
     # Middle East, North Africa & Rivals
     "Mamluk Sultanate": "#c19a6b",

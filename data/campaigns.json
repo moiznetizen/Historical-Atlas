@@ -325,6 +325,210 @@
     ]
   },
   {
+    "name": "Sinan Pasha's Relief Expedition to Hatvan and Esztergom (1594)",
+    "start": 1594,
+    "end": 1594,
+    "summary": "Grand Vizier Koca Sinan Pasha's relief expedition from Belgrade to relieve the sieges of Esztergom and Hatvan during the Long Turkish War.",
+    "points": [
+      [
+        20.46,
+        44.82
+      ],
+      [
+        19.05,
+        47.50
+      ],
+      [
+        19.69,
+        47.66
+      ]
+    ]
+  },
+  {
+"name": "Köprülü Fazıl Ahmed Pasha's Campaign to Novi Zrin and Saint Gotthard (1663–1664)",
+"start": 1663,
+"end": 1664,
+"summary": "Grand Vizier Köprülü Fazıl Ahmed Pasha's major campaign during the Austro-Turkish War, culminating in the destruction of the fortress of Novi Zrin and the Battle of Saint Gotthard.",
+"points": [
+[
+26.56,
+41.68
+],
+[
+20.46,
+44.82
+],
+[
+19.05,
+47.50
+],
+[
+16.99,
+46.45
+],
+[
+16.88,
+46.32
+],
+[
+16.27,
+46.95
+]
+]
+},
+{
+"name": "Koca Sinan Pasha's Campaign to Győr, Szentmárton, and Komárom (1594)",
+"start": 1594,
+"end": 1594,
+"summary": "Grand Vizier Koca Sinan Pasha's campaign during the Long Turkish War resulting in the capture of Győr (Raab) and Szentmárton (St. Marton), though checked at Komárom.",
+"points": [
+[
+20.46,
+44.82
+],
+[
+19.05,
+47.50
+],
+[
+17.63,
+47.68
+],
+[
+17.76,
+47.55
+],
+[
+18.12,
+47.74
+]
+]
+},
+{
+"name": "Sultan Mehmed II's Campaign to Trabzon (1461)",
+"start": 1461,
+"end": 1461,
+"summary": "Sultan Mehmed II's joint land and naval expedition that successfully conquered the Empire of Trebizond, bringing the southern Black Sea coast under permanent Ottoman control.",
+"points": [
+[
+        27.0355422,
+        40.7826012
+      ],
+      [
+        26.828971,
+        40.544859
+      ],
+      [
+        26.5654145,
+        40.3659965
+      ],
+      [
+        26.928695,
+        40.1866581
+      ],
+      [
+        30.7582863,
+        36.8668324
+      ],
+      [
+        32.1256083,
+        38.6982648
+      ],
+      [
+        33.2627658,
+        40.1197839
+      ],
+      [
+        33.975351,
+        41.4857266
+      ],
+      [
+        34.9365112,
+        41.9905376
+      ],
+      [
+        35.4748197,
+        41.512164
+      ],
+      [
+        37.9269989,
+        40.6934401
+      ],
+      [
+        39.557757,
+        41.0167707
+      ]
+]
+},
+{
+"name": "Köprülü Fazıl Mustafa Pasha's Counter-Offensive Campaign to Belgrade (1690)",
+"start": 1690,
+"end": 1690,
+"summary": "Grand Vizier Köprülü Fazıl Mustafa Pasha's successful counter-offensive campaign during the Great Turkish War that recaptured Belgrade and pushed Habsburg forces out of Serbia.",
+"points": [
+[
+26.56,
+41.68
+],
+[
+23.32,
+42.69
+],
+[
+21.89,
+43.32
+],
+[
+20.46,
+44.82
+]
+]
+},
+{
+    "name": "Hadım Suleiman Pasha's Naval Expedition to Diu (1538)",
+    "start": 1538,
+    "end": 1538,
+    "summary": "Ottoman naval expedition led by Governor of Egypt Hadım Suleiman Pasha into the Indian Ocean to dislodge the Portuguese from the strategic fort of Diu, marking a major clash of empires in western India.",
+    "points": [
+      [
+        48.17697,
+        29.8627358
+      ],
+      [
+        51.943445,
+        26.6012609
+      ],
+      [
+        54.2448003,
+        25.7203408
+      ],
+      [
+        56.393302,
+        26.667535
+      ],
+      [
+        58.2115143,
+        24.288042
+      ],
+      [
+        67.6876893,
+        23.6786633
+      ],
+      [
+        69.3553174,
+        21.1113033
+      ],
+      [
+        70.5147757,
+        20.1857403
+      ],
+      [
+        70.9368694,
+        20.6897314
+      ]
+    ]
+  },
+  {
     "name": "Campaign against Astrakhan",
     "start": 1556,
     "end": 1556,
@@ -334,7 +538,54 @@
       [48.05, 46.35]
     ]
   },
- 
+ {
+  "name": "Ottoman Campaign against Kiliya and Akkerman",
+  "start": 1484,
+  "end": 1484,
+  "summary": "Bayezid II's major Black Sea campaign against the Moldavian fortresses of Kiliya and Akkerman. The Ottoman army advanced from the Balkans through Wallachia toward the lower Danube, captured Kiliya at the Danube delta, and then moved west along the Black Sea coast to besiege and capture Akkerman on the Dniester estuary.",
+  "points": [
+ [
+        26.5621019,
+        41.6944572
+      ],
+      [
+        23.5493386,
+        42.6147298
+      ],
+      [
+        23.3625354,
+        42.7141995
+      ],
+      [
+        23.7941153,
+        43.32642
+      ],
+      [
+        27.8586952,
+        43.1997689
+      ],
+      [
+        28.5787613,
+        44.1889355
+      ],
+      [
+        28.8215196,
+        45.031431
+      ],
+      [
+        29.2509142,
+        45.4342507
+      ],
+      [
+        29.9283443,
+        46.1372731
+      ],
+      [
+        30.3689289,
+        46.1884288
+      ]
+  ]
+},
   {
     "name": "Campaign of Chaldiran",
     "start": 1514,
