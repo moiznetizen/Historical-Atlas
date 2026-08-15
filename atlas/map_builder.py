@@ -46,9 +46,10 @@ def _css():
         for name, color in POWER_COLORS.items()
     )
     return f"""
-@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Aref+Ruqaa:wght@400;700&family=Reem+Kufi:wght@400;600&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Aref+Ruqaa:wght@400;700&family=Reem+Kufi:wght@400;600&family=Cinzel:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap');
 :root {{
   {css_palette_vars()}
+  --zoom-scale: 1;
   --glass: rgba(251, 246, 234, 0.92);
   --glass-strong: rgba(251, 246, 234, 0.98);
   --line: rgba(36, 27, 24, 0.16);
@@ -770,18 +771,63 @@ body {{
   white-space: nowrap;
 }}
 .territory-label {{
-  color: rgba(20, 32, 27, 0.86);
-  font: 700 11px/1.15 Inter, sans-serif;
+  display: inline-block;
+  color: rgba(20, 32, 27, 0.88);
+  font-family: "Cinzel", "Times New Roman", serif;
+  font-weight: 700;
+  font-size: calc(10.1px * var(--zoom-scale, 1));
+  line-height: 1.2;
   text-align: center;
   text-transform: uppercase;
-  text-shadow: 0 1px 0 rgba(251, 246, 234, 0.95), 0 -1px 0 rgba(251, 246, 234, 0.95), 1px 0 0 rgba(251, 246, 234, 0.95), -1px 0 0 rgba(251, 246, 234, 0.95);
-  pointer-events: none;
+  letter-spacing: calc(0.4px + 0.25px * var(--zoom-scale, 1));
+  text-shadow:
+    0 1px 0 rgba(251, 246, 234, 0.96), 0 -1px 0 rgba(251, 246, 234, 0.96),
+    1px 0 0 rgba(251, 246, 234, 0.96), -1px 0 0 rgba(251, 246, 234, 0.96),
+    1px 1px 1px rgba(251, 246, 234, 0.9), -1px -1px 1px rgba(251, 246, 234, 0.9),
+    0 1px 3px rgba(251, 246, 234, 0.6);
+  cursor: pointer;
+  pointer-events: auto;
+  -webkit-tap-highlight-color: transparent;
+  transition: color 0.2s var(--ease), letter-spacing 0.25s var(--ease), transform 0.25s var(--ease), text-shadow 0.25s var(--ease);
+  transform-origin: center;
+}}
+.territory-label:hover, .territory-label:focus-visible {{
+  color: var(--accent-dark);
+  letter-spacing: calc(1.0px + 0.3px * var(--zoom-scale, 1));
+  transform: scale(1.08);
+  text-shadow:
+    0 1px 0 rgba(251, 246, 234, 1), 0 -1px 0 rgba(251, 246, 234, 1),
+    1px 0 0 rgba(251, 246, 234, 1), -1px 0 0 rgba(251, 246, 234, 1),
+    0 0 8px rgba(184, 134, 15, 0.45);
+  outline: none;
+}}
+.territory-label.is-pinned {{
+  color: var(--accent-dark);
+  text-shadow:
+    0 1px 0 rgba(251, 246, 234, 1), 0 -1px 0 rgba(251, 246, 234, 1),
+    1px 0 0 rgba(251, 246, 234, 1), -1px 0 0 rgba(251, 246, 234, 1),
+    0 0 10px rgba(184, 134, 15, 0.65);
 }}
 .territory-label.vassal {{
-  color: rgba(28, 83, 53, 0.88);
+  color: rgba(28, 83, 53, 0.9);
 }}
+.territory-label.vassal:hover {{ color: var(--turquoise-dark); }}
 .territory-label.neighbour {{
-  color: rgba(70, 73, 69, 0.76);
+  color: rgba(70, 73, 69, 0.78);
+  font-weight: 600;
+}}
+:root[data-label-style="manuscript"] .territory-label {{
+  font-family: "Amiri", "Cinzel", serif;
+  font-style: italic;
+  font-weight: 700;
+  letter-spacing: calc(0.2px + 0.2px * var(--zoom-scale, 1));
+  text-transform: none;
+}}
+:root[data-label-style="modern"] .territory-label {{
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: calc(1.2px + 0.3px * var(--zoom-scale, 1));
 }}
 .coord-readout, .fullscreen-faux {{
   padding: 6px 9px;
@@ -1212,7 +1258,9 @@ def _shell():
     </div>
     <div class="atlas-title-actions">
       <button class="icon-toggle-btn" id="theme-toggle" title="Toggle day/night theme">&#9789;</button>
+      <button class="icon-toggle-btn" id="label-style-toggle" title="Cycle territory label lettering style">&#10021;</button>
       <button class="icon-toggle-btn" id="lang-toggle" data-i18n-title="lang_toggle_title" title="Switch to Turkish">EN</button>
+      <button class="icon-toggle-btn" id="ottoman-only-toggle" title="Show only Ottoman direct provinces and vassal territories">&#9770;</button>
       <button class="icon-toggle-btn" id="link-button" data-i18n-title="copy_link_title" title="Copy link to this year">&#128279;</button>
       <button class="icon-toggle-btn" id="title-minimize-button" title="Minimize Title">&#9650;</button>
     </div>
@@ -1287,6 +1335,7 @@ def _shell():
         <button class="filter-chip" data-defense="earthwork_abatis" data-i18n="filter_earthwork">Earthworks</button>
         <button class="filter-chip" data-defense="medieval_stone" data-i18n="filter_stone">Stone</button>
         <button class="filter-chip" data-defense="transitional" data-i18n="filter_transitional">Transitional</button>
+        <button class="filter-chip" data-kind="fortified_town" data-i18n="filter_fortified_town">Fortified Towns</button>
       </div>
       <div class="filter-group" style="margin-left: auto;">
         <span data-i18n="filter_era">Battle Era:</span>
@@ -1476,6 +1525,13 @@ const map = L.map("map", {{
 
 map.setView([45.0, 20.0], 5);
 
+function updateLabelZoomScale() {{
+  const z = map.getZoom();
+  const scale = Math.max(0.7, Math.min(1.5, 0.55 + z * 0.09));
+  document.documentElement.style.setProperty("--zoom-scale", scale.toFixed(3));
+}}
+map.on("zoomend", updateLabelZoomScale);
+
 L.tileLayer("https://{{s}}.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{{z}}/{{x}}/{{y}}{{r}}.png", {{
   attribution: "OpenStreetMap contributors, CARTO",
   maxZoom: 18,
@@ -1484,7 +1540,10 @@ L.tileLayer("https://{{s}}.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{{
 
 let currentYear = ATLAS.start;
 let currentDefenseFilter = "all";
+let currentKindFilter = "all";
 let territoryOpacityScale = 1;
+let showOttomanOnly = false;
+let pinnedLabelName = null;
 let battleMinYear = 0;
 let showRevolts = true;
 let timer = null;
@@ -1610,6 +1669,12 @@ mini.fitBounds(ATLAS.bounds);
 function activeInYear(item, year) {{
   const props = item.properties || item;
   return props.start <= year && year <= props.end;
+}}
+
+function isOttomanDirectOrVassal(feature) {{
+  const props = feature.properties;
+  const power = (props.power || "");
+  return props.relation === "direct" || props.relation === "vassal" || power.indexOf("Ottoman") === 0;
 }}
 
 function styleFor(feature) {{
@@ -2303,11 +2368,25 @@ function renderTerritoryLabels(features) {{
   features.forEach(feature => {{
     const p = feature.properties;
     const center = featureCenter(feature);
-    const className = "territory-label " + p.relation;
-    L.marker(center, {{
-      icon: L.divIcon({{className: "", html: '<div class="' + className + '">' + p.name + '</div>', iconSize: [132, 40], iconAnchor: [66, 20]}}),
-      interactive: false
+    const pinned = p.name === pinnedLabelName ? " is-pinned" : "";
+    const className = "territory-label " + p.relation + pinned;
+    const marker = L.marker(center, {{
+      icon: L.divIcon({{className: "", html: '<div class="' + className + '" tabindex="0" role="button">' + p.name + '</div>', iconSize: [132, 40], iconAnchor: [66, 20]}}),
+      interactive: true,
+      keyboard: false,
+      bubblingMouseEvents: false
     }}).addTo(labelGroup);
+    const span = p.start && p.end ? (p.start + " \\u2013 " + p.end) : (p.start ? "from " + p.start : "");
+    marker.on("click", event => {{
+      L.DomEvent.stopPropagation(event);
+      pinnedLabelName = pinnedLabelName === p.name ? null : p.name;
+      renderTerritoryLabels(features);
+      map.flyTo(center, Math.max(map.getZoom(), 6), {{duration: 0.6}});
+      showToast(p.name + (span ? " \\u00b7 " + span : "") + (p.relation ? " \\u00b7 " + p.relation : ""));
+    }});
+    marker.on("mouseover", () => {{
+      marker.getElement()?.querySelector(".territory-label")?.setAttribute("title", p.name + (span ? " (" + span + ")" : ""));
+    }});
   }});
 }}
 
@@ -2332,17 +2411,30 @@ function renderPoints(year) {{
     }}
 
     const isFortress = kind === "fortress" || defenseType !== "general";
-    
-    if (isFortress && currentDefenseFilter !== "all" && defenseType !== currentDefenseFilter) {{
+    const isFortifiedTown = kind === "fortified_town";
+
+    if (currentKindFilter !== "all" && kind !== currentKindFilter) {{
+      return;
+    }}
+
+    if (currentKindFilter === "all" && isFortress && currentDefenseFilter !== "all" && defenseType !== currentDefenseFilter) {{
       return;
     }}
 
     if (start === null || start <= year) {{
-      const icon = isFortress ? fortressIcon() : cityIcon(name);
-      const tooltipLabel = isFortress ? "<b>Fortress: " + name + "</b><br>" + (note || "") + (defenseType !== "general" ? "<br><i>Type: " + defenseType.replace("_", " ") + "</i>" : "") : "<b>" + name + "</b><br><span>" + (note || "") + "</span>";
-      
+      const icon = isFortress || isFortifiedTown ? fortressIcon() : cityIcon(name);
+      const typeLabel = isFortifiedTown ? "Fortified Town" : "Fortress";
+      const tooltipLabel = (isFortress || isFortifiedTown) ? "<b>" + typeLabel + ": " + name + "</b><br>" + (note || "") + (defenseType !== "general" ? "<br><i>Type: " + defenseType.replace("_", " ") + "</i>" : "") : "<b>" + name + "</b><br><span>" + (note || "") + "</span>";
+      const cardLabel = (isFortress || isFortifiedTown)
+        ? '<h3>' + name + '</h3>' +
+          '<p><b>' + t("info_type") + ':</b> ' + typeLabel + (defenseType !== "general" ? " &middot; " + defenseType.replace("_", " ") : "") + '</p>' +
+          (start ? '<p><b>' + t("info_since") + ':</b> ' + start + (item.end ? "\\u2013" + item.end : "") + '</p>' : "") +
+          '<p><b>' + t("info_notes") + ':</b> ' + (note || "&mdash;") + '</p>'
+        : '<h3>' + name + '</h3>' + '<p>' + (note || "") + '</p>';
+
       L.marker([lat, lon], {{icon: icon}})
         .bindTooltip('<div class="atlas-tooltip">' + tooltipLabel + '</div>', {{sticky: true}})
+        .on("click", () => openInfoCard(cardLabel))
         .addTo(cityGroup);
     }}
   }});
@@ -2461,7 +2553,10 @@ function setYear(year) {{
   const event = eventFor(currentYear);
   eventTitle.textContent = event.year + " · " + event.title;
   eventBody.textContent = event.body;
-  const activeFeatures = ATLAS.territories.features.filter(feature => activeInYear(feature, currentYear));
+  const activeFeatures = ATLAS.territories.features.filter(feature =>
+    activeInYear(feature, currentYear) &&
+    (!showOttomanOnly || isOttomanDirectOrVassal(feature))
+  );
   territoryLayer.clearLayers();
   territoryLayer.addData({{
     type: "FeatureCollection",
@@ -2571,6 +2666,32 @@ themeToggle.addEventListener("click", () => {{
   themeToggle.classList.toggle("is-active", !isNight);
 }});
 
+/* --- Ottoman-only filter: hide neighbouring/foreign territories, keep direct provinces + vassals --- */
+const ottomanOnlyToggle = document.getElementById("ottoman-only-toggle");
+ottomanOnlyToggle.addEventListener("click", () => {{
+  showOttomanOnly = !showOttomanOnly;
+  ottomanOnlyToggle.classList.toggle("is-active", showOttomanOnly);
+  setYear(currentYear);
+  showToast(showOttomanOnly ? "Showing Ottoman direct provinces and vassals only" : "Showing all territories and neighbours");
+}});
+
+/* --- Territory label lettering style: classic engraved / manuscript / modern --- */
+const labelStyleToggle = document.getElementById("label-style-toggle");
+const labelStyles = ["classic", "manuscript", "modern"];
+const labelStyleNames = {{classic: "Classic engraved", manuscript: "Manuscript italic", modern: "Modern sans"}};
+let labelStyleIndex = 0;
+labelStyleToggle.addEventListener("click", () => {{
+  labelStyleIndex = (labelStyleIndex + 1) % labelStyles.length;
+  const style = labelStyles[labelStyleIndex];
+  if (style === "classic") {{
+    document.documentElement.removeAttribute("data-label-style");
+  }} else {{
+    document.documentElement.setAttribute("data-label-style", style);
+  }}
+  labelStyleToggle.classList.toggle("is-active", style !== "classic");
+  showToast("Territory labels: " + labelStyleNames[style]);
+}});
+
 /* --- Era markers + Golden Age band on the timeline slider --- */
 const ERA_MARKERS = [
   {{year: 1453, label: "1453 \\u2014 Fall of Constantinople"}},
@@ -2649,6 +2770,7 @@ const TRANSLATIONS = {{
   filter_earthwork: {{en: "Earthworks", tr: "Toprak Tabyalar"}},
   filter_stone: {{en: "Stone", tr: "Ta\\u015f"}},
   filter_transitional: {{en: "Transitional", tr: "Ge\\u00e7i\\u015f D\\u00f6nemi"}},
+  filter_fortified_town: {{en: "Fortified Towns", tr: "Surlu Kasabalar"}},
   filter_era: {{en: "Battle Era:", tr: "Sava\\u015f D\\u00f6nemi:"}},
   filter_unrest: {{en: "Unrest:", tr: "Huzursuzluk:"}},
   filter_revolts: {{en: "Revolts", tr: "İsyanlar"}},
@@ -2670,6 +2792,8 @@ const TRANSLATIONS = {{
   info_result: {{en: "Result", tr: "Sonu\\u00e7"}},
   info_importance: {{en: "Importance", tr: "\\u00d6nem"}},
   info_casualties: {{en: "Casualties", tr: "Kay\\u0131plar"}},
+  info_type: {{en: "Type", tr: "T\\u00fcr"}},
+  info_notes: {{en: "Notes", tr: "Notlar"}},
   lang_toggle_title: {{en: "Switch to Turkish", tr: "\\u0130ngilizceye ge\\u00e7"}},
   copy_link_title: {{en: "Copy link to this year", tr: "Bu y\\u0131l\\u0131n ba\\u011flant\\u0131s\\u0131n\\u0131 kopyala"}},
   compare_title: {{en: "Compare two years", tr: "\\u0130ki y\\u0131l\\u0131 kar\\u015f\\u0131la\\u015ft\\u0131r"}},
@@ -2969,11 +3093,17 @@ document.addEventListener("keydown", event => {{
   }}
 }});
 
-document.querySelectorAll(".filter-chip[data-defense]").forEach(btn => {{
+document.querySelectorAll(".filter-chip[data-defense], .filter-chip[data-kind]").forEach(btn => {{
   btn.addEventListener("click", () => {{
-    document.querySelectorAll(".filter-chip[data-defense]").forEach(b => b.classList.remove("is-active"));
+    document.querySelectorAll(".filter-chip[data-defense], .filter-chip[data-kind]").forEach(b => b.classList.remove("is-active"));
     btn.classList.add("is-active");
-    currentDefenseFilter = btn.getAttribute("data-defense");
+    if (btn.hasAttribute("data-kind")) {{
+      currentKindFilter = btn.getAttribute("data-kind");
+      currentDefenseFilter = "all";
+    }} else {{
+      currentDefenseFilter = btn.getAttribute("data-defense");
+      currentKindFilter = "all";
+    }}
     renderPoints(currentYear);
   }});
 }});
@@ -3093,6 +3223,8 @@ const regionalLabels = [
   {{name: "Samogitia", lat: 55.65, lon: 22.88}},
   {{name: "Black Ruthenia", lat: 53.38, lon: 25.82}},
   {{name: "Pontic-Caspian Steppe", lat: 47.50, lon: 47.00}},
+  {{name: "Dobruja", lat: 44.15, lon: 28.35}},
+  {{name: "Budjak Horde", lat: 45.85, lon: 29.50}},
   {{name: "Carpathian Mountains", lat: 49.00, lon: 24.50}},
   {{name: "Caucasus Mountains", lat: 42.30, lon: 44.00}},
   {{name: "Ural Mountains", lat: 60.00, lon: 60.00}},
@@ -3252,6 +3384,7 @@ if (hashMatch) {{
 
 renderEraTicks();
 setYear(currentYear);
+updateLabelZoomScale();
 """
 
 

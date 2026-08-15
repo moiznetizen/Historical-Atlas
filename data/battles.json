@@ -140,7 +140,7 @@
   "year": 1612,
   "lat": 49.80,
   "lon": 30.11,
-  "kind": "land battle",
+  "kind": "land",
   "date": "Autumn 1612",
   "commanders": "Zaporozhian Cossacks vs. Crimean Khanate Forces",
   "result": "Cossack victory",
@@ -164,7 +164,7 @@
   "year": 1629,
   "lat": 49.26,
   "lon": 24.62,
-  "kind": "land battle",
+  "kind": "land",
   "date": "9 October 1629",
   "commanders": "Stefan Chmielecki and Hryhoriy Chornyi vs. Kalga Devlet-Giray, Aslan-Giray, and Khan Temir",
   "result": "Polish–Lithuanian–Cossack victory",
@@ -176,7 +176,7 @@
   "year": 1626,
   "lat": 49.82,
   "lon": 30.21,
-  "kind": "land battle",
+  "kind": "land",
   "date": "9 October 1626",
   "commanders": "Stefan Chmielecki and Mykhailo Doroshenko vs. Buhar Kantymirowie",
   "result": "Polish–Lithuanian–Cossack victory",
@@ -397,18 +397,7 @@
         "importance": "Near-total destruction of a 9,000-strong Crimean raiding force along the Horyn River",
         "casualties": "Crimean force nearly eradicated (only ~50 survivors)"
     },
-    {
-        "name": "Battle of Ștefănești",
-        "year": 1476,
-        "date": "July 1476",
-        "lat": 47.80,
-        "lon": 27.20,
-        "kind": "land",
-        "commanders": "Stephen III vs. Eminek Mârza",
-        "result": "Moldavian Victory",
-        "importance": "Repelled a diversionary Crimean-Nogai Tatar invasion of northern Moldavia ordered by Sultan Mehmed II",
-        "casualties": "Very heavy losses for the Tatar forces"
-    },{
+  {
         "name": "Battle of Cernăuți",
         "year": 1497,
         "date": "30 October 1497",
@@ -1572,18 +1561,7 @@
     "importance": "Fought on the hill of Vrtijeljka near Cetinje at the start of the Morean War; an Ottoman force under Süleyman Pasha of Scutari defeated a Venetian irregular force and Montenegrin-Hajduk fighters, resulting in the death of the famed hajduk leader Bajo Pivljanin and the display of severed heads in Constantinople",
     "casualties": "Heavy Christian and Hajduk casualties, including the death of Bajo Pivljanin and dozens of fighters; significant Ottoman losses"
   },
-  {
-    "name": "Battle of Párkány",
-    "date": "7–9 October 1683",
-    "year": 1683,
-    "lat": 47.79,
-    "lon": 18.71,
-    "kind": "land",
-    "commanders": "John III Sobieski and Charles V, Duke of Lorraine vs. Ottoman field army",
-    "result": "Decisive Christian victory",
-    "importance": "Crushed the retreating Ottoman forces in northern Hungary immediately after the relief of Vienna.",
-    "casualties": "Heavy for Ottomans, light for Christians"
-  },
+
    {
     "name": "Rákóczi's Invasion of Poland (Treaty of Radnot Campaign)",
     "year": 1657,
@@ -2505,17 +2483,41 @@
     "casualties": "Not securely recorded."
   },
   
-  {
-    "name": "Battle of Romhány",
-    "date": "1593",
-    "year": 1593,
-    "lat": 48.01,
-    "lon": 19.26,
-    "kind": "land",
-    "commanders": "Habsburg vs. Ottoman Empire",
+{
+  "name": "Battle of Romhány (Fülek–Romhány)",
+  "date": "21 November 1593",
+  "year": 1593,
+  "lat": 48.28,
+  "lon": 19.81,
+  "kind": "land",
+  "commanders": "István Báthori and Sigismund Rákóczi vs. Ottoman garrison forces",
+  "result": "Habsburg-Hungarian victory",
+  "importance": "An early Christian victory of the Fifteen Years' War on the Upper Hungarian front, in which Hungarian forces defeated an Ottoman relief army attempting to relieve the siege of Fülek.",
+  "casualties": "Moderate Ottoman casualties"
+},
+{
+    "name": "Siege of Szolnok",
+    "date": "1552",
+    "year": 1552,
+    "lat": 47.17,
+    "lon": 20.20,
+    "kind": "siege",
+    "commanders": "Kara Ahmed Pasha; István Dobó / Lőrinc Nyáry",
     "result": "Ottoman victory",
-    "importance": "An early engagement of the Long Turkish War on the northern Hungarian front.",
-    "casualties": "Moderate"
+    "importance": "The fall of Szolnok opened the central Hungarian plains further to Ottoman advance and facilitated the capture of Eger.",
+    "casualties": "Heavy casualties among the defenders; significant Ottoman losses during the artillery bombardment and assaults."
+  },
+  {
+    "name": "Siege of Veszprém",
+    "date": "1552",
+    "year": 1552,
+    "lat": 47.09,
+    "lon": 17.91,
+    "kind": "siege",
+    "commanders": "Ali Pasha; Gergely Wass",
+    "result": "Ottoman victory",
+    "importance": "The capture of Veszprém strengthened the Ottoman defensive and offensive posture in the region west of the Danube during the 1552 campaign.",
+    "casualties": "Moderate to heavy garrison casualties."
   },
   {
     "name": "Battle of Guruslău",
@@ -2655,9 +2657,9 @@
 {
   "name": "Battle of Cecora (1620)",
   "year": 1620,
-  "lat": 47.16,
+  "lat": 47.26,
   "lon": 27.60,
-  "kind": "land battle",
+  "kind": "land",
   "date": "17 September – 7 October 1620",
   "commanders": "Stanisław Żółkiewski and Gaspar Graziani vs. Iskender Pasha, Khan Temir, and Gabor Bethlen",
   "result": "Ottoman victory",
@@ -3158,6 +3160,30 @@
     "result": "Moldavian victory",
     "importance": "Moldavian invasion of Wallachia resulting in the rout of Wallachian-Ottoman forces following the death of Mehmed II.",
     "casualties": "Entire Wallachian army annihilated; significant Moldavian losses."
+  },
+  {
+    "name": "Hungarian-Ottoman Border War",
+    "date": "1500–1503",
+    "year": 1500,
+    "lat": 44.81,
+    "lon": 20.46,
+    "kind": "campaign",
+    "commanders": "Kingdom of Hungary; Ottoman Empire",
+    "result": "Inconclusive / Truce in 1503",
+    "importance": "Fought alongside the Ottoman-Venetian War as Hungary joined the anti-Ottoman coalition, involving extensive skirmishing along the Croatian, Bosnian, and Serbian frontiers before a seven-year peace treaty was concluded in 1503.",
+    "casualties": "Widespread regional losses and casualties from continuous border raids."
+  },
+  {
+    "name": "Southern Frontier Border Skirmishes",
+    "date": "1512–1513",
+    "year": 1512,
+    "lat": 45.15,
+    "lon": 17.68,
+    "kind": "campaign",
+    "commanders": "Hungarian border guards and local commanders; Ottoman Akinji raiders",
+    "result": "Inconclusive border raiding",
+    "importance": "Renewed intense cross-border raiding along the southern frontier (Croatia, Bosnia, and Srem) taking advantage of political instability and succession struggles within the Ottoman Empire following Bayezid II's abdication.",
+    "casualties": "Localized casualties among garrisons and border populations."
   },
   {
     "name": "Battle of Chițcani",
@@ -3860,6 +3886,18 @@
   "importance": "Although the attempt to capture nearby Ottoman forts failed, the relief expedition successfully reprovisioned the Jajce garrison, extending the lifespan of this critical Christian defensive salient by several years.",
   "casualties": "Heavy for the relief force"
 },
+{
+    "name": "Siege of Jajce",
+    "date": "1500",
+    "year": 1500,
+    "lat": 44.34,
+    "lon": 17.28,
+    "kind": "siege",
+    "commanders": "Ottoman forces; John Corvinus (Hungarian relief force)",
+    "result": "Hungarian victory (relief)",
+    "importance": "The successful relief of Jajce by John Corvinus preserved a vital Christian stronghold on the Bosnian frontier and checked Ottoman expansion in the region.",
+    "casualties": "Heavy casualties for the besieging Ottoman forces following the arrival of the Hungarian relief army."
+  },
 {
   "name": "Siege of Knin",
   "date": "1522",
@@ -4887,19 +4925,8 @@
     "importance": "A legendary symbol of heroism; Szondi and his small garrison fought to the death against overwhelming odds.",
     "casualties": "Heavy (total for defenders)"
   },
-{
-  "name": "Siege of Szolnok",
-  "date": "1552",
-  "year": 1552,
-  "lat": 47.17,
-  "lon": 20.20,
-  "kind": "siege",
-  "commanders": "Ottoman Empire (Pasha Ahmed Ali) vs. Lőrinc Nyáry",
-  "result": "Ottoman victory",
-  "importance": "The rapid collapse of the fortress due to mercenary desertion caused widespread panic in the region, directly impacting the morale of the defenders at the upcoming Siege of Eger.",
-  "casualties": "Low (due to mass desertion)"
-}
-  ,
+
+  
   {
     "name": "Siege of Eger",
     "date": "1596",
@@ -7982,12 +8009,96 @@
     "year": 1552,
     "lat": 54.19,
     "lon": 37.61,
-    "kind": "land",
+    "kind": "siege",
     "date": "June 21–23, 1552",
     "commanders": "Devlet I Giray vs. Ivan the Terrible, Mikhail Vorotynsky, Andrei Kurbsky",
     "result": "Decisive Russian victory; Crimean forces defeated and forced to retreat",
     "importance": "Thwarted the Crimean attempt to divert Ivan the Terrible from the Kazan campaign, successfully protecting Tula and freeing all captives.",
     "casualties": "Heavy Crimean losses; severe wounds sustained by Prince Kurbsky"
+  },
+  {
+    "name": "Siege of Szécsény",
+    "date": "1552",
+    "year": 1552,
+    "lat": 48.08,
+    "lon": 19.53,
+    "kind": "siege",
+    "commanders": "Kara Ahmed Pasha / Hadım Ali Pasha; Hungarian garrison",
+    "result": "Ottoman victory",
+    "importance": "The fall of Szécsény formed part of the coordinated 1552 Ottoman campaign that systematically dismantled the northern Hungarian border defense network.",
+    "casualties": "Moderate garrison losses; the fort was largely abandoned or surrendered after minimal resistance following surrounding defeats."
+  },
+  {
+    "name": "Siege of Hollókő",
+    "date": "1552",
+    "year": 1552,
+    "lat": 47.99,
+    "lon": 19.58,
+    "kind": "siege",
+    "commanders": "Ottoman forces; local Hungarian garrison",
+    "result": "Ottoman victory",
+    "importance": "Capturing the strategic hilltop fortress of Hollókő allowed the Ottomans to secure regional communications and lines of supply during their push toward Eger.",
+    "casualties": "Light to moderate casualties; the small garrison surrendered after a brief bombardment."
+  },
+  {
+    "name": "Siege of Buják",
+    "date": "1552",
+    "year": 1552,
+    "lat": 47.85,
+    "lon": 19.55,
+    "kind": "siege",
+    "commanders": "Ottoman forces; Hungarian castle garrison",
+    "result": "Ottoman victory",
+    "importance": "The capture of Buják further consolidated Ottoman control over the Nógrád region, eliminating another strongpoint that could threaten their regional supply lines.",
+    "casualties": "Garrison casualties unrecorded; forces capitulated as the broader defense network collapsed."
+  },
+  {
+    "name": "Siege of Gyarmat (Balassagyarmat)",
+    "date": "1552",
+    "year": 1552,
+    "lat": 48.07,
+    "lon": 19.29,
+    "kind": "siege",
+    "commanders": "Ottoman forces; local fortress defenders",
+    "result": "Ottoman victory",
+    "importance": "The fall of Balassagyarmat removed a key defensive hub along the Ipoly river valley, tightening the Ottoman grip on upper Hungary.",
+    "casualties": "Moderate casualties among the defenders; swift surrender following heavy artillery pressure."
+  },
+  {
+    "name": "Siege of Pétervárad",
+    "date": "1526",
+    "year": 1526,
+    "lat": 45.25,
+    "lon": 19.86,
+    "kind": "siege",
+    "commanders": "Suleiman the Magnificent / Pargalı Ibrahim Pasha; Bálint Török / small Hungarian garrison",
+    "result": "Ottoman victory",
+    "importance": "The fall of Pétervárad on July 15, 1526, broke the first major southern defensive barrier on the Danube, allowing the main Ottoman army an unobstructed advance toward Mohács.",
+    "casualties": "Heavy casualties among the outnumbered defenders who resisted bravely despite a chronic lack of reinforcements and garrison troops."
+  },
+  {
+    "name": "Siege of Újlak",
+    "date": "1526",
+    "year": 1526,
+    "lat": 45.22,
+    "lon": 19.38,
+    "kind": "siege",
+    "commanders": "Suleiman the Magnificent; local Hungarian garrison",
+    "result": "Ottoman victory",
+    "importance": "Capturing Újlak (Ilok) secured the Ottoman supply lines and flank along the Danube river route during the march toward the Hungarian heartland.",
+    "casualties": "Moderate to heavy garrison losses following artillery bombardment."
+  },
+  {
+    "name": "Siege of Eszék",
+    "date": "1526",
+    "year": 1526,
+    "lat": 45.55,
+    "lon": 18.69,
+    "kind": "siege",
+    "commanders": "Suleiman the Magnificent; local defenders",
+    "result": "Ottoman victory",
+    "importance": "The capture of Eszék (Osijek) and the surrounding crossing points enabled the main Ottoman army to successfully bridge the Drava River prior to the Battle of Mohács.",
+    "casualties": "Light to moderate; the town and fortifications offered little resistance as the main Ottoman host approached."
   },
   {
     "name": "Battle on the Shivron River",
@@ -10128,6 +10239,126 @@
     "casualties": "Not specified in source"
   },
   {
+    "name": "Siege of Nové Zámky (1621)",
+    "year": 1621,
+    "lat": 47.9854,
+    "lon": 18.1719,
+    "kind": "siege",
+    "date": "1621",
+    "commanders": "Gabriel Bethlen vs. Habsburg garrison",
+    "result": "Unsuccessful Transylvanian siege",
+    "importance": "Part of Bethlen's renewed campaign against Ferdinand II during the Thirty Years' War, highlighting the strategic struggle for control of Royal Hungary's fortresses.",
+    "casualties": "Significant besieger losses from disease and fortification defense"
+  },
+  {
+    "name": "Capture of Kassa (Košice)",
+    "year": 1619,
+    "lat": 48.7164,
+    "lon": 21.2611,
+    "kind": "siege",
+    "date": "1619",
+    "commanders": "Gabriel Bethlen vs. Habsburg loyalists",
+    "result": "Transylvanian victory",
+    "importance": "Bethlen's opening move into Royal Hungary, securing a vital strategic base and rallying Hungarian nobles to his side.",
+    "casualties": "Light to moderate"
+  },
+  {
+    "name": "Capture of Pressburg (Bratislava)",
+    "year": 1619,
+    "lat": 48.1586,
+    "lon": 17.1077,
+    "kind": "siege",
+    "date": "1619",
+    "commanders": "Gabriel Bethlen vs. Habsburg garrison",
+    "result": "Transylvanian victory",
+    "importance": "Bethlen seized the city and the Hungarian royal treasury, including the Holy Crown of Hungary.",
+    "casualties": "Minimal"
+  },
+  {
+    "name": "Siege of Vienna",
+    "year": 1619,
+    "lat": 48.2182,
+    "lon": 16.3738,
+    "kind": "siege",
+    "date": "1619",
+    "commanders": "Gabriel Bethlen and Heinrich Matthias von Thurn vs. Ferdinand II",
+    "result": "Withdrawn due to rear flank attack",
+    "importance": "Bethlen's forces marched into Lower Austria to join Bohemian forces in besieging Vienna, lifted when a Polish Lisowczycy raid forced a withdrawal.",
+    "casualties": "Moderate logistical losses"
+  },
+  {
+    "name": "Diet of Besztercebánya (Banská Bystrica)",
+    "year": 1620,
+    "lat": 48.7394,
+    "lon": 19.1534,
+    "kind": "treaty",
+    "date": "1620",
+    "commanders": "Gabriel Bethlen",
+    "result": "Political establishment",
+    "importance": "Gabriel Bethlen was elected King of Hungary by the Protestant estates, asserting political-military control over Royal Hungary.",
+    "casualties": "None"
+  },
+  {
+    "name": "Peace of Nikolsburg",
+    "year": 1621,
+    "lat": 48.8505,
+    "lon": 16.6381,
+    "kind": "treaty",
+    "date": "1621",
+    "commanders": "Gabriel Bethlen vs. Ferdinand II",
+    "result": "Settlement",
+    "importance": "Ended the first major phase of the war; Bethlen relinquished the title of King of Hungary in exchange for territorial concessions and rule over several Hungarian counties.",
+    "casualties": "N/A"
+  },
+  {
+    "name": "Invasion of Royal Hungary and Moravia",
+    "year": 1623,
+    "lat": 48.5000,
+    "lon": 17.5000,
+    "kind": "raid",
+    "date": "1623",
+    "commanders": "Gabriel Bethlen and Ernst von Mansfeld vs. Habsburg forces",
+    "result": "Indecisive campaign",
+    "importance": "Second campaign where Bethlen allied with Protestant forces and pushed toward Austria, threatening Vienna's approaches.",
+    "casualties": "Moderate"
+  },
+  {
+    "name": "Peace of Vienna",
+    "year": 1624,
+    "lat": 48.2082,
+    "lon": 16.3738,
+    "kind": "treaty",
+    "date": "1624",
+    "commanders": "Gabriel Bethlen vs. Ferdinand II",
+    "result": "Peace treaty",
+    "importance": "Concluded the second round of fighting between Transylvania and the Habsburg monarchy.",
+    "casualties": "N/A"
+  },
+  {
+    "name": "Campaign with Ernst von Mansfeld",
+    "year": 1626,
+    "lat": 47.5000,
+    "lon": 19.0000,
+    "kind": "land",
+    "date": "1626",
+    "commanders": "Gabriel Bethlen and Ernst von Mansfeld vs. Wallenstein's forces",
+    "result": "Strategic maneuvering",
+    "importance": "Third campaign where Bethlen linked up with Mansfeld near the frontier, resulting mostly in tactical maneuvering without major pitched battles.",
+    "casualties": "Low tactical losses"
+  },
+  {
+    "name": "Peace of Pressburg (Bratislava)",
+    "year": 1626,
+    "lat": 48.1486,
+    "lon": 17.1077,
+    "kind": "treaty",
+    "date": "1626",
+    "commanders": "Gabriel Bethlen vs. Ferdinand II",
+    "result": "Final settlement",
+    "importance": "Final settlement of Bethlen's anti-Habsburg campaigns, after which he made no further major moves before his death in 1629.",
+    "casualties": "N/A"
+  },
+  {
     "name": "Relief of Genoa",
     "year": 1625,
     "date": "1620s (approximate)",
@@ -10857,7 +11088,7 @@
     {
     "name": "Jan Zamoyski's Expedition to Moldavia",
     "year": 1595,
-    "lat": 47.16,
+    "lat": 47.18,
     "lon": 27.58,
     "kind": "campaign",
     "date": "Summer – December 1595",
@@ -10869,8 +11100,8 @@
   {
     "name": "Battle of Cecora (1595)",
     "year": 1595,
-    "lat": 45.47,
-    "lon": 28.14,
+    "lat": 47.17,
+    "lon": 27.77,
     "kind": "battle",
     "date": "September 18–21, 1595",
     "commanders": "Jan Zamoyski vs. Gazi II Girej",
@@ -11137,7 +11368,7 @@
   "year": 1644,
   "lat": 49.02,
   "lon": 30.29,
-  "kind": "land battle",
+  "kind": "land",
   "date": "30 January 1644",
   "commanders": "Stanisław Koniecpolski and Jeremi Wiśniowiecki vs. Tugay Bey",
   "result": "Polish–Lithuanian victory",
@@ -11765,8 +11996,8 @@
     {
     "name": "1st Raid on Ochakov (1600)",
     "year": 1600,
-    "lat": 46.52,
-    "lon": 31.54,
+    "lat": 46.72,
+    "lon": 31.55,
     "kind": "raid",
     "date": "1600",
     "commanders": "Zaporozhian Cossacks vs. Ottoman Garrison",
@@ -12325,7 +12556,7 @@
     "year": 1606,
     "lat": 33.89,
     "lon": 35.50,
-    "kind": "expedition",
+    "kind": "revolt",
     "commanders": "Fakhr-al-Din II & Canbulatoğlu Ali Pasha vs. Ottoman Authorities",
     "result": "Rebel Territorial Expansion",
     "importance": "Fakhr-al-Din II extended his authority by aligning with rebel leader Canbulatoğlu Ali Pasha, directly challenging the Sultan's rule across Adana and the Levant.",
@@ -12337,7 +12568,7 @@
     "year": 1607,
     "lat": 38.96,
     "lon": 35.24,
-    "kind": "expedition",
+    "kind": "revolt",
     "commanders": "Grand Vizier Kuyucu Murad Pasha vs. Anatolian Rebels",
     "result": "Decisive Imperial Victory",
     "importance": "Grand Vizier Kuyucu Murad Pasha led brutal, large-scale military expeditions across Anatolia to crush the Jelali revolts, securing the empire's rear lines against the Safavids.",
@@ -14357,6 +14588,30 @@
     "casualties": "Heavy Ottoman casualties, including commander Mezid Bey and his son"
   }
 ,
+{
+    "name": "Siege of Maróth Camp (Wagon Fortress)",
+    "date": "1526",
+    "year": 1526,
+    "lat": 47.78,
+    "lon": 18.88,
+    "kind": "siege",
+    "commanders": "Ottoman raiding party; refugees and local militia",
+    "result": "Ottoman victory and massacre",
+    "importance": "Demonstrated the vulnerability of refugee camps and improvised fortifications against Ottoman artillery and organized assault during the post-Mohács retreat.",
+    "casualties": "Massacre of about 25,000 refugees, women, children, and defenders."
+  },
+  {
+    "name": "Raid and Siege of Bács (Bač)",
+    "date": "1526",
+    "year": 1526,
+    "lat": 45.39,
+    "lon": 19.24,
+    "kind": "siege",
+    "commanders": "Suleiman the Magnificent; local fortress garrison and defenders",
+    "result": "Ottoman victory",
+    "importance": "The heavy fight and capture of the strong fortress of Bács punished remaining pockets of resistance during the Ottoman return march toward Constantinople.",
+    "casualties": "Heavy losses among Ottoman Janissaries and sipahis, alongside devastating casualties for the fortress defenders and city inhabitants."
+  },
 
   {
     "name": "Siege of Šabac (1521)",
@@ -14469,7 +14724,42 @@
     "casualties": "Heavy Ottoman casualties; loss of royal siege artillery"
   }
 ,
-
+{
+    "name": "Siege and Campaign of Srebrenik",
+    "date": "1464",
+    "year": 1464,
+    "lat": 44.71,
+    "lon": 18.48,
+    "kind": "siege",
+    "commanders": "King Matthias Corvinus; Ottoman forces",
+    "result": "Hungarian victory",
+    "importance": "Following the Ottoman attempt to retake Jajce, Matthias Corvinus led a personal relief and counter-offensive campaign that recovered Srebrenik and other key fortresses, establishing the Banate of Jajce as a strategic buffer zone.",
+    "casualties": "Moderate to heavy losses for the defending Ottoman garrison."
+  },
+  {
+    "name": "Capture of Kilia",
+    "date": "1465",
+    "year": 1465,
+    "lat": 45.42,
+    "lon": 29.27,
+    "kind": "siege",
+    "commanders": "Stephen the Great (Moldavia); Wallachian garrison",
+    "result": "Moldavian victory",
+    "importance": "Stephen the Great seized the vital Danube-mouth fortress of Kilia from Wallachian control, a regional conflict that intertwined with broader Hungarian, Wallachian, and Ottoman power struggles in Eastern Europe.",
+    "casualties": "Moderate casualties among the defending Wallachian forces."
+  },
+  {
+    "name": "Burning of Braila",
+    "date": "1476",
+    "year": 1476,
+    "lat": 45.27,
+    "lon": 27.97,
+    "kind": "sacked",
+    "commanders": "Sultan Mehmed II; Wallachian defenders",
+    "result": "Ottoman victory / destruction",
+    "importance": "During his 1476 campaign against Vlad the Impaler, Sultan Mehmed II captured and burned the key Danubian port and fortress of Brăila (Ibrail) to neutralize Wallachian supply lines and secure Ottoman control over the lower Danube.",
+    "casualties": "Heavy losses among the local garrison and inhabitants during the sack and fire."
+  },
   {
     "name": "Siege of Jajce",
     "year": 1463,
@@ -16012,7 +16302,7 @@
   "year": 1620,
   "lat": 47.16,
   "lon": 27.60,
-  "kind": "land battle",
+  "kind": "land",
   "date": "September 1620",
   "commanders": "Gaspar Graziani vs. Iskender Pasha",
   "result": "Ottoman-Tatar victory",
@@ -17931,7 +18221,7 @@
   "year": 1582,
   "lat": 58.18,
   "lon": 68.25,
-  "kind": "land battle",
+  "kind": "land",
   "date": "November 5, 1582",
   "commanders": "Yermak Timofeyevich vs. Mametqul",
   "result": "Russian victory",
@@ -17943,7 +18233,7 @@
   "year": 1585,
   "lat": 54.98,
   "lon": 73.36,
-  "kind": "land battle",
+  "kind": "land",
   "date": "August 6, 1585",
   "commanders": "Kuchum Khan vs. Yermak Timofeyevich",
   "result": "Decisive Sibir Khanate victory",

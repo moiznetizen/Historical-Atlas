@@ -54,11 +54,12 @@ POWER_COLORS = {
     "House of Luxembourg / Wittelsbach":"#9c07f3",
     "House of Hohenzollern / Luxembourg":"#9c07f3",
     "vassal of Polish-Lithuanian Commonwealth":"#9B3918", 
+    "Sibir Khanate":"#09D57D", 
     
     # Eastern Europe & Rus Principalities
     "Grand Duchy of Muscovy": "#1a7894",
     "Kingdom of Poland": "#4cc6ef",
-    "Fief of Poland": "#d76827",
+    "Fief of Poland": "#3ebee9",
     "Grand Duchy of Lithuania": "#4112cd",
     "Vassal of the Grand Duchy of Lithuania": "#4112cd",
     "Polish-Lithuanian Commonwealth": "#952500", 
